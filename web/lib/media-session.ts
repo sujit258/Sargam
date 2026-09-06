@@ -20,6 +20,7 @@ export type NowPlaying = {
   title: string;
   artist: string;
   album?: string;
+  /** Absolute URL to artwork image. Relative URLs are resolved automatically. */
   artwork?: string;
 };
 
@@ -29,6 +30,10 @@ type Handlers = {
   next: () => void;
   previous: () => void;
   seek?: (seconds: number) => void;
+  /** Called with a positive delta in seconds (e.g. 10s skip backward). */
+  seekBackward?: (delta: number) => void;
+  /** Called with a positive delta in seconds (e.g. 10s skip forward). */
+  seekForward?: (delta: number) => void;
 };
 
 function available(): boolean {
@@ -40,6 +45,24 @@ function canDescribe(): boolean {
   return available() && typeof MediaMetadata === "function";
 }
 
+/**
+ * Resolve a potentially-relative artwork URL to an absolute one.
+ *
+ * The OS fetches artwork independently of the browser tab — it issues an HTTP
+ * request from outside the page context. Relative URLs like "/logo.png" are
+ * meaningless there; only absolute URLs with an origin work.
+ */
+function absoluteArtwork(url: string | undefined): string | undefined {
+  if (!url) return undefined;
+  if (url.startsWith("http://") || url.startsWith("https://")) return url;
+  if (typeof window === "undefined") return undefined;
+  try {
+    return new URL(url, window.location.origin).href;
+  } catch {
+    return undefined;
+  }
+}
+
 /** What the lock screen shows. */
 export function setNowPlaying(song: NowPlaying | null) {
   if (!canDescribe()) return;
@@ -49,17 +72,31 @@ export function setNowPlaying(song: NowPlaying | null) {
     return;
   }
 
+  const abs = absoluteArtwork(song.artwork);
+
+  // Provide two sizes so the platform picks the most suitable one.
+  // YouTube thumbnails are 480×360 (hq) and 320×180 (mq); both are 16:9
+  // rather than square, and we declare their true size rather than lying about
+  // having square artwork — a platform that trusts the declaration will
+  // letterbox or crop against a shape the image does not have.
+  const artworkEntries: MediaImage[] = abs
+    ? [
+        { src: abs, sizes: "480x360", type: "image/jpeg" },
+        // mq variant: swap hqdefault → mqdefault in the URL when present.
+        // Falls back to the same image on unrecognised URLs.
+        {
+          src: abs.replace("hqdefault", "mqdefault"),
+          sizes: "320x180",
+          type: "image/jpeg",
+        },
+      ]
+    : [];
+
   navigator.mediaSession.metadata = new MediaMetadata({
     title: song.title,
     artist: song.artist,
     album: song.album,
-    // The size it actually is. Listing the same URL as 96, 256 and 512 square
-    // is a common trick and a lie here — a YouTube thumbnail is 480x360 — and
-    // a platform that trusts the declaration will letterbox or crop against a
-    // shape the image does not have.
-    artwork: song.artwork
-      ? [{ src: song.artwork, sizes: "480x360", type: "image/jpeg" }]
-      : [],
+    artwork: artworkEntries,
   });
 }
 
@@ -101,6 +138,8 @@ export function setPosition(elapsed: number, duration: number) {
 export function setHandlers(handlers: Handlers): () => void {
   if (!available()) return () => {};
 
+  const DEFAULT_SKIP_SECONDS = 10;
+
   const entries: [MediaSessionAction, MediaSessionActionHandler][] = [
     ["play", () => handlers.play()],
     ["pause", () => handlers.pause()],
@@ -116,6 +155,26 @@ export function setHandlers(handlers: Handlers): () => void {
       },
     ]);
   }
+
+  // seekbackward / seekforward: used by Bluetooth headsets, car media systems,
+  // and the Android notification / lock-screen rewind and fast-forward buttons.
+  // Without these the spec says the platform should fall back to
+  // previoustrack / nexttrack, but in practice many silently drop the event.
+  entries.push([
+    "seekbackward",
+    (details) => {
+      const delta = details.seekOffset ?? DEFAULT_SKIP_SECONDS;
+      handlers.seekBackward?.(delta);
+    },
+  ]);
+
+  entries.push([
+    "seekforward",
+    (details) => {
+      const delta = details.seekOffset ?? DEFAULT_SKIP_SECONDS;
+      handlers.seekForward?.(delta);
+    },
+  ]);
 
   for (const [action, handler] of entries) {
     try {
