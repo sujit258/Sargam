@@ -666,6 +666,37 @@ export function PlayerBar({
     toggleRef.current = toggle;
   });
 
+  // Global keyboard shortcuts for playback (Space = Play/Pause, J = Prev, L = Next, M = Mute)
+  useEffect(() => {
+    const onKeyDown = (e: KeyboardEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (
+        target?.tagName === "INPUT" ||
+        target?.tagName === "TEXTAREA" ||
+        target?.isContentEditable
+      ) {
+        return;
+      }
+
+      if (e.code === "Space") {
+        e.preventDefault();
+        toggleRef.current();
+      } else if (e.key === "j" || e.key === "J") {
+        e.preventDefault();
+        onPrev();
+      } else if (e.key === "l" || e.key === "L") {
+        e.preventDefault();
+        onNext();
+      } else if (e.key === "m" || e.key === "M") {
+        e.preventDefault();
+        setMuted((m) => !m);
+      }
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [onNext, onPrev]);
+
   // Skipped on the first run: toggleSignal starts at 0, and without this
   // guard mounting the bar would immediately "toggle" a song that was never
   // playing yet.

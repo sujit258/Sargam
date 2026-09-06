@@ -10,35 +10,23 @@ import {
   useState,
 } from "react";
 import { PlayerBar } from "@/components/player-bar";
-import { hydrate, type Catalogue, type RawSong } from "@/lib/catalogue";
+import { hydrate, type Catalogue, type RawSong, type Song } from "@/lib/catalogue";
 import { track } from "@/lib/analytics";
 import { useCatalogue } from "@/lib/queries";
+import { recordPlayedSong } from "@/lib/discovery";
 
 type PlayerApi = {
   currentId: number | null;
+  currentTrack: Song | null;
   playing: boolean;
   ambient: boolean;
   /** Songs the player advances through. Set by whichever route is showing. */
   setQueue: (songs: RawSong[]) => void;
   /** The same list, observable, so the queue view can render it. */
   queue: RawSong[];
-  /**
-   * The queue panel's own entry, and its only consumer.
-   *
-   * Named for where it is used rather than exposed as a bare `play`, because
-   * a bare one is how a route into playback ends up uncounted: it looks like
-   * the obvious thing to reach for and carries no label with it.
-   */
+  play: (song: Song | RawSong) => void;
+  toggle: () => void;
   playQueued: (id: number) => void;
-  /**
-   * What a row's own play/pause control should call instead of `play`.
-   *
-   * `play(id)` on the song already current and playing sets state to the
-   * value it already holds, so nothing re-renders and nothing pauses — the
-   * row's button would claim to pause and silently fail. This tells the bar
-   * to toggle instead, via `toggleSignal`, for exactly that one case; any
-   * other id is a plain play.
-   */
   playOrToggle: (id: number) => void;
   playFirst: (songs: RawSong[]) => void;
   playRandom: (songs: RawSong[]) => void;
@@ -247,6 +235,23 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
     [currentId, playFrom, unplayable]
   );
 
+  useEffect(() => {
+    if (currentId !== null) {
+      recordPlayedSong(currentId);
+    }
+  }, [currentId]);
+
+  const playTrack = useCallback(
+    (song: Song | RawSong) => {
+      playFrom(song.id, "direct");
+    },
+    [playFrom]
+  );
+
+  const toggleTrack = useCallback(() => {
+    setToggleSignal((n) => n + 1);
+  }, []);
+
   const currentSong = useMemo(() => {
     if (!catalogue || currentId === null) return null;
     const raw = catalogue.songs.find((s) => s.id === currentId);
@@ -256,10 +261,13 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
   const api = useMemo<PlayerApi>(
     () => ({
       currentId,
+      currentTrack: currentSong,
       playing,
       ambient,
       setQueue,
       queue,
+      play: playTrack,
+      toggle: toggleTrack,
       playQueued,
       playOrToggle,
       playFirst,
@@ -269,10 +277,13 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
     }),
     [
       currentId,
+      currentSong,
       playing,
       ambient,
       setQueue,
       queue,
+      playTrack,
+      toggleTrack,
       playQueued,
       playOrToggle,
       playFirst,

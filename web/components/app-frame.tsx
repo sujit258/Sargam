@@ -8,12 +8,13 @@ import {
   Code2,
   ScrollText,
   Disc3,
+  Globe,
   Heart,
-  HeartHandshake,
+  History,
   Info,
-  ListMusic,
   Menu,
   Palette,
+  Radio,
   Search,
   X,
 } from "lucide-react";
@@ -23,8 +24,9 @@ import { InstallButton } from "@/components/install-prompt";
 import { InstallCard } from "@/components/install-card";
 import { LikeBurstHost } from "@/components/like-burst";
 import { NoticeDialog } from "@/components/notice-dialog";
+import { MobileNav } from "@/components/mobile-nav";
 import { track } from "@/lib/analytics";
-import { facetCards, portrait } from "@/lib/catalogue";
+import { portrait } from "@/lib/catalogue";
 import { usePlayer, usePlayerBar } from "@/components/player-provider";
 import { useCatalogue, usePhotoManifest } from "@/lib/queries";
 import { brand } from "@/lib/brand";
@@ -94,39 +96,77 @@ export function AppFrame({ children }: { children: React.ReactNode }) {
 
   const brandAndNav = (
     <>
-      <div className="shrink-0 px-4 pb-3 pt-4">
+      <div className="shrink-0 px-4 pb-3 pt-4 border-b border-white/[0.06]">
         <Link href="/" className="flex items-center gap-2.5">
           <img src="/logo.png" alt={brand.shortName} width={36} height={36} className="size-9 rounded-lg shadow-md ring-1 ring-white/10" />
           <span>
-            <span className="block text-lg leading-tight tracking-tight font-bold">{brand.shortName}</span>
+            <span className="block text-lg leading-tight tracking-tight font-serif font-bold text-foreground">{brand.shortName}</span>
             {catalogue ? (
-              <span className="block text-xs text-muted-foreground">
-                {catalogue.songs.length.toLocaleString()} songs ·{" "}
-                {catalogue.facets.stations.length} stations
+              <span className="block text-[11px] text-primary/80">
+                {catalogue.songs.length.toLocaleString()} Songs · {catalogue.facets.stations.length} Stations
               </span>
             ) : (
-              <span className="block text-xs text-muted-foreground">{brand.tagline}</span>
+              <span className="block text-[11px] text-muted-foreground">{brand.tagline}</span>
             )}
           </span>
         </Link>
       </div>
 
-      {/* A real nav, not a div: this is the app's primary way to move between
-          routes, and the rail and the mobile drawer both render it. */}
-      <nav aria-label="Primary" className="shrink-0 space-y-0.5 px-2 pb-2">
-        <Link href="/" className={navClass(onBrowse)}>
-          <Compass className="size-4" /> Browse
-        </Link>
-        <Link href="/songs" className={navClass(pathname === "/songs")}>
-          <ListMusic className="size-4" /> All songs
-        </Link>
-        <Link href="/favourites" className={navClass(pathname === "/favourites")}>
-          <Heart className="size-4" /> Your favourites
-        </Link>
-        <Link href="/contribute" className={navClass(pathname === "/contribute")}>
-          <HeartHandshake className="size-4" /> Help us find songs
-        </Link>
-        <InstallButton />
+      <nav aria-label="Primary" className="flex-1 overflow-y-auto space-y-4 px-2 py-3 text-xs scroll-slim">
+        <div>
+          <span className="px-2 text-[10px] font-mono uppercase tracking-wider text-muted-foreground/60">Discover</span>
+          <div className="mt-1 space-y-0.5">
+            <Link href="/" className={navClass(onBrowse)}>
+              <Compass className="size-4 text-primary" /> Discover
+            </Link>
+            <Link href="/songs" className={navClass(pathname === "/songs")}>
+              <Search className="size-4" /> Search All Songs
+            </Link>
+            <Link href="/#languages" className={navClass(false)}>
+              <Globe className="size-4 text-teal-400" /> Languages
+            </Link>
+            <Link href="/station/top-300" className={navClass(pathname.startsWith("/station"))}>
+              <Radio className="size-4" /> Stations
+            </Link>
+          </div>
+        </div>
+
+        <div>
+          <span className="px-2 text-[10px] font-mono uppercase tracking-wider text-muted-foreground/60">Your Library</span>
+          <div className="mt-1 space-y-0.5">
+            <Link href="/favourites" className={navClass(pathname === "/favourites")}>
+              <Heart className="size-4 text-rose-500" /> Favorites
+            </Link>
+            <Link href="/#history" className={navClass(false)}>
+              <History className="size-4" /> Recently Played
+            </Link>
+            <Link href="/themes" className={navClass(pathname === "/themes")}>
+              <Palette className="size-4 text-amber-400" /> Backdrop Themes
+            </Link>
+          </div>
+        </div>
+
+        <div>
+          <span className="px-2 text-[10px] font-mono uppercase tracking-wider text-muted-foreground/60">Golden Eras</span>
+          <div className="mt-1 space-y-0.5">
+            <Link href="/#eras" className="flex items-center gap-2 rounded-md px-2 py-1.5 text-xs text-muted-foreground hover:bg-white/[0.05] hover:text-foreground">
+              <span className="size-1.5 rounded-full bg-amber-400" /> 1950s Black &amp; White
+            </Link>
+            <Link href="/#eras" className="flex items-center gap-2 rounded-md px-2 py-1.5 text-xs text-muted-foreground hover:bg-white/[0.05] hover:text-foreground">
+              <span className="size-1.5 rounded-full bg-rose-400" /> 1960s Golden Dawn
+            </Link>
+            <Link href="/#eras" className="flex items-center gap-2 rounded-md px-2 py-1.5 text-xs text-muted-foreground hover:bg-white/[0.05] hover:text-foreground">
+              <span className="size-1.5 rounded-full bg-orange-400" /> 1970s Technicolor
+            </Link>
+            <Link href="/#eras" className="flex items-center gap-2 rounded-md px-2 py-1.5 text-xs text-muted-foreground hover:bg-white/[0.05] hover:text-foreground">
+              <span className="size-1.5 rounded-full bg-teal-400" /> 1980s Retro Rhythm
+            </Link>
+          </div>
+        </div>
+
+        <div className="pt-2">
+          <InstallButton />
+        </div>
       </nav>
     </>
   );
@@ -438,10 +478,11 @@ export function AppFrame({ children }: { children: React.ReactNode }) {
                 decide their own vertical rhythm and cannot drift apart. The
                 gap below the header comes from the header itself, so this
                 needs no top padding of its own. */}
-            <div className="px-4 pb-16 pt-4 sm:px-6 sm:pt-5 lg:px-8">{children}</div>
+            <div className="px-4 pb-28 pt-4 sm:px-6 sm:pt-5 lg:px-8 lg:pb-16">{children}</div>
           </main>
 
           {playerBar}
+          <MobileNav />
         </div>
       </div>
 

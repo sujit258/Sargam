@@ -45,9 +45,11 @@ let revision = 0;
 function read(): number[] {
   try {
     let raw = localStorage.getItem(KEY);
-    // Seamless one-time migration from legacy key
+    // Seamless one-time migration from legacy keys
     if (!raw) {
-      const legacy = localStorage.getItem(LEGACY_KEY);
+      const legacy =
+        localStorage.getItem(LEGACY_KEY) ||
+        localStorage.getItem(brand.storageKeys.legacy.oldMehfilFavourites);
       if (legacy) {
         raw = legacy;
         try {
