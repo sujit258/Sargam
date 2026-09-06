@@ -1,7 +1,7 @@
 "use client";
 
 import { Globe, ArrowRight, CheckCircle2, Clock } from "lucide-react";
-import { SUPPORTED_LANGUAGES, type LanguageMeta } from "@/lib/types";
+import { SUPPORTED_LANGUAGES } from "@/lib/types";
 
 interface LanguageExplorerProps {
   activeLanguage?: string;

@@ -19,7 +19,7 @@ const PERSON_KINDS = new Set(["singer", "composer", "lyricist", "actor"]);
 export function CollectionHeader({
   kind,
   label,
-  facet,
+  facet: _facet,
   catalogue,
   photos,
   posters,
