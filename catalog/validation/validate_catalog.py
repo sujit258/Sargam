@@ -33,14 +33,19 @@ def validate_catalog_file(catalog_path: Path) -> bool:
         print(f"[-] Error: Found {len(ids) - len(unique_ids)} duplicate song IDs!")
         return False
 
-    # 2. Check for missing titles or videos
+    # 2. Check for missing titles and video validation
     missing_title = [s for s in songs if not s.get("t")]
-    missing_video = [s for s in songs if not s.get("v")]
     if missing_title:
         print(f"[-] Error: {len(missing_title)} songs missing title!")
         return False
-    if missing_video:
-        print(f"[-] Error: {len(missing_video)} songs missing video ID!")
+
+    # For Hindi songs or verified Marathi songs, video ID must be present
+    unverified_without_flag = [
+        s for s in songs 
+        if not s.get("v") and s.get("source_verified") is not False
+    ]
+    if unverified_without_flag:
+        print(f"[-] Error: {len(unverified_without_flag)} songs marked verified but missing video ID!")
         return False
 
     # 3. Check facet bounds

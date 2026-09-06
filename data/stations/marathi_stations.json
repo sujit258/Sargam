@@ -1,0 +1,91 @@
+[
+  {
+    "id": "station-marathi-classics",
+    "name": "Marathi Classics",
+    "language": "marathi",
+    "description": "Timeless golden-era master recordings by Maharashtra's greatest vocalists.",
+    "filters": {
+      "categories": [
+        "marathi-classics"
+      ]
+    }
+  },
+  {
+    "id": "station-marathi-bhavg",
+    "name": "Marathi Bhavageet",
+    "language": "marathi",
+    "description": "Intimate poetic expressions of romance, rain, nature, and longing.",
+    "filters": {
+      "categories": [
+        "bhavageet"
+      ]
+    }
+  },
+  {
+    "id": "station-marathi-natya",
+    "name": "Natya Sangeet",
+    "language": "marathi",
+    "description": "Semi-classical grandeur from the golden age of Marathi musical theatre.",
+    "filters": {
+      "categories": [
+        "natya-sangeet"
+      ]
+    }
+  },
+  {
+    "id": "station-marathi-lavani",
+    "name": "Lavani",
+    "language": "marathi",
+    "description": "Electrifying rhythm, dholki beats, and vibrant traditional dance expressions.",
+    "filters": {
+      "categories": [
+        "lavani"
+      ]
+    }
+  },
+  {
+    "id": "station-marathi-bhakti",
+    "name": "Marathi Bhakti",
+    "language": "marathi",
+    "description": "Divine Abhangs, saint poetry, and Aarti hymns honoring Vitthal and Ganapati.",
+    "filters": {
+      "categories": [
+        "marathi-bhakti",
+        "devotional"
+      ]
+    }
+  },
+  {
+    "id": "station-marathi-gavlani",
+    "name": "Gavlani",
+    "language": "marathi",
+    "description": "Playful, joyful folk tales of Radha, Krishna, gopis, and the flute in Gokul.",
+    "filters": {
+      "categories": [
+        "gavlani"
+      ]
+    }
+  },
+  {
+    "id": "station-marathi-folk",
+    "name": "Marathi Folk",
+    "language": "marathi",
+    "description": "Rustic rhythms of Maharashtra: Koli geet, Gondhal, Dhangari, and Powada.",
+    "filters": {
+      "categories": [
+        "folk"
+      ]
+    }
+  },
+  {
+    "id": "station-marathi-romantic",
+    "name": "Marathi Romance",
+    "language": "marathi",
+    "description": "Soulful melodies celebrating tender moments and eternal cinema romance.",
+    "filters": {
+      "categories": [
+        "romantic"
+      ]
+    }
+  }
+]

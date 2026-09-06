@@ -1,6 +1,5 @@
-"use client";
-
-import { Feather, Sparkles, Music } from "lucide-react";
+import Link from "next/link";
+import { Feather, Sparkles, Music, ArrowRight } from "lucide-react";
 import { MARATHI_SPOTLIGHT } from "@/lib/types";
 
 export function MarathiSpotlight() {
@@ -21,12 +20,19 @@ export function MarathiSpotlight() {
             Celebrating Maharashtra&apos;s rich traditions of Bhavgeet, Natya Sangeet, and classic cinema.
           </p>
         </div>
+        <Link
+          href="/languages/marathi"
+          className="text-xs font-medium text-teal-400 hover:underline flex items-center gap-1"
+        >
+          Explore All <ArrowRight className="size-3" />
+        </Link>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {MARATHI_SPOTLIGHT.map((item) => (
-          <div
+          <Link
             key={item.id}
+            href="/languages/marathi"
             className="group relative overflow-hidden rounded-2xl border border-teal-500/20 bg-gradient-to-b from-teal-950/25 via-card/60 to-card/40 p-5 backdrop-blur-sm transition duration-300 hover:border-teal-500/40 hover:scale-[1.01] shadow-lg flex flex-col justify-between"
           >
             <div>
@@ -56,7 +62,7 @@ export function MarathiSpotlight() {
                 <span className="truncate italic">Featured: {item.sampleTrackTitle}</span>
               </div>
             )}
-          </div>
+          </Link>
         ))}
       </div>
     </section>

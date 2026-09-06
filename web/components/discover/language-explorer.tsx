@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Globe, ArrowRight, CheckCircle2, Clock } from "lucide-react";
 import { SUPPORTED_LANGUAGES } from "@/lib/types";
 
@@ -26,23 +27,45 @@ export function LanguageExplorer({
             Discover timeless Indian music across linguistic heritages.
           </p>
         </div>
+        <Link
+          href="/languages"
+          className="text-xs font-medium text-teal-400 hover:underline flex items-center gap-1"
+        >
+          View All <ArrowRight className="size-3" />
+        </Link>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
         {SUPPORTED_LANGUAGES.map((lang) => {
           const isSelected = activeLanguage === lang.id;
           const isAvailable = lang.status === "available";
+          const href =
+            lang.id === "marathi"
+              ? "/languages/marathi"
+              : lang.id === "hindi"
+              ? "/songs"
+              : "/languages";
 
           return (
-            <div
+            <Link
               key={lang.id}
-              onClick={() => isAvailable && onSelectLanguage?.(lang.id)}
+              href={isAvailable ? href : "#"}
+              onClick={(e) => {
+                if (!isAvailable) {
+                  e.preventDefault();
+                  return;
+                }
+                if (onSelectLanguage) {
+                  e.preventDefault();
+                  onSelectLanguage(lang.id);
+                }
+              }}
               className={`group relative overflow-hidden rounded-xl border p-4 transition duration-200 ${
                 isSelected
                   ? "border-primary/60 bg-primary/[0.08] shadow-lg shadow-primary/10"
                   : isAvailable
                   ? "border-white/10 bg-card/40 hover:border-white/25 hover:bg-card/70 cursor-pointer"
-                  : "border-white/[0.06] bg-white/[0.02] opacity-70"
+                  : "border-white/[0.06] bg-white/[0.02] opacity-70 pointer-events-none"
               }`}
             >
               <div className="flex items-start justify-between">
@@ -81,7 +104,7 @@ export function LanguageExplorer({
                   <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5 text-primary" />
                 </div>
               )}
-            </div>
+            </Link>
           );
         })}
       </div>

@@ -17,7 +17,7 @@ export function LikeButton({
   className = "",
   size = 16,
 }: {
-  songId: number;
+  songId: number | string;
   className?: string;
   size?: number;
 }) {

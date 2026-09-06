@@ -44,7 +44,7 @@ export function getAajchaSargam(catalogue: Catalogue): Song | null {
  *
  * Selects a high-quality track across varied stations, avoiding the current song.
  */
-export function getSurpriseSong(catalogue: Catalogue, currentSongId?: number): Song | null {
+export function getSurpriseSong(catalogue: Catalogue, currentSongId?: number | string): Song | null {
   if (!catalogue.songs.length) return null;
 
   const candidates = catalogue.songs.filter(
@@ -59,7 +59,7 @@ export function getSurpriseSong(catalogue: Catalogue, currentSongId?: number): S
 /**
  * Recently Played Management
  */
-export function getRecentlyPlayed(): number[] {
+export function getRecentlyPlayed(): (number | string)[] {
   if (typeof window === "undefined") return [];
   try {
     const raw = window.localStorage.getItem(HISTORY_KEY);
@@ -71,7 +71,7 @@ export function getRecentlyPlayed(): number[] {
   }
 }
 
-export function recordPlayedSong(songId: number) {
+export function recordPlayedSong(songId: number | string) {
   if (typeof window === "undefined") return;
   try {
     const existing = getRecentlyPlayed().filter((id) => id !== songId);

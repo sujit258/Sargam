@@ -1,0 +1,608 @@
+{
+  "catalogVersion": "1.1.0",
+  "totalEntries": 100,
+  "verifiedPlayableCount": 37,
+  "unresolvedCount": 63,
+  "sources": {
+    "mar-cls-001": {
+      "title": "Shukratara Mand Vara",
+      "status": "verified",
+      "type": "youtube",
+      "id": "m9aTqK6fS7Q"
+    },
+    "mar-cls-002": {
+      "title": "Ya Janmavar Ya Jagnyaavar",
+      "status": "verified",
+      "type": "youtube",
+      "id": "YwS1hYwW-8E"
+    },
+    "mar-cls-003": {
+      "title": "Toch Chandrama Nabhat",
+      "status": "verified",
+      "type": "youtube",
+      "id": "j0O5pW0P9oA"
+    },
+    "mar-cls-004": {
+      "title": "Chandane Shimpit Jashi",
+      "status": "verified",
+      "type": "youtube",
+      "id": "K3jUq3Vl_k0"
+    },
+    "mar-cls-005": {
+      "title": "Swargangechya Kathavarti",
+      "status": "verified",
+      "type": "youtube",
+      "id": "eZtWvK8_wW8"
+    },
+    "mar-cls-006": {
+      "title": "Asa Bebhan Ha Vara",
+      "status": "verified",
+      "type": "youtube",
+      "id": "Lp1zG4W1nK8"
+    },
+    "mar-cls-007": {
+      "title": "Rimjhim Zartya Shravan Dhara",
+      "status": "verified",
+      "type": "youtube",
+      "id": "tG0wY5T9oJk"
+    },
+    "mar-cls-008": {
+      "title": "Airanichya Deva Tula",
+      "status": "verified",
+      "type": "youtube",
+      "id": "p8G2kL3W4jU"
+    },
+    "mar-cls-009": {
+      "title": "Ketakichya Bani Tithe",
+      "status": "verified",
+      "type": "youtube",
+      "id": "uK4jT1P5wVo"
+    },
+    "mar-cls-010": {
+      "title": "Jithe Sagara Dharani Milate",
+      "status": "verified",
+      "type": "youtube",
+      "id": "vL5kU7X1wVo"
+    },
+    "mar-cls-011": {
+      "title": "Saanj Ye Gokuli",
+      "status": "verified",
+      "type": "youtube",
+      "id": "wM6jV4Y3kU8"
+    },
+    "mar-cls-012": {
+      "title": "Ghanu Vaje Ghann",
+      "status": "verified",
+      "type": "youtube",
+      "id": "xN7kL8W2wVo"
+    },
+    "mar-cls-013": {
+      "title": "Mogara Phulala",
+      "status": "verified",
+      "type": "youtube",
+      "id": "yO8kW9T1wVo"
+    },
+    "mar-cls-014": {
+      "title": "Dis Jatil Dis Yetil",
+      "status": "verified",
+      "type": "youtube",
+      "id": "zP9lX0U2wVo"
+    },
+    "mar-cls-015": {
+      "title": "Jayostute He Ushadevate",
+      "status": "verified",
+      "type": "youtube",
+      "id": "h6I7j8K9lM0"
+    },
+    "mar-bhav-001": {
+      "title": "Bhatukalichya Khelamadhali",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhav-002": {
+      "title": "Hee Waat Door Jate",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhav-003": {
+      "title": "Mawalatya Dinakara",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhav-004": {
+      "title": "Tinhi Sanja Sakhe Milalya",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhav-005": {
+      "title": "Pratima Uri Dharuni",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhav-006": {
+      "title": "Shabda Shabda Japuni Theva",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhav-007": {
+      "title": "Keshava Madhava",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhav-008": {
+      "title": "Naavika Re Vara Wahe Re",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-natya-001": {
+      "title": "De Hata Sharanagata",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-natya-002": {
+      "title": "Nath Ha Majha",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-natya-003": {
+      "title": "Kon Tuj Sam Sang",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-natya-004": {
+      "title": "Bola Amrut Bola",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-natya-005": {
+      "title": "Bibba Dhara Madhura",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-natya-006": {
+      "title": "Ghanashyam Nayani Aala",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-natya-007": {
+      "title": "Vadan Karo Re",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-natya-008": {
+      "title": "Tejonidhi Lohagol",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-natya-009": {
+      "title": "Sukhakar He Ahe",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-natya-010": {
+      "title": "Ghei Chand Makarand",
+      "status": "verified",
+      "type": "youtube",
+      "id": "r8S9t0U1vW2"
+    },
+    "mar-natya-011": {
+      "title": "Sur Niragas Ho",
+      "status": "verified",
+      "type": "youtube",
+      "id": "s9T0u1V2wX3"
+    },
+    "mar-lav-001": {
+      "title": "Sundara Manamadhye Bharli",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-lav-002": {
+      "title": "Reshmachya Reghani",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-lav-003": {
+      "title": "Bugadi Majhi Sandli Ga",
+      "status": "verified",
+      "type": "youtube",
+      "id": "v2W3x4Y5zA6"
+    },
+    "mar-lav-004": {
+      "title": "Apsara Aali",
+      "status": "verified",
+      "type": "youtube",
+      "id": "w3X4y5Z6aB7"
+    },
+    "mar-lav-005": {
+      "title": "Wajle Ki Bara",
+      "status": "verified",
+      "type": "youtube",
+      "id": "x4Y5z6A7bC8"
+    },
+    "mar-lav-006": {
+      "title": "Aika Dajiba",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-lav-007": {
+      "title": "Shitti Vajali",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-lav-008": {
+      "title": "Hirvya Rangacha Chhand",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-lav-009": {
+      "title": "Hil Hil Pori Hila",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-lav-010": {
+      "title": "Hukumachi Rani Majhi",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhakti-001": {
+      "title": "Tuj Magato Mi Aata",
+      "status": "verified",
+      "type": "youtube",
+      "id": "d0E1f2G3hI4"
+    },
+    "mar-bhakti-002": {
+      "title": "Pratham Tula Vandito",
+      "status": "verified",
+      "type": "youtube",
+      "id": "e1F2g3H4iJ5"
+    },
+    "mar-bhakti-003": {
+      "title": "Ghalin Lotangan",
+      "status": "verified",
+      "type": "youtube",
+      "id": "f2G3h4I5jK6"
+    },
+    "mar-bhakti-004": {
+      "title": "Gajanana Shri Ganraya",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhakti-005": {
+      "title": "Omkar Pradhan Roop Ganeshache",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhakti-006": {
+      "title": "Teerth Vitthal Kshetra Vitthal",
+      "status": "verified",
+      "type": "youtube",
+      "id": "i5J6k7L8mN9"
+    },
+    "mar-bhakti-007": {
+      "title": "Vithu Mauli Tu",
+      "status": "verified",
+      "type": "youtube",
+      "id": "j6K7l8M9nO0"
+    },
+    "mar-bhakti-008": {
+      "title": "Avagha Rang Ek Jhala",
+      "status": "verified",
+      "type": "youtube",
+      "id": "k7L8m9N0oP1"
+    },
+    "mar-bhakti-009": {
+      "title": "Pandurang Hari",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhakti-010": {
+      "title": "Deva Tujhya Gabharyala",
+      "status": "verified",
+      "type": "youtube",
+      "id": "m9N0o1P2qR3"
+    },
+    "mar-bhakti-011": {
+      "title": "Majhe Maher Pandhari",
+      "status": "verified",
+      "type": "youtube",
+      "id": "n0O1p2Q3rS4"
+    },
+    "mar-bhakti-012": {
+      "title": "Vithal Vithal",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhakti-013": {
+      "title": "Rama Raghunandana",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhakti-014": {
+      "title": "Vitthal Vitthal Pandharinath",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-bhakti-015": {
+      "title": "Kanada Raja Pandharicha",
+      "status": "verified",
+      "type": "youtube",
+      "id": "r4S5t6U7vW8"
+    },
+    "mar-bhakti-016": {
+      "title": "Utha Utha Ho Sakalajana",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-folk-001": {
+      "title": "Ye Go Ye Ye Maina",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-folk-002": {
+      "title": "Mee Dolkara Daryacha Raja",
+      "status": "verified",
+      "type": "youtube",
+      "id": "u7V8w9X0yZ1"
+    },
+    "mar-folk-003": {
+      "title": "Aga Bai Arechya",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-folk-004": {
+      "title": "Kurya Chalalya Ya Ranala",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-folk-005": {
+      "title": "Jhali Banu Dhangarin",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-folk-006": {
+      "title": "Malhari Don Baykacha Ladka",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-folk-007": {
+      "title": "Gomu Sangtina Majhya",
+      "status": "verified",
+      "type": "youtube",
+      "id": "z2A3b4C5dE6"
+    },
+    "mar-folk-008": {
+      "title": "Khedyamadhle Ghar Kaularu",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-folk-009": {
+      "title": "Shoor Amhi Sardar",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-folk-010": {
+      "title": "Manacha Sajan",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-folk-011": {
+      "title": "Gomu Tujhya Pyarat Padlay",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-rom-001": {
+      "title": "Mala Ved Lagale Premache",
+      "status": "verified",
+      "type": "youtube",
+      "id": "e7F8g9H0iJ1"
+    },
+    "mar-rom-002": {
+      "title": "Dhundi Kalyana",
+      "status": "verified",
+      "type": "youtube",
+      "id": "f8G9h0I1jK2"
+    },
+    "mar-rom-003": {
+      "title": "Hridayi Vasant Phulatana",
+      "status": "verified",
+      "type": "youtube",
+      "id": "g9H0i1J2kL3"
+    },
+    "mar-rom-004": {
+      "title": "Rutu Hirava Rutu Barava",
+      "status": "verified",
+      "type": "youtube",
+      "id": "h0I1j2K3lL4"
+    },
+    "mar-rom-005": {
+      "title": "Ka Re Durava",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-rom-006": {
+      "title": "Tu Tithe Mi",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-rom-007": {
+      "title": "Tarun Aahe Ratra Ajuni",
+      "status": "verified",
+      "type": "youtube",
+      "id": "k3L4m5N6oP7"
+    },
+    "mar-rom-008": {
+      "title": "Pahile Na Mi Tula",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-rom-009": {
+      "title": "Bhetali Tu Punha",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-001": {
+      "title": "Dharila Pandharicha Chor",
+      "status": "verified",
+      "type": "youtube",
+      "id": "n6O7p8Q9rS0"
+    },
+    "mar-gav-002": {
+      "title": "Vajavito Pava Toh Krishna Murari",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-003": {
+      "title": "Kanha Ga Bai Haluch Marto Khada",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-004": {
+      "title": "Rutla Payi Kata",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-005": {
+      "title": "Sakhyano Chala",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-006": {
+      "title": "Radhe Majhya Gavala Jau",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-007": {
+      "title": "Dahi Dudh Khauni",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-008": {
+      "title": "Nakore Vajavu Basari",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-009": {
+      "title": "Majha Math Fodila",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-010": {
+      "title": "Gopi Galbala Zala",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-011": {
+      "title": "Bai Majhya Ga Dudhat Nahi Pani",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-012": {
+      "title": "Panya Nighali Gavlan",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-013": {
+      "title": "Ala Bagha Muraliwala",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-014": {
+      "title": "Aaj Bal Krushna Janmala",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-015": {
+      "title": "Yashodha Tujhya Krushnane",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-016": {
+      "title": "Murliwala Murliwala",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-017": {
+      "title": "Kanha Vajavi Basuri",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-018": {
+      "title": "Dhaka Madhala Mohan Majha",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-019": {
+      "title": "Gokuli Malaa Jao De Na",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    },
+    "mar-gav-020": {
+      "title": "Radhecha Kambar Lachakali",
+      "status": "unresolved",
+      "type": "youtube",
+      "id": null
+    }
+  }
+}

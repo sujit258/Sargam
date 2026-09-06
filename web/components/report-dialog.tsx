@@ -25,7 +25,7 @@ export function ReportDialog({
   onClose,
 }: {
   kind: ReportKind;
-  songId: number;
+  songId: number | string;
   songTitle: string;
   songFilm?: string;
   currentVideoId?: string;

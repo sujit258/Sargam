@@ -17,7 +17,7 @@ export type ReportKind = "wrong-track" | "missing-song";
 
 export type Report = {
   kind: ReportKind;
-  songId: number;
+  songId: number | string;
   songTitle: string;
   songFilm?: string;
   /** What is playing now, for a wrong-track report. */

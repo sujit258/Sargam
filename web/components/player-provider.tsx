@@ -16,7 +16,7 @@ import { useCatalogue } from "@/lib/queries";
 import { recordPlayedSong } from "@/lib/discovery";
 
 type PlayerApi = {
-  currentId: number | null;
+  currentId: number | string | null;
   currentTrack: Song | null;
   playing: boolean;
   ambient: boolean;
@@ -26,13 +26,13 @@ type PlayerApi = {
   queue: RawSong[];
   play: (song: Song | RawSong) => void;
   toggle: () => void;
-  playQueued: (id: number) => void;
-  playOrToggle: (id: number) => void;
+  playQueued: (id: number | string) => void;
+  playOrToggle: (id: number | string) => void;
   playFirst: (songs: RawSong[]) => void;
   playRandom: (songs: RawSong[]) => void;
   toggleAmbient: () => void;
   /** Ids the player could not start this session, for the list to mark. */
-  unplayable: Record<number, string>;
+  unplayable: Record<string, string>;
 };
 
 const PlayerContext = createContext<PlayerApi | null>(null);
@@ -61,12 +61,12 @@ export function usePlayer() {
 export function PlayerProvider({ children }: { children: React.ReactNode }) {
   const { data: catalogue } = useCatalogue();
 
-  const [currentId, setCurrentId] = useState<number | null>(null);
+  const [currentId, setCurrentId] = useState<number | string | null>(null);
   const [playing, setPlaying] = useState(false);
   const [shuffle, setShuffle] = useState(false);
   const [repeat, setRepeat] = useState(false);
   const [ambient, setAmbient] = useState(true);
-  const [unplayable, setUnplayable] = useState<Record<number, string>>({});
+  const [unplayable, setUnplayable] = useState<Record<string, string>>({});
   // A counter rather than a boolean: the bar's effect fires on every change,
   // including two toggles in a row, which a boolean flipped back and forth
   // could coalesce away if the second click landed before the effect ran.
@@ -83,7 +83,7 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
   // rather than jumping to the top of the list. When neither neighbour is in
   // the new queue either — navigating to an unrelated collection, say — there
   // is genuinely nothing to resume from, and the queue's own start is right.
-  const neighboursRef = useRef<{ next: number | null; prev: number | null }>({
+  const neighboursRef = useRef<{ next: number | string | null; prev: number | string | null }>({
     next: null,
     prev: null,
   });
@@ -114,7 +114,7 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
     };
   }, [currentId, queue]);
 
-  const play = useCallback((id: number) => {
+  const play = useCallback((id: number | string) => {
     setCurrentId(id);
     setPlaying(true);
   }, []);
@@ -125,7 +125,7 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
   // free of one, and makes the label a decision at each call rather than a
   // guess made in the middle.
   const playFrom = useCallback(
-    (id: number, from: string) => {
+    (id: number | string, from: string) => {
       track("play", { from });
       play(id);
     },
@@ -136,7 +136,7 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
   // is already playing should pause it, and play() cannot — it only ever
   // sets state that is already set. Anything else is a plain play.
   const playOrToggle = useCallback(
-    (id: number) => {
+    (id: number | string) => {
       if (id === currentId) setToggleSignal((n) => n + 1);
       else playFrom(id, "row");
     },
@@ -144,7 +144,7 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
   );
 
   const playQueued = useCallback(
-    (id: number) => playFrom(id, "queue"),
+    (id: number | string) => playFrom(id, "queue"),
     [playFrom]
   );
 
@@ -216,7 +216,7 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
   }, [repeat, currentId, step]);
 
   const handleUnplayable = useCallback(
-    (songId: number, reason: string) => {
+    (songId: number | string, reason: string) => {
       setUnplayable((prev) => (prev[songId] ? prev : { ...prev, [songId]: reason }));
       // A late failure from a track the user already left must not hijack
       // whatever is playing now.
@@ -243,9 +243,14 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
 
   const playTrack = useCallback(
     (song: Song | RawSong) => {
+      const videoId = "video" in song ? song.video : song.v;
+      if (!videoId) {
+        handleUnplayable(song.id, "Playback source pending verification");
+        return;
+      }
       playFrom(song.id, "direct");
     },
-    [playFrom]
+    [playFrom, handleUnplayable]
   );
 
   const toggleTrack = useCallback(() => {
