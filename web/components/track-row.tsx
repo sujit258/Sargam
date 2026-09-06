@@ -103,7 +103,15 @@ export function TrackRow({
             {mood}
           </span>
         ))}
-        {song.confidence < 0.85 && (
+        {song.sourceVerified === false && (
+          <span
+            title="Metadata verified · Playback stream pending verification"
+            className="hidden rounded-full border border-amber-500/30 bg-amber-500/10 px-2 py-0.5 text-[10px] text-amber-400/90 sm:inline"
+          >
+            Metadata only
+          </span>
+        )}
+        {song.confidence < 0.85 && song.sourceVerified !== false && (
           <span
             title="Matched on singer alone — may not be the catalogue recording"
             className="hidden size-1.5 rounded-full bg-primary/60 sm:block"

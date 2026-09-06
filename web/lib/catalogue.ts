@@ -11,10 +11,12 @@ export type FacetKey =
   | "lyricist"
   | "actor"
   | "singer"
-  | "director";
+  | "director"
+  | "languages"
+  | "categories";
 
 export type RawSong = {
-  id: number;
+  id: number | string;
   t: string;
   f: number | null;
   v: string;
@@ -27,6 +29,10 @@ export type RawSong = {
   ar: number[]; // actor
   sr: number[]; // singer
   dr: number[]; // director
+  lang?: string;
+  cat?: number[];
+  themes?: string[];
+  source_verified?: boolean;
 };
 
 /** What a station is named after, so its poster can be chosen sensibly. */
@@ -42,8 +48,9 @@ export type Catalogue = {
 };
 
 export type Song = {
-  id: number;
+  id: number | string;
   title: string;
+  language?: string;
   film: string | null;
   video: string;
   confidence: number;
@@ -57,6 +64,9 @@ export type Song = {
   lyricists: string[];
   actors: string[];
   directors: string[];
+  categories?: string[];
+  themes?: string[];
+  sourceVerified?: boolean;
 };
 
 // Which song field backs each filterable facet.
@@ -86,6 +96,7 @@ export const FACET_LABEL: Record<string, string> = {
  * `mq` (320x180) is enough for rows; `hq` (480x360) for the large player art.
  */
 export function artwork(videoId: string, size: "mq" | "hq" = "mq"): string {
+  if (!videoId) return "/logo.png";
   return `https://i.ytimg.com/vi/${videoId}/${size}default.jpg`;
 }
 
@@ -93,16 +104,20 @@ export function hydrate(song: RawSong, facets: Catalogue["facets"]): Song {
   return {
     id: song.id,
     title: song.t,
-    film: song.f === null ? null : facets.films[song.f],
+    language: song.lang ?? "hindi",
+    film: song.f === null ? null : (facets.films[song.f] ?? null),
     video: song.v,
     confidence: song.c,
-    artists: song.a.map((i) => facets.artists[i]),
-    stations: song.s.map((i) => facets.stations[i]),
-    moods: song.m.map((i) => facets.moods[i]),
+    artists: song.a.map((i) => facets.artists[i]).filter(Boolean),
+    stations: song.s.map((i) => facets.stations[i]).filter(Boolean),
+    moods: song.m.map((i) => facets.moods[i]).filter(Boolean),
     composers: (song.cr ?? []).map((i) => facets.composer?.[i]).filter(Boolean),
     lyricists: (song.lt ?? []).map((i) => facets.lyricist?.[i]).filter(Boolean),
     actors: (song.ar ?? []).map((i) => facets.actor?.[i]).filter(Boolean),
     directors: (song.dr ?? []).map((i) => facets.director?.[i]).filter(Boolean),
+    categories: (song.cat ?? []).map((i) => facets.categories?.[i]).filter(Boolean),
+    themes: song.themes ?? [],
+    sourceVerified: song.source_verified ?? Boolean(song.v),
   };
 }
 
@@ -118,17 +133,22 @@ export function filterSongs(
   return catalogue.songs.filter((song) => {
     for (const [facet, chosen] of active) {
       const field = FACET_FIELD[facet];
+      if (!field) continue;
       const value = song[field];
       if (field === "f") {
         if (song.f === null || !chosen.has(song.f)) return false;
-      } else if (!(value as number[]).some((i) => chosen.has(i))) {
+      } else if (Array.isArray(value) && !value.some((i) => typeof i === "number" && chosen.has(i))) {
         return false;
       }
     }
     if (!q) return true;
-    const film = song.f === null ? "" : catalogue.facets.films[song.f];
+    const film = song.f === null ? "" : (catalogue.facets.films[song.f] ?? "");
     if (song.t.toLowerCase().includes(q) || film.toLowerCase().includes(q)) return true;
-    return song.a.some((i) => catalogue.facets.artists[i].toLowerCase().includes(q));
+    if (song.lang && song.lang.toLowerCase().includes(q)) return true;
+    if (song.a.some((i) => catalogue.facets.artists[i]?.toLowerCase().includes(q))) return true;
+    if (song.cat && song.cat.some((i) => catalogue.facets.categories?.[i]?.toLowerCase().includes(q))) return true;
+    if (song.themes && song.themes.some((theme) => theme.toLowerCase().includes(q))) return true;
+    return false;
   });
 }
 

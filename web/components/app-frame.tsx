@@ -122,7 +122,7 @@ export function AppFrame({ children }: { children: React.ReactNode }) {
             <Link href="/songs" className={navClass(pathname === "/songs")}>
               <Search className="size-4" /> Search All Songs
             </Link>
-            <Link href="/#languages" className={navClass(false)}>
+            <Link href="/languages" className={navClass(pathname.startsWith("/languages"))}>
               <Globe className="size-4 text-teal-400" /> Languages
             </Link>
             <Link href="/station/top-300" className={navClass(pathname.startsWith("/station"))}>

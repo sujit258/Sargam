@@ -18,10 +18,10 @@ export function SongList({
   catalogue: Catalogue;
   songs: RawSong[];
   filterKey: string;
-  currentId: number | null;
+  currentId: number | string | null;
   playing: boolean;
   scrollParent: HTMLElement | null;
-  onPlay: (id: number) => void;
+  onPlay: (id: number | string) => void;
 }) {
   const paged = usePagedItems(songs, filterKey);
   const loaded = useMemo(() => flattenPages<RawSong>(paged.data?.pages), [paged.data]);

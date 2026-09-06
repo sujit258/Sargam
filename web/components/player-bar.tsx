@@ -349,7 +349,7 @@ export function PlayerBar({
   onPrev: () => void;
   onEnded: () => void;
   onPlayingChange: (playing: boolean) => void;
-  onUnplayable: (songId: number, reason: string) => void;
+  onUnplayable: (songId: number | string, reason: string) => void;
   /** Bumped by the provider when a row's control asks for the current song to
    *  be toggled rather than (re)started. See `toggle` below. */
   toggleSignal: number;

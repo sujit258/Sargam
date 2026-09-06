@@ -31,18 +31,18 @@ const KEY = brand.storageKeys.favourites;
 const LEGACY_KEY = brand.storageKeys.legacy.favourites;
 
 /** Frozen so the server snapshot is referentially stable across renders. */
-const EMPTY: readonly number[] = Object.freeze([]);
+const EMPTY: readonly (number | string)[] = Object.freeze([]);
 
 const listeners = new Set<() => void>();
 
 // Cached rather than re-read per render: getSnapshot runs on every render of
 // every subscriber, and parsing 20 KB of JSON there would be pointless work.
 // Both caches are dropped together whenever the underlying value changes.
-let ids: readonly number[] | null = null;
-let index: ReadonlySet<number> | null = null;
+let ids: readonly (number | string)[] | null = null;
+let index: ReadonlySet<number | string> | null = null;
 let revision = 0;
 
-function read(): number[] {
+function read(): (number | string)[] {
   try {
     let raw = localStorage.getItem(KEY);
     // Seamless one-time migration from legacy keys
@@ -64,7 +64,7 @@ function read(): number[] {
     // value, a half-written string. Take only what is usable rather than
     // letting a bad entry throw on every render.
     return Array.isArray(parsed)
-      ? parsed.filter((value): value is number => Number.isInteger(value))
+      ? parsed.filter((value): value is number | string => typeof value === "string" || Number.isInteger(value))
       : [];
   } catch {
     // Private mode can refuse getItem outright, and JSON.parse throws on a
@@ -73,18 +73,18 @@ function read(): number[] {
   }
 }
 
-function current(): readonly number[] {
+function current(): readonly (number | string)[] {
   if (ids === null) ids = Object.freeze(read());
   return ids;
 }
 
 /** O(1) membership, so a list of rows does not scan the array per row. */
-function currentIndex(): ReadonlySet<number> {
+function currentIndex(): ReadonlySet<number | string> {
   if (index === null) index = new Set(current());
   return index;
 }
 
-function commit(next: number[]) {
+function commit(next: (number | string)[]) {
   ids = Object.freeze(next);
   index = new Set(next);
   revision += 1;
@@ -132,18 +132,18 @@ function subscribe(listener: () => void) {
 }
 
 /** Whether a song is liked, without subscribing. For event handlers. */
-export function isFavourite(id: number): boolean {
+export function isFavourite(id: number | string): boolean {
   return currentIndex().has(id);
 }
 
-export function toggleFavourite(id: number) {
+export function toggleFavourite(id: number | string) {
   // The action, never the song. Which songs a person loves is theirs.
   track("favourite", { action: isFavourite(id) ? "unliked" : "liked" });
   const now = current();
   commit(isFavourite(id) ? now.filter((value) => value !== id) : [...now, id]);
 }
 
-export function useIsFavourite(id: number): boolean {
+export function useIsFavourite(id: number | string): boolean {
   // A boolean snapshot, so only rows whose own state changed re-render.
   return useSyncExternalStore(
     subscribe,
@@ -152,7 +152,7 @@ export function useIsFavourite(id: number): boolean {
   );
 }
 
-export function useFavouriteIds(): readonly number[] {
+export function useFavouriteIds(): readonly (number | string)[] {
   return useSyncExternalStore(subscribe, current, () => EMPTY);
 }
 
