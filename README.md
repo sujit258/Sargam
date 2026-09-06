@@ -1,18 +1,16 @@
-# Mehfil
+# Sargam — Retro Bollywood Melodies
 
-*Mehfil* — an evening gathering for music and poetry.
+*Golden Era Hindi Classics*
 
-A personal, local web player for browsing golden-era Hindi film music by singer,
-composer, lyricist, actor, film, station and mood. The catalogue is built from
-Saregama's publicly published Carvaan Gold songlist.
+An independent, production-ready Progressive Web Application (PWA) for browsing and playing golden-era Hindi film music by singer, composer, lyricist, actor, film, station, and mood.
 
-The device is a *dial*: 66 fixed positions, one axis, pick one. This is a *query
-engine*: the same catalogue with composable filters, so
-`Gulzar lyrics + R.D. Burman music + Lata vocals` is one click.
+Inspired by [Mehfil](https://mehfil.shashwa7.in/) by Shashwat Rastogi. Built and customized as Sargam by our team with a distinctive **Deep Obsidian Velvet & Radiant Luminous Amber** design aesthetic, enhanced PWA installation flows, and centralized brand architecture.
 
-> Personal project, run locally. No audio is stored or redistributed — playback
-> streams from YouTube's official embeds, and the catalogue holds only factual
-> metadata (titles, film names, credits).
+> **Legal Disclaimer:** No audio is hosted, stored, or redistributed. Playback streams exclusively through YouTube's official embedded player. Song metadata is factual catalogue information compiled from publicly available songlists.
+
+## Documentation
+- [PWA Guide & Installation (PWA.md)](file:///f:/Mahfil/PWA.md)
+- [System Architecture (ARCHITECTURE.md)](file:///f:/Mahfil/ARCHITECTURE.md)
 
 ## How it works
 
