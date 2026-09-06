@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Themes",
   description:
-    "Pick a moving backdrop for Mehfil. Applies immediately and is kept on " +
+    "Pick a moving backdrop for Sargam. Applies immediately and is kept on " +
     "this device.",
 };
 

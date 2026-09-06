@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Your favourites",
   description:
-    "The songs you've liked on Mehfil, kept on this device and ready to play " +
+    "The songs you've liked on Sargam, kept on this device and ready to play " +
     "or shuffle.",
 };
 

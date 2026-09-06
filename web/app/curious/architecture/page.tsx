@@ -6,7 +6,7 @@ import { EVENTS } from "@/lib/analytics";
 export const metadata: Metadata = {
   title: "Architecture",
   description:
-    "How Mehfil works — a music player with no backend, a catalogue built by " +
+    "How Sargam works — a music player with no backend, a catalogue built by " +
     "a Python pipeline, and playback borrowed from YouTube.",
 };
 
@@ -26,7 +26,7 @@ export default function ArchitecturePage() {
       <header>
         <h1 className="text-3xl leading-tight">Architecture</h1>
         <p className="mt-3 max-w-prose text-sm leading-relaxed text-muted-foreground">
-          Mehfil has no backend, no database at runtime, and no accounts. It is <Key>a static site that reads one JSON file</Key> and borrows
+          Sargam has no backend, no database at runtime, and no accounts. It is <Key>a static site that reads one JSON file</Key> and borrows
           YouTube&apos;s player for the sound. Almost every interesting decision here follows
           from that one, and most of the work happens long before anyone visits.
         </p>
@@ -39,7 +39,7 @@ export default function ArchitecturePage() {
             ["Facets", "415 singers, 1,379 films, 66 stations, 23 composers, 12 lyricists, 12 moods"],
             ["Framework", "Next.js 16 App Router, React 19, Tailwind v4"],
             ["Server code", "One route — /api/feedback — and nothing else"],
-            ["Storage", "Four localStorage keys, no cookies. Seven anonymous counts via Umami — the list is below"],
+            ["Storage", "Four localStorage keys (sargam namespace with legacy migration), no cookies. Seven anonymous counts via Umami"],
           ]}
         />
         <p className="mt-4 max-w-prose text-sm leading-relaxed text-muted-foreground">

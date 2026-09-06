@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About & credits",
   description:
-    "What Mehfil is, what it does not own, and full credits for station " +
+    "What Sargam is, what it does not own, and full credits for station " +
     "artwork and artist portraits.",
 };
 

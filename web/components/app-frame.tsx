@@ -27,6 +27,7 @@ import { track } from "@/lib/analytics";
 import { facetCards, portrait } from "@/lib/catalogue";
 import { usePlayer, usePlayerBar } from "@/components/player-provider";
 import { useCatalogue, usePhotoManifest } from "@/lib/queries";
+import { brand } from "@/lib/brand";
 
 type Frame = {
   /** Scroll container the virtualised lists measure against. */
@@ -95,14 +96,16 @@ export function AppFrame({ children }: { children: React.ReactNode }) {
     <>
       <div className="shrink-0 px-4 pb-3 pt-4">
         <Link href="/" className="flex items-center gap-2.5">
-          <img src="/logo.png" alt="" width={36} height={36} className="size-9 rounded-lg" />
+          <img src="/logo.png" alt={brand.shortName} width={36} height={36} className="size-9 rounded-lg shadow-md ring-1 ring-white/10" />
           <span>
-            <span className="block text-lg leading-tight tracking-tight">Mehfil</span>
-            {catalogue && (
+            <span className="block text-lg leading-tight tracking-tight font-bold">{brand.shortName}</span>
+            {catalogue ? (
               <span className="block text-xs text-muted-foreground">
                 {catalogue.songs.length.toLocaleString()} songs ·{" "}
                 {catalogue.facets.stations.length} stations
               </span>
+            ) : (
+              <span className="block text-xs text-muted-foreground">{brand.tagline}</span>
             )}
           </span>
         </Link>
@@ -185,14 +188,18 @@ export function AppFrame({ children }: { children: React.ReactNode }) {
       <p className="px-2 pb-1 pt-2.5 text-[10px] leading-snug text-muted-foreground/60">
         Music streams from YouTube. Nothing is hosted here.
       </p>
-      <a
-        href="https://shashwa7.in"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block px-2 pb-1 text-[10px] text-muted-foreground/60 underline-offset-2 transition hover:text-muted-foreground hover:underline"
-      >
-        made with <span className="text-heart">&#9829;</span> by shashwa7.in
-      </a>
+      <div className="px-2 pb-1 text-[10px] text-muted-foreground/60">
+        Inspired by{" "}
+        <a
+          href={brand.credit.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline-offset-2 transition hover:text-muted-foreground hover:underline"
+        >
+          {brand.credit.inspiredBy}
+        </a>{" "}
+        · Built with <span className="text-heart">&#9829;</span> by our team
+      </div>
     </div>
   );
 

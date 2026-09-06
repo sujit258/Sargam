@@ -24,7 +24,7 @@ export function CuriousTabs() {
     <div className="pb-6">
       <nav aria-label="Breadcrumb" className="flex items-center gap-1 text-xs text-muted-foreground">
         <Link href="/" className="transition hover:text-foreground">
-          Mehfil
+          Sargam
         </Link>
         <ChevronRight aria-hidden className="size-3 opacity-50" />
         <span>For the curious</span>

@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "All songs",
   description:
-    "Browse every song in the Mehfil catalogue. Filter by singer, composer, " +
+    "Browse every song in the Sargam catalogue. Filter by singer, composer, " +
     "lyricist, actor, film or mood, or search by title.",
 };
 

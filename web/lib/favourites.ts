@@ -25,7 +25,10 @@ import { track } from "@/lib/analytics";
  * another device, and clearing site data destroys them. That is deliberate.
  */
 
-const KEY = "mehfil:favourites:v1";
+import { brand } from "@/lib/brand";
+
+const KEY = brand.storageKeys.favourites;
+const LEGACY_KEY = brand.storageKeys.legacy.favourites;
 
 /** Frozen so the server snapshot is referentially stable across renders. */
 const EMPTY: readonly number[] = Object.freeze([]);
@@ -41,7 +44,19 @@ let revision = 0;
 
 function read(): number[] {
   try {
-    const raw = localStorage.getItem(KEY);
+    let raw = localStorage.getItem(KEY);
+    // Seamless one-time migration from legacy key
+    if (!raw) {
+      const legacy = localStorage.getItem(LEGACY_KEY);
+      if (legacy) {
+        raw = legacy;
+        try {
+          localStorage.setItem(KEY, legacy);
+        } catch {
+          // Keep in-memory
+        }
+      }
+    }
     const parsed: unknown = raw ? JSON.parse(raw) : [];
     // Anything could be under this key — another tab's bug, a hand-edited
     // value, a half-written string. Take only what is usable rather than
@@ -96,7 +111,7 @@ function commit(next: number[]) {
  * could survive a 0→1 subscriber transition.
  */
 function onStorage(event: StorageEvent) {
-  if (event.key !== null && event.key !== KEY) return;
+  if (event.key !== null && event.key !== KEY && event.key !== LEGACY_KEY) return;
   ids = null;
   index = null;
   revision += 1;

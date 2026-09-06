@@ -3,14 +3,13 @@
 import { useCallback, useEffect, useState } from "react";
 import { Download, Share, SquarePlus, X } from "lucide-react";
 
+import { brand } from "@/lib/brand";
+
 /**
  * Shared with InstallCard, which is what writes it now.
- *
- * Exported rather than repeated: two copies of a storage key is how one of
- * them quietly stops matching the other, and the failure — a nudge that will
- * not stay dismissed — looks like a bug in the dialog rather than a typo.
  */
-export const DISMISSED_KEY = "mehfil.installDismissed";
+export const DISMISSED_KEY = brand.storageKeys.installDismissed;
+export const LEGACY_DISMISSED_KEY = brand.storageKeys.legacy.installDismissed;
 
 /** What came of asking. "instructions" is iOS, where nothing can be known. */
 export type InstallOutcome = "accepted" | "dismissed" | "instructions" | "unavailable";
@@ -138,7 +137,7 @@ export function IOSInstallHelp({ onClose }: { onClose: () => void }) {
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="" width={40} height={40} className="size-10 rounded-lg" />
             <div>
-              <p className="text-sm font-medium">Install Mehfil</p>
+              <p className="text-sm font-medium">Install {brand.shortName}</p>
               <p className="text-xs text-muted-foreground">Two taps in Safari</p>
             </div>
           </div>
@@ -172,12 +171,6 @@ export function IOSInstallHelp({ onClose }: { onClose: () => void }) {
 
 /**
  * Permanent install control for the drawer.
- *
- * Always rendered unless already installed. Gating it on `canInstall` meant it
- * was invisible on any browser that had not fired `beforeinstallprompt`, which
- * is most of them — so the entry point people look for simply was not there.
- * Where no programmatic install exists, it explains the manual route instead
- * of doing nothing.
  */
 export function InstallButton({ className = "" }: { className?: string }) {
   const { install, installed, isIOS, canInstall, showIOSHelp, dismissIOSHelp } =
@@ -186,14 +179,6 @@ export function InstallButton({ className = "" }: { className?: string }) {
 
   if (installed) return null;
 
-  /**
-   * The permanent way in, and deliberately quiet.
-   *
-   * The nudging is InstallCard's job — a card, shown once, on a visit after
-   * the welcome. This row is what remains afterwards for anyone who said not
-   * now and then changed their mind, so it reads like its neighbours rather
-   * than competing with them.
-   */
   return (
     <>
       <button
@@ -201,7 +186,7 @@ export function InstallButton({ className = "" }: { className?: string }) {
         className={`flex w-full items-center gap-2.5 rounded-md px-2 py-1.5 text-sm text-muted-foreground transition hover:bg-white/[0.06] hover:text-foreground ${className}`}
       >
         <Download className="size-4 shrink-0" />
-        <span className="min-w-0 flex-1 truncate text-left">Install Mehfil</span>
+        <span className="min-w-0 flex-1 truncate text-left">Install {brand.shortName}</span>
       </button>
       {showIOSHelp && <IOSInstallHelp onClose={dismissIOSHelp} />}
       {showHelp && !isIOS && <ManualInstallHelp onClose={() => setShowHelp(false)} />}
@@ -218,7 +203,7 @@ function ManualInstallHelp({ onClose }: { onClose: () => void }) {
           <div className="flex items-center gap-3">
             <img src="/logo.png" alt="" width={40} height={40} className="size-10 rounded-lg" />
             <div>
-              <p className="text-sm font-medium">Install Mehfil</p>
+              <p className="text-sm font-medium">Install {brand.shortName}</p>
               <p className="text-xs text-muted-foreground">From your browser menu</p>
             </div>
           </div>

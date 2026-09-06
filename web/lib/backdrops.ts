@@ -17,8 +17,10 @@ import { track } from "@/lib/analytics";
  * costs a beat with no backdrop, which the fade-in below turns into something
  * that reads as intentional rather than as a flash.
  */
+import { brand } from "@/lib/brand";
 
-const KEY = "mehfil:backdrop:v1";
+const KEY = brand.storageKeys.backdrop;
+const LEGACY_KEY = brand.storageKeys.legacy.backdrop;
 
 export type Backdrop = {
   id: string;
@@ -53,7 +55,16 @@ let chosen: string | null = null;
 
 function read(): string {
   try {
-    const raw = localStorage.getItem(KEY);
+    let raw = localStorage.getItem(KEY);
+    if (!raw) {
+      const legacy = localStorage.getItem(LEGACY_KEY);
+      if (legacy) {
+        raw = legacy;
+        try {
+          localStorage.setItem(KEY, legacy);
+        } catch {}
+      }
+    }
     // An unknown id means a theme that has since been removed, or a
     // hand-edited value. Fall back rather than requesting a file that is not
     // there and leaving the app with no backdrop and no explanation.
@@ -81,7 +92,7 @@ export function setBackdrop(id: string) {
 }
 
 function onStorage(event: StorageEvent) {
-  if (event.key !== null && event.key !== KEY) return;
+  if (event.key !== null && event.key !== KEY && event.key !== LEGACY_KEY) return;
   chosen = null;
   for (const listener of listeners) listener();
 }

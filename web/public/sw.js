@@ -35,7 +35,7 @@
  * entries are segregated rather than sharing a name across versions.
  */
 const VERSION = new URL(self.location.href).searchParams.get("v") || "dev";
-const CACHE = `mehfil-${VERSION}`;
+const CACHE = `sargam-${VERSION}`;
 const IMMUTABLE = /^\/_next\/static\//;
 
 self.addEventListener("install", () => {

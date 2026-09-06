@@ -37,6 +37,7 @@ import { PlayerMenu } from "@/components/player-menu";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { useCatalogue, useSongCredits } from "@/lib/queries";
 import { QueuePanel } from "@/components/queue-panel";
+import { brand } from "@/lib/brand";
 
 type YTPlayer = {
   playVideo(): void;
@@ -629,7 +630,7 @@ export function PlayerBar({
     // Preserve whatever else is on the entry (the view hook stores its state
     // here too), so popping back to it does not lose the current filters.
     window.history.pushState(
-      { ...(window.history.state ?? {}), mehfilPlayer: true },
+      { ...(window.history.state ?? {}), [brand.historyStateKey]: true },
       ""
     );
     const onPop = () => setExpanded(false);
@@ -638,7 +639,12 @@ export function PlayerBar({
       window.removeEventListener("popstate", onPop);
       // Only unwind the entry we added; if this cleanup ran *because* of a
       // popstate, the entry is already gone.
-      if (window.history.state?.mehfilPlayer) window.history.back();
+      if (
+        window.history.state?.[brand.historyStateKey] ||
+        window.history.state?.mehfilPlayer
+      ) {
+        window.history.back();
+      }
     };
   }, [expanded]);
 

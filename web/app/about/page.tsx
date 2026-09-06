@@ -39,12 +39,31 @@ export default function AboutPage() {
         Back
       </Link>
 
-      <h1 className="text-3xl">About Mehfil</h1>
-      <p className="mt-4 text-sm leading-7 text-muted-foreground">
-        A personal project for browsing golden-era Hindi film music by singer,
-        composer, lyricist, film and mood. It is a way to navigate a catalogue —
-        not a music service.
+      <h1 className="text-3xl font-serif">About Sargam</h1>
+      <p className="mt-2 text-base text-primary/90 font-medium">
+        Golden Era Hindi Classics
       </p>
+      <p className="mt-4 text-sm leading-7 text-muted-foreground">
+        A dedicated music discovery and playback application focused on golden-era
+        Hindi film music by singer, composer, lyricist, actor, film and mood. It is
+        an immersive, nostalgic gateway to timeless melodies from vintage Indian cinema.
+      </p>
+
+      <Section title="Credits & Attribution">
+        <p>
+          <strong className="text-foreground">Inspired by Mehfil</strong> (<a
+            href="https://mehfil.shashwa7.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            mehfil.shashwa7.in
+          </a>), originally crafted by Shashwat Rastogi. Built, rebranded, and customized as Sargam by our team.
+        </p>
+        <p>
+          Powered by modern web technologies including Next.js, React, Tailwind CSS, Base UI, and Lucide Icons. Designed for seamless progressive web app (PWA) installation and offline metadata access.
+        </p>
+      </Section>
 
       <Section title="What this does not own">
         <p>
@@ -99,16 +118,9 @@ export default function AboutPage() {
       <Section title="Requests and corrections">
         <p>
           If you own rights to something shown here and would like it removed, or
-          you have spotted a credit that is wrong, please get in touch at{" "}
-          <a
-            href="https://shashwa7.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary hover:underline"
-          >
-            shashwa7.in
-          </a>
-          . Requests are honoured promptly and without argument.
+          you have spotted a credit that is wrong, please submit a report through
+          the in-app feedback dialog on any song. Requests are honoured promptly
+          and without argument.
         </p>
       </Section>
 
@@ -210,14 +222,14 @@ export default function AboutPage() {
       )}
 
       <p className="mt-14 border-t border-white/[0.06] pt-6 text-xs text-muted-foreground">
-        Made with <span className="text-primary">♥</span> by{" "}
+        Sargam — Retro Bollywood Melodies · Inspired by{" "}
         <a
-          href="https://shashwa7.in"
+          href="https://mehfil.shashwa7.in/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-primary hover:underline"
         >
-          shashwa7.in
+          Mehfil
         </a>
       </p>
     </div>

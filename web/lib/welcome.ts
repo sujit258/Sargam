@@ -15,13 +15,25 @@
  * the same tab. Hence the listener set.
  */
 
-const SEEN_KEY = "mehfil:notice-seen:v1";
+import { brand } from "@/lib/brand";
+
+const SEEN_KEY = brand.storageKeys.welcomeSeen;
+const LEGACY_SEEN_KEY = brand.storageKeys.legacy.welcomeSeen;
 
 const listeners = new Set<() => void>();
 
 export function hasSeenWelcome(): boolean {
   try {
-    return localStorage.getItem(SEEN_KEY) === "1";
+    const val = localStorage.getItem(SEEN_KEY);
+    if (val === "1") return true;
+    const legacy = localStorage.getItem(LEGACY_SEEN_KEY);
+    if (legacy === "1") {
+      try {
+        localStorage.setItem(SEEN_KEY, "1");
+      } catch {}
+      return true;
+    }
+    return false;
   } catch {
     // Private browsing refuses localStorage. Treated as not seen, which shows
     // the welcome again rather than silently never showing it.

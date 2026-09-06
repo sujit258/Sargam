@@ -6,6 +6,7 @@ import { PlayerProvider } from "@/components/player-provider";
 import { OfflineNotice } from "@/components/offline-notice";
 import { AppFrame } from "@/components/app-frame";
 import { AppBackdrop } from "@/components/app-backdrop";
+import { brand } from "@/lib/brand";
 import "./globals.css";
 
 // Figtree: a geometric sans in the same family as the faces music apps favour.
@@ -52,34 +53,37 @@ function siteUrl(): string {
 }
 
 const SITE_URL = siteUrl();
-const DESCRIPTION =
-  "Browse and play golden-era Hindi film music by singer, composer, lyricist, " +
-  "actor, film and mood. Over 3,000 songs across 66 stations.";
+const DESCRIPTION = brand.description;
 
 export const metadata: Metadata = {
   // Without metadataBase, Next emits relative og:image URLs, which crawlers
   // cannot resolve — the card renders with no image at all.
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Mehfil — Retro Bollywood Songs",
-    template: "%s · Mehfil",
+    default: brand.name,
+    template: `%s · ${brand.shortName}`,
   },
   description: DESCRIPTION,
-  applicationName: "Mehfil",
+  applicationName: brand.shortName,
   keywords: [
-    "retro bollywood songs",
+    "sargam",
+    "retro bollywood melodies",
+    "golden era hindi classics",
     "old hindi songs",
     "golden era hindi music",
     "Lata Mangeshkar",
     "Mohammed Rafi",
     "Kishore Kumar",
+    "Mukesh",
+    "Asha Bhosle",
     "R.D. Burman",
-    "carvaan",
+    "S.D. Burman",
+    "vintage hindi cinema",
   ],
   openGraph: {
     type: "website",
-    siteName: "Mehfil",
-    title: "Mehfil — Retro Bollywood Songs",
+    siteName: brand.shortName,
+    title: brand.name,
     description: DESCRIPTION,
     url: SITE_URL,
     locale: "en_IN",
@@ -88,7 +92,7 @@ export const metadata: Metadata = {
     // summary_large_image gives the full-width card; plain "summary" crops to
     // a small square and wastes the artwork.
     card: "summary_large_image",
-    title: "Mehfil — Retro Bollywood Songs",
+    title: brand.name,
     description: DESCRIPTION,
   },
   // iOS ignores the manifest's display mode and reads these instead, so
@@ -97,7 +101,7 @@ export const metadata: Metadata = {
   // bar, which is what the theme colour is for everywhere else.
   appleWebApp: {
     capable: true,
-    title: "Mehfil",
+    title: brand.shortName,
     statusBarStyle: "black-translucent",
   },
   other: {
@@ -114,7 +118,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   // Tints the browser chrome on mobile to match the shell.
-  themeColor: "#1a1613",
+  themeColor: "#0f121a",
   colorScheme: "dark",
 };
 

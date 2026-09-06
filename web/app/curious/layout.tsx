@@ -4,7 +4,7 @@ import { CuriousTabs } from "@/components/curious-tabs";
 export const metadata: Metadata = {
   title: "For the curious",
   description:
-    "How Mehfil is built — the design system it draws from, and the " +
+    "How Sargam is built — the design system it draws from, and the " +
     "architecture behind a music player with no backend.",
 };
 

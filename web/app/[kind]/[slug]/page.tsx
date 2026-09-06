@@ -3,6 +3,7 @@ import { join } from "node:path";
 import type { Metadata } from "next";
 import { CollectionView } from "@/components/collection-view";
 import { FACET_BY_KIND, KIND_BY_FACET, KIND_LABEL, resolveSlug, slugify } from "@/lib/routes";
+import { brand } from "@/lib/brand";
 
 type RawCatalogue = { facets: Record<string, string[]> };
 
@@ -81,7 +82,7 @@ export async function generateMetadata({
   const kindLabel = KIND_LABEL[kind] ?? "Collection";
   return {
     title: label,
-    description: `${kindLabel} · every ${label} song in the Mehfil catalogue, ready to play or shuffle.`,
+    description: `${kindLabel} · every ${label} song in the ${brand.shortName} catalogue, ready to play or shuffle.`,
   };
 }
 

@@ -15,6 +15,7 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog";
+import { brand } from "@/lib/brand";
 
 /**
  * The one-time welcome: what this app does not own, and what it does not store.
@@ -192,7 +193,7 @@ export function NoticeDialog() {
               somewhere to stand, and leading-tight matches the page headings
               elsewhere. The badge lives on the thumbnail now, not in here. */}
           <AlertDialogTitle className="text-xl leading-tight">
-            Welcome to Mehfil
+            Welcome to {brand.shortName}
           </AlertDialogTitle>
           {/* A div rather than the default <p>, so two paragraphs can sit
               inside without nesting a <p> in a <p>. The description id, and so

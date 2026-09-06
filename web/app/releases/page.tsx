@@ -27,7 +27,7 @@ import { RELEASES, type Release } from "@/lib/releases";
 export const metadata: Metadata = {
   title: "Release notes",
   description:
-    "Every version of Mehfil so far — what each one added, and what it " +
+    "Every version of Sargam so far — what each one added, and what it " +
     "repaired.",
 };
 
@@ -37,10 +37,9 @@ export default function ReleasesPage() {
       <header className="max-w-prose pb-10 pt-1">
         <h2 className="text-3xl leading-tight">Release notes</h2>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-          Everything that has shipped, newest first. Mehfil is one person&apos;s
-          side project, so this doubles as an honest list of what was wrong for
-          a while — the catalogue is stitched together from a printed songlist
-          and public uploads, and getting it right has taken some going over.
+          Everything that has shipped, newest first. Documenting our release
+          milestones, PWA improvements, design system evolutions, and catalog
+          refinements over time.
         </p>
       </header>
 

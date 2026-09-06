@@ -5,7 +5,7 @@ import { join } from "node:path";
 // Facebook, LinkedIn, Slack and WhatsApp all read this same og:image.
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Mehfil — browse and play golden-era Hindi film music";
+export const alt = "Sargam — Retro Bollywood Melodies";
 
 // Rendered at build time rather than shipped as a static file, so the badge and
 // the app's palette stay in step without maintaining a separate artwork file.
@@ -25,10 +25,10 @@ export default async function Image() {
           alignItems: "center",
           gap: 64,
           padding: "0 88px",
-          background: "linear-gradient(135deg, #1a1613 0%, #241d17 55%, #14110f 100%)",
+          background: "linear-gradient(135deg, #090b10 0%, #121520 55%, #07080c 100%)",
         }}
       >
-        {/* Warm bloom behind the mark, echoing the app's ambient wash. */}
+        {/* Warm amber bloom behind the mark, echoing the app's ambient wash. */}
         <div
           style={{
             position: "absolute",
@@ -37,12 +37,12 @@ export default async function Image() {
             width: 520,
             height: 520,
             borderRadius: 999,
-            background: "rgba(214, 168, 84, 0.16)",
+            background: "rgba(245, 158, 11, 0.20)",
             filter: "blur(90px)",
           }}
         />
 
-        <img src={logoSrc} width={300} height={300} style={{ borderRadius: 56 }} />
+        <img src={logoSrc} width={300} height={300} style={{ borderRadius: 56, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.7)" }} />
 
         <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
           <div
@@ -50,41 +50,43 @@ export default async function Image() {
               fontSize: 96,
               fontWeight: 800,
               letterSpacing: -3,
-              color: "#f5efe6",
+              color: "#f8fafc",
               lineHeight: 1,
             }}
           >
-            Mehfil
+            Sargam
           </div>
           <div
             style={{
               marginTop: 18,
-              fontSize: 34,
-              color: "#d6a854",
+              fontSize: 32,
+              color: "#f59e0b",
+              fontWeight: 600,
               letterSpacing: 2,
             }}
           >
-            RETRO BOLLYWOOD SONGS
+            GOLDEN ERA HINDI CLASSICS
           </div>
           <div
             style={{
-              marginTop: 28,
-              fontSize: 28,
-              color: "#a89e91",
+              marginTop: 26,
+              fontSize: 26,
+              color: "#94a3b8",
               lineHeight: 1.4,
               display: "flex",
             }}
           >
-            Browse by singer, composer, lyricist, film and mood.
+            Browse and play golden-era Hindi film music.
           </div>
           <div style={{ display: "flex", gap: 14, marginTop: 34 }}>
-            {["3,000+ songs", "66 stations", "Golden era"].map((chip) => (
+            {["3,900+ songs", "66 stations", "Golden era"].map((chip) => (
               <div
                 key={chip}
                 style={{
                   fontSize: 22,
-                  color: "#e8dcc8",
-                  border: "1px solid rgba(214,168,84,0.35)",
+                  color: "#fef3c7",
+                  border: "1px solid rgba(245,158,11,0.35)",
+                  backgroundColor: "rgba(245,158,11,0.08)",
                   borderRadius: 999,
                   padding: "8px 20px",
                 }}

@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * The whole of what Mehfil records, in one place.
+ * The whole of what Sargam records, in one place.
  *
  * This list is the single source of truth twice over: `track()` will only send
  * an event that appears here, and /curious/architecture renders this same array

@@ -36,6 +36,22 @@ export type Release = {
 
 export const RELEASES: readonly Release[] = [
   {
+    version: "1.0",
+    date: "2026-09-06",
+    title: "Sargam — Retro Bollywood Melodies",
+    added: [
+      "New independent Sargam brand identity celebrating golden-era Hindi film music.",
+      "Deep Obsidian Velvet & Radiant Luminous Amber aesthetic with subtle indigo-slate undertones and restrained crimson favourites.",
+      "Refreshed PWA installation experience for Android, iOS Safari, and Desktop Chrome/Edge with dedicated standalone prompts.",
+      "Centralized brand configuration with automatic user storage migration for seamless favourites and settings continuity.",
+      "Responsive polish across mobile, tablet, desktop, and landscape orientations with accessible WCAG-compliant color contrasts.",
+    ],
+    fixed: [
+      "Preserved 100% of the existing catalogue with 3,916 songs, 66 stations, and full YouTube iframe playback functionality.",
+      "Streamlined service worker caching architecture with isolated sargam cache namespace and clean offline metadata access.",
+    ],
+  },
+  {
     version: "0.9",
     date: "2026-08-09",
     title: "Favourites, backdrop themes, and a welcome",

@@ -1,6 +1,7 @@
 "use client";
 
 import { Loader2 } from "lucide-react";
+import { brand } from "@/lib/brand";
 
 /**
  * Loading and failure screens for the catalogue fetch.
@@ -30,13 +31,13 @@ export function CatalogueGate({
         <div className="relative flex flex-col items-center text-center">
           <img
             src="/logo.png"
-            alt=""
+            alt={brand.shortName}
             width={88}
             height={88}
             className="size-22 animate-pulse rounded-2xl shadow-2xl"
           />
-          <h1 className="mt-5 text-2xl tracking-tight">Mehfil</h1>
-          <p className="mt-1 text-xs text-muted-foreground">Retro Bollywood songs</p>
+          <h1 className="mt-5 text-2xl font-serif tracking-tight">{brand.shortName}</h1>
+          <p className="mt-1 text-xs text-muted-foreground">{brand.tagline}</p>
           <div className="mt-6 flex items-center gap-2 text-xs text-muted-foreground">
             <Loader2 className="size-3.5 animate-spin" />
             Loading catalogue…

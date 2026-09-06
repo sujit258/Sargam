@@ -15,9 +15,11 @@ import {
 } from "@/components/ui/alert-dialog";
 import {
   DISMISSED_KEY,
+  LEGACY_DISMISSED_KEY,
   IOSInstallHelp,
   useInstall,
 } from "@/components/install-prompt";
+import { brand } from "@/lib/brand";
 import { track } from "@/lib/analytics";
 import { hasSeenWelcome, onWelcomeSeen } from "@/lib/welcome";
 
@@ -51,7 +53,7 @@ export function InstallCard() {
   // event, so polling would be the only alternative.
   useEffect(() => {
     try {
-      if (localStorage.getItem(DISMISSED_KEY)) return;
+      if (localStorage.getItem(DISMISSED_KEY) || localStorage.getItem(LEGACY_DISMISSED_KEY)) return;
     } catch {
       // No storage means no way to remember a refusal, and a nudge that cannot
       // be refused would return on every load. Better never to ask.
@@ -66,7 +68,7 @@ export function InstallCard() {
       // that welcome again — the card returns five seconds later having already
       // been told no.
       try {
-        if (localStorage.getItem(DISMISSED_KEY)) return;
+        if (localStorage.getItem(DISMISSED_KEY) || localStorage.getItem(LEGACY_DISMISSED_KEY)) return;
       } catch {
         return;
       }
@@ -146,7 +148,7 @@ export function InstallCard() {
 
         <AlertDialogHeader className="place-items-start text-left">
           <AlertDialogTitle className="text-xl leading-tight">
-            Keep Mehfil on your {isIOS ? "home screen" : "device"}
+            Keep {brand.shortName} on your {isIOS ? "home screen" : "device"}
           </AlertDialogTitle>
           <AlertDialogDescription
             render={<div className="space-y-3 text-left" />}

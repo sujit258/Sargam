@@ -1,29 +1,11 @@
-          <Panel className="p-4">
-            <p className="text-sm">
-              <Key>Colour resolves through tokens.</Key>
-            </p>
-            <p className="mt-1 max-w-prose text-sm leading-relaxed text-muted-foreground">
-              A literal in a class string is where a palette starts drifting, so
-              colour is written as a token with an opacity rather than a value.
-              Honestly: a handful of places still break this — the backdrop&apos;s
-              warm wash and four glow shadows quote raw values, because Tailwind
-              cannot interpolate a custom property inside an arbitrary shadow.
-              They are the exceptions, and they are on the list.
-            </p>
-            <Code caption="left: how colour is written. right: the four places that still are not.">
-{`bg-primary/15   text-primary   border-heart/40
-shadow-[0_0_20px_-2px_rgba(214,168,84,0.45)]   // app-frame.tsx
-bg-[oklch(0.79_0.135_78)]/[0.07]               // app-backdrop.tsx`}
-            </Code>
-          </Panel>
 import type { Metadata } from "next";
 import { Code, Key, Panel } from "@/components/curious-bits";
 
 export const metadata: Metadata = {
   title: "Design system",
   description:
-    "The tokens, type and components Mehfil is built from — a brass palette " +
-    "in OKLCH, Figtree, and shadcn on Base UI.",
+    "The tokens, typography, and components Sargam is built from — Deep Obsidian Velvet " +
+    "and Radiant Luminous Amber in OKLCH, Figtree, and shadcn on Base UI.",
 };
 
 /**
@@ -36,13 +18,15 @@ export const metadata: Metadata = {
  */
 
 const PALETTE = [
-  { token: "--primary", value: "oklch(0.79 0.135 78)", name: "Brass", note: "Accents, the play button, everything that means yes" },
-  { token: "--heart", value: "oklch(0.70 0.17 22)", name: "Heart", note: "Favourites only. Warm red at the brass's own lightness" },
-  { token: "--background", value: "oklch(0.16 0.006 60)", name: "Ground", note: "The room the whole app sits in" },
-  { token: "--card", value: "oklch(0.21 0.008 60)", name: "Card", note: "Panels and dialogs" },
-  { token: "--sidebar", value: "oklch(0.115 0.005 60)", name: "Sidebar", note: "Darker than the ground, so the rail recedes" },
-  { token: "--muted-foreground", value: "oklch(0.72 0.012 70)", name: "Muted", note: "Second-line text: singers, counts, dates" },
-  { token: "--border", value: "oklch(1 0 0 / 9%)", name: "Border", note: "White at nine per cent, never a grey" },
+  { token: "--primary", value: "oklch(0.82 0.16 75)", name: "Radiant Amber", note: "Primary actions, play button, and luminous focus highlights" },
+  { token: "--heart", value: "oklch(0.72 0.20 18)", name: "Restrained Crimson", note: "Favourites only. Warm rose-crimson tuned to amber lightness" },
+  { token: "--background", value: "oklch(0.14 0.016 260)", name: "Deep Obsidian Velvet", note: "The deep midnight listening room the entire app sits in" },
+  { token: "--sidebar", value: "oklch(0.10 0.014 260)", name: "Obsidian Rail", note: "Darker indigo-slate tone so navigation recedes elegantly" },
+  { token: "--card", value: "oklch(0.185 0.018 260)", name: "Elevated Slate", note: "Soft glass-like panels, elevated cards and dialogs" },
+  { token: "--popover", value: "oklch(0.185 0.018 260)", name: "Popover", note: "Flyouts, floating menus and contextual overlays" },
+  { token: "--foreground", value: "oklch(0.96 0.008 260)", name: "Luminous White", note: "Primary headings and song titles with WCAG AAA clarity" },
+  { token: "--muted-foreground", value: "oklch(0.72 0.015 260)", name: "Slate Muted", note: "Second-line credits, artists, counts and metadata" },
+  { token: "--border", value: "oklch(1 0 0 / 10%)", name: "Etched Border", note: "Ten per cent translucent white for crisp hairline edges" },
 ];
 
 const PRIMITIVES = [
@@ -56,10 +40,10 @@ export default function DesignPage() {
       <header>
         <h1 className="text-3xl leading-tight">Design system</h1>
         <p className="mt-3 max-w-prose text-sm leading-relaxed text-muted-foreground">
-          Mehfil is one dark theme, one accent, and a small set of primitives.
+          Sargam is an intentional aesthetic of Deep Obsidian Velvet and Radiant Luminous Amber.
           There is <Key>no light mode and no second brand colour</Key>, which is less a
-          principle than an admission: a catalogue of golden-era film music
-          wants brass on near-black, and everything else was a distraction.
+          principle than an admission: a catalogue of golden-era Hindi film music
+          belongs in the atmosphere of a vintage listening room bathed in warm amber glow.
         </p>
       </header>
 
@@ -70,7 +54,7 @@ export default function DesignPage() {
             Colour is a CSS custom property in OKLCH almost everywhere, rather
             than a value written into a class string.{" "}
             <Key>OKLCH because its lightness is perceptual</Key> — the accent
-            and the heart sit at 0.79 and 0.70, so they read as siblings rather
+            and the heart sit at 0.82 and 0.72, so they read as harmonious siblings rather
             than one shouting over the other.
           </>
         }
@@ -252,12 +236,11 @@ export default function DesignPage() {
             </p>
             <Code caption="left: how the app writes colour. right: what it avoids.">
 {`bg-primary/15  text-primary  border-heart/40
-bg-[#d6a854]   text-[#f66c6d]`}
+bg-[#f59e0b]   text-[#e11d48]`}
             </Code>
           </Panel>
         </div>
       </Section>
-
     </div>
   );
 }
