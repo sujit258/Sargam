@@ -43,27 +43,37 @@ export function RecommendedClassics({ catalogue }: RecommendedClassicsProps) {
           return (
             <div
               key={song.id}
-              className="group relative flex items-center gap-3.5 rounded-xl border border-white/10 bg-card/40 p-3 backdrop-blur-sm transition duration-200 hover:border-primary/40 hover:bg-card/75"
+              onClick={() => (currentTrack?.id === song.id ? toggle() : play(song))}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  if (currentTrack?.id === song.id) toggle();
+                  else play(song);
+                }
+              }}
+              className="group relative flex items-center gap-3.5 rounded-xl border border-white/10 bg-card/40 p-3 backdrop-blur-sm transition duration-200 hover:border-primary/40 hover:bg-card/75 cursor-pointer outline-none focus-visible:ring-1 focus-visible:ring-primary"
             >
               {/* Artwork with play button overlay */}
-              <div className="relative size-16 shrink-0 overflow-hidden rounded-lg shadow-md">
+              <div className="relative size-16 shrink-0 overflow-hidden rounded-lg shadow-md bg-black/40">
                 <img
                   src={artwork(song.video, "mq")}
                   alt={song.title}
                   className="size-full object-cover"
                   loading="lazy"
                 />
-                <button
-                  onClick={() => (currentTrack?.id === song.id ? toggle() : play(song))}
-                  aria-label={isPlaying ? `Pause ${song.title}` : `Play ${song.title}`}
-                  className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition duration-200"
+                <div
+                  className={`absolute inset-0 flex items-center justify-center bg-black/40 transition duration-200 ${
+                    isPlaying ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                  }`}
                 >
                   {isPlaying ? (
                     <Pause className="size-6 text-primary fill-current" />
                   ) : (
                     <Play className="size-6 text-primary fill-current ml-0.5" />
                   )}
-                </button>
+                </div>
               </div>
 
               {/* Title & Artist */}
@@ -80,7 +90,10 @@ export function RecommendedClassics({ catalogue }: RecommendedClassicsProps) {
               </div>
 
               {/* Like action */}
-              <div className="shrink-0 pr-1">
+              <div
+                className="shrink-0 pr-1"
+                onClick={(e) => e.stopPropagation()}
+              >
                 <LikeButton songId={song.id} />
               </div>
             </div>

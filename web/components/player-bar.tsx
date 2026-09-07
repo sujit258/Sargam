@@ -1178,7 +1178,7 @@ export function PlayerBar({
         // needs clipping, and it now clips itself.
         <footer
           aria-label="Player"
-          className="relative z-50 shrink-0 border-t bg-card/80 backdrop-blur lg:rounded-lg lg:border"
+          className="fixed bottom-14 inset-x-0 z-40 border-t border-white/10 bg-card/90 backdrop-blur-xl shadow-2xl lg:relative lg:bottom-0 lg:z-30 lg:border-t lg:border-white/10 shrink-0"
         >
       {/* Ambient wash from the current track, so the bar picks up its colour.
           A child rather than a background image on the footer: it has to paint

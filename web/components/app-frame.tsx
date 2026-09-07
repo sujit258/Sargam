@@ -10,13 +10,14 @@ import {
   Disc3,
   Globe,
   Heart,
-  History,
   Info,
   Menu,
   Palette,
   Radio,
   Search,
   X,
+  Sparkles,
+  Music2,
 } from "lucide-react";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
@@ -34,7 +35,7 @@ import { brand } from "@/lib/brand";
 type Frame = {
   /** Scroll container the virtualised lists measure against. */
   scrollEl: HTMLElement | null;
-  /** Portal target for the current route's filter panel. */
+  /** Portal target for the current route's filter panel (if any). */
   filterSlot: HTMLElement | null;
   query: string;
   setQuery: (value: string) => void;
@@ -48,17 +49,6 @@ export function useFrame() {
   return context;
 }
 
-/**
- * The application chrome, rendered once in the root layout.
- *
- * Living in the layout rather than in each page means the rail keeps its full
- * height beside the player and does not remount on navigation. Routes are only
- * responsible for their content.
- *
- * The filter panel is route-specific, so the rail exposes a slot that pages
- * portal into. A portal rather than shared state: passing React nodes upward
- * through context invites render loops, and this needs neither.
- */
 export function AppFrame({ children }: { children: React.ReactNode }) {
   const { data: catalogue } = useCatalogue();
   const [scrollEl, setScrollEl] = useState<HTMLElement | null>(null);
@@ -70,11 +60,6 @@ export function AppFrame({ children }: { children: React.ReactNode }) {
   const { playRandom } = usePlayer();
   const { data: photos } = usePhotoManifest();
 
-  // The three voices this catalogue is really made of. Named rather than
-  // ranked: ranking by catalogue share puts Asha Bhosle third and leaves
-  // Kishore Kumar out, and these three together say what the collection is at
-  // a glance. Anyone missing a portrait is dropped rather than drawn blank,
-  // and if none resolve the control simply shows no faces.
   const faces = useMemo(
     () =>
       ["Lata Mangeshkar", "Kishore Kumar", "Mohammed Rafi"]
@@ -83,417 +68,289 @@ export function AppFrame({ children }: { children: React.ReactNode }) {
     [photos]
   );
 
-  const onBrowse = pathname === "/";
-  // The about page has nothing to search and its own back control, so the
-  // header would be an empty bar. Mobile still needs the menu, which only
-  // lives there, so the row stays below lg with the search removed.
-  const hideSearch = pathname === "/about" || pathname === "/contribute";
-
   const navClass = (active: boolean) =>
-    `flex w-full items-center gap-2.5 rounded-md px-2 py-1.5 text-sm transition ${
-      active ? "bg-white/[0.09] text-foreground" : "text-muted-foreground hover:text-foreground"
-    }`;
-
-  const brandAndNav = (
-    <>
-      <div className="shrink-0 px-4 pb-3 pt-4 border-b border-white/[0.06]">
-        <Link href="/" className="flex items-center gap-2.5">
-          <img src="/logo.png" alt={brand.shortName} width={36} height={36} className="size-9 rounded-lg shadow-md ring-1 ring-white/10" />
-          <span>
-            <span className="block text-lg leading-tight tracking-tight font-serif font-bold text-foreground">{brand.shortName}</span>
-            {catalogue ? (
-              <span className="block text-[11px] text-primary/80">
-                {catalogue.songs.length.toLocaleString()} Songs · {catalogue.facets.stations.length} Stations
-              </span>
-            ) : (
-              <span className="block text-[11px] text-muted-foreground">{brand.tagline}</span>
-            )}
-          </span>
-        </Link>
-      </div>
-
-      <nav aria-label="Primary" className="flex-1 overflow-y-auto space-y-4 px-2 py-3 text-xs scroll-slim">
-        <div>
-          <span className="px-2 text-[10px] font-mono uppercase tracking-wider text-muted-foreground/60">Discover</span>
-          <div className="mt-1 space-y-0.5">
-            <Link href="/" className={navClass(onBrowse)}>
-              <Compass className="size-4 text-primary" /> Discover
-            </Link>
-            <Link href="/songs" className={navClass(pathname === "/songs")}>
-              <Search className="size-4" /> Search All Songs
-            </Link>
-            <Link href="/languages" className={navClass(pathname.startsWith("/languages"))}>
-              <Globe className="size-4 text-teal-400" /> Languages
-            </Link>
-            <Link href="/station/top-300" className={navClass(pathname.startsWith("/station"))}>
-              <Radio className="size-4" /> Stations
-            </Link>
-          </div>
-        </div>
-
-        <div>
-          <span className="px-2 text-[10px] font-mono uppercase tracking-wider text-muted-foreground/60">Your Library</span>
-          <div className="mt-1 space-y-0.5">
-            <Link href="/favourites" className={navClass(pathname === "/favourites")}>
-              <Heart className="size-4 text-rose-500" /> Favorites
-            </Link>
-            <Link href="/#history" className={navClass(false)}>
-              <History className="size-4" /> Recently Played
-            </Link>
-            <Link href="/themes" className={navClass(pathname === "/themes")}>
-              <Palette className="size-4 text-amber-400" /> Backdrop Themes
-            </Link>
-          </div>
-        </div>
-
-        <div>
-          <span className="px-2 text-[10px] font-mono uppercase tracking-wider text-muted-foreground/60">Golden Eras</span>
-          <div className="mt-1 space-y-0.5">
-            <Link href="/#eras" className="flex items-center gap-2 rounded-md px-2 py-1.5 text-xs text-muted-foreground hover:bg-white/[0.05] hover:text-foreground">
-              <span className="size-1.5 rounded-full bg-amber-400" /> 1950s Black &amp; White
-            </Link>
-            <Link href="/#eras" className="flex items-center gap-2 rounded-md px-2 py-1.5 text-xs text-muted-foreground hover:bg-white/[0.05] hover:text-foreground">
-              <span className="size-1.5 rounded-full bg-rose-400" /> 1960s Golden Dawn
-            </Link>
-            <Link href="/#eras" className="flex items-center gap-2 rounded-md px-2 py-1.5 text-xs text-muted-foreground hover:bg-white/[0.05] hover:text-foreground">
-              <span className="size-1.5 rounded-full bg-orange-400" /> 1970s Technicolor
-            </Link>
-            <Link href="/#eras" className="flex items-center gap-2 rounded-md px-2 py-1.5 text-xs text-muted-foreground hover:bg-white/[0.05] hover:text-foreground">
-              <span className="size-1.5 rounded-full bg-teal-400" /> 1980s Retro Rhythm
-            </Link>
-          </div>
-        </div>
-
-        <div className="pt-2">
-          <InstallButton />
-        </div>
-      </nav>
-    </>
-  );
-
-  // One definition for both the rail and the mobile menu: they are the same
-  // surface at different sizes, and two copies would drift.
-  const railTexture = (
-    <div
-      aria-hidden
-      className="pointer-events-none absolute inset-x-0 bottom-0 top-1/3 [mask-image:linear-gradient(to_top,#000_0%,#000_35%,transparent_100%)]"
-    >
-      <img
-        src="/collage.jpg"
-        alt=""
-        className="size-full object-cover opacity-[0.20] saturate-[0.55] sepia-[0.35]"
-      />
-    </div>
-  );
-
-  // The rail's secondary rows: the same shape as navClass, one step quieter,
-  // so they read as a group beneath the main nav rather than competing with it.
-  const subNavClass = (active: boolean) =>
-    `flex items-center gap-2.5 rounded-md px-2 py-1.5 text-xs transition ${
+    `relative rounded-full px-3.5 py-1.5 text-xs font-medium transition-all ${
       active
-        ? "bg-white/[0.08] text-foreground"
-        : "text-muted-foreground hover:bg-white/[0.05] hover:text-foreground"
+        ? "bg-primary/20 text-primary font-semibold shadow-sm"
+        : "text-muted-foreground hover:bg-white/[0.06] hover:text-foreground"
     }`;
 
-  const credit = (
-    // Opaque backing: the collage is anchored to the bottom of the rail, so it
-    // sits directly behind this text. Without it the smallest type in the app
-    // is the one competing with a busy image.
-    <div className="shrink-0 border-t border-white/[0.06] bg-sidebar/95 px-2 py-2 backdrop-blur-sm">
-      {/* Rows, not a stack of footnote-sized text.
-          These were three lines of 11px muted type with nothing to say they
-          could be pressed and nothing to aim at on a touchscreen. They lead to
-          real pages, so they now look and behave like the nav above them: a
-          hit area, an icon, a hover state. Only the attribution stays small
-          and quiet — it is the one line here that is a credit rather than a
-          destination. */}
-      <div className="space-y-0.5">
-        <Link href="/themes" className={subNavClass(pathname === "/themes")}>
-          <Palette className="size-3.5 shrink-0" /> Themes
-        </Link>
-        <Link href="/releases" className={subNavClass(pathname === "/releases")}>
-          <ScrollText className="size-3.5 shrink-0" /> Release notes
-        </Link>
-        <Link
-          href="/curious/design"
-          className={subNavClass(pathname.startsWith("/curious"))}
-        >
-          <Code2 className="size-3.5 shrink-0" /> For the curious
-        </Link>
-        <Link href="/about" className={subNavClass(pathname === "/about")}>
-          <Info className="size-3.5 shrink-0" /> About &amp; credits
-        </Link>
-      </div>
-
-      <p className="px-2 pb-1 pt-2.5 text-[10px] leading-snug text-muted-foreground/60">
-        Music streams from YouTube. Nothing is hosted here.
-      </p>
-      <div className="px-2 pb-1 text-[10px] text-muted-foreground/60">
-        Inspired by{" "}
-        <a
-          href={brand.credit.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline-offset-2 transition hover:text-muted-foreground hover:underline"
-        >
-          {brand.credit.inspiredBy}
-        </a>{" "}
-        · Built with <span className="text-heart">&#9829;</span> by our team
-      </div>
-    </div>
-  );
+  const navLinks = [
+    { href: "/", label: "Discover", active: pathname === "/" },
+    { href: "/songs", label: "Explore", active: pathname === "/songs" },
+    { href: "/stations", label: "Stations", active: pathname.startsWith("/station") || pathname === "/stations" },
+    { href: "/favourites", label: "Library", active: pathname === "/favourites" },
+  ];
 
   return (
     <FrameContext.Provider value={{ scrollEl, filterSlot, query, setQuery }}>
-      <div className="flex h-[100dvh] gap-0 p-0 lg:gap-2 lg:p-2">
-        {/* Full height, beside the player rather than above it. */}
-        <aside className="relative hidden w-72 shrink-0 flex-col overflow-hidden rounded-lg bg-sidebar lg:flex">
-          {/* Texture for the space the filter panel leaves empty: masked out
-              well before the navigation and pulled toward the brass palette,
-              so it reads as a surface rather than a picture competing with the
-              controls in front of it. */}
-          {railTexture}
-
-          {/* Above the texture, or the controls sit behind it. */}
-          <div className="relative z-10 flex min-h-0 flex-1 flex-col">
-            {brandAndNav}
-            <div ref={setFilterSlot} className="min-h-0 flex-1 overflow-hidden" />
-            {credit}
-          </div>
-        </aside>
-
-        <div className="flex min-w-0 flex-1 flex-col gap-0 lg:gap-2">
-          <main
-            ref={setScrollEl}
-            className="scroll-slim min-h-0 flex-1 overflow-y-auto rounded-none bg-card/40 lg:rounded-lg"
-          >
-            {/* Gutter must match the content below exactly, or the search box
-                sits on a different edge from everything it sits above. */}
-            <div
-              className={`sticky top-0 z-20 items-center gap-2 bg-background/70 px-4 pb-2 pt-3 backdrop-blur sm:px-6 lg:px-8 ${
-                hideSearch ? "flex lg:hidden" : "flex"
-              }`}
-            >
-              {/* Shown at every width below lg: brandAndNav's Browse row
-                  points at `/` too, but the logo is the brand mark and the
-                  one tap-target that reliably reads as "home" on a phone, so
-                  it stays even where every pixel is contested. The room for
-                  it came from Themes below, not from hiding this again. */}
-              <Link href="/" className="flex shrink-0 items-center gap-2 lg:hidden">
-                <img src="/logo.png" alt="" width={32} height={32} className="size-8 rounded-lg" />
-              </Link>
-
-              {!hideSearch && (
-              <div className="relative min-w-0 flex-1 md:max-w-lg">
-                <Search className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground transition-colors" />
-                <input
-                  value={query}
-                  onChange={(e) => {
-                    // Once per search, on the empty-to-typed edge. Gating this
-                    // on the redirect below meant searching was only ever
-                    // counted when it moved you to /songs — so every search
-                    // made once you were already there, which is most of them,
-                    // went unrecorded. Still no query text, only that it began.
-                    if (!query.trim() && e.target.value.trim()) track("search");
-                    setQuery(e.target.value);
-                    // Searching from anywhere lands on the list that can show
-                    // results, rather than silently doing nothing.
-                    if (pathname !== "/songs" && e.target.value) {
-                      router.push("/songs");
-                    }
-                  }}
-                  placeholder="Search songs, films, singers…"
-                  className="h-10 w-full rounded-full border border-white/10 bg-white/[0.07] pl-10 pr-9 text-sm outline-none transition placeholder:text-muted-foreground/70 hover:border-white/20 hover:bg-white/[0.09] focus:border-primary/50 focus:bg-white/[0.1] focus:ring-4 focus:ring-primary/10"
+      <div className="flex h-[100dvh] flex-col overflow-hidden bg-background">
+        {/* Compact Top Navigation (Desktop & Mobile header) */}
+        <header className="sticky top-0 z-40 flex h-16 w-full shrink-0 items-center justify-between border-b border-white/[0.08] bg-background/85 px-4 backdrop-blur-xl sm:px-6 lg:px-8">
+          {/* Left: Brand Identity */}
+          <div className="flex items-center gap-6">
+            <Link href="/" className="group flex items-center gap-3">
+              <div className="relative size-9 overflow-hidden rounded-xl bg-card shadow-md ring-1 ring-white/10 transition-transform duration-200 group-hover:scale-105">
+                <img
+                  src="/logo.png"
+                  alt={brand.shortName}
+                  className="size-full object-cover"
                 />
-                {query && (
-                  <button
-                    onClick={() => setQuery("")}
-                    aria-label="Clear search"
-                    className="absolute right-3 top-1/2 grid size-5 -translate-y-1/2 place-items-center rounded-full text-muted-foreground transition hover:bg-white/10 hover:text-foreground"
-                  >
-                    <X className="size-3.5" />
-                  </button>
-                )}
               </div>
-              )}
-
-              {/* Favourites, one glance away at any width. It already lives
-                  in the rail/drawer nav, but that is only a touchpoint once a
-                  phone user opens the drawer — this is the fix for that. Not
-                  gated on hideSearch: hideSearch only retires the search box
-                  (nothing to search on /about or /contribute), it says
-                  nothing about this, and hiding it there would remove the
-                  one touchpoint mobile still has on those routes. The row
-                  itself already collapses to lg:hidden on those pages, so on
-                  desktop this disappears with the rest of the row rather than
-                  needing its own check. ml-auto moves here from the Surprise
-                  button below: this is now the first element of the group
-                  that gets pushed to the right edge, and Surprise/the menu
-                  trigger ride along after it instead of pushing themselves. */}
-              <div className="ml-auto flex shrink-0 items-center gap-1.5">
-                {/* aria-label carries the accessible name regardless of what a
-                    screen reader does with the tooltip; the tooltip is only
-                    there for the sighted mouse user who has nothing else to
-                    go on before clicking an icon-only link. */}
-                <Tooltip>
-                  <TooltipTrigger
-                    render={
-                      <Link
-                        href="/favourites"
-                        aria-label="Your favourites"
-                        // The one nav control that carries a colour of its
-                        // own. It is a heart, and a heart in brass is filed
-                        // with the furniture — this is the entry point the
-                        // owner wanted noticed, so it keeps the accent even
-                        // when the route is not active, and deepens rather
-                        // than switches colour when it is.
-                        className={`grid size-9 place-items-center rounded-full border transition ${
-                          pathname === "/favourites"
-                            ? "border-heart/40 bg-heart/15 text-heart"
-                            : "border-white/10 bg-white/[0.06] text-heart/75 hover:border-heart/30 hover:bg-heart/10 hover:text-heart"
-                        }`}
-                      />
-                    }
-                  >
-                    <Heart className="size-4" />
-                  </TooltipTrigger>
-                  <TooltipContent>Your favourites</TooltipContent>
-                </Tooltip>
-                {/* Hidden below sm: this is what paid for the logo's return.
-                    Themes is a preference visited occasionally, not a
-                    destination like Favourites, and it stays reachable from
-                    the drawer (via the credit block) at every width — this
-                    icon is only ever the second-fastest way to it. */}
-                <Tooltip>
-                  <TooltipTrigger
-                    render={
-                      <Link
-                        href="/themes"
-                        aria-label="Themes"
-                        className={`hidden size-9 place-items-center rounded-full border transition sm:grid ${
-                          pathname === "/themes"
-                            ? "border-primary/30 bg-primary/15 text-primary"
-                            : "border-white/10 bg-white/[0.06] text-muted-foreground hover:text-foreground"
-                        }`}
-                      />
-                    }
-                  >
-                    <Palette className="size-4" />
-                  </TooltipTrigger>
-                  <TooltipContent>Themes</TooltipContent>
-                </Tooltip>
+              <div>
+                <span className="block font-serif text-xl font-bold tracking-wider text-foreground group-hover:text-primary transition-colors">
+                  SARGAM
+                </span>
+                <span className="hidden text-[10px] font-sans tracking-wide text-muted-foreground sm:block">
+                  Retro Indian Melodies
+                </span>
               </div>
+            </Link>
 
-              {/* Fills the empty right side with the one action that needs no
-                  prior choice: drop into the catalogue at random. */}
-              {catalogue && !hideSearch && (
-                // "Surprise" already labels the button, but not what it does —
-                // the tooltip carries that, which is why this keeps a tooltip
-                // despite the visible text.
-                <Tooltip>
-                  <TooltipTrigger
-                    render={
-                      <button
-                        onClick={() => playRandom(catalogue.songs)}
-                        className="group/surprise hidden shrink-0 items-center gap-2 rounded-full border border-primary/30 bg-primary/15 px-4 py-2 text-xs font-semibold text-primary shadow-[0_0_0_0_rgba(214,168,84,0)] transition-[background-color,border-color,box-shadow] duration-300 hover:border-primary/50 hover:bg-primary/25 hover:shadow-[0_0_20px_-2px_rgba(214,168,84,0.45)] lg:inline-flex"
-                      />
-                    }
-                  >
-                    {/* A record, not a shuffle glyph: this plays music at
-                        random rather than reordering a list. A full revolution
-                        ends where it began — the old half turn stopped upside
-                        down and read as a glitch. */}
-                    <Disc3 className="size-4 shrink-0 transition-transform duration-[900ms] ease-out motion-safe:group-hover/surprise:rotate-[360deg]" />
-                    Surprise
+            {/* Center Navigation Links (Desktop) */}
+            <nav className="hidden items-center gap-1 md:flex" aria-label="Desktop Navigation">
+              {navLinks.map((link) => (
+                <Link key={link.href} href={link.href} className={navClass(link.active)}>
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
 
-                    {/* The faces fan out on hover. Transform only, never margin:
-                        margins are laid out, so animating one reflows the button
-                        every frame — which is both why this was not smooth and
-                        why the control grew as it played. A transform is composited
-                        and moves nothing around it. */}
-                    {faces.length > 0 && (
-                      <span className="flex shrink-0 -space-x-2">
-                        {faces.map((face, index) => (
-                          <img
-                            key={face.name}
-                            src={face.src}
-                            alt=""
-                            loading="lazy"
-                            style={
-                              {
-                                "--fan": `${index * 5}px`,
-                                transitionDelay: `${index * 45}ms`,
-                              } as React.CSSProperties
-                            }
-                            className="size-5 rounded-full object-cover object-top ring-2 ring-card transition-transform duration-300 ease-out motion-safe:group-hover/surprise:translate-x-[var(--fan)]"
-                          />
-                        ))}
-                      </span>
-                    )}
-                  </TooltipTrigger>
-                  <TooltipContent>Play something at random</TooltipContent>
-                </Tooltip>
-              )}
-
-              {/* Keyed on the route, and otherwise uncontrolled. Navigating
-                  changes the key, React discards this Sheet and mounts a fresh
-                  one, and a fresh one is closed — so following a link closes
-                  the drawer without anything here having to drive its open
-                  state. Driving it was the previous attempt and it stopped the
-                  trigger opening at all. */}
-              <Sheet key={pathname}>
-                <SheetTrigger
-                  render={
-                    <button
-                      title="Menu"
-                      aria-label="Menu"
-                      className="relative grid size-9 shrink-0 place-items-center rounded-full border border-white/10 bg-white/[0.06] text-muted-foreground transition hover:text-foreground lg:hidden"
-                    />
+          {/* Right: Search, Surprise, Favourites, Themes, Menu */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            {/* Search Input (Desktop/Tablet) */}
+            <div className="relative hidden w-44 sm:block md:w-60 lg:w-72">
+              <Search className="pointer-events-none absolute left-3 top-1/2 size-3.5 -translate-y-1/2 text-muted-foreground" />
+              <input
+                value={query}
+                onChange={(e) => {
+                  if (!query.trim() && e.target.value.trim()) track("search");
+                  setQuery(e.target.value);
+                  if (pathname !== "/songs" && e.target.value) {
+                    router.push("/songs");
                   }
+                }}
+                placeholder="Search songs, singers…"
+                className="h-8.5 w-full rounded-full border border-white/10 bg-white/[0.06] pl-8.5 pr-8 text-xs text-foreground outline-none transition placeholder:text-muted-foreground/60 hover:border-white/20 hover:bg-white/[0.09] focus:border-primary/60 focus:bg-white/[0.1] focus:ring-2 focus:ring-primary/20"
+              />
+              {query && (
+                <button
+                  onClick={() => setQuery("")}
+                  aria-label="Clear search"
+                  className="absolute right-2.5 top-1/2 grid size-4 -translate-y-1/2 place-items-center rounded-full text-muted-foreground hover:text-foreground"
                 >
-                  <Menu className="size-4" />
-                </SheetTrigger>
-                {/* No `relative` here. These classes are merged over the base
-                    ones, and it would beat the `fixed` that positions the
-                    panel — taking `inset-y-0 left-0 h-full` with it and
-                    collapsing the drawer to nothing. `fixed` already anchors
-                    the absolutely-positioned texture inside. */}
-                <SheetContent
-                  side="left"
-                  className="flex w-[19rem] flex-col overflow-hidden bg-sidebar p-0"
-                >
-                  <SheetTitle className="sr-only">Menu</SheetTitle>
-                  {railTexture}
-
-                  <div className="relative z-10 flex min-h-0 flex-1 flex-col">
-                    {brandAndNav}
-                    <div className="min-h-0 flex-1" />
-                    {credit}
-                  </div>
-                </SheetContent>
-              </Sheet>
+                  <X className="size-3" />
+                </button>
+              )}
             </div>
 
-            {/* One place sets the page gutter and bottom room, so routes only
-                decide their own vertical rhythm and cannot drift apart. The
-                gap below the header comes from the header itself, so this
-                needs no top padding of its own. */}
-            <div className="px-4 pb-28 pt-4 sm:px-6 sm:pt-5 lg:px-8 lg:pb-16">{children}</div>
-          </main>
+            {/* Quick Surprise Button */}
+            {catalogue && (
+              <Tooltip>
+                <TooltipTrigger
+                  render={
+                    <button
+                      onClick={() => playRandom(catalogue.songs)}
+                      className="group hidden items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary transition hover:border-primary/60 hover:bg-primary/20 sm:inline-flex"
+                    >
+                      <Disc3 className="size-3.5 shrink-0 transition-transform duration-700 ease-out group-hover:rotate-[360deg]" />
+                      <span>Surprise</span>
+                      {faces.length > 0 && (
+                        <span className="flex shrink-0 -space-x-1.5 ml-1">
+                          {faces.map((face) => (
+                            <img
+                              key={face.name}
+                              src={face.src}
+                              alt=""
+                              className="size-4 rounded-full object-cover ring-1 ring-card"
+                            />
+                          ))}
+                        </span>
+                      )}
+                    </button>
+                  }
+                />
+                <TooltipContent>Play something at random</TooltipContent>
+              </Tooltip>
+            )}
 
-          {playerBar}
-          <MobileNav />
-        </div>
+            {/* Favourites Shortcut */}
+            <Tooltip>
+              <TooltipTrigger
+                render={
+                  <Link
+                    href="/favourites"
+                    aria-label="Your favourites"
+                    className={`grid size-8.5 place-items-center rounded-full border transition ${
+                      pathname === "/favourites"
+                        ? "border-heart/40 bg-heart/15 text-heart"
+                        : "border-white/10 bg-white/[0.06] text-heart/80 hover:border-heart/30 hover:bg-heart/10 hover:text-heart"
+                    }`}
+                  >
+                    <Heart className="size-4" />
+                  </Link>
+                }
+              />
+              <TooltipContent>Favourites</TooltipContent>
+            </Tooltip>
+
+            {/* Themes Shortcut */}
+            <Tooltip>
+              <TooltipTrigger
+                render={
+                  <Link
+                    href="/themes"
+                    aria-label="Backdrop themes"
+                    className={`hidden size-8.5 place-items-center rounded-full border transition sm:grid ${
+                      pathname === "/themes"
+                        ? "border-primary/30 bg-primary/15 text-primary"
+                        : "border-white/10 bg-white/[0.06] text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    <Palette className="size-4" />
+                  </Link>
+                }
+              />
+              <TooltipContent>Themes</TooltipContent>
+            </Tooltip>
+
+            {/* Overflow Menu Drawer */}
+            <Sheet key={pathname}>
+              <SheetTrigger
+                render={
+                  <button
+                    title="Menu"
+                    aria-label="Menu"
+                    className="grid size-8.5 place-items-center rounded-full border border-white/10 bg-white/[0.06] text-muted-foreground transition hover:text-foreground hover:bg-white/[0.1]"
+                  >
+                    <Menu className="size-4" />
+                  </button>
+                }
+              />
+              <SheetContent
+                side="right"
+                className="flex w-72 flex-col overflow-hidden bg-card/95 p-0 backdrop-blur-xl border-l border-white/10"
+              >
+                <SheetTitle className="sr-only">Sargam Menu</SheetTitle>
+
+                {/* Drawer Header */}
+                <div className="p-5 border-b border-white/[0.08]">
+                  <div className="flex items-center gap-3">
+                    <img src="/logo.png" alt="Sargam" className="size-8 rounded-lg shadow" />
+                    <div>
+                      <span className="block font-serif text-lg font-bold text-foreground">SARGAM</span>
+                      <span className="block text-[11px] text-muted-foreground">
+                        {catalogue ? `${catalogue.songs.length.toLocaleString()} Master Recordings` : brand.tagline}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mobile Navigation Links inside Drawer */}
+                <div className="flex-1 overflow-y-auto p-4 space-y-4 text-xs scroll-slim">
+                  <div className="space-y-1">
+                    <span className="px-2 text-[10px] font-mono uppercase tracking-wider text-muted-foreground/60">
+                      Navigation
+                    </span>
+                    <div className="mt-1 space-y-0.5">
+                      {navLinks.map((link) => (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          className={`flex items-center gap-2.5 rounded-lg px-3 py-2 text-xs font-medium transition ${
+                            link.active
+                              ? "bg-primary/15 text-primary font-semibold"
+                              : "text-muted-foreground hover:bg-white/[0.06] hover:text-foreground"
+                          }`}
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="space-y-1">
+                    <span className="px-2 text-[10px] font-mono uppercase tracking-wider text-muted-foreground/60">
+                      Preferences & Archive
+                    </span>
+                    <div className="mt-1 space-y-0.5">
+                      <Link
+                        href="/themes"
+                        className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-xs text-muted-foreground hover:bg-white/[0.06] hover:text-foreground transition"
+                      >
+                        <Palette className="size-4 text-amber-400" />
+                        <span>Backdrop Themes</span>
+                      </Link>
+                      <Link
+                        href="/releases"
+                        className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-xs text-muted-foreground hover:bg-white/[0.06] hover:text-foreground transition"
+                      >
+                        <ScrollText className="size-4 text-teal-400" />
+                        <span>Release Notes</span>
+                      </Link>
+                      <Link
+                        href="/curious/design"
+                        className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-xs text-muted-foreground hover:bg-white/[0.06] hover:text-foreground transition"
+                      >
+                        <Code2 className="size-4 text-blue-400" />
+                        <span>For the Curious</span>
+                      </Link>
+                      <Link
+                        href="/about"
+                        className="flex items-center gap-2.5 rounded-lg px-3 py-2 text-xs text-muted-foreground hover:bg-white/[0.06] hover:text-foreground transition"
+                      >
+                        <Info className="size-4 text-purple-400" />
+                        <span>About &amp; Credits</span>
+                      </Link>
+                    </div>
+                  </div>
+
+                  <div className="pt-2">
+                    <InstallButton />
+                  </div>
+                </div>
+
+                {/* Footer Attribution */}
+                <div className="border-t border-white/[0.08] p-4 text-[10px] text-muted-foreground/70 space-y-1 bg-black/20">
+                  <p>Music streams via YouTube embed verification.</p>
+                  <p>
+                    Inspired by{" "}
+                    <a
+                      href={brand.credit.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-foreground transition"
+                    >
+                      {brand.credit.inspiredBy}
+                    </a>
+                  </p>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+        </header>
+
+        {/* Main Content Area (Spacious, full width on desktop, no sidebar rail) */}
+        <main
+          ref={setScrollEl}
+          className="scroll-slim min-h-0 flex-1 overflow-y-auto w-full"
+        >
+          <div className="mx-auto max-w-7xl px-4 pt-4 pb-36 sm:px-6 sm:pt-6 sm:pb-28 lg:px-8 lg:pb-24 w-full">
+            {children}
+          </div>
+        </main>
+
+        {/* Persistent Player Bar */}
+        {playerBar}
+
+        {/* Mobile Navigation Bar */}
+        <MobileNav />
       </div>
 
-      {/* Mounted once here, regardless of route, so any heart in the app can
-          fire into it. */}
+      {/* Overlays mounted once */}
       <LikeBurstHost />
       <InstallCard />
-
-      {/* Same reasoning: one instance, always present, so it can open itself
-          on first run or on /about regardless of which route the app landed
-          on. */}
       <NoticeDialog />
     </FrameContext.Provider>
   );

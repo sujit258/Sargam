@@ -104,9 +104,9 @@ export default function ThemesPage() {
             )}
           </span>
           <span className="block px-3 py-2.5">
-            <span className="block text-sm">None</span>
+            <span className="block text-sm">Obsidian Velvet</span>
             <span className="block text-[11px] text-muted-foreground">
-              Just the dark room
+              Pure minimalist backdrop for focused listening
             </span>
           </span>
         </button>

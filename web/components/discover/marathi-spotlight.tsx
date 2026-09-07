@@ -29,12 +29,24 @@ export function MarathiSpotlight() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {MARATHI_SPOTLIGHT.map((item) => (
-          <Link
-            key={item.id}
-            href="/languages/marathi"
-            className="group relative overflow-hidden rounded-2xl border border-teal-500/20 bg-gradient-to-b from-teal-950/25 via-card/60 to-card/40 p-5 backdrop-blur-sm transition duration-300 hover:border-teal-500/40 hover:scale-[1.01] shadow-lg flex flex-col justify-between"
-          >
+        {MARATHI_SPOTLIGHT.map((item) => {
+          const catSlug =
+            item.category === "Bhavgeet"
+              ? "bhavageet"
+              : item.category === "Natya Sangeet"
+              ? "natya-sangeet"
+              : item.category === "Marathi Cinema"
+              ? "marathi-film"
+              : item.category === "Lavani"
+              ? "lavani"
+              : "all";
+
+          return (
+            <Link
+              key={item.id}
+              href={`/languages/marathi?category=${catSlug}`}
+              className="group relative overflow-hidden rounded-2xl border border-teal-500/20 bg-gradient-to-b from-teal-950/25 via-card/60 to-card/40 p-5 backdrop-blur-sm transition duration-300 hover:border-teal-500/40 hover:scale-[1.01] shadow-lg flex flex-col justify-between"
+            >
             <div>
               <div className="flex items-center justify-between">
                 <span className="inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-teal-300 bg-teal-500/15 px-2 py-0.5 rounded">
@@ -63,8 +75,9 @@ export function MarathiSpotlight() {
               </div>
             )}
           </Link>
-        ))}
-      </div>
+        );
+      })}
+    </div>
     </section>
   );
 }

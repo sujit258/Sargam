@@ -32,54 +32,67 @@ export function TrackRow({
   playing: boolean;
   onPlay: () => void;
 }) {
-  // ARIA gives the button role presentational children: the heart nested
-  // inside a role="button" row has its accessible name and aria-pressed
-  // swallowed by the ancestor's role, so a screen reader user could never
-  // tell it was there, let alone use it. Two real <button>s — this one for
-  // play, the heart for like — sidestep that entirely, and the row itself
-  // goes back to being a plain <div> whose onClick still catches a mouse
-  // anywhere else in it.
+  const isPlayable = song.sourceVerified !== false && Boolean(song.video);
+
+  const handleRowClick = () => {
+    if (isPlayable) {
+      onPlay();
+    }
+  };
+
   return (
     <div
-      onClick={onPlay}
-      className={`group grid cursor-default grid-cols-[1.5rem_2.5rem_1fr_auto] items-center gap-2.5 rounded-md px-1 py-1.5 outline-none transition-colors hover:bg-white/[0.06] focus-visible:bg-white/[0.08] sm:gap-3 sm:px-2 ${
+      onClick={handleRowClick}
+      title={!isPlayable ? "Archival record · Playback stream pending verification" : undefined}
+      className={`group grid grid-cols-[1.5rem_2.5rem_1fr_auto] items-center gap-2.5 rounded-md px-1 py-1.5 outline-none transition-colors sm:gap-3 sm:px-2 ${
+        isPlayable ? "cursor-pointer hover:bg-white/[0.06] focus-visible:bg-white/[0.08]" : "cursor-default opacity-85 hover:bg-white/[0.03]"
+      } ${
         active ? "bg-white/[0.07]" : ""
       }`}
     >
-      {/* Index swaps to a play control on hover — same cell, now the row's
-          one real activation control instead of a decorative div riding on
-          the row's own role="button". stopPropagation keeps this from also
-          firing the row's onClick and starting the song twice. */}
       <button
         type="button"
+        disabled={!isPlayable}
         onClick={(e) => {
           e.stopPropagation();
-          onPlay();
+          if (isPlayable) {
+            onPlay();
+          }
         }}
-        aria-label={active && playing ? `Pause ${song.title}` : `Play ${song.title}`}
-        className="grid size-6 place-items-center text-xs tabular-nums text-muted-foreground"
+        aria-label={
+          !isPlayable
+            ? `Archival record: ${song.title} (playback pending verification)`
+            : active && playing
+            ? `Pause ${song.title}`
+            : `Play ${song.title}`
+        }
+        className={`grid size-6 place-items-center text-xs tabular-nums text-muted-foreground ${
+          !isPlayable ? "cursor-default" : ""
+        }`}
       >
         {active && playing ? (
           <span className="group-hover:hidden">
             <NowPlayingBars />
           </span>
         ) : (
-          <span className="group-hover:hidden">{index + 1}</span>
+          <span className={isPlayable ? "group-hover:hidden" : ""}>{index + 1}</span>
         )}
-        <span className="hidden group-hover:block">
-          {active && playing ? (
-            <Pause className="size-3.5 fill-current text-foreground" />
-          ) : (
-            <Play className="size-3.5 fill-current text-foreground" />
-          )}
-        </span>
+        {isPlayable && (
+          <span className="hidden group-hover:block">
+            {active && playing ? (
+              <Pause className="size-3.5 fill-current text-foreground" />
+            ) : (
+              <Play className="size-3.5 fill-current text-foreground" />
+            )}
+          </span>
+        )}
       </button>
 
       <img
         src={artwork(song.video)}
         alt=""
         loading="lazy"
-        className="size-10 rounded object-cover"
+        className={`size-10 rounded object-cover ${!isPlayable ? "grayscale-[0.5] opacity-80" : ""}`}
       />
 
       <div className="min-w-0">

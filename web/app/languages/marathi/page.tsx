@@ -1,13 +1,13 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { Suspense, useMemo, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import {
   Globe,
   Radio,
   Shuffle,
   Music2,
-  Sparkles,
   Play,
   Pause,
   Info,
@@ -16,8 +16,17 @@ import {
 } from "lucide-react";
 import { useCatalogue } from "@/lib/queries";
 import { usePlayer } from "@/components/player-provider";
-import { hydrate, artwork, type Song, type RawSong } from "@/lib/catalogue";
+import { hydrate, artwork, type Song } from "@/lib/catalogue";
 import { LikeButton } from "@/components/like-button";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 
 type CategoryTab =
   | "all"
@@ -59,11 +68,33 @@ const MARATHI_STATIONS_INFO = [
   { name: "Marathi Romance", slug: "marathi-romance", desc: "Tender duets & cinematic romance" },
 ];
 
-export default function MarathiLanguagePage() {
+function normalize(str: string): string {
+  if (!str) return "";
+  return str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
+function MarathiContent() {
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams.get("category") as CategoryTab | null;
+
   const { data: catalogue, isLoading } = useCatalogue();
-  const { play, toggle, currentTrack, playing, playRandom } = usePlayer();
-  const [selectedCategory, setSelectedCategory] = useState<CategoryTab>("all");
+  const { play, toggle, currentTrack, playing, playRandom, setQueue } = usePlayer();
+  const [selectedCategory, setSelectedCategory] = useState<CategoryTab | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
+  const [extraLimit, setExtraLimit] = useState(0);
+  const [unverifiedSongNotice, setUnverifiedSongNotice] = useState<Song | null>(null);
+
+  // Active category derived from user selection or URL query param
+  const activeCategory: CategoryTab =
+    selectedCategory ??
+    (categoryParam && CATEGORY_LABELS.some((c) => c.id === categoryParam)
+      ? categoryParam
+      : "all");
+
+  const displayCount = 60 + extraLimit;
 
   // Extract Marathi songs from catalogue
   const marathiSongs = useMemo(() => {
@@ -73,9 +104,9 @@ export default function MarathiLanguagePage() {
       .map((s) => hydrate(s, catalogue.facets));
   }, [catalogue]);
 
-  // Verified playable vs metadata only
+  // Verified playable vs metadata only stats
   const stats = useMemo(() => {
-    const verified = marathiSongs.filter((s) => s.sourceVerified).length;
+    const verified = marathiSongs.filter((s) => s.sourceVerified && Boolean(s.video)).length;
     return {
       total: marathiSongs.length,
       verified,
@@ -98,37 +129,62 @@ export default function MarathiLanguagePage() {
 
   // Filter songs based on category and search
   const filteredSongs = useMemo(() => {
+    const normQ = normalize(searchQuery).trim();
+    const tokens = normQ ? normQ.split(/\s+/).filter(Boolean) : [];
+
     return marathiSongs.filter((s) => {
       // Category filter
-      if (selectedCategory !== "all") {
-        if (!s.categories || !s.categories.includes(selectedCategory)) {
+      if (activeCategory !== "all") {
+        if (!s.categories || !s.categories.includes(activeCategory)) {
           return false;
         }
       }
       // Search filter
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase().trim();
-        const inTitle = s.title.toLowerCase().includes(q);
-        const inArtist = s.artists.some((a) => a.toLowerCase().includes(q));
-        const inFilm = s.film ? s.film.toLowerCase().includes(q) : false;
-        const inCat = s.categories ? s.categories.some((c) => c.toLowerCase().includes(q)) : false;
-        if (!inTitle && !inArtist && !inFilm && !inCat) return false;
+      if (tokens.length > 0) {
+        const parts: string[] = [s.title];
+        if (s.artists) parts.push(...s.artists);
+        if (s.film) parts.push(s.film);
+        if (s.composers) parts.push(...s.composers);
+        if (s.lyricists) parts.push(...s.lyricists);
+        if (s.categories) parts.push(...s.categories);
+        const blob = normalize(parts.join(" "));
+        return tokens.every((tok) => blob.includes(tok));
       }
       return true;
     });
-  }, [marathiSongs, selectedCategory, searchQuery]);
+  }, [marathiSongs, activeCategory, searchQuery]);
 
-  const handleShuffleMarathi = () => {
-    if (!catalogue) return;
-    const playableRaw = catalogue.songs.filter(
+  // Playable verified tracks for queue
+  const playableRaw = useMemo(() => {
+    if (!catalogue) return [];
+    return catalogue.songs.filter(
       (s) =>
         (s.lang === "marathi" || (typeof s.id === "string" && s.id.startsWith("mar-"))) &&
         Boolean(s.v)
     );
+  }, [catalogue]);
+
+  const handleShuffleMarathi = () => {
     if (playableRaw.length > 0) {
       playRandom(playableRaw);
     }
   };
+
+  const handleCardClick = (song: Song) => {
+    const isVerified = Boolean(song.sourceVerified && song.video);
+    if (isVerified) {
+      if (currentTrack?.id === song.id) {
+        toggle();
+      } else {
+        setQueue(playableRaw);
+        play(song);
+      }
+    } else {
+      setUnverifiedSongNotice(song);
+    }
+  };
+
+  const visibleSongs = filteredSongs.slice(0, displayCount);
 
   return (
     <div className="space-y-8 pb-12">
@@ -169,94 +225,133 @@ export default function MarathiLanguagePage() {
               {stats.unresolved} Source Under Resolution
             </span>
           </div>
+        </div>
 
-          <div className="mt-6 flex flex-wrap items-center gap-3">
-            <button
-              onClick={handleShuffleMarathi}
-              className="flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/25 transition hover:brightness-110 active:scale-95"
-            >
-              <Shuffle className="size-4" />
-              <span>Shuffle Verified Marathi</span>
-            </button>
-            <Link
-              href="/station/marathi-classics"
-              className="flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-4 py-2.5 text-sm font-medium text-foreground transition hover:border-white/30 hover:bg-white/[0.12]"
-            >
-              <Radio className="size-4 text-teal-400" />
-              <span>Explore Marathi Stations</span>
-            </Link>
-          </div>
+        {/* Quick Shuffle Action */}
+        <div className="relative z-10 mt-6 flex flex-wrap items-center gap-3 pt-6 border-t border-white/[0.08]">
+          <button
+            onClick={handleShuffleMarathi}
+            className="flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-xs font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition hover:brightness-110 active:scale-95 cursor-pointer"
+          >
+            <Shuffle className="size-3.5" />
+            <span>Shuffle Verified Marathi ({stats.verified})</span>
+          </button>
         </div>
       </header>
 
-      {/* 8 Curated Marathi Stations Carousel/Grid */}
+      {/* Dedicated Radio Stations */}
       <section>
-        <div className="flex items-center justify-between mb-3.5">
-          <div className="flex items-center gap-2">
-            <Radio className="size-4 text-teal-400" />
-            <h2 className="text-lg font-serif text-foreground">Curated Marathi Stations</h2>
+        <div className="flex items-center justify-between mb-4">
+          <div>
+            <div className="flex items-center gap-2">
+              <Radio className="size-4 text-teal-400" />
+              <h2 className="text-xl sm:text-2xl font-serif text-foreground">
+                Marathi Radio Stations
+              </h2>
+            </div>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              8 curated stations organized around regional genres and traditions.
+            </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-          {MARATHI_STATIONS_INFO.map((st) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {MARATHI_STATIONS_INFO.map((station) => (
             <Link
-              key={st.slug}
-              href={`/station/${st.slug}`}
-              className="group rounded-xl border border-white/10 bg-card/40 p-3.5 backdrop-blur-sm transition duration-200 hover:border-teal-500/50 hover:bg-card/75"
+              key={station.slug}
+              href={`/station/${station.slug}`}
+              className="group relative overflow-hidden rounded-xl border border-white/10 bg-card/40 p-4 transition duration-200 hover:border-teal-500/40 hover:bg-card/70"
             >
-              <h3 className="text-xs sm:text-sm font-medium text-foreground group-hover:text-teal-300 transition">
-                {st.name}
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-mono font-bold uppercase tracking-wider text-teal-300">
+                  Station
+                </span>
+                <Radio className="size-3.5 text-teal-400/70" />
+              </div>
+              <h3 className="mt-2 text-sm font-serif font-bold text-foreground group-hover:text-primary transition">
+                {station.name}
               </h3>
-              <p className="mt-1 text-[11px] text-muted-foreground line-clamp-2">
-                {st.desc}
+              <p className="mt-1 text-xs text-muted-foreground leading-relaxed">
+                {station.desc}
               </p>
             </Link>
           ))}
         </div>
       </section>
 
-      {/* Category Tabs & Search Bar */}
-      <section className="space-y-4">
-        <div className="flex flex-col sm:flex-row gap-3 sm:items-center justify-between">
-          <div className="flex flex-wrap gap-1.5">
-            {CATEGORY_LABELS.map((tab) => {
-              const count = categoryCounts[tab.id] ?? 0;
-              const isSelected = selectedCategory === tab.id;
-              return (
-                <button
-                  key={tab.id}
-                  onClick={() => setSelectedCategory(isSelected ? "all" : tab.id)}
-                  className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition ${
-                    isSelected
-                      ? "bg-teal-500 text-black font-semibold shadow"
-                      : "bg-white/[0.06] text-muted-foreground hover:bg-white/[0.10] hover:text-foreground"
-                  }`}
-                >
-                  <span>{tab.label}</span>
-                  <span
-                    className={`rounded-full px-1.5 py-0.5 text-[10px] font-mono leading-none ${
-                      isSelected
-                        ? "bg-black/20 text-black font-bold"
-                        : "bg-white/10 text-muted-foreground"
-                    }`}
-                  >
-                    {count}
-                  </span>
-                </button>
-              );
-            })}
+      {/* Main Catalogue Section */}
+      <section className="space-y-5">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-white/[0.08] pb-4">
+          <div>
+            <h2 className="text-xl sm:text-2xl font-serif text-foreground flex items-center gap-2">
+              <span>Marathi Master Catalogue</span>
+              <span className="text-xs font-mono text-muted-foreground font-normal">
+                ({filteredSongs.length} of {stats.total} songs)
+              </span>
+            </h2>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              Filter by traditional categories or search for specific artists, poets, and ragas.
+            </p>
           </div>
 
-          <div className="relative w-full sm:w-64">
+          {/* In-page search input */}
+          <div className="relative w-full sm:w-72">
             <input
               type="text"
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search Marathi songs, singers..."
-              className="w-full rounded-full border border-white/10 bg-white/[0.05] px-3.5 py-1.5 text-xs text-foreground placeholder:text-muted-foreground outline-none focus:border-teal-500/60"
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                setExtraLimit(0);
+              }}
+              placeholder="Search songs, singers, films..."
+              className="w-full rounded-full border border-white/10 bg-white/[0.05] px-4 py-2 text-xs text-foreground placeholder:text-muted-foreground/60 outline-none focus:border-teal-500/50 focus:ring-1 focus:ring-teal-500/30"
             />
+            {searchQuery && (
+              <button
+                onClick={() => {
+                  setSearchQuery("");
+                  setExtraLimit(0);
+                }}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-xs text-muted-foreground hover:text-foreground"
+              >
+                ✕
+              </button>
+            )}
           </div>
+        </div>
+
+        {/* Category Tabs */}
+        <div className="no-scrollbar -mx-4 flex gap-1.5 overflow-x-auto px-4 sm:mx-0 sm:px-0 sm:flex-wrap">
+          {CATEGORY_LABELS.map((tab) => {
+            const isSelected = activeCategory === tab.id;
+            const count = categoryCounts[tab.id] || 0;
+
+            return (
+              <button
+                key={tab.id}
+                onClick={() => {
+                  setSelectedCategory(tab.id);
+                  setExtraLimit(0);
+                }}
+                className={`group flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-medium transition shrink-0 cursor-pointer ${
+                  isSelected
+                    ? "bg-teal-500 text-black font-semibold shadow-md shadow-teal-500/20"
+                    : "bg-white/[0.06] text-foreground/80 hover:bg-white/[0.12]"
+                }`}
+              >
+                <span>{tab.label}</span>
+                <span
+                  className={`rounded-full px-1.5 py-0.2 text-[10px] font-mono ${
+                    isSelected
+                      ? "bg-black/20 text-black font-bold"
+                      : "bg-white/[0.08] text-muted-foreground"
+                  }`}
+                >
+                  {count}
+                </span>
+              </button>
+            );
+          })}
         </div>
 
         {/* Informative source clarification banner */}
@@ -292,79 +387,162 @@ export default function MarathiLanguagePage() {
             No Marathi songs found matching the selected criteria.
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
-            {filteredSongs.map((song: Song) => {
-              const isPlaying = currentTrack?.id === song.id && playing;
-              const isVerified = Boolean(song.sourceVerified && song.video);
+          <div className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
+              {visibleSongs.map((song: Song) => {
+                const isPlaying = currentTrack?.id === song.id && playing;
+                const isVerified = Boolean(song.sourceVerified && song.video);
 
-              return (
-                <div
-                  key={song.id}
-                  className="group relative flex items-center gap-3 rounded-xl border border-white/10 bg-card/40 p-2.5 backdrop-blur-sm transition duration-200 hover:border-teal-500/40 hover:bg-card/70"
-                >
-                  <div className="relative size-12 shrink-0 overflow-hidden rounded-lg shadow-md bg-black/40">
-                    <img
-                      src={artwork(song.video, "mq")}
-                      alt={song.title}
-                      className="size-full object-cover"
-                      loading="lazy"
-                    />
-                    {isVerified ? (
-                      <button
-                        onClick={() => (currentTrack?.id === song.id ? toggle() : play(song))}
-                        aria-label={isPlaying ? `Pause ${song.title}` : `Play ${song.title}`}
-                        className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition duration-200"
-                      >
-                        {isPlaying ? (
-                          <Pause className="size-5 text-primary fill-current" />
-                        ) : (
-                          <Play className="size-5 text-primary fill-current ml-0.5" />
+                return (
+                  <div
+                    key={song.id}
+                    onClick={() => handleCardClick(song)}
+                    role="button"
+                    tabIndex={0}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        handleCardClick(song);
+                      }
+                    }}
+                    className={`group relative flex items-center gap-3 rounded-xl border p-2.5 backdrop-blur-sm transition duration-200 cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-teal-500/50 ${
+                      isVerified
+                        ? "border-white/10 bg-card/40 hover:border-teal-500/40 hover:bg-card/70"
+                        : "border-white/[0.06] bg-card/20 hover:border-amber-500/30 hover:bg-card/40"
+                    }`}
+                  >
+                    <div className="relative size-12 shrink-0 overflow-hidden rounded-lg shadow-md bg-black/40">
+                      <img
+                        src={artwork(song.video, "mq")}
+                        alt={song.title}
+                        className={`size-full object-cover ${!isVerified ? "grayscale-[0.4] opacity-75" : ""}`}
+                        loading="lazy"
+                      />
+                      {isVerified ? (
+                        <div
+                          className={`absolute inset-0 flex items-center justify-center bg-black/50 transition duration-200 ${
+                            isPlaying ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                          }`}
+                        >
+                          {isPlaying ? (
+                            <Pause className="size-5 text-primary fill-current" />
+                          ) : (
+                            <Play className="size-5 text-primary fill-current ml-0.5" />
+                          )}
+                        </div>
+                      ) : (
+                        <div
+                          title="Source pending verification"
+                          className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-70 text-[9px] font-mono text-amber-300"
+                        >
+                          Info
+                        </div>
+                      )}
+                    </div>
+
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center gap-2">
+                        <h4 className={`text-sm font-medium truncate transition ${
+                          isVerified ? "text-foreground group-hover:text-teal-300" : "text-foreground/80 group-hover:text-amber-200"
+                        }`}>
+                          {song.title}
+                        </h4>
+                        {!isVerified && (
+                          <span className="shrink-0 rounded-full border border-amber-500/30 bg-amber-500/10 px-1.5 py-0.5 text-[9px] text-amber-300">
+                            Metadata
+                          </span>
                         )}
-                      </button>
-                    ) : (
-                      <div
-                        title="Source pending verification"
-                        className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-60 text-[9px] font-mono text-muted-foreground"
-                      >
-                        Info
                       </div>
-                    )}
-                  </div>
-
-                  <div className="min-w-0 flex-1">
-                    <div className="flex items-center gap-2">
-                      <h4 className="text-sm font-medium text-foreground truncate group-hover:text-teal-300 transition">
-                        {song.title}
-                      </h4>
-                      {!isVerified && (
-                        <span className="shrink-0 rounded-full border border-amber-500/30 bg-amber-500/10 px-1.5 py-0.5 text-[9px] text-amber-300">
-                          Metadata
-                        </span>
-                      )}
+                      <p className="text-xs text-muted-foreground truncate">
+                        {song.artists.join(", ") || "Traditional"}
+                        {song.film ? ` · ${song.film}` : ""}
+                      </p>
+                      <div className="mt-0.5 flex items-center gap-1.5 text-[10px] text-muted-foreground/70">
+                        {song.composers && song.composers.length > 0 && (
+                          <span>Comp: {song.composers[0]}</span>
+                        )}
+                        {song.lyricists && song.lyricists.length > 0 && (
+                          <span>· Lyrics: {song.lyricists[0]}</span>
+                        )}
+                      </div>
                     </div>
-                    <p className="text-xs text-muted-foreground truncate">
-                      {song.artists.join(", ") || "Traditional"}
-                      {song.film ? ` · ${song.film}` : ""}
-                    </p>
-                    <div className="mt-0.5 flex items-center gap-1.5 text-[10px] text-muted-foreground/70">
-                      {song.composers && song.composers.length > 0 && (
-                        <span>Comp: {song.composers[0]}</span>
-                      )}
-                      {song.lyricists && song.lyricists.length > 0 && (
-                        <span>· Lyrics: {song.lyricists[0]}</span>
-                      )}
+
+                    <div
+                      className="shrink-0 pr-1 flex items-center gap-1.5"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <LikeButton songId={song.id} size={15} />
                     </div>
                   </div>
+                );
+              })}
+            </div>
 
-                  <div className="shrink-0 pr-1 flex items-center gap-1.5">
-                    <LikeButton songId={song.id} size={15} />
-                  </div>
-                </div>
-              );
-            })}
+            {/* Progressive Reveal Button */}
+            {filteredSongs.length > displayCount && (
+              <div className="pt-2 text-center">
+                <button
+                  onClick={() => setExtraLimit((prev) => prev + 60)}
+                  className="rounded-full border border-white/10 bg-white/[0.05] px-6 py-2 text-xs font-medium text-foreground hover:border-teal-500/30 hover:bg-white/[0.1] transition cursor-pointer"
+                >
+                  Show More ({filteredSongs.length - displayCount} remaining)
+                </button>
+              </div>
+            )}
           </div>
         )}
       </section>
+
+      {/* Informative Dialog for Metadata-only Songs */}
+      <AlertDialog
+        open={Boolean(unverifiedSongNotice)}
+        onOpenChange={(open) => !open && setUnverifiedSongNotice(null)}
+      >
+        <AlertDialogContent className="max-w-md border border-white/15 bg-card/95 backdrop-blur-xl">
+          <AlertDialogHeader>
+            <AlertDialogTitle className="font-serif text-lg text-foreground flex items-center gap-2">
+              <Info className="size-5 text-amber-400 shrink-0" />
+              <span>Playback Source Under Verification</span>
+            </AlertDialogTitle>
+            <AlertDialogDescription className="text-xs sm:text-sm text-muted-foreground leading-relaxed pt-2 space-y-2">
+              <span className="block font-semibold text-foreground">
+                “{unverifiedSongNotice?.title}”
+                {unverifiedSongNotice?.artists && unverifiedSongNotice.artists.length > 0 && (
+                  <span className="font-normal text-muted-foreground"> by {unverifiedSongNotice.artists.join(", ")}</span>
+                )}
+              </span>
+              <span className="block text-muted-foreground/90">
+                This recording is documented as a canonical archival entry in the Sargam Marathi catalog.
+              </span>
+              <span className="block text-muted-foreground/80 bg-white/[0.04] p-3 rounded-lg border border-white/[0.06]">
+                Sargam strictly streams verified audio from legitimate public archives. Official playback verification for this recording is currently in progress.
+              </span>
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogAction
+              onClick={() => setUnverifiedSongNotice(null)}
+              className="rounded-full bg-primary text-primary-foreground font-semibold px-5 py-2 text-xs hover:brightness-110"
+            >
+              Understood
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
+  );
+}
+
+export default function MarathiLanguagePage() {
+  return (
+    <Suspense
+      fallback={
+        <div className="py-16 text-center text-sm text-muted-foreground">
+          Loading Marathi catalogue...
+        </div>
+      }
+    >
+      <MarathiContent />
+    </Suspense>
   );
 }

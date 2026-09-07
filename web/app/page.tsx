@@ -34,7 +34,7 @@ export default function DiscoverPage() {
           <AajchaSargam catalogue={catalogue} />
 
           {/* 3. Explore Languages */}
-          <LanguageExplorer />
+          <LanguageExplorer catalogue={catalogue} />
 
           {/* 4. Golden Eras (1950s - 1980s) */}
           <div id="eras">
@@ -57,7 +57,7 @@ export default function DiscoverPage() {
                 Explore Stations & Artists
               </h2>
               <p className="text-xs text-muted-foreground mt-0.5">
-                Browse through 66 curated stations, legendary vocalists, composers, lyricists, actors, and films.
+                Browse through {catalogue.facets.stations.length} curated stations, legendary vocalists, composers, lyricists, actors, and films.
               </p>
             </div>
 
