@@ -10,6 +10,7 @@ import { useCatalogue } from "@/lib/queries";
 
 import { GreetingHero } from "@/components/discover/greeting-hero";
 import { AajchaSargam } from "@/components/discover/aajcha-sargam";
+import { RaatKeGeetCard } from "@/components/discover/raat-ke-geet-card";
 import { LanguageExplorer } from "@/components/discover/language-explorer";
 import { GoldenEras } from "@/components/discover/golden-eras";
 import { MarathiSpotlight } from "@/components/discover/marathi-spotlight";
@@ -33,7 +34,10 @@ export default function DiscoverPage() {
           {/* 2. Deterministic Daily Classic (Song of the Day) */}
           <AajchaSargam catalogue={catalogue} />
 
-          {/* 3. Explore Languages */}
+          {/* 3. Curated Late-Night Station: Raat Ke Geet */}
+          <RaatKeGeetCard catalogue={catalogue} />
+
+          {/* 4. Explore Languages */}
           <LanguageExplorer catalogue={catalogue} />
 
           {/* 4. Golden Eras (1950s - 1980s) */}
