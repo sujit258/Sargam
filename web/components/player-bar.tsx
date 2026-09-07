@@ -498,7 +498,24 @@ export function PlayerBar({
             // first, its play() set the provider playing while the lines below
             // immediately set it back to false for the track that had just
             // ended — the new song inherited the outgoing one's state.
-            if (event.data === state.ENDED) endedRef.current();
+            if (event.data === state.ENDED) {
+              endedRef.current();
+              // Background nudge: on low-power Android devices the JS→React
+              // re-render chain triggered by onEnded() may be delayed by the
+              // browser's background throttle. If the next song hasn’t started
+              // within 2 seconds, call playVideo() once more to break the stall.
+              // The timer is harmless if the track has already started playing
+              // (getCurrentTime() > 0 on the new video).
+              window.setTimeout(() => {
+                const player = playerRef.current;
+                if (!player) return;
+                // If the player is PAUSED and at time 0, it was loaded but
+                // never started — nudge it.
+                if (player.getCurrentTime() === 0) {
+                  player.playVideo();
+                }
+              }, 2000);
+            }
 
             // Buffering and unstarted both mean "not audible yet". Anything
             // else means the load resolved one way or the other.
@@ -596,9 +613,12 @@ export function PlayerBar({
     playerRef.current?.setVolume(muted ? 0 : Math.round(volume * 100));
   }, [volume, muted, ready]);
 
-  // The IFrame API emits no time events, so poll while playing.
+  // The IFrame API emits no time events, so poll while playing or loading.
+  // Running during BUFFERING keeps the lock-screen scrubber alive — some
+  // platforms treat a stale position state as "player stopped" and will
+  // aggressively freeze the tab background context.
   useEffect(() => {
-    if (!playing) return;
+    if (!playing && !loading) return;
     const id = window.setInterval(() => {
       const player = playerRef.current;
       if (!player) return;
@@ -606,7 +626,7 @@ export function PlayerBar({
       setDuration(player.getDuration());
     }, 400);
     return () => window.clearInterval(id);
-  }, [playing]);
+  }, [playing, loading]);
 
   // Escape closes the expanded view, matching every other overlay on the web.
   useEffect(() => {
@@ -738,12 +758,15 @@ export function PlayerBar({
     setPlaybackState(playing);
   }, [playing]);
 
-  // Only while playing. Writing a position for a paused or loading track means
-  // writing zeros, which draws a lock-screen scrubber that keeps resetting.
+  // Update position whenever elapsed/duration changes and we have valid data.
+  // Previously this was gated on `playing === true`, which meant a BUFFERING
+  // pause would stop updating the lock-screen scrubber — some platforms
+  // interpret a stale position state as the player having stopped and will
+  // aggressively freeze the tab. Writing zeros is avoided by setPosition()
+  // itself, which guards on finite positive duration before calling the API.
   useEffect(() => {
-    if (!playing) return;
     setPosition(elapsed, duration);
-  }, [playing, elapsed, duration]);
+  }, [elapsed, duration]);
 
   // Only next and previous need a ref: they are props and change identity,
   // while the handlers the OS holds are registered once and would otherwise
@@ -768,6 +791,25 @@ export function PlayerBar({
         if (!player) return;
         player.seekTo(seconds, true);
         setElapsed(seconds);
+      },
+      // seekbackward / seekforward: Bluetooth headsets, car media, Android
+      // notification and lock-screen rewind/fast-forward buttons. Derive the
+      // new position from the player's own currentTime so this is always
+      // accurate even if the polled elapsed state is one tick behind.
+      seekBackward: (delta) => {
+        const player = playerRef.current;
+        if (!player) return;
+        const newTime = Math.max(0, player.getCurrentTime() - delta);
+        player.seekTo(newTime, true);
+        setElapsed(newTime);
+      },
+      seekForward: (delta) => {
+        const player = playerRef.current;
+        if (!player) return;
+        const dur = player.getDuration();
+        const newTime = dur > 0 ? Math.min(dur, player.getCurrentTime() + delta) : player.getCurrentTime() + delta;
+        player.seekTo(newTime, true);
+        setElapsed(newTime);
       },
     });
   }, []);
