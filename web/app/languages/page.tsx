@@ -3,8 +3,49 @@
 import Link from "next/link";
 import { Globe, ArrowRight, CheckCircle2, Clock } from "lucide-react";
 import { SUPPORTED_LANGUAGES } from "@/lib/types";
+import { useCatalogue } from "@/lib/queries";
+import { useMemo } from "react";
 
 export default function LanguagesPage() {
+  const { data: catalogue } = useCatalogue();
+
+  const langCounts = useMemo(() => {
+    if (!catalogue) return { hindi: null, marathi: null };
+    const songs = catalogue.songs ?? [];
+    const hindi = songs.filter((s: { lang?: string }) => !s.lang || s.lang === "hindi").length;
+    const marathi = songs.filter((s: { lang?: string }) => s.lang === "marathi").length;
+    return { hindi, marathi };
+  }, [catalogue]);
+
+  const stationCounts = useMemo(() => {
+    if (!catalogue) return { hindi: null, marathi: null };
+    const stationMeta = catalogue.stationMeta ?? {};
+    const allStations = Object.keys(stationMeta);
+    const marathiStationNames = [
+      "Marathi Classics", "Marathi Bhavageet", "Natya Sangeet",
+      "Lavani", "Marathi Bhakti", "Gavlani", "Marathi Folk", "Marathi Romance",
+    ];
+    const marathi = allStations.filter((s) => marathiStationNames.includes(s)).length;
+    const hindi = allStations.length - marathi;
+    return { hindi, marathi };
+  }, [catalogue]);
+
+  function langCountLabel(langId: string): string {
+    if (langId === "marathi") {
+      const songs = langCounts.marathi;
+      const stations = stationCounts.marathi;
+      if (songs === null) return "Loading…";
+      return `${songs.toLocaleString()} Songs · ${stations ?? 8} Stations`;
+    }
+    if (langId === "hindi") {
+      const songs = langCounts.hindi;
+      const stations = stationCounts.hindi;
+      if (songs === null) return "Loading…";
+      return `${songs.toLocaleString()} Songs · ${stations ?? 66} Stations`;
+    }
+    return "";
+  }
+
   return (
     <div className="space-y-8 pb-12">
       <header className="max-w-2xl">
@@ -52,9 +93,6 @@ export default function LanguagesPage() {
                         {lang.nativeName}
                       </span>
                     </div>
-                    <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
-                      {lang.description}
-                    </p>
                   </div>
 
                   <div className="shrink-0 ml-2">
@@ -71,15 +109,15 @@ export default function LanguagesPage() {
                     )}
                   </div>
                 </div>
+
+                <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
+                  {lang.description}
+                </p>
               </div>
 
               {isAvailable && (
                 <div className="mt-5 pt-3 border-t border-white/[0.06] flex items-center justify-between text-xs text-muted-foreground">
-                  <span>
-                    {lang.id === "marathi"
-                      ? "100 Songs · 8 Stations"
-                      : "3,916 Songs · 66 Stations"}
-                  </span>
+                  <span>{langCountLabel(lang.id)}</span>
                   <div className="flex items-center gap-1 font-medium text-primary group-hover:translate-x-0.5 transition-transform">
                     <span>Explore</span>
                     <ArrowRight className="size-3.5" />

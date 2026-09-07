@@ -28,18 +28,24 @@ type CategoryTab =
   | "marathi-bhakti"
   | "gavlani"
   | "folk"
-  | "romantic";
+  | "marathi-film"
+  | "romantic"
+  | "devotional"
+  | "patriotic";
 
-const CATEGORY_LABELS: { id: CategoryTab; label: string; countHint?: string }[] = [
-  { id: "all", label: "All Songs" },
+const CATEGORY_LABELS: { id: CategoryTab; label: string }[] = [
+  { id: "all", label: "All" },
   { id: "marathi-classics", label: "Classics" },
   { id: "bhavageet", label: "Bhavageet" },
   { id: "natya-sangeet", label: "Natya Sangeet" },
   { id: "lavani", label: "Lavani" },
-  { id: "marathi-bhakti", label: "Bhakti & Abhang" },
+  { id: "marathi-bhakti", label: "Bhakti" },
   { id: "gavlani", label: "Gavlani" },
-  { id: "folk", label: "Folk & Koli" },
-  { id: "romantic", label: "Romance" },
+  { id: "folk", label: "Folk" },
+  { id: "marathi-film", label: "Film" },
+  { id: "romantic", label: "Romantic" },
+  { id: "devotional", label: "Devotional" },
+  { id: "patriotic", label: "Patriotic" },
 ];
 
 const MARATHI_STATIONS_INFO = [
@@ -75,6 +81,19 @@ export default function MarathiLanguagePage() {
       verified,
       unresolved: marathiSongs.length - verified,
     };
+  }, [marathiSongs]);
+
+  // Dynamic category counts from actual catalogue
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = { all: marathiSongs.length };
+    for (const song of marathiSongs) {
+      if (song.categories) {
+        for (const cat of song.categories) {
+          counts[cat] = (counts[cat] || 0) + 1;
+        }
+      }
+    }
+    return counts;
   }, [marathiSongs]);
 
   // Filter songs based on category and search
@@ -201,19 +220,32 @@ export default function MarathiLanguagePage() {
       <section className="space-y-4">
         <div className="flex flex-col sm:flex-row gap-3 sm:items-center justify-between">
           <div className="flex flex-wrap gap-1.5">
-            {CATEGORY_LABELS.map((tab) => (
-              <button
-                key={tab.id}
-                onClick={() => setSelectedCategory(tab.id)}
-                className={`rounded-full px-3 py-1.5 text-xs font-medium transition ${
-                  selectedCategory === tab.id
-                    ? "bg-teal-500 text-black font-semibold shadow"
-                    : "bg-white/[0.06] text-muted-foreground hover:bg-white/[0.10] hover:text-foreground"
-                }`}
-              >
-                {tab.label}
-              </button>
-            ))}
+            {CATEGORY_LABELS.map((tab) => {
+              const count = categoryCounts[tab.id] ?? 0;
+              const isSelected = selectedCategory === tab.id;
+              return (
+                <button
+                  key={tab.id}
+                  onClick={() => setSelectedCategory(isSelected ? "all" : tab.id)}
+                  className={`inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition ${
+                    isSelected
+                      ? "bg-teal-500 text-black font-semibold shadow"
+                      : "bg-white/[0.06] text-muted-foreground hover:bg-white/[0.10] hover:text-foreground"
+                  }`}
+                >
+                  <span>{tab.label}</span>
+                  <span
+                    className={`rounded-full px-1.5 py-0.5 text-[10px] font-mono leading-none ${
+                      isSelected
+                        ? "bg-black/20 text-black font-bold"
+                        : "bg-white/10 text-muted-foreground"
+                    }`}
+                  >
+                    {count}
+                  </span>
+                </button>
+              );
+            })}
           </div>
 
           <div className="relative w-full sm:w-64">
@@ -228,13 +260,26 @@ export default function MarathiLanguagePage() {
         </div>
 
         {/* Informative source clarification banner */}
-        <div className="flex items-center gap-2.5 rounded-xl border border-white/[0.07] bg-card/30 px-4 py-2.5 text-xs text-muted-foreground">
-          <Info className="size-4 shrink-0 text-teal-400" />
-          <span>
-            Displaying {filteredSongs.length} songs. Verified tracks stream instantly; metadata-only
-            entries document authentic discography while official streams undergo embed
-            verification.
-          </span>
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 rounded-xl border border-white/[0.07] bg-card/30 px-4 py-2.5 text-xs text-muted-foreground">
+          <div className="flex items-center gap-2">
+            <Info className="size-4 shrink-0 text-teal-400" />
+            <span>
+              Displaying {filteredSongs.length} songs. Verified tracks stream instantly; metadata-only
+              entries document authentic discography while official streams undergo embed
+              verification.
+            </span>
+          </div>
+          {(selectedCategory !== "all" || searchQuery.trim().length > 0) && (
+            <button
+              onClick={() => {
+                setSelectedCategory("all");
+                setSearchQuery("");
+              }}
+              className="text-xs text-teal-400 hover:text-teal-300 underline shrink-0 cursor-pointer self-start sm:self-auto"
+            >
+              Clear filter
+            </button>
+          )}
         </div>
 
         {/* Songs Grid / Track List */}

@@ -1,16 +1,17 @@
 {
-  "bhavageet": 26,
-  "devotional": 25,
+  "bhavageet": 46,
+  "devotional": 64,
   "dhangari": 2,
-  "folk": 21,
-  "gavlani": 20,
+  "folk": 38,
+  "gavlani": 30,
   "gondhal": 1,
   "koli-geet": 5,
-  "lavani": 10,
-  "marathi-bhakti": 18,
-  "marathi-classics": 18,
-  "marathi-film": 19,
-  "natya-sangeet": 11,
+  "lavani": 31,
+  "marathi-bhakti": 22,
+  "marathi-classics": 24,
+  "marathi-film": 69,
+  "natya-sangeet": 45,
+  "patriotic": 7,
   "powada": 1,
-  "romantic": 14
+  "romantic": 22
 }

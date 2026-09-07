@@ -1,17 +1,17 @@
-"""Sargam Multi-Language Catalog Publisher (v1.1.0)
+"""Sargam Multi-Language Catalog Publisher (v1.2.0)
 
-Merges the 3,916 Hindi master recordings with the new canonical 100 Marathi
-recordings into web/public/catalogue.json and publishes language-partitioned
-indexes into data/indexes/.
+Merges the 3,916 Hindi master recordings with the Marathi catalogue
+(currently 313 songs, grows over time) into web/public/catalogue.json
+and publishes language-partitioned indexes into data/indexes/.
 
 Preservation rules:
 1. Hindi songs (count: 3,916) retain their exact IDs, titles, film references,
    artists, stations, and video IDs.
 2. Hindi stations (count: 66) are completely preserved.
-3. 8 new Marathi stations are added.
+3. 8 Marathi stations are added.
 4. Marathi songs use canonical 'mar-...' IDs, first-class 'marathi' language tag,
    controlled category tags, and explicit source verification flags.
-5. Emits catalogVersion: '1.1.0'.
+5. Emits catalogVersion: '1.2.0'.
 """
 
 import json
@@ -27,10 +27,15 @@ def publish():
     with open(catalog_path, "r", encoding="utf-8") as f:
         catalog = json.load(f)
 
-    existing_songs = catalog["songs"]
+    all_songs_in_catalog = catalog["songs"]
     facets = catalog["facets"]
     station_meta = catalog.get("stationMeta", {})
 
+    # Count only Hindi songs from existing catalogue (Marathi may already be present)
+    existing_songs = [
+        s for s in all_songs_in_catalog
+        if s.get("lang", "hindi") == "hindi"
+    ]
     hindi_count = len(existing_songs)
     print(f"[+] Baseline Hindi songs count: {hindi_count}")
     assert hindi_count == 3916, f"Expected 3,916 Hindi songs, found {hindi_count}"
@@ -192,8 +197,9 @@ def publish():
         lt_vals = [lyricist_idx[l] for l in s.get("lyricists", []) if l in lyricist_idx]
         c_vals = [cat_idx[c] for c in s.get("categories", []) if c in cat_idx]
 
-        is_verified = bool(s.get("source", {}).get("verified"))
-        video_id = s.get("source", {}).get("id") if is_verified else ""
+        source = s.get("source") or {}
+        is_verified = bool(source.get("verified"))
+        video_id = source.get("id") if is_verified else ""
 
         marathi_processed.append({
             "id": s["id"],
