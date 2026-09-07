@@ -250,7 +250,8 @@
     "categories": [
       "marathi-classics",
       "marathi-film",
-      "devotional"
+      "devotional",
+      "bhavageet"
     ],
     "moods": [
       "devotional",
@@ -286,7 +287,8 @@
     ],
     "categories": [
       "marathi-classics",
-      "marathi-film"
+      "marathi-film",
+      "bhavageet"
     ],
     "moods": [
       "romantic"
@@ -321,7 +323,8 @@
     ],
     "categories": [
       "marathi-classics",
-      "marathi-film"
+      "marathi-film",
+      "bhavageet"
     ],
     "moods": [
       "romantic",
@@ -3400,6 +3403,3201 @@
     "provenance": {
       "catalogVersion": "1.1.0",
       "source": "sargam-marathi-archives"
+    }
+  },
+  {
+    "id": "mar-bhav-009",
+    "title": "Ganga Jamuna Dolyat Ubha",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0018"
+    }
+  },
+  {
+    "id": "mar-bhav-010",
+    "title": "Gandha Halke Halke",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0019"
+    }
+  },
+  {
+    "id": "mar-bhav-011",
+    "title": "Shravanat Ghan Nila",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0020"
+    }
+  },
+  {
+    "id": "mar-natya-012",
+    "title": "De Hata Ya Sharanagata",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0021"
+    }
+  },
+  {
+    "id": "mar-natya-013",
+    "title": "Khara To Prema Na Dhari",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0022"
+    }
+  },
+  {
+    "id": "mar-natya-014",
+    "title": "Chandrika Hi Janu",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0023"
+    }
+  },
+  {
+    "id": "mar-natya-015",
+    "title": "Naman Natavara Vismayakara",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0024"
+    }
+  },
+  {
+    "id": "mar-natya-016",
+    "title": "Nath Ha Majha Mohi Khala",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0027"
+    }
+  },
+  {
+    "id": "mar-natya-017",
+    "title": "Narayan Narayan Naam Tujhe",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0029"
+    }
+  },
+  {
+    "id": "mar-natya-018",
+    "title": "Nayan Tujhe Jadugar",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0030"
+    }
+  },
+  {
+    "id": "mar-lav-011",
+    "title": "Reshamachya Reghani",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0031"
+    }
+  },
+  {
+    "id": "mar-lav-012",
+    "title": "Bugadi Majhi Sandali Ga",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0032"
+    }
+  },
+  {
+    "id": "mar-lav-013",
+    "title": "Mala Lagali Kunachi Uchaki",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0033"
+    }
+  },
+  {
+    "id": "mar-lav-014",
+    "title": "Aata Vajale Ki Bara",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0034"
+    }
+  },
+  {
+    "id": "mar-lav-015",
+    "title": "Apsara Aali Indrapuritun",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0035"
+    }
+  },
+  {
+    "id": "mar-lav-016",
+    "title": "Phad Sambhal Turyala Ga",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0036"
+    }
+  },
+  {
+    "id": "mar-lav-017",
+    "title": "Latpat Latpat Tujha Chalana",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0037"
+    }
+  },
+  {
+    "id": "mar-lav-018",
+    "title": "Mala Aana Kolhapuri Saaj",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0039"
+    }
+  },
+  {
+    "id": "mar-lav-019",
+    "title": "Hirvya Rangacha Chand Raya",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0040"
+    }
+  },
+  {
+    "id": "mar-bhakti-017",
+    "title": "Abir Gulal Udhalit Rang",
+    "language": "marathi",
+    "categories": [
+      "marathi-bhakti"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0048"
+    }
+  },
+  {
+    "id": "mar-bhakti-018",
+    "title": "Amrutahuni God Naam",
+    "language": "marathi",
+    "categories": [
+      "marathi-bhakti"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0049"
+    }
+  },
+  {
+    "id": "mar-bhakti-019",
+    "title": "Sundar Te Dhyan",
+    "language": "marathi",
+    "categories": [
+      "marathi-bhakti"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0050"
+    }
+  },
+  {
+    "id": "mar-folk-012",
+    "title": "Aadhi Ganala Rani Aanala",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0051"
+    }
+  },
+  {
+    "id": "mar-folk-013",
+    "title": "Aali Aali Ho Gondhalala",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0052"
+    }
+  },
+  {
+    "id": "mar-folk-014",
+    "title": "Kathi Na Ghongadi Gheun Dya Ki",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0053"
+    }
+  },
+  {
+    "id": "mar-folk-015",
+    "title": "Kavala Piperi Vajavato",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0054"
+    }
+  },
+  {
+    "id": "mar-folk-016",
+    "title": "Gana Dhav Re",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0055"
+    }
+  },
+  {
+    "id": "mar-folk-017",
+    "title": "Gadi Chalali Ghungarachi",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0056"
+    }
+  },
+  {
+    "id": "mar-folk-018",
+    "title": "Chamake Shivabachi Talwar",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0057"
+    }
+  },
+  {
+    "id": "mar-folk-019",
+    "title": "Phu Bai Phu Fugada Phu",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0058"
+    }
+  },
+  {
+    "id": "mar-folk-020",
+    "title": "Malhari Majha Malhari",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0059"
+    }
+  },
+  {
+    "id": "mar-folk-021",
+    "title": "Vinchhu Chavala",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0060"
+    }
+  },
+  {
+    "id": "mar-folk-022",
+    "title": "Gorya Gorya Galavari",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0061"
+    }
+  },
+  {
+    "id": "mar-folk-023",
+    "title": "Payala Naman Ho Karito",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0062"
+    }
+  },
+  {
+    "id": "mar-folk-024",
+    "title": "Runjhun Vajantri Vajati",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0063"
+    }
+  },
+  {
+    "id": "mar-folk-025",
+    "title": "Sanai Vaje Manjul Nade",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0064"
+    }
+  },
+  {
+    "id": "mar-folk-026",
+    "title": "Sumbaran Gavu Chala",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0065"
+    }
+  },
+  {
+    "id": "mar-film-001",
+    "title": "Mala Ishkachi Ingali Dasali",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0066"
+    }
+  },
+  {
+    "id": "mar-film-002",
+    "title": "Swapnat Sajana Yeshil Ka",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0067"
+    }
+  },
+  {
+    "id": "mar-film-003",
+    "title": "Aga Nach Nach Nach Radhe",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0068"
+    }
+  },
+  {
+    "id": "mar-film-004",
+    "title": "Jivalaga Kadhi Re Yeshil Tu",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0069"
+    }
+  },
+  {
+    "id": "mar-film-005",
+    "title": "Jeev Dangala Gungala",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0070"
+    }
+  },
+  {
+    "id": "mar-film-006",
+    "title": "Jeevan Gagan Mi Pakharu",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0071"
+    }
+  },
+  {
+    "id": "mar-film-007",
+    "title": "Jeevanat Hi Ghadi Ashich",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0072"
+    }
+  },
+  {
+    "id": "mar-film-008",
+    "title": "Malmalitarunya Majhe",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0074"
+    }
+  },
+  {
+    "id": "mar-film-009",
+    "title": "Raan He Uthale Uthale",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0075"
+    }
+  },
+  {
+    "id": "mar-film-010",
+    "title": "Jinyachi Jhali Shok Katha",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0076"
+    }
+  },
+  {
+    "id": "mar-film-011",
+    "title": "Jeevan Aahe Jaganyasathi",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0077"
+    }
+  },
+  {
+    "id": "mar-film-012",
+    "title": "Jeevan Gane Gatach Rahave",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0078"
+    }
+  },
+  {
+    "id": "mar-film-013",
+    "title": "Jivache Maitar Tumhi",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0079"
+    }
+  },
+  {
+    "id": "mar-film-014",
+    "title": "Thakale Priya Kadhichi",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0080"
+    }
+  },
+  {
+    "id": "mar-dev-001",
+    "title": "Je Ka Ranjale Ganjale",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0081"
+    }
+  },
+  {
+    "id": "mar-dev-002",
+    "title": "Vrukshavalli Aamha Soyari",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0082"
+    }
+  },
+  {
+    "id": "mar-dev-003",
+    "title": "Dnyaniyancha Raja",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0083"
+    }
+  },
+  {
+    "id": "mar-dev-004",
+    "title": "Hechi Daan Dega Deva",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0084"
+    }
+  },
+  {
+    "id": "mar-dev-005",
+    "title": "Om Namoji Aadya",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0085"
+    }
+  },
+  {
+    "id": "mar-gav-021",
+    "title": "Are Krishna Are Kanha",
+    "language": "marathi",
+    "categories": [
+      "gavlani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0086"
+    }
+  },
+  {
+    "id": "mar-gav-022",
+    "title": "Are Nand Nandana Kamal Lochana",
+    "language": "marathi",
+    "categories": [
+      "gavlani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0087"
+    }
+  },
+  {
+    "id": "mar-gav-023",
+    "title": "Madhurechya Bajari",
+    "language": "marathi",
+    "categories": [
+      "gavlani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0088"
+    }
+  },
+  {
+    "id": "mar-gav-024",
+    "title": "Madhuret Mi Gokuli Kanha",
+    "language": "marathi",
+    "categories": [
+      "gavlani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0089"
+    }
+  },
+  {
+    "id": "mar-gav-025",
+    "title": "Madhurela Krishna Nighala",
+    "language": "marathi",
+    "categories": [
+      "gavlani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0090"
+    }
+  },
+  {
+    "id": "mar-gav-026",
+    "title": "Pana Panat Disato Kanha",
+    "language": "marathi",
+    "categories": [
+      "gavlani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0092"
+    }
+  },
+  {
+    "id": "mar-gav-027",
+    "title": "De Re Kanha Choli An Lugadi",
+    "language": "marathi",
+    "categories": [
+      "gavlani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0093"
+    }
+  },
+  {
+    "id": "mar-gav-028",
+    "title": "Hari Tujhi Kalali Chaturai",
+    "language": "marathi",
+    "categories": [
+      "gavlani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0094"
+    }
+  },
+  {
+    "id": "mar-gav-029",
+    "title": "Gavalan Hovuniya Firtan",
+    "language": "marathi",
+    "categories": [
+      "gavlani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0095"
+    }
+  },
+  {
+    "id": "mar-rom-010",
+    "title": "Majhya Pritichya Pakhara",
+    "language": "marathi",
+    "categories": [
+      "romantic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0099"
+    }
+  },
+  {
+    "id": "mar-rom-011",
+    "title": "Mi Patang Tu Dora",
+    "language": "marathi",
+    "categories": [
+      "romantic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0100"
+    }
+  },
+  {
+    "id": "mar-cls-016",
+    "title": "Nimbonichya Zadamage",
+    "language": "marathi",
+    "categories": [
+      "marathi-classics"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0101"
+    }
+  },
+  {
+    "id": "mar-cls-017",
+    "title": "Bala Gaun Kashi Angaai",
+    "language": "marathi",
+    "categories": [
+      "marathi-classics"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0102"
+    }
+  },
+  {
+    "id": "mar-cls-018",
+    "title": "Malachya Malyamadhi",
+    "language": "marathi",
+    "categories": [
+      "marathi-classics"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0103"
+    }
+  },
+  {
+    "id": "mar-cls-019",
+    "title": "Raja Lalkari Ashi De",
+    "language": "marathi",
+    "categories": [
+      "marathi-classics"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0104"
+    }
+  },
+  {
+    "id": "mar-cls-020",
+    "title": "Phite Andharache Jaale",
+    "language": "marathi",
+    "categories": [
+      "marathi-classics"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0106"
+    }
+  },
+  {
+    "id": "mar-cls-021",
+    "title": "Aala Aala Vara",
+    "language": "marathi",
+    "categories": [
+      "marathi-classics"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0107"
+    }
+  },
+  {
+    "id": "mar-film-015",
+    "title": "Jeevacha Maitar",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0108"
+    }
+  },
+  {
+    "id": "mar-film-016",
+    "title": "Majhi Priya Hasavi",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0109"
+    }
+  },
+  {
+    "id": "mar-film-017",
+    "title": "Sangu Kashi Priya Mi",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0110"
+    }
+  },
+  {
+    "id": "mar-film-018",
+    "title": "Aabhal Varti Khali Dharti",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0111"
+    }
+  },
+  {
+    "id": "mar-natya-019",
+    "title": "Darbari Rasikjan Jamale",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0112"
+    }
+  },
+  {
+    "id": "mar-film-019",
+    "title": "Koda Sodavu Kase",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0113"
+    }
+  },
+  {
+    "id": "mar-bhakti-020",
+    "title": "Apar Ha Bhavsasagar",
+    "language": "marathi",
+    "categories": [
+      "marathi-bhakti"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0114"
+    }
+  },
+  {
+    "id": "mar-folk-027",
+    "title": "Holicha Rang Luta",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0115"
+    }
+  },
+  {
+    "id": "mar-dev-006",
+    "title": "Dev Jagavegla",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0116"
+    }
+  },
+  {
+    "id": "mar-film-020",
+    "title": "Hodi Chale Latevari",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0117"
+    }
+  },
+  {
+    "id": "mar-natya-020",
+    "title": "Jhan Jhananana Chedlya Tara",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0118"
+    }
+  },
+  {
+    "id": "mar-film-021",
+    "title": "Dogha Lutuya Rang Bahar",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0119"
+    }
+  },
+  {
+    "id": "mar-film-022",
+    "title": "Ha Mangala Ga Mangala",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0120"
+    }
+  },
+  {
+    "id": "mar-bhav-012",
+    "title": "Nakalat Saare Ghadale",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0122"
+    }
+  },
+  {
+    "id": "mar-bhav-013",
+    "title": "Waat Ithe Swapnatil",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0123"
+    }
+  },
+  {
+    "id": "mar-bhav-014",
+    "title": "Aas Ahe Antari Ya",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0124"
+    }
+  },
+  {
+    "id": "mar-bhav-015",
+    "title": "Antarangi Rangalele",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0125"
+    }
+  },
+  {
+    "id": "mar-bhav-016",
+    "title": "Antarichya Goodh Garbhi",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0126"
+    }
+  },
+  {
+    "id": "mar-natya-021",
+    "title": "Arasika Kiti Ha Shela",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0127"
+    }
+  },
+  {
+    "id": "mar-bhav-017",
+    "title": "Chandanya Ratritale Te Swapna",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0128"
+    }
+  },
+  {
+    "id": "mar-film-023",
+    "title": "Chandra Ahe Sakshila",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0129"
+    }
+  },
+  {
+    "id": "mar-bhav-018",
+    "title": "Chandra Ardha Rahila",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0130"
+    }
+  },
+  {
+    "id": "mar-dev-007",
+    "title": "Devkinche Baal Bai",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0131"
+    }
+  },
+  {
+    "id": "mar-bhav-019",
+    "title": "Dhaga Dhaga Akhand Vinuya",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0132"
+    }
+  },
+  {
+    "id": "mar-bhav-020",
+    "title": "Aji Mi Brahma Pahile",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0133"
+    }
+  },
+  {
+    "id": "mar-bhav-021",
+    "title": "Kanthatach Rutalya Taana",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0134"
+    }
+  },
+  {
+    "id": "mar-dev-008",
+    "title": "Dalita Kandit Abhang",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0135"
+    }
+  },
+  {
+    "id": "mar-bhav-022",
+    "title": "Kay Karu Me Bola",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0136"
+    }
+  },
+  {
+    "id": "mar-dev-009",
+    "title": "Vithu Maza Lekurwala",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0137"
+    }
+  },
+  {
+    "id": "mar-folk-028",
+    "title": "Eka Talyat Hoti Badake",
+    "language": "marathi",
+    "categories": [
+      "folk"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0138"
+    }
+  },
+  {
+    "id": "mar-dev-010",
+    "title": "Naam Gheta Tuze Govind",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0139"
+    }
+  },
+  {
+    "id": "mar-gav-030",
+    "title": "Radha Gaulan Karite Manthan",
+    "language": "marathi",
+    "categories": [
+      "gavlani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0140"
+    }
+  },
+  {
+    "id": "mar-film-024",
+    "title": "Ja Ja Ja Re Nako Bolu",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0141"
+    }
+  },
+  {
+    "id": "mar-bhav-023",
+    "title": "Chandanyat Phirtana",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0142"
+    }
+  },
+  {
+    "id": "mar-bhav-024",
+    "title": "Kevhatari Pahate",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0143"
+    }
+  },
+  {
+    "id": "mar-bhav-025",
+    "title": "Samayichya Shubhra Kalya",
+    "language": "marathi",
+    "categories": [
+      "bhavageet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0144"
+    }
+  },
+  {
+    "id": "mar-natya-022",
+    "title": "Ghanashyam Sundara Shridhara",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0145"
+    }
+  },
+  {
+    "id": "mar-natya-023",
+    "title": "Ghadi Ghadi Are Manmohana",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0146"
+    }
+  },
+  {
+    "id": "mar-film-025",
+    "title": "Tujhya Preetiche Dukhh Mala Daau Nako Re",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0147"
+    }
+  },
+  {
+    "id": "mar-rom-012",
+    "title": "Tujhi Majhi Preet",
+    "language": "marathi",
+    "categories": [
+      "romantic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0148"
+    }
+  },
+  {
+    "id": "mar-rom-013",
+    "title": "Nako Door Deshi Javoo",
+    "language": "marathi",
+    "categories": [
+      "romantic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0149"
+    }
+  },
+  {
+    "id": "mar-film-026",
+    "title": "Lek Ladki Hya Gharchi",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0150"
+    }
+  },
+  {
+    "id": "mar-film-027",
+    "title": "Bai Bai Man Moracha",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0151"
+    }
+  },
+  {
+    "id": "mar-film-028",
+    "title": "Zala Sakharpuda",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0152"
+    }
+  },
+  {
+    "id": "mar-film-029",
+    "title": "Nilya Aabhali",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0153"
+    }
+  },
+  {
+    "id": "mar-film-030",
+    "title": "Son Sakali Sarja",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0154"
+    }
+  },
+  {
+    "id": "mar-film-031",
+    "title": "Akhercha Tula Ha Dandvat",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0155"
+    }
+  },
+  {
+    "id": "mar-film-032",
+    "title": "Marathi Paaul Padte Pudhe",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0156"
+    }
+  },
+  {
+    "id": "mar-natya-024",
+    "title": "Aaj Mi Alvite Kedar",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0157"
+    }
+  },
+  {
+    "id": "mar-natya-025",
+    "title": "Aali Aali Sakhi Priya Milna",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0158"
+    }
+  },
+  {
+    "id": "mar-film-033",
+    "title": "Ga Re Kokila Ga",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0159"
+    }
+  },
+  {
+    "id": "mar-dev-011",
+    "title": "Tujhia Botalaa Krishna",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0160"
+    }
+  },
+  {
+    "id": "mar-rom-014",
+    "title": "Malmali Tarunya Maaze",
+    "language": "marathi",
+    "categories": [
+      "romantic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0161"
+    }
+  },
+  {
+    "id": "mar-natya-026",
+    "title": "Hikuni Chedilitaar",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0162"
+    }
+  },
+  {
+    "id": "mar-film-034",
+    "title": "Asa Nesun Shalu Hirva",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0163"
+    }
+  },
+  {
+    "id": "mar-natya-027",
+    "title": "Pratham Tuj Pahata",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0164"
+    }
+  },
+  {
+    "id": "mar-natya-028",
+    "title": "Jhan Jhananana Chedilya Tara",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0165"
+    }
+  },
+  {
+    "id": "mar-natya-029",
+    "title": "Rasa Barsat Amrit Veena",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0166"
+    }
+  },
+  {
+    "id": "mar-rom-015",
+    "title": "Mi Tar Prem Diwani",
+    "language": "marathi",
+    "categories": [
+      "romantic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0167"
+    }
+  },
+  {
+    "id": "mar-dev-012",
+    "title": "Parvati Vechi Bilvadale",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0168"
+    }
+  },
+  {
+    "id": "mar-film-035",
+    "title": "Shravan Aala Ga Vani",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0169"
+    }
+  },
+  {
+    "id": "mar-natya-030",
+    "title": "Bhet Tujhi Majhi Smarate",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0170"
+    }
+  },
+  {
+    "id": "mar-natya-031",
+    "title": "Shapat Tula Aahe",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0171"
+    }
+  },
+  {
+    "id": "mar-rom-016",
+    "title": "Jevha Tichi Ni Mazi",
+    "language": "marathi",
+    "categories": [
+      "romantic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0172"
+    }
+  },
+  {
+    "id": "mar-natya-032",
+    "title": "Muralidharsham",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0173"
+    }
+  },
+  {
+    "id": "mar-natya-033",
+    "title": "Kata Rute Kunala",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0174"
+    }
+  },
+  {
+    "id": "mar-dev-013",
+    "title": "Sarvatmata Sarveshwara",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0175"
+    }
+  },
+  {
+    "id": "mar-dev-014",
+    "title": "Uthi Uthi Gopala",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0176"
+    }
+  },
+  {
+    "id": "mar-natya-034",
+    "title": "Kaivalyachya Chandnyala",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0177"
+    }
+  },
+  {
+    "id": "mar-natya-035",
+    "title": "Marma Bandhatali Thev Hi",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0178"
+    }
+  },
+  {
+    "id": "mar-natya-036",
+    "title": "Runanubandhachya",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0179"
+    }
+  },
+  {
+    "id": "mar-natya-037",
+    "title": "Natha Ghari Nache Maza Sakha Pandurang",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0180"
+    }
+  },
+  {
+    "id": "mar-natya-038",
+    "title": "Mriganayana Rasik Mohini",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0181"
+    }
+  },
+  {
+    "id": "mar-natya-039",
+    "title": "Kon Tujh Sam Sang",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0182"
+    }
+  },
+  {
+    "id": "mar-film-036",
+    "title": "Mann Udhaan Varyache",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0186"
+    }
+  },
+  {
+    "id": "mar-film-037",
+    "title": "Kanth Aani Aabhal",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0187"
+    }
+  },
+  {
+    "id": "mar-film-038",
+    "title": "Chimbh Bhijalele",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0188"
+    }
+  },
+  {
+    "id": "mar-film-039",
+    "title": "Jhali Punha",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0189"
+    }
+  },
+  {
+    "id": "mar-film-040",
+    "title": "Sone Paijana",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0190"
+    }
+  },
+  {
+    "id": "mar-film-041",
+    "title": "Nuste Nuste",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0191"
+    }
+  },
+  {
+    "id": "mar-film-042",
+    "title": "Kai Jahale Tula Mane",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0192"
+    }
+  },
+  {
+    "id": "mar-film-043",
+    "title": "Ya Sukhano Ya",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0193"
+    }
+  },
+  {
+    "id": "mar-film-044",
+    "title": "Sakhya Re",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0194"
+    }
+  },
+  {
+    "id": "mar-lav-020",
+    "title": "Majhi Pritichya Jhulyat Jhulwa",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0195"
+    }
+  },
+  {
+    "id": "mar-lav-021",
+    "title": "Kabootar",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0196"
+    }
+  },
+  {
+    "id": "mar-lav-022",
+    "title": "Themb Thembana Kelai Mala Gaar",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0197"
+    }
+  },
+  {
+    "id": "mar-lav-023",
+    "title": "Majhya Pathivar Pensil Firva",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0198"
+    }
+  },
+  {
+    "id": "mar-lav-024",
+    "title": "Kaatevadi Ghoda",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0199"
+    }
+  },
+  {
+    "id": "mar-lav-025",
+    "title": "Gharaat Shirlaay Chor",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0200"
+    }
+  },
+  {
+    "id": "mar-lav-026",
+    "title": "Kasa Pailwan Kadhatyat Jor",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0201"
+    }
+  },
+  {
+    "id": "mar-lav-027",
+    "title": "Aho Raya Tumchya Hatachi",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0202"
+    }
+  },
+  {
+    "id": "mar-lav-028",
+    "title": "Gaadi Aanavi Burkhyachi",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0203"
+    }
+  },
+  {
+    "id": "mar-lav-029",
+    "title": "Chhatishi Kavlun Dhara",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0204"
+    }
+  },
+  {
+    "id": "mar-lav-030",
+    "title": "Aata Kasa Re Majha",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0205"
+    }
+  },
+  {
+    "id": "mar-film-045",
+    "title": "Gomu Sangtina Majhya Tu Yeshil Ka",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0206"
+    }
+  },
+  {
+    "id": "mar-rom-017",
+    "title": "Hi Kashana Dhundi Aali",
+    "language": "marathi",
+    "categories": [
+      "romantic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0207"
+    }
+  },
+  {
+    "id": "mar-film-046",
+    "title": "Gandh Phulancha Gela Sangun",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0208"
+    }
+  },
+  {
+    "id": "mar-lav-031",
+    "title": "Mi Mosambi Mi Narangi",
+    "language": "marathi",
+    "categories": [
+      "lavani"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0209"
+    }
+  },
+  {
+    "id": "mar-film-047",
+    "title": "Kalya Matit Matit",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0210"
+    }
+  },
+  {
+    "id": "mar-film-048",
+    "title": "Jo Jo Gate Zoka Dete",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0211"
+    }
+  },
+  {
+    "id": "mar-dev-015",
+    "title": "Ashi Eka Satichi Thor Punyaai",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0212"
+    }
+  },
+  {
+    "id": "mar-dev-016",
+    "title": "Bala Jo Jo Re",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0213"
+    }
+  },
+  {
+    "id": "mar-dev-017",
+    "title": "Aparan Bhavsasagar",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0214"
+    }
+  },
+  {
+    "id": "mar-film-049",
+    "title": "Raya Lalkari Ashi De",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0215"
+    }
+  },
+  {
+    "id": "mar-dev-018",
+    "title": "Chandra Bhagechya Tiri",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0216"
+    }
+  },
+  {
+    "id": "mar-dev-019",
+    "title": "Datta Digambara Ya Ho",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0217"
+    }
+  },
+  {
+    "id": "mar-dev-020",
+    "title": "Tuch Sur Thawa Majsi",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0218"
+    }
+  },
+  {
+    "id": "mar-dev-021",
+    "title": "Deh Vitthal",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0219"
+    }
+  },
+  {
+    "id": "mar-dev-022",
+    "title": "Mandirat Antarat",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0220"
+    }
+  },
+  {
+    "id": "mar-dev-023",
+    "title": "Aarti Ye Vitthale",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0221"
+    }
+  },
+  {
+    "id": "mar-dev-024",
+    "title": "Vithal Vithal Pandharinath",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0222"
+    }
+  },
+  {
+    "id": "mar-dev-025",
+    "title": "Avaghe Garje Pandharpur",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0223"
+    }
+  },
+  {
+    "id": "mar-dev-026",
+    "title": "Pandharpuricha Natha",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0224"
+    }
+  },
+  {
+    "id": "mar-dev-027",
+    "title": "Vithoba Rakhumai",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0225"
+    }
+  },
+  {
+    "id": "mar-dev-028",
+    "title": "Panduranga Dhav Re",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0227"
+    }
+  },
+  {
+    "id": "mar-dev-029",
+    "title": "Sukhkarta Dukhharta",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0229"
+    }
+  },
+  {
+    "id": "mar-dev-030",
+    "title": "Durge Durgat Bhari",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0230"
+    }
+  },
+  {
+    "id": "mar-dev-031",
+    "title": "Yei O Vitthale",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0231"
+    }
+  },
+  {
+    "id": "mar-dev-032",
+    "title": "Pandharicha Raja",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0232"
+    }
+  },
+  {
+    "id": "mar-dev-033",
+    "title": "Sundar Te Dhyan Ubhe Vitevari",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0233"
+    }
+  },
+  {
+    "id": "mar-dev-034",
+    "title": "Tirth Vitthal Kshetra Vitthal",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0234"
+    }
+  },
+  {
+    "id": "mar-dev-035",
+    "title": "Dnyanoba Mauli Tukaram",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0235"
+    }
+  },
+  {
+    "id": "mar-dev-036",
+    "title": "Mauli Mauli",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0236"
+    }
+  },
+  {
+    "id": "mar-dev-037",
+    "title": "Vithal Naamachi Shala Bharali",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0237"
+    }
+  },
+  {
+    "id": "mar-dev-038",
+    "title": "Jai Jai Ram Krishna Hari",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0238"
+    }
+  },
+  {
+    "id": "mar-dev-039",
+    "title": "Ram Krishna Hari",
+    "language": "marathi",
+    "categories": [
+      "devotional"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0239"
+    }
+  },
+  {
+    "id": "mar-natya-040",
+    "title": "Ghei Chhand Makarand",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0240"
+    }
+  },
+  {
+    "id": "mar-natya-041",
+    "title": "Deva Tuza Gabhara",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0241"
+    }
+  },
+  {
+    "id": "mar-film-050",
+    "title": "Satyam Shivam Sundaram",
+    "language": "marathi",
+    "categories": [
+      "marathi-film"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0242"
+    }
+  },
+  {
+    "id": "mar-natya-042",
+    "title": "Vasant Ki Bahar",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0243"
+    }
+  },
+  {
+    "id": "mar-natya-043",
+    "title": "Sundar Mi Honar",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0244"
+    }
+  },
+  {
+    "id": "mar-natya-044",
+    "title": "Prem Seva Sharan",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0245"
+    }
+  },
+  {
+    "id": "mar-natya-045",
+    "title": "Mhanoni Dya Malaa",
+    "language": "marathi",
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0246"
+    }
+  },
+  {
+    "id": "mar-pat-001",
+    "title": "Jai Jai Maharashtra Majha",
+    "language": "marathi",
+    "categories": [
+      "patriotic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0247"
+    }
+  },
+  {
+    "id": "mar-pat-002",
+    "title": "Garja Maharashtra Majha",
+    "language": "marathi",
+    "categories": [
+      "patriotic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0248"
+    }
+  },
+  {
+    "id": "mar-pat-003",
+    "title": "Utha Rashtra Veer Ho",
+    "language": "marathi",
+    "categories": [
+      "patriotic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0249"
+    }
+  },
+  {
+    "id": "mar-pat-004",
+    "title": "Shivba Raja",
+    "language": "marathi",
+    "categories": [
+      "patriotic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0250"
+    }
+  },
+  {
+    "id": "mar-pat-005",
+    "title": "He Hindavi Swarajya",
+    "language": "marathi",
+    "categories": [
+      "patriotic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0251"
+    }
+  },
+  {
+    "id": "mar-pat-006",
+    "title": "Maharashtra Desha",
+    "language": "marathi",
+    "categories": [
+      "patriotic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0252"
+    }
+  },
+  {
+    "id": "mar-pat-007",
+    "title": "Majha Maharashtra Desh Ha",
+    "language": "marathi",
+    "categories": [
+      "patriotic"
+    ],
+    "moods": [],
+    "source": null,
+    "provenance": {
+      "catalogVersion": "1.2.0",
+      "source": "sargam-marathi-seed-v1",
+      "seedId": "mr-0253"
     }
   }
 ]
