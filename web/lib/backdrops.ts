@@ -35,13 +35,13 @@ const DEFAULT_BACKDROP = "lofi";
 export const NO_BACKDROP = "none";
 
 export const BACKDROPS: readonly Backdrop[] = [
-  { id: "lofi", label: "Lofi room", note: "A studio with the hills outside" },
-  { id: "reading", label: "Reading room", note: "A dog asleep, a book open, a laptop playing something" },
-  { id: "meadow", label: "Meadow", note: "A sheep, a dog, an afternoon" },
-  { id: "flock", label: "Evening flock", note: "The whole flock at sunset" },
-  { id: "stop-dusk", label: "Bus stop, dusk", note: "A cat waiting, in red light" },
-  { id: "stop-night", label: "Bus stop, night", note: "The same cat, under a lamp" },
-  { id: "porch", label: "Sleeping porch", note: "Two cats, entirely asleep" },
+  { id: "lofi", label: "Amber Studio", note: "Warm acoustic sanctuary amidst mountain reverie" },
+  { id: "reading", label: "Midnight Riyaaz", note: "Quiet evening contemplation with handwritten notations" },
+  { id: "meadow", label: "Monsoon Melody", note: "Open highland pastures bathed in contemplative daytime ragas" },
+  { id: "flock", label: "Golden Horizon", note: "Dusk silhouettes across amber skies at evening transition" },
+  { id: "stop-dusk", label: "Retro Cinema", note: "Cinematic streetlights under rich incandescent crimson glow" },
+  { id: "stop-night", label: "Vintage Streetlamp", note: "Nocturnal quietude steeped in golden-era melodies" },
+  { id: "porch", label: "Baithak Veranda", note: "Peaceful courtyard sanctuary for resting between melodies" },
 ];
 
 const IDS = new Set<string>(BACKDROPS.map((b) => b.id));

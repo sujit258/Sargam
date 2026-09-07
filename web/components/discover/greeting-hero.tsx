@@ -58,28 +58,28 @@ export function GreetingHero({ catalogue }: GreetingHeroProps) {
         <div className="max-w-xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-medium text-primary">
             <Compass className="size-3.5" />
-            <span>{brand.tagline}</span>
+            <span>The Music That Stayed · {brand.tagline}</span>
           </div>
 
-          <h1 className="mt-3 text-3xl sm:text-4xl font-serif tracking-tight text-foreground">
+          <h1 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-serif tracking-tight text-foreground">
             {greeting}
           </h1>
 
-          <p className="mt-2 text-sm sm:text-base leading-relaxed text-muted-foreground">
+          <p className="mt-2.5 text-sm sm:text-base leading-relaxed text-muted-foreground/90 max-w-lg">
             Immerse yourself in timeless golden-era melodies. Browse curated stations,
-            revisit defining musical decades, and explore our new Marathi regional spotlight.
+            revisit defining musical decades, and explore our rich regional music heritage.
           </p>
 
-          <div className="mt-4 flex flex-wrap items-center gap-2 text-xs text-muted-foreground/80">
-            <span className="flex items-center gap-1.5 rounded-md bg-white/[0.05] px-2.5 py-1">
+          <div className="mt-5 flex flex-wrap items-center gap-2 text-xs text-muted-foreground/85">
+            <span className="flex items-center gap-1.5 rounded-md bg-white/[0.05] px-2.5 py-1 font-medium">
               <Music2 className="size-3 text-primary" />
               {catalogue.songs.length.toLocaleString()} Master Recordings
             </span>
-            <span className="rounded-md bg-white/[0.05] px-2.5 py-1">
-              66 Curated Stations
+            <span className="rounded-md bg-white/[0.05] px-2.5 py-1 font-medium">
+              {catalogue.facets.stations.length} Curated Stations
             </span>
-            <span className="rounded-md bg-white/[0.05] px-2.5 py-1 text-teal-300">
-              Hindi & Marathi
+            <span className="rounded-md bg-white/[0.05] px-2.5 py-1 text-primary/90 font-medium">
+              Hindi & Marathi Archive
             </span>
           </div>
         </div>

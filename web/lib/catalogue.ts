@@ -122,13 +122,22 @@ export function hydrate(song: RawSong, facets: Catalogue["facets"]): Song {
 }
 
 /** Songs matching every active facet plus the free-text query. */
+function normalizeSearch(str: string): string {
+  if (!str) return "";
+  return str
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase();
+}
+
 export function filterSongs(
   catalogue: Catalogue,
   selected: Record<string, Set<number>>,
   query: string
 ): RawSong[] {
-  const q = query.trim().toLowerCase();
+  const normQ = normalizeSearch(query).trim();
   const active = Object.entries(selected).filter(([, v]) => v.size > 0);
+  const tokens = normQ ? normQ.split(/\s+/).filter(Boolean) : [];
 
   return catalogue.songs.filter((song) => {
     for (const [facet, chosen] of active) {
@@ -141,14 +150,53 @@ export function filterSongs(
         return false;
       }
     }
-    if (!q) return true;
+    if (tokens.length === 0) return true;
+
     const film = song.f === null ? "" : (catalogue.facets.films[song.f] ?? "");
-    if (song.t.toLowerCase().includes(q) || film.toLowerCase().includes(q)) return true;
-    if (song.lang && song.lang.toLowerCase().includes(q)) return true;
-    if (song.a.some((i) => catalogue.facets.artists[i]?.toLowerCase().includes(q))) return true;
-    if (song.cat && song.cat.some((i) => catalogue.facets.categories?.[i]?.toLowerCase().includes(q))) return true;
-    if (song.themes && song.themes.some((theme) => theme.toLowerCase().includes(q))) return true;
-    return false;
+    const title = song.t;
+    const lang = song.lang ?? "hindi";
+
+    if (normQ.length > 2 && (normalizeSearch(title).includes(normQ) || normalizeSearch(film).includes(normQ))) {
+      return true;
+    }
+
+    const parts: string[] = [title, film, lang];
+    if (song.a) {
+      for (const i of song.a) {
+        const a = catalogue.facets.artists[i];
+        if (a) parts.push(a);
+      }
+    }
+    if (song.cr) {
+      for (const i of song.cr) {
+        const c = catalogue.facets.composer?.[i];
+        if (c) parts.push(c);
+      }
+    }
+    if (song.lt) {
+      for (const i of song.lt) {
+        const l = catalogue.facets.lyricist?.[i];
+        if (l) parts.push(l);
+      }
+    }
+    if (song.s) {
+      for (const i of song.s) {
+        const s = catalogue.facets.stations?.[i];
+        if (s) parts.push(s);
+      }
+    }
+    if (song.cat) {
+      for (const i of song.cat) {
+        const cat = catalogue.facets.categories?.[i];
+        if (cat) parts.push(cat);
+      }
+    }
+    if (song.themes) {
+      parts.push(...song.themes);
+    }
+
+    const blob = normalizeSearch(parts.join(" "));
+    return tokens.every((tok) => blob.includes(tok));
   });
 }
 

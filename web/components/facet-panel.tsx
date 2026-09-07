@@ -159,7 +159,7 @@ export function FacetPanel({
         (a, b) =>
           Number(chosen.has(b.index)) - Number(chosen.has(a.index)) ||
           b.count - a.count ||
-          a.label.localeCompare(b.label)
+          (a.label < b.label ? -1 : a.label > b.label ? 1 : 0)
       );
       if (query) list = list.filter((o) => o.label.toLowerCase().includes(query));
       out[facet] = list;

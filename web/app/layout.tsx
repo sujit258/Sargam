@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Figtree } from "next/font/google";
+import { Figtree, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import { Providers } from "./providers";
 import { PlayerProvider } from "@/components/player-provider";
@@ -9,16 +9,14 @@ import { AppBackdrop } from "@/components/app-backdrop";
 import { brand } from "@/lib/brand";
 import "./globals.css";
 
-// Figtree: a geometric sans in the same family as the faces music apps favour.
-// Spotify's own Circular is proprietary, and of the free alternatives Figtree
-// is the one actually drawn for interfaces — Poppins and Outfit read well large
-// but get wide and loose in dense track rows.
-//
-// One face at several weights rather than a display/body pair: geometric sans
-// carry headings on weight and tracking alone, and mixing a serif in would
-// undo the look this is going for.
 const figtree = Figtree({
   variable: "--font-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-serif",
   subsets: ["latin"],
   display: "swap",
 });
@@ -130,7 +128,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`dark ${figtree.variable} h-full antialiased`}
+      className={`dark ${figtree.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col overflow-hidden">
         {/* App-wide backdrop. Fixed and behind everything, so it holds still

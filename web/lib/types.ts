@@ -45,7 +45,7 @@ export const SUPPORTED_LANGUAGES: readonly LanguageMeta[] = [
     nativeName: "मराठी",
     description: "Timeless Bhavgeet, Natya Sangeet, and Marathi cinema classics.",
     status: "available",
-    songCount: 150,
+    songCount: 313,
     stationCount: 8,
     accentColor: "oklch(0.65 0.14 185)", // Regional Teal
   },

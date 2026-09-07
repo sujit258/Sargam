@@ -2,17 +2,45 @@
 
 import Link from "next/link";
 import { Globe, ArrowRight, CheckCircle2, Clock } from "lucide-react";
+import { useMemo } from "react";
+import { useCatalogue } from "@/lib/queries";
+import { type Catalogue } from "@/lib/catalogue";
 import { SUPPORTED_LANGUAGES } from "@/lib/types";
 
 interface LanguageExplorerProps {
+  catalogue?: Catalogue;
   activeLanguage?: string;
   onSelectLanguage?: (lang: string) => void;
 }
 
 export function LanguageExplorer({
+  catalogue: passedCatalogue,
   activeLanguage = "hindi",
   onSelectLanguage,
 }: LanguageExplorerProps) {
+  const { data: fetchedCatalogue } = useCatalogue();
+  const catalogue = passedCatalogue ?? fetchedCatalogue;
+
+  const langCounts = useMemo(() => {
+    if (!catalogue) return { hindi: 3916, marathi: 313 };
+    const songs = catalogue.songs ?? [];
+    const hindi = songs.filter((s: { lang?: string }) => !s.lang || s.lang === "hindi").length;
+    const marathi = songs.filter((s: { lang?: string }) => s.lang === "marathi").length;
+    return { hindi, marathi };
+  }, [catalogue]);
+
+  const stationCounts = useMemo(() => {
+    if (!catalogue) return { hindi: 66, marathi: 8 };
+    const stationMeta = catalogue.stationMeta ?? {};
+    const allStations = Object.keys(stationMeta);
+    const marathiStationNames = [
+      "Marathi Classics", "Marathi Bhavageet", "Natya Sangeet",
+      "Lavani", "Marathi Bhakti", "Gavlani", "Marathi Folk", "Marathi Romance",
+    ];
+    const marathi = allStations.filter((s) => marathiStationNames.includes(s)).length;
+    const hindi = allStations.length - marathi;
+    return { hindi: hindi > 0 ? hindi : 66, marathi: marathi > 0 ? marathi : 8 };
+  }, [catalogue]);
   return (
     <section id="languages" className="mb-10">
       <div className="flex items-center justify-between mb-4">
@@ -98,9 +126,23 @@ export function LanguageExplorer({
                 </div>
               </div>
 
-              {isAvailable && lang.songCount && (
+              {isAvailable && (
                 <div className="mt-3 pt-2.5 border-t border-white/[0.06] flex items-center justify-between text-[11px] text-muted-foreground">
-                  <span>{lang.songCount.toLocaleString()} Songs · {lang.stationCount} Stations</span>
+                  <span>
+                    {(lang.id === "marathi"
+                      ? langCounts.marathi
+                      : lang.id === "hindi"
+                      ? langCounts.hindi
+                      : lang.songCount
+                    )?.toLocaleString()}{" "}
+                    Songs ·{" "}
+                    {lang.id === "marathi"
+                      ? stationCounts.marathi
+                      : lang.id === "hindi"
+                      ? stationCounts.hindi
+                      : lang.stationCount}{" "}
+                    Stations
+                  </span>
                   <ArrowRight className="size-3 transition-transform group-hover:translate-x-0.5 text-primary" />
                 </div>
               )}

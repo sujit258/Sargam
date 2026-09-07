@@ -12,7 +12,7 @@ interface AajchaSargamProps {
 }
 
 export function AajchaSargam({ catalogue }: AajchaSargamProps) {
-  const { play, toggle, currentTrack, playing } = usePlayer();
+  const { play, toggle, currentTrack, playing, setQueue } = usePlayer();
 
   const dailySong = useMemo(() => {
     return getAajchaSargam(catalogue);
@@ -26,6 +26,10 @@ export function AajchaSargam({ catalogue }: AajchaSargamProps) {
     if (currentTrack?.id === dailySong.id) {
       toggle();
     } else {
+      const raw = catalogue.songs.find((s) => s.id === dailySong.id);
+      if (raw) {
+        setQueue([raw]);
+      }
       play(dailySong);
     }
   };
@@ -68,7 +72,18 @@ export function AajchaSargam({ catalogue }: AajchaSargamProps) {
 
         <div className="relative flex flex-col sm:flex-row items-center gap-5 sm:gap-6">
           {/* Vinyl sleeve album artwork */}
-          <div className="relative size-28 sm:size-36 shrink-0 overflow-hidden rounded-xl shadow-2xl border border-white/10 group-hover:scale-105 transition duration-300">
+          <div
+            onClick={handlePlay}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                handlePlay();
+              }
+            }}
+            className="cursor-pointer relative size-28 sm:size-36 shrink-0 overflow-hidden rounded-xl shadow-2xl border border-white/10 group-hover:scale-105 transition duration-300"
+          >
             <img
               src={artwork(dailySong.video, "hq")}
               alt={dailySong.title}
@@ -97,7 +112,18 @@ export function AajchaSargam({ catalogue }: AajchaSargamProps) {
               <span>Today&apos;s Masterpiece</span>
             </div>
 
-            <h3 className="mt-1 text-xl sm:text-2xl font-serif text-foreground truncate">
+            <h3
+              onClick={handlePlay}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  handlePlay();
+                }
+              }}
+              className="mt-1 text-xl sm:text-2xl font-serif text-foreground truncate cursor-pointer hover:text-primary transition-colors"
+            >
               {dailySong.title}
             </h3>
 
