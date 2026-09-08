@@ -1,32 +1,23 @@
 import Link from "next/link";
-import { Feather, Sparkles, Music, ArrowRight } from "lucide-react";
+import { Feather, Sparkles, Music } from "lucide-react";
 import { MARATHI_SPOTLIGHT } from "@/lib/types";
+import { SectionHeader } from "@/components/music/section-header";
 
 export function MarathiSpotlight() {
   return (
     <section className="mb-10">
-      <div className="flex items-center justify-between mb-4">
-        <div>
-          <div className="flex items-center gap-2">
-            <Feather className="size-4 text-teal-400" />
-            <h2 className="text-xl sm:text-2xl font-serif text-foreground">
-              Marathi Spotlight
-            </h2>
-            <span className="text-xs font-serif text-teal-300 bg-teal-500/10 border border-teal-500/20 px-2 py-0.5 rounded-full">
-              मराठी विशेष
-            </span>
-          </div>
-          <p className="text-xs text-muted-foreground mt-0.5">
-            Celebrating Maharashtra&apos;s rich traditions of Bhavgeet, Natya Sangeet, and classic cinema.
-          </p>
-        </div>
-        <Link
-          href="/languages/marathi"
-          className="text-xs font-medium text-teal-400 hover:underline flex items-center gap-1"
-        >
-          Explore All <ArrowRight className="size-3" />
-        </Link>
-      </div>
+      <SectionHeader
+        title="Marathi Spotlight"
+        subtitle="Celebrating Maharashtra's rich traditions of Bhavgeet, Natya Sangeet, and classic cinema."
+        icon={Feather}
+        iconClassName="text-teal-400"
+        badge={
+          <span className="text-xs font-serif text-teal-300 bg-teal-500/10 border border-teal-500/20 px-2 py-0.5 rounded-full">
+            मराठी विशेष
+          </span>
+        }
+        action={{ label: "Explore All", href: "/languages/marathi" }}
+      />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {MARATHI_SPOTLIGHT.map((item) => {

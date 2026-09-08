@@ -2,7 +2,10 @@
 
 import { useEffect, useMemo } from "react";
 import Link from "next/link";
-import { Heart, Play, Shuffle } from "lucide-react";
+import { Heart } from "lucide-react";
+import { EmptyState } from "@/components/music/empty-state";
+import { PlaybackActions } from "@/components/music/playback-actions";
+import { resolveRawSongs } from "@/lib/catalogue";
 import { CatalogueGate } from "@/components/catalogue-gate";
 import { useFrame } from "@/components/app-frame";
 import { usePlayer } from "@/components/player-provider";
@@ -17,24 +20,12 @@ export default function FavouritesPage() {
   const ids = useFavouriteIds();
   const revision = useFavouritesRevision();
 
-  // Keyed on the catalogue alone: it only changes on a fetch, whereas ids
-  // changes on every like and unlike, and rebuilding a 3,900-entry Map for
-  // that would be work with nothing to show for it.
-  const byId = useMemo(() => {
-    if (!catalogue) return null;
-    return new Map(catalogue.songs.map((song) => [song.id, song]));
-  }, [catalogue]);
-
-  const results = useMemo(() => {
-    if (!byId) return [];
-    // Newest first, and ids missing from the catalogue are skipped rather than
-    // removed from storage: a failed catalogue fetch would otherwise look
-    // exactly like every song having been deleted.
-    return ids
-      .map((id) => byId.get(id))
-      .filter((song): song is NonNullable<typeof song> => Boolean(song))
-      .reverse();
-  }, [byId, ids]);
+  // Newest first, resolved via memoized catalogue song lookup; missing IDs skipped safely
+  const reversedIds = useMemo(() => [...ids].reverse(), [ids]);
+  const results = useMemo(
+    () => resolveRawSongs(catalogue, reversedIds),
+    [catalogue, reversedIds]
+  );
 
   // Only when there is something to play. An empty list would replace a queue
   // that is currently playing with nothing, and the player has no way back
@@ -58,41 +49,20 @@ export default function FavouritesPage() {
               </p>
             </div>
             {results.length > 0 && (
-              <div className="flex items-center gap-2">
-                <button
-                  onClick={() => playRandom(results)}
-                  title="Shuffle"
-                  aria-label="Shuffle favourites"
-                  className="grid size-10 place-items-center rounded-full border border-white/15 transition hover:bg-white/10"
-                >
-                  <Shuffle className="size-4" />
-                </button>
-                <button
-                  onClick={() => playFirst(results)}
-                  title="Play"
-                  aria-label="Play favourites"
-                  className="grid size-12 place-items-center rounded-full bg-primary text-primary-foreground shadow-lg transition hover:scale-105"
-                >
-                  <Play className="size-5 translate-x-px fill-current" />
-                </button>
-              </div>
+              <PlaybackActions
+                onPlay={() => playFirst(results)}
+                onShuffle={() => playRandom(results)}
+                reverseOrder
+              />
             )}
           </div>
 
           {results.length === 0 ? (
-            <div className="py-20 text-center">
-              <Heart className="mx-auto size-8 text-muted-foreground/40" />
-              <p className="mt-4 text-sm text-muted-foreground">
-                Nothing here yet. Tap the heart beside any song and it will be
-                waiting for you.
-              </p>
-              <Link
-                href="/songs"
-                className="mt-4 inline-block rounded-full border border-white/15 px-4 py-2 text-xs transition hover:bg-white/10"
-              >
-                Browse all songs
-              </Link>
-            </div>
+            <EmptyState
+              icon={Heart}
+              message="Nothing here yet. Tap the heart beside any song and it will be waiting for you."
+              action={{ label: "Browse all songs", href: "/songs" }}
+            />
           ) : (
             <SongList
               catalogue={catalogue}

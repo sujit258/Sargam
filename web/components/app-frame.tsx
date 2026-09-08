@@ -4,20 +4,15 @@ import { createContext, useContext, useMemo, useState } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
-  Compass,
   Code2,
   ScrollText,
   Disc3,
-  Globe,
   Heart,
   Info,
   Menu,
   Palette,
-  Radio,
   Search,
   X,
-  Sparkles,
-  Music2,
 } from "lucide-react";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";

@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, Play, Shuffle } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import { StationPoster } from "@/components/station-poster";
+import { PlaybackActions } from "@/components/music/playback-actions";
 import { artwork, portrait, type Catalogue, type PhotoManifest } from "@/lib/catalogue";
 import type { StationPosterManifest } from "@/lib/queries";
 import { KIND_LABEL } from "@/lib/routes";
@@ -84,22 +85,11 @@ export function CollectionHeader({
           </p>
 
           {songCount > 0 && (
-            <div className="mt-4 flex items-center justify-center gap-2 sm:justify-start">
-              <button
-                onClick={onPlay}
-                className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground transition hover:opacity-90"
-              >
-                <Play className="size-4 fill-current" />
-                Play
-              </button>
-              <button
-                onClick={onShuffle}
-                className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium transition hover:bg-white/10"
-              >
-                <Shuffle className="size-4" />
-                Shuffle
-              </button>
-            </div>
+            <PlaybackActions
+              onPlay={onPlay}
+              onShuffle={onShuffle}
+              className="mt-4 justify-center sm:justify-start"
+            />
           )}
         </div>
       </div>

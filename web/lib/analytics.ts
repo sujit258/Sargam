@@ -1,5 +1,3 @@
-"use client";
-
 /**
  * The whole of what Sargam records, in one place.
  *
