@@ -1,5 +1,3 @@
-"use client";
-
 /**
  * Whether the welcome has been seen, and a way to be told when it is.
  *

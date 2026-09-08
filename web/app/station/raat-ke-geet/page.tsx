@@ -2,12 +2,13 @@
 
 import { useEffect, useMemo } from "react";
 import Link from "next/link";
-import { ArrowLeft, Play, Shuffle, Moon, Sparkles, Clock, Compass } from "lucide-react";
+import { ArrowLeft, Moon, Compass } from "lucide-react";
+import { PlaybackActions } from "@/components/music/playback-actions";
 import { CatalogueGate } from "@/components/catalogue-gate";
 import { useFrame } from "@/components/app-frame";
 import { usePlayer } from "@/components/player-provider";
 import { SongList } from "@/components/song-list";
-import { artwork, type RawSong } from "@/lib/catalogue";
+import { artwork, resolveRawSongs, type RawSong } from "@/lib/catalogue";
 import { useCatalogue } from "@/lib/queries";
 import { RAAT_KE_GEET } from "@/lib/collections/raat-ke-geet";
 
@@ -16,13 +17,10 @@ export default function RaatKeGeetStationPage() {
   const { scrollEl } = useFrame();
   const { currentId, playing, playOrToggle, playFirst, playRandom, setQueue } = usePlayer();
 
-  const raatSongs = useMemo<RawSong[]>(() => {
-    if (!catalogue) return [];
-    const map = new Map<number | string, RawSong>(catalogue.songs.map((s) => [s.id, s]));
-    return RAAT_KE_GEET.songIds
-      .map((id) => map.get(id))
-      .filter((s): s is RawSong => Boolean(s));
-  }, [catalogue]);
+  const raatSongs = useMemo(
+    () => resolveRawSongs(catalogue, RAAT_KE_GEET.songIds),
+    [catalogue]
+  );
 
   // Set the player queue to this curated sequence
   useEffect(() => {
@@ -118,21 +116,12 @@ export default function RaatKeGeetStationPage() {
 
                 {/* Transport Actions */}
                 <div className="mt-6 flex flex-wrap items-center justify-center sm:justify-start gap-3">
-                  <button
-                    onClick={() => playFirst(raatSongs)}
-                    className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 px-6 py-2.5 text-xs font-bold text-black shadow-lg shadow-amber-500/30 transition hover:brightness-110 active:scale-95"
-                  >
-                    <Play className="size-4 fill-current" />
-                    <span>Play Station</span>
-                  </button>
-
-                  <button
-                    onClick={() => playRandom(raatSongs)}
-                    className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.06] px-5 py-2.5 text-xs font-medium text-foreground transition hover:bg-white/10 active:scale-95"
-                  >
-                    <Shuffle className="size-4" />
-                    <span>Shuffle</span>
-                  </button>
+                  <PlaybackActions
+                    onPlay={() => playFirst(raatSongs)}
+                    onShuffle={() => playRandom(raatSongs)}
+                    playLabel="Play Station"
+                    color="amber"
+                  />
 
                   <span className="text-xs text-muted-foreground ml-2 font-mono">
                     {raatSongs.length} Master Recordings

@@ -8,25 +8,22 @@ import {
   Radio,
   Shuffle,
   Music2,
-  Play,
-  Pause,
-  Info,
   CheckCircle2,
   Clock,
+  Info,
 } from "lucide-react";
 import { useCatalogue } from "@/lib/queries";
 import { usePlayer } from "@/components/player-provider";
-import { hydrate, artwork, type Song } from "@/lib/catalogue";
-import { LikeButton } from "@/components/like-button";
 import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
+  hydrate,
+  getMarathiStats,
+  tokenizeSearchQuery,
+  matchesAllTokens,
+  type Song,
+} from "@/lib/catalogue";
+import { TrackCard } from "@/components/music/track-card";
+import { MetadataNoticeDialog } from "@/components/music/metadata-notice-dialog";
+import { EmptyState } from "@/components/music/empty-state";
 
 type CategoryTab =
   | "all"
@@ -57,7 +54,7 @@ const CATEGORY_LABELS: { id: CategoryTab; label: string }[] = [
   { id: "patriotic", label: "Patriotic" },
 ];
 
-const MARATHI_STATIONS_INFO = [
+const MARATHI_STATIONS = [
   { name: "Marathi Classics", slug: "marathi-classics", desc: "Hallmark recordings from legends" },
   { name: "Marathi Bhavageet", slug: "marathi-bhavageet", desc: "Poetic melodies of longing & nature" },
   { name: "Natya Sangeet", slug: "natya-sangeet", desc: "Musical theatre stage classics" },
@@ -67,14 +64,6 @@ const MARATHI_STATIONS_INFO = [
   { name: "Marathi Folk", slug: "marathi-folk", desc: "Koli geet, Gondhal & Powada" },
   { name: "Marathi Romance", slug: "marathi-romance", desc: "Tender duets & cinematic romance" },
 ];
-
-function normalize(str: string): string {
-  if (!str) return "";
-  return str
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase();
-}
 
 function MarathiContent() {
   const searchParams = useSearchParams();
@@ -104,15 +93,7 @@ function MarathiContent() {
       .map((s) => hydrate(s, catalogue.facets));
   }, [catalogue]);
 
-  // Verified playable vs metadata only stats
-  const stats = useMemo(() => {
-    const verified = marathiSongs.filter((s) => s.sourceVerified && Boolean(s.video)).length;
-    return {
-      total: marathiSongs.length,
-      verified,
-      unresolved: marathiSongs.length - verified,
-    };
-  }, [marathiSongs]);
+  const stats = useMemo(() => getMarathiStats(catalogue), [catalogue]);
 
   // Dynamic category counts from actual catalogue
   const categoryCounts = useMemo(() => {
@@ -129,8 +110,7 @@ function MarathiContent() {
 
   // Filter songs based on category and search
   const filteredSongs = useMemo(() => {
-    const normQ = normalize(searchQuery).trim();
-    const tokens = normQ ? normQ.split(/\s+/).filter(Boolean) : [];
+    const tokens = tokenizeSearchQuery(searchQuery);
 
     return marathiSongs.filter((s) => {
       // Category filter
@@ -141,14 +121,15 @@ function MarathiContent() {
       }
       // Search filter
       if (tokens.length > 0) {
-        const parts: string[] = [s.title];
-        if (s.artists) parts.push(...s.artists);
-        if (s.film) parts.push(s.film);
-        if (s.composers) parts.push(...s.composers);
-        if (s.lyricists) parts.push(...s.lyricists);
-        if (s.categories) parts.push(...s.categories);
-        const blob = normalize(parts.join(" "));
-        return tokens.every((tok) => blob.includes(tok));
+        return matchesAllTokens(
+          tokens,
+          s.title,
+          s.artists,
+          s.film,
+          s.composers,
+          s.lyricists,
+          s.categories
+        );
       }
       return true;
     });
@@ -256,7 +237,7 @@ function MarathiContent() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          {MARATHI_STATIONS_INFO.map((station) => (
+          {MARATHI_STATIONS.map((station) => (
             <Link
               key={station.slug}
               href={`/station/${station.slug}`}
@@ -383,99 +364,37 @@ function MarathiContent() {
             Loading Marathi catalogue...
           </div>
         ) : filteredSongs.length === 0 ? (
-          <div className="py-12 text-center text-sm text-muted-foreground">
-            No Marathi songs found matching the selected criteria.
-          </div>
+          <EmptyState
+            message="No Marathi songs found matching the selected criteria."
+            action={{
+              label: "Clear filter",
+              onClick: () => {
+                setSelectedCategory("all");
+                setSearchQuery("");
+              },
+            }}
+          />
         ) : (
           <div className="space-y-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
-              {visibleSongs.map((song: Song) => {
-                const isPlaying = currentTrack?.id === song.id && playing;
-                const isVerified = Boolean(song.sourceVerified && song.video);
-
-                return (
-                  <div
-                    key={song.id}
-                    onClick={() => handleCardClick(song)}
-                    role="button"
-                    tabIndex={0}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault();
-                        handleCardClick(song);
-                      }
-                    }}
-                    className={`group relative flex items-center gap-3 rounded-xl border p-2.5 backdrop-blur-sm transition duration-200 cursor-pointer select-none outline-none focus-visible:ring-1 focus-visible:ring-teal-500/50 ${
-                      isVerified
-                        ? "border-white/10 bg-card/40 hover:border-teal-500/40 hover:bg-card/70"
-                        : "border-white/[0.06] bg-card/20 hover:border-amber-500/30 hover:bg-card/40"
-                    }`}
-                  >
-                    <div className="relative size-12 shrink-0 overflow-hidden rounded-lg shadow-md bg-black/40">
-                      <img
-                        src={artwork(song.video, "mq")}
-                        alt={song.title}
-                        className={`size-full object-cover ${!isVerified ? "grayscale-[0.4] opacity-75" : ""}`}
-                        loading="lazy"
-                      />
-                      {isVerified ? (
-                        <div
-                          className={`absolute inset-0 flex items-center justify-center bg-black/50 transition duration-200 ${
-                            isPlaying ? "opacity-100" : "opacity-0 group-hover:opacity-100"
-                          }`}
-                        >
-                          {isPlaying ? (
-                            <Pause className="size-5 text-primary fill-current" />
-                          ) : (
-                            <Play className="size-5 text-primary fill-current ml-0.5" />
-                          )}
-                        </div>
-                      ) : (
-                        <div
-                          title="Source pending verification"
-                          className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-70 text-[9px] font-mono text-amber-300"
-                        >
-                          Info
-                        </div>
-                      )}
-                    </div>
-
-                    <div className="min-w-0 flex-1">
-                      <div className="flex items-center gap-2">
-                        <h4 className={`text-sm font-medium truncate transition ${
-                          isVerified ? "text-foreground group-hover:text-teal-300" : "text-foreground/80 group-hover:text-amber-200"
-                        }`}>
-                          {song.title}
-                        </h4>
-                        {!isVerified && (
-                          <span className="shrink-0 rounded-full border border-amber-500/30 bg-amber-500/10 px-1.5 py-0.5 text-[9px] text-amber-300">
-                            Metadata
-                          </span>
-                        )}
-                      </div>
-                      <p className="text-xs text-muted-foreground truncate">
-                        {song.artists.join(", ") || "Traditional"}
-                        {song.film ? ` · ${song.film}` : ""}
-                      </p>
-                      <div className="mt-0.5 flex items-center gap-1.5 text-[10px] text-muted-foreground/70">
-                        {song.composers && song.composers.length > 0 && (
-                          <span>Comp: {song.composers[0]}</span>
-                        )}
-                        {song.lyricists && song.lyricists.length > 0 && (
-                          <span>· Lyrics: {song.lyricists[0]}</span>
-                        )}
-                      </div>
-                    </div>
-
-                    <div
-                      className="shrink-0 pr-1 flex items-center gap-1.5"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      <LikeButton songId={song.id} size={15} />
-                    </div>
-                  </div>
-                );
-              })}
+              {visibleSongs.map((song: Song) => (
+                <TrackCard
+                  key={song.id}
+                  song={song}
+                  isPlaying={playing}
+                  isCurrent={currentTrack?.id === song.id}
+                  onSelect={handleCardClick}
+                  subtitle={song.artists.join(", ") || "Traditional"}
+                  secondaryText={
+                    song.film
+                      ? song.film
+                      : song.composers?.[0]
+                      ? `Comp: ${song.composers[0]}`
+                      : undefined
+                  }
+                  size="compact"
+                />
+              ))}
             </div>
 
             {/* Progressive Reveal Button */}
@@ -494,41 +413,11 @@ function MarathiContent() {
       </section>
 
       {/* Informative Dialog for Metadata-only Songs */}
-      <AlertDialog
+      <MetadataNoticeDialog
+        song={unverifiedSongNotice}
         open={Boolean(unverifiedSongNotice)}
         onOpenChange={(open) => !open && setUnverifiedSongNotice(null)}
-      >
-        <AlertDialogContent className="max-w-md border border-white/15 bg-card/95 backdrop-blur-xl">
-          <AlertDialogHeader>
-            <AlertDialogTitle className="font-serif text-lg text-foreground flex items-center gap-2">
-              <Info className="size-5 text-amber-400 shrink-0" />
-              <span>Playback Source Under Verification</span>
-            </AlertDialogTitle>
-            <AlertDialogDescription className="text-xs sm:text-sm text-muted-foreground leading-relaxed pt-2 space-y-2">
-              <span className="block font-semibold text-foreground">
-                “{unverifiedSongNotice?.title}”
-                {unverifiedSongNotice?.artists && unverifiedSongNotice.artists.length > 0 && (
-                  <span className="font-normal text-muted-foreground"> by {unverifiedSongNotice.artists.join(", ")}</span>
-                )}
-              </span>
-              <span className="block text-muted-foreground/90">
-                This recording is documented as a canonical archival entry in the Sargam Marathi catalog.
-              </span>
-              <span className="block text-muted-foreground/80 bg-white/[0.04] p-3 rounded-lg border border-white/[0.06]">
-                Sargam strictly streams verified audio from legitimate public archives. Official playback verification for this recording is currently in progress.
-              </span>
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogAction
-              onClick={() => setUnverifiedSongNotice(null)}
-              className="rounded-full bg-primary text-primary-foreground font-semibold px-5 py-2 text-xs hover:brightness-110"
-            >
-              Understood
-            </AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
+      />
     </div>
   );
 }

@@ -1,3 +1,9 @@
+import {
+  normalizeSearchText,
+  tokenizeSearchQuery,
+  matchesAllTokens,
+} from "./catalogue/search";
+
 // Shapes mirror pipeline/export_catalogue.py. Songs reference facet values by
 // index into `facets` to keep the payload small; `hydrate` turns one back into
 // plain strings for rendering.
@@ -126,23 +132,15 @@ export function hydrate(song: RawSong, facets: Catalogue["facets"]): Song {
   };
 }
 
-/** Songs matching every active facet plus the free-text query. */
-function normalizeSearch(str: string): string {
-  if (!str) return "";
-  return str
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase();
-}
 
 export function filterSongs(
   catalogue: Catalogue,
   selected: Record<string, Set<number>>,
   query: string
 ): RawSong[] {
-  const normQ = normalizeSearch(query).trim();
+  const normQ = normalizeSearchText(query).trim();
   const active = Object.entries(selected).filter(([, v]) => v.size > 0);
-  const tokens = normQ ? normQ.split(/\s+/).filter(Boolean) : [];
+  const tokens = tokenizeSearchQuery(query);
 
   return catalogue.songs.filter((song) => {
     for (const [facet, chosen] of active) {
@@ -161,7 +159,7 @@ export function filterSongs(
     const title = song.t;
     const lang = song.lang ?? "hindi";
 
-    if (normQ.length > 2 && (normalizeSearch(title).includes(normQ) || normalizeSearch(film).includes(normQ))) {
+    if (normQ.length > 2 && (normalizeSearchText(title).includes(normQ) || normalizeSearchText(film).includes(normQ))) {
       return true;
     }
 
@@ -200,8 +198,7 @@ export function filterSongs(
       parts.push(...song.themes);
     }
 
-    const blob = normalizeSearch(parts.join(" "));
-    return tokens.every((tok) => blob.includes(tok));
+    return matchesAllTokens(tokens, parts);
   });
 }
 
@@ -319,14 +316,14 @@ export function searchFacetCards(
   query: string,
   perFacet = 4
 ): { facet: string; card: FacetCard }[] {
-  const needle = query.trim().toLowerCase();
+  const needle = normalizeSearchText(query).trim();
   if (needle.length < 2) return [];
 
   const results: { facet: string; card: FacetCard; rank: number }[] = [];
   for (const [facet, cards] of Object.entries(cardsByFacet)) {
     const hits = [];
     for (const card of cards) {
-      const label = card.label.toLowerCase();
+      const label = normalizeSearchText(card.label);
       const at = label.indexOf(needle);
       if (at < 0) continue;
       // A name starting with the query beats one merely containing it, and a
@@ -353,3 +350,21 @@ export function facetCounts(songs: RawSong[], facet: string): Map<number, number
   }
   return counts;
 }
+
+export {
+  normalizeSearchText,
+  tokenizeSearchQuery,
+  matchesAllTokens,
+};
+
+export {
+  MARATHI_STATIONS,
+  MARATHI_STATION_NAMES,
+  getLanguageSongCounts,
+  getLanguageStationCounts,
+  getMarathiStats,
+  getMarathiCatalogueData,
+  getSongMap,
+  resolveHydratedSongs,
+  resolveRawSongs,
+} from "./catalogue/selectors";

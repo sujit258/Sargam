@@ -5,6 +5,7 @@ import { GOLDEN_ERAS, type GoldenEra } from "@/lib/types";
 import { type Catalogue, filterSongs } from "@/lib/catalogue";
 import { usePlayer } from "@/components/player-provider";
 import { useRouter } from "next/navigation";
+import { SectionHeader } from "@/components/music/section-header";
 
 interface GoldenErasProps {
   catalogue: Catalogue;
@@ -30,19 +31,12 @@ export function GoldenEras({ catalogue }: GoldenErasProps) {
 
   return (
     <section className="mb-10">
-      <div className="flex items-center justify-between mb-4">
-        <div>
-          <div className="flex items-center gap-2">
-            <History className="size-4 text-amber-400" />
-            <h2 className="text-xl sm:text-2xl font-serif text-foreground">
-              Golden Eras
-            </h2>
-          </div>
-          <p className="text-xs text-muted-foreground mt-0.5">
-            Journey through the four defining epochs of Indian cinematic sound.
-          </p>
-        </div>
-      </div>
+      <SectionHeader
+        title="Golden Eras"
+        subtitle="Journey through the four defining epochs of Indian cinematic sound."
+        icon={History}
+        iconClassName="text-amber-400"
+      />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {GOLDEN_ERAS.map((era) => (
