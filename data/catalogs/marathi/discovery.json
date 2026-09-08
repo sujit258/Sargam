@@ -1,4332 +1,5 @@
 [
   {
-    "id": "mar-cls-001",
-    "title": "Shukratara Mand Vara",
-    "language": "marathi",
-    "year": 1962,
-    "artists": [
-      "Arun Date",
-      "Sudha Malhotra"
-    ],
-    "composers": [
-      "Srinivas Khale"
-    ],
-    "lyricists": [
-      "Mangesh Padgaonkar"
-    ],
-    "categories": [
-      "marathi-classics",
-      "bhavageet",
-      "romantic"
-    ],
-    "moods": [
-      "romantic",
-      "peaceful",
-      "nostalgic"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "m9aTqK6fS7Q",
-      "verified": false
-    },
-    "provenance": {
-      "catalogVersion": "1.1.0",
-      "source": "sargam-marathi-archives"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-cls-003",
-    "title": "Toch Chandrama Nabhat",
-    "language": "marathi",
-    "year": 1960,
-    "artists": [
-      "Sudhir Phadke"
-    ],
-    "composers": [
-      "Sudhir Phadke"
-    ],
-    "lyricists": [
-      "Shanta Shelke"
-    ],
-    "categories": [
-      "marathi-classics",
-      "bhavageet"
-    ],
-    "moods": [
-      "nostalgic",
-      "melancholic"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "j0O5pW0P9oA",
-      "verified": false
-    },
-    "provenance": {
-      "catalogVersion": "1.1.0",
-      "source": "sargam-marathi-archives"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-cls-005",
-    "title": "Swargangechya Kathavarti",
-    "language": "marathi",
-    "year": 1968,
-    "artists": [
-      "Sudhir Phadke"
-    ],
-    "composers": [
-      "Sudhir Phadke"
-    ],
-    "lyricists": [
-      "Shanta Shelke"
-    ],
-    "categories": [
-      "marathi-classics",
-      "bhavageet"
-    ],
-    "moods": [
-      "romantic",
-      "peaceful"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "eZtWvK8_wW8",
-      "verified": false
-    },
-    "provenance": {
-      "catalogVersion": "1.1.0",
-      "source": "sargam-marathi-archives"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-cls-006",
-    "title": "Asa Bebhan Ha Vara",
-    "language": "marathi",
-    "year": 1984,
-    "artists": [
-      "Lata Mangeshkar"
-    ],
-    "composers": [
-      "Pt. Hridaynath Mangeshkar"
-    ],
-    "lyricists": [
-      "Mangesh Padgaonkar"
-    ],
-    "categories": [
-      "marathi-classics",
-      "marathi-film"
-    ],
-    "moods": [
-      "energetic",
-      "joyful"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "M9j5IWqz_Hk",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=M9j5IWqz_Hk",
-      "checkedAt": "2026-09-07T16:52:55.525709+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=M9j5IWqz_Hk"
-    },
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Asa Bebhan Ha Vara | असा बेभान हा वारा | Lata Mangeshkar | Pt. Hridaynath Mangeshkar | Old Songs",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    }
-  },
-  {
-    "id": "mar-cls-007",
-    "title": "Rimjhim Zartya Shravan Dhara",
-    "language": "marathi",
-    "year": 1978,
-    "artists": [
-      "Mahendra Kapoor",
-      "Anuradha Paudwal"
-    ],
-    "composers": [
-      "Sudhir Phadke"
-    ],
-    "lyricists": [
-      "Shanta Shelke"
-    ],
-    "categories": [
-      "marathi-classics",
-      "bhavageet"
-    ],
-    "moods": [
-      "romantic",
-      "peaceful"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "tG0wY5T9oJk",
-      "verified": false
-    },
-    "provenance": {
-      "catalogVersion": "1.1.0",
-      "source": "sargam-marathi-archives"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-cls-008",
-    "title": "Airanichya Deva Tula",
-    "language": "marathi",
-    "year": 1965,
-    "film": {
-      "name": "Sadhi Mansa",
-      "year": 1965
-    },
-    "artists": [
-      "Lata Mangeshkar"
-    ],
-    "composers": [
-      "Anandghan"
-    ],
-    "lyricists": [
-      "Jagdish Khebudkar"
-    ],
-    "categories": [
-      "marathi-classics",
-      "marathi-film",
-      "devotional",
-      "bhavageet"
-    ],
-    "moods": [
-      "devotional",
-      "spiritual"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "p8G2kL3W4jU",
-      "verified": false
-    },
-    "provenance": {
-      "catalogVersion": "1.1.0",
-      "source": "sargam-marathi-archives"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-cls-009",
-    "title": "Ketakichya Bani Tithe",
-    "language": "marathi",
-    "year": 1974,
-    "film": {
-      "name": "Sugandhi Katta",
-      "year": 1974
-    },
-    "artists": [
-      "Suman Kalyanpur"
-    ],
-    "composers": [
-      "Sudhir Phadke"
-    ],
-    "lyricists": [
-      "G.D. Madgulkar"
-    ],
-    "categories": [
-      "marathi-classics",
-      "marathi-film",
-      "bhavageet"
-    ],
-    "moods": [
-      "romantic"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "uK4jT1P5wVo",
-      "verified": false
-    },
-    "provenance": {
-      "catalogVersion": "1.1.0",
-      "source": "sargam-marathi-archives"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-cls-010",
-    "title": "Jithe Sagara Dharani Milate",
-    "language": "marathi",
-    "year": 1968,
-    "film": {
-      "name": "Amhi Jato Amuchya Gava",
-      "year": 1968
-    },
-    "artists": [
-      "Suman Kalyanpur"
-    ],
-    "composers": [
-      "Sudhir Phadke"
-    ],
-    "lyricists": [
-      "Jagdish Khebudkar"
-    ],
-    "categories": [
-      "marathi-classics",
-      "marathi-film",
-      "bhavageet"
-    ],
-    "moods": [
-      "romantic",
-      "peaceful"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "vL5kU7X1wVo",
-      "verified": false
-    },
-    "provenance": {
-      "catalogVersion": "1.1.0",
-      "source": "sargam-marathi-archives"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-cls-011",
-    "title": "Saanj Ye Gokuli",
-    "language": "marathi",
-    "year": 1982,
-    "artists": [
-      "Suresh Wadkar",
-      "Lata Mangeshkar"
-    ],
-    "composers": [
-      "Hridaynath Mangeshkar"
-    ],
-    "lyricists": [
-      "Suresh Bhat"
-    ],
-    "categories": [
-      "marathi-classics",
-      "bhavageet",
-      "romantic"
-    ],
-    "moods": [
-      "nostalgic",
-      "peaceful"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "wM6jV4Y3kU8",
-      "verified": false
-    },
-    "provenance": {
-      "catalogVersion": "1.1.0",
-      "source": "sargam-marathi-archives"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-cls-012",
-    "title": "Ghanu Vaje Ghann",
-    "language": "marathi",
-    "year": 1972,
-    "artists": [
-      "Lata Mangeshkar"
-    ],
-    "composers": [
-      "Hridaynath Mangeshkar"
-    ],
-    "lyricists": [
-      "Sant Dnyaneshwar"
-    ],
-    "categories": [
-      "marathi-classics",
-      "bhavageet",
-      "devotional"
-    ],
-    "moods": [
-      "peaceful",
-      "spiritual"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "xN7kL8W2wVo",
-      "verified": false
-    },
-    "provenance": {
-      "catalogVersion": "1.1.0",
-      "source": "sargam-marathi-archives"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-cls-013",
-    "title": "Mogara Phulala",
-    "language": "marathi",
-    "year": 1970,
-    "artists": [
-      "Lata Mangeshkar"
-    ],
-    "composers": [
-      "Pt. Hridaynath Mangeshkar"
-    ],
-    "lyricists": [
-      "Sant Dnyaneshwar"
-    ],
-    "categories": [
-      "marathi-bhakti"
-    ],
-    "moods": [
-      "spiritual",
-      "peaceful"
-    ],
-    "themes": [
-      "saints"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "UNNUf9xpi0E",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=UNNUf9xpi0E",
-      "checkedAt": "2026-09-07T16:53:05.518379+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=UNNUf9xpi0E"
-    },
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Mogara Phulala | मोगरा फुलला | Lata Mangeshkar | Pt. Hridaynath Mangeshkar | Sant Dnyaneshwar",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    }
-  },
-  {
-    "id": "mar-cls-014",
-    "title": "Dis Jatil Dis Yetil",
-    "language": "marathi",
-    "year": 1981,
-    "artists": [
-      "Asha Bhosle",
-      "Suresh Wadkar"
-    ],
-    "composers": [
-      "Sudhir Phadke"
-    ],
-    "lyricists": [
-      "Sudhir Moghe"
-    ],
-    "categories": [
-      "marathi-classics",
-      "marathi-film"
-    ],
-    "moods": [
-      "nostalgic",
-      "peaceful"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "LoKfGaFbfNw",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=LoKfGaFbfNw",
-      "checkedAt": "2026-09-07T16:52:54.803188+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=LoKfGaFbfNw"
-    },
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Dis Jatil Dis Yetil - Audio song with Lyrics | दिस जातील दिस येतील | Asha Bhosle | Suresh Wadkar",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    }
-  },
-  {
-    "id": "mar-bhakti-005",
-    "title": "Omkar Pradhan Roop Ganeshache",
-    "language": "marathi",
-    "year": 1968,
-    "artists": [
-      "Suman Kalyanpur"
-    ],
-    "composers": [
-      "Kamalakar Bhagwat"
-    ],
-    "lyricists": [
-      "Sant Tukaram"
-    ],
-    "categories": [
-      "marathi-bhakti"
-    ],
-    "moods": [
-      "devotional",
-      "spiritual"
-    ],
-    "themes": [
-      "ganesh",
-      "saints"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "UxmD6ZorNsM",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=UxmD6ZorNsM",
-      "checkedAt": "2026-09-07T16:53:06.380080+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=UxmD6ZorNsM"
-    },
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Omkar Pradhan Roop Ganeshache | ओंकार प्रधान रूप गणेशाचे | Suman Kalyanpur | Ganpati Songs",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    }
-  },
-  {
-    "id": "mar-bhakti-006",
-    "title": "Teerth Vitthal Kshetra Vitthal",
-    "language": "marathi",
-    "year": 1974,
-    "artists": [
-      "Pt. Bhimsen Joshi"
-    ],
-    "composers": [
-      "Ram Pathak"
-    ],
-    "lyricists": [
-      "Sant Namdeo"
-    ],
-    "categories": [
-      "marathi-classics",
-      "marathi-film"
-    ],
-    "moods": [
-      "devotional",
-      "spiritual"
-    ],
-    "themes": [
-      "vitthal",
-      "saints"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "b2XdXHprhPc",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=b2XdXHprhPc",
-      "checkedAt": "2026-09-07T16:53:30.363803+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=b2XdXHprhPc"
-    },
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Tirte Vithal Kshetra Vithal | तिर्थ विठ्ठल क्षेत्र विठ्ठल | Pt. Bhimsen Joshi | Marathi Bhaktigeet",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    },
-    "aliases": [
-      "Tirtha Vithal Kshetra Vithal"
-    ]
-  },
-  {
-    "id": "mar-folk-009",
-    "title": "Shoor Amhi Sardar",
-    "language": "marathi",
-    "year": 1964,
-    "film": {
-      "name": "Maratha Tituka Melvava",
-      "year": 1964
-    },
-    "artists": [
-      "Pt. Hridaynath Mangeshkar"
-    ],
-    "composers": [
-      "Anandghan"
-    ],
-    "lyricists": [
-      "Shanta Shelke"
-    ],
-    "categories": [
-      "patriotic"
-    ],
-    "moods": [
-      "energetic"
-    ],
-    "themes": [
-      "traditional"
-    ],
-    "source": {
-      "type": "youtube",
-      "id": "2v92Fga9vZ4",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=2v92Fga9vZ4",
-      "checkedAt": "2026-09-07T16:52:30.285607+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=2v92Fga9vZ4"
-    },
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Shoor Amhi Sardar | शूर आम्ही सरदार | Pt. Hridaynath Mangeshkar | Shanta Shelke",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    }
-  },
-  {
-    "id": "mar-bhav-009",
-    "title": "Ganga Jamuna Dolyat Ubha",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0018"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-010",
-    "title": "Gandha Halke Halke",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0019"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-011",
-    "title": "Shravanat Ghan Nila",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0020"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-012",
-    "title": "De Hata Ya Sharanagata",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": {
-      "type": "youtube",
-      "id": "31v7OmY4GxY",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=31v7OmY4GxY",
-      "checkedAt": "2026-09-07T16:52:30.449523+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=31v7OmY4GxY"
-    },
-    "artists": [
-      "Prabhakar Karekar"
-    ],
-    "composers": [
-      "Basant Prabhu"
-    ],
-    "lyricists": [
-      "K.P. Khadilkar"
-    ],
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "De Haata Ya Sharanagata | दे हात या शरणागत | Prabhakar Karekar | Old Marathi Songs",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    },
-    "aliases": [
-      "De Haata Ya Sharanagata"
-    ]
-  },
-  {
-    "id": "mar-natya-013",
-    "title": "Khara To Prema Na Dhari",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0022"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-014",
-    "title": "Chandrika Hi Janu",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": {
-      "type": "youtube",
-      "id": "-GyZ_28MCNE",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=-GyZ_28MCNE",
-      "checkedAt": "2026-09-07T16:52:22.605724+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=-GyZ_28MCNE"
-    },
-    "artists": [
-      "Sonu Nigam"
-    ],
-    "film": {
-      "name": "Sangeet Manapmaan"
-    },
-    "album": "Sangeet Manapmaan",
-    "composers": [
-      "Shankar-Ehsaan-Loy"
-    ],
-    "lyricists": [
-      "Sameer Samant"
-    ],
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Chandrika - Lyrical | चंद्रिका | Sangeet Manapmaan | Sonu Nigam | Subodh Bhave | Vaidehi Parashurami",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    },
-    "aliases": [
-      "Chandrika"
-    ]
-  },
-  {
-    "id": "mar-natya-015",
-    "title": "Naman Natavara Vismayakara",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0024"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-016",
-    "title": "Nath Ha Majha Mohi Khala",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0027"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-017",
-    "title": "Narayan Narayan Naam Tujhe",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0029"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-018",
-    "title": "Nayan Tujhe Jadugar",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0030"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-011",
-    "title": "Reshamachya Reghani",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0031"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-012",
-    "title": "Bugadi Majhi Sandali Ga",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0032"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-013",
-    "title": "Mala Lagali Kunachi Uchaki",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0033"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-014",
-    "title": "Aata Vajale Ki Bara",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0034"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-015",
-    "title": "Apsara Aali Indrapuritun",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0035"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-016",
-    "title": "Phad Sambhal Turyala Ga",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0036"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-017",
-    "title": "Latpat Latpat Tujha Chalana",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0037"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-018",
-    "title": "Mala Aana Kolhapuri Saaj",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0039"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-019",
-    "title": "Hirvya Rangacha Chand Raya",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0040"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhakti-017",
-    "title": "Abir Gulal Udhalit Rang",
-    "language": "marathi",
-    "categories": [
-      "marathi-bhakti"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0048"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhakti-018",
-    "title": "Amrutahuni God Naam",
-    "language": "marathi",
-    "categories": [
-      "marathi-bhakti"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0049"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhakti-019",
-    "title": "Sundar Te Dhyan",
-    "language": "marathi",
-    "categories": [
-      "marathi-bhakti"
-    ],
-    "moods": [],
-    "source": {
-      "type": "youtube",
-      "id": "QxjFBnsJ0sE",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=QxjFBnsJ0sE",
-      "checkedAt": "2026-09-07T16:53:01.592753+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=QxjFBnsJ0sE"
-    },
-    "artists": [
-      "Lata Mangeshkar"
-    ],
-    "composers": [
-      "Shrinivas Khale"
-    ],
-    "lyricists": [
-      "Sant Tukaram"
-    ],
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "सुंदर ते ध्यान | Sundar Te Dhyan | Lata Mangeshkar | Vitthal Songs | Marathi Bhaktigeete",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    }
-  },
-  {
-    "id": "mar-folk-012",
-    "title": "Aadhi Ganala Rani Aanala",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0051"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-013",
-    "title": "Aali Aali Ho Gondhalala",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0052"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-014",
-    "title": "Kathi Na Ghongadi Gheun Dya Ki",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0053"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-015",
-    "title": "Kavala Piperi Vajavato",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0054"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-016",
-    "title": "Gana Dhav Re",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0055"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-017",
-    "title": "Gadi Chalali Ghungarachi",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0056"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-018",
-    "title": "Chamake Shivabachi Talwar",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0057"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-019",
-    "title": "Phu Bai Phu Fugada Phu",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0058"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-020",
-    "title": "Malhari Majha Malhari",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0059"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-021",
-    "title": "Vinchhu Chavala",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0060"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-022",
-    "title": "Gorya Gorya Galavari",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0061"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-023",
-    "title": "Payala Naman Ho Karito",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0062"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-024",
-    "title": "Runjhun Vajantri Vajati",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0063"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-025",
-    "title": "Sanai Vaje Manjul Nade",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0064"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-026",
-    "title": "Sumbaran Gavu Chala",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0065"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-001",
-    "title": "Mala Ishkachi Ingali Dasali",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0066"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-002",
-    "title": "Swapnat Sajana Yeshil Ka",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0067"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-003",
-    "title": "Aga Nach Nach Nach Radhe",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0068"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-004",
-    "title": "Jivalaga Kadhi Re Yeshil Tu",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0069"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-005",
-    "title": "Jeev Dangala Gungala",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0070"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-006",
-    "title": "Jeevan Gagan Mi Pakharu",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0071"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-007",
-    "title": "Jeevanat Hi Ghadi Ashich",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0072"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-008",
-    "title": "Malmalitarunya Majhe",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0074"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-009",
-    "title": "Raan He Uthale Uthale",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0075"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-010",
-    "title": "Jinyachi Jhali Shok Katha",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0076"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-011",
-    "title": "Jeevan Aahe Jaganyasathi",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0077"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-012",
-    "title": "Jeevan Gane Gatach Rahave",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0078"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-013",
-    "title": "Jivache Maitar Tumhi",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0079"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-014",
-    "title": "Thakale Priya Kadhichi",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0080"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-001",
-    "title": "Je Ka Ranjale Ganjale",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0081"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-002",
-    "title": "Vrukshavalli Aamha Soyari",
-    "language": "marathi",
-    "categories": [
-      "marathi-bhakti"
-    ],
-    "moods": [],
-    "source": {
-      "type": "youtube",
-      "id": "RneauDtFYLA",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=RneauDtFYLA",
-      "checkedAt": "2026-09-07T16:53:02.361880+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=RneauDtFYLA"
-    },
-    "artists": [
-      "Lata Mangeshkar"
-    ],
-    "composers": [
-      "Shrinivas Khale"
-    ],
-    "lyricists": [
-      "Sant Tukaram"
-    ],
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Vrukshavalli Aamha Soyari | वृक्षवल्ली आम्हा सोयरी | Lata Mangeshkar | Vitthal Songs",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    }
-  },
-  {
-    "id": "mar-dev-003",
-    "title": "Dnyaniyancha Raja",
-    "language": "marathi",
-    "categories": [
-      "marathi-bhakti"
-    ],
-    "moods": [],
-    "source": {
-      "type": "youtube",
-      "id": "4UKlLO45N9I",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=4UKlLO45N9I",
-      "checkedAt": "2026-09-07T16:52:32.421457+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=4UKlLO45N9I"
-    },
-    "artists": [
-      "Pt. Bhimsen Joshi"
-    ],
-    "composers": [
-      "Ram Pathak"
-    ],
-    "lyricists": [
-      "Sant Tukaram (Traditional)"
-    ],
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Dyaniyancha Raja Guru Maharav | ज्ञानियांचा  राजा गुरु महाराव | Pt. Bhimsen Joshi | Sant Tukaram",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    },
-    "aliases": [
-      "Dyaniyancha Raja Guru Maharav"
-    ]
-  },
-  {
-    "id": "mar-dev-004",
-    "title": "Hechi Daan Dega Deva",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0084"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-005",
-    "title": "Om Namoji Aadya",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0085"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-gav-021",
-    "title": "Are Krishna Are Kanha",
-    "language": "marathi",
-    "categories": [
-      "gavlani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0086"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-gav-022",
-    "title": "Are Nand Nandana Kamal Lochana",
-    "language": "marathi",
-    "categories": [
-      "gavlani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0087"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-gav-023",
-    "title": "Madhurechya Bajari",
-    "language": "marathi",
-    "categories": [
-      "gavlani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0088"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-gav-024",
-    "title": "Madhuret Mi Gokuli Kanha",
-    "language": "marathi",
-    "categories": [
-      "gavlani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0089"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-gav-025",
-    "title": "Madhurela Krishna Nighala",
-    "language": "marathi",
-    "categories": [
-      "gavlani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0090"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-gav-026",
-    "title": "Pana Panat Disato Kanha",
-    "language": "marathi",
-    "categories": [
-      "gavlani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0092"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-gav-027",
-    "title": "De Re Kanha Choli An Lugadi",
-    "language": "marathi",
-    "categories": [
-      "gavlani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0093"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-gav-028",
-    "title": "Hari Tujhi Kalali Chaturai",
-    "language": "marathi",
-    "categories": [
-      "gavlani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0094"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-gav-029",
-    "title": "Gavalan Hovuniya Firtan",
-    "language": "marathi",
-    "categories": [
-      "gavlani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0095"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-rom-010",
-    "title": "Majhya Pritichya Pakhara",
-    "language": "marathi",
-    "categories": [
-      "romantic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0099"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-rom-011",
-    "title": "Mi Patang Tu Dora",
-    "language": "marathi",
-    "categories": [
-      "romantic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0100"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-cls-016",
-    "title": "Nimbonichya Zadamage",
-    "language": "marathi",
-    "categories": [
-      "marathi-classics",
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": {
-      "type": "youtube",
-      "id": "9JukBaAtLUM",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=9JukBaAtLUM",
-      "checkedAt": "2026-09-07T16:52:39.223238+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=9JukBaAtLUM"
-    },
-    "artists": [
-      "Suman Kalyanpur"
-    ],
-    "composers": [
-      "N. Dutta"
-    ],
-    "lyricists": [
-      "Madhusudan Kalekar"
-    ],
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Nimbonichya Zadamaage | निंबोणीच्या झाडामागे | Suman Kalyanpur | Old Marathi Songs",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    },
-    "aliases": [
-      "Nimbonichya Zadamaage"
-    ]
-  },
-  {
-    "id": "mar-cls-017",
-    "title": "Bala Gaun Kashi Angaai",
-    "language": "marathi",
-    "categories": [
-      "marathi-classics"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0102"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-cls-018",
-    "title": "Malachya Malyamadhi",
-    "language": "marathi",
-    "categories": [
-      "marathi-classics"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0103"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-cls-019",
-    "title": "Raja Lalkari Ashi De",
-    "language": "marathi",
-    "categories": [
-      "marathi-classics",
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": {
-      "type": "youtube",
-      "id": "65y1HN5abp0",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=65y1HN5abp0",
-      "checkedAt": "2026-09-07T16:52:35.012415+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=65y1HN5abp0"
-    },
-    "artists": [
-      "Anuradha Paudwal",
-      "Suresh Wadkar"
-    ],
-    "composers": [
-      "Anil-Arun"
-    ],
-    "lyricists": [
-      "Jagdish Khebudkar"
-    ],
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Raja Lalkari Ashi De - Audio song with Lyrics | राजा ललकारी अशी दे | Anuradha | Suresh Wadkar",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    }
-  },
-  {
-    "id": "mar-cls-020",
-    "title": "Phite Andharache Jaale",
-    "language": "marathi",
-    "categories": [
-      "marathi-classics"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0106"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-cls-021",
-    "title": "Aala Aala Vara",
-    "language": "marathi",
-    "categories": [
-      "marathi-classics",
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": {
-      "type": "youtube",
-      "id": "UiQJbR_EhSk",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=UiQJbR_EhSk",
-      "checkedAt": "2026-09-07T16:53:06.309321+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=UiQJbR_EhSk"
-    },
-    "artists": [
-      "Asha Bhosle",
-      "Anuradha Paudwal"
-    ],
-    "composers": [
-      "Pt. Hridaynath Mangeshkar"
-    ],
-    "lyricists": [
-      "Sudhir Moghe"
-    ],
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Aala Aala Vara | आला आला वारा | Asha Bhosle, Anuradha Paudwal | Old Marathi Song",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    }
-  },
-  {
-    "id": "mar-film-015",
-    "title": "Jeevacha Maitar",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0108"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-016",
-    "title": "Majhi Priya Hasavi",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0109"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-017",
-    "title": "Sangu Kashi Priya Mi",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0110"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-018",
-    "title": "Aabhal Varti Khali Dharti",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0111"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-019",
-    "title": "Darbari Rasikjan Jamale",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0112"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-019",
-    "title": "Koda Sodavu Kase",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0113"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhakti-020",
-    "title": "Apar Ha Bhavsasagar",
-    "language": "marathi",
-    "categories": [
-      "marathi-bhakti"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0114"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-027",
-    "title": "Holicha Rang Luta",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0115"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-006",
-    "title": "Dev Jagavegla",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0116"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-020",
-    "title": "Hodi Chale Latevari",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0117"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-020",
-    "title": "Jhan Jhananana Chedlya Tara",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0118"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-021",
-    "title": "Dogha Lutuya Rang Bahar",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0119"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-022",
-    "title": "Ha Mangala Ga Mangala",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0120"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-012",
-    "title": "Nakalat Saare Ghadale",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0122"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-013",
-    "title": "Waat Ithe Swapnatil",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0123"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-014",
-    "title": "Aas Ahe Antari Ya",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0124"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-015",
-    "title": "Antarangi Rangalele",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0125"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-016",
-    "title": "Antarichya Goodh Garbhi",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0126"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-021",
-    "title": "Arasika Kiti Ha Shela",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0127"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-017",
-    "title": "Chandanya Ratritale Te Swapna",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0128"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-023",
-    "title": "Chandra Ahe Sakshila",
-    "language": "marathi",
-    "categories": [
-      "marathi-classics",
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": {
-      "type": "youtube",
-      "id": "6YQ2lD9sJOA",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=6YQ2lD9sJOA",
-      "checkedAt": "2026-09-07T16:52:35.882598+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=6YQ2lD9sJOA"
-    },
-    "artists": [
-      "Asha Bhosle",
-      "Sudhir Phadke"
-    ],
-    "composers": [
-      "Sudhir Phadke"
-    ],
-    "lyricists": [
-      "Jagdish Khebudkar"
-    ],
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Chandra Aahe Sakshiila | चंद्र आहे साक्षीला | Asha Bhosle, Sudhir Phadke | Old Marathi Songs",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    },
-    "aliases": [
-      "Chandra Aahe Sakshiila"
-    ]
-  },
-  {
-    "id": "mar-bhav-018",
-    "title": "Chandra Ardha Rahila",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0130"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-007",
-    "title": "Devkinche Baal Bai",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0131"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-019",
-    "title": "Dhaga Dhaga Akhand Vinuya",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0132"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-020",
-    "title": "Aji Mi Brahma Pahile",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0133"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-021",
-    "title": "Kanthatach Rutalya Taana",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0134"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-008",
-    "title": "Dalita Kandit Abhang",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0135"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-022",
-    "title": "Kay Karu Me Bola",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0136"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-009",
-    "title": "Vithu Maza Lekurwala",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0137"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-folk-028",
-    "title": "Eka Talyat Hoti Badake",
-    "language": "marathi",
-    "categories": [
-      "folk"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0138"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-010",
-    "title": "Naam Gheta Tuze Govind",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0139"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-gav-030",
-    "title": "Radha Gaulan Karite Manthan",
-    "language": "marathi",
-    "categories": [
-      "gavlani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0140"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-024",
-    "title": "Ja Ja Ja Re Nako Bolu",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0141"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-023",
-    "title": "Chandanyat Phirtana",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0142"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-024",
-    "title": "Kevhatari Pahate",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0143"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-bhav-025",
-    "title": "Samayichya Shubhra Kalya",
-    "language": "marathi",
-    "categories": [
-      "bhavageet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0144"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-022",
-    "title": "Ghanashyam Sundara Shridhara",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0145"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-023",
-    "title": "Ghadi Ghadi Are Manmohana",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0146"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-025",
-    "title": "Tujhya Preetiche Dukhh Mala Daau Nako Re",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0147"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-rom-012",
-    "title": "Tujhi Majhi Preet",
-    "language": "marathi",
-    "categories": [
-      "romantic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0148"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-rom-013",
-    "title": "Nako Door Deshi Javoo",
-    "language": "marathi",
-    "categories": [
-      "romantic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0149"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-026",
-    "title": "Lek Ladki Hya Gharchi",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0150"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-027",
-    "title": "Bai Bai Man Moracha",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0151"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-028",
-    "title": "Zala Sakharpuda",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0152"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-029",
-    "title": "Nilya Aabhali",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0153"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-030",
-    "title": "Son Sakali Sarja",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0154"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-031",
-    "title": "Akhercha Tula Ha Dandvat",
-    "language": "marathi",
-    "categories": [
-      "marathi-classics",
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": {
-      "type": "youtube",
-      "id": "3_G7NcKaaLc",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=3_G7NcKaaLc",
-      "checkedAt": "2026-09-07T16:52:31.554722+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=3_G7NcKaaLc"
-    },
-    "artists": [
-      "Lata Mangeshkar"
-    ],
-    "composers": [
-      "Anandghan"
-    ],
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Akhercha Ha Tula Dandvat | अखेरचा हा तुला दंडवत | Lata Mangeshkar | Old Marathi Songs",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null. Publisher lyricist credit appears inconsistent; omitted pending corroboration."
-    },
-    "aliases": [
-      "Akhercha Ha Tula Dandvat"
-    ]
-  },
-  {
-    "id": "mar-film-032",
-    "title": "Marathi Paaul Padte Pudhe",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0156"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-024",
-    "title": "Aaj Mi Alvite Kedar",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0157"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-025",
-    "title": "Aali Aali Sakhi Priya Milna",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0158"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-033",
-    "title": "Ga Re Kokila Ga",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0159"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-011",
-    "title": "Tujhia Botalaa Krishna",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0160"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-rom-014",
-    "title": "Malmali Tarunya Maaze",
-    "language": "marathi",
-    "categories": [
-      "romantic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0161"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-026",
-    "title": "Hikuni Chedilitaar",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0162"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-034",
-    "title": "Asa Nesun Shalu Hirva",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0163"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-027",
-    "title": "Pratham Tuj Pahata",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0164"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-028",
-    "title": "Jhan Jhananana Chedilya Tara",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0165"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-029",
-    "title": "Rasa Barsat Amrit Veena",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0166"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-rom-015",
-    "title": "Mi Tar Prem Diwani",
-    "language": "marathi",
-    "categories": [
-      "romantic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0167"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-012",
-    "title": "Parvati Vechi Bilvadale",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0168"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-035",
-    "title": "Shravan Aala Ga Vani",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0169"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-030",
-    "title": "Bhet Tujhi Majhi Smarate",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0170"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-031",
-    "title": "Shapat Tula Aahe",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0171"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-rom-016",
-    "title": "Jevha Tichi Ni Mazi",
-    "language": "marathi",
-    "categories": [
-      "romantic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0172"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-032",
-    "title": "Muralidharsham",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0173"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-033",
-    "title": "Kata Rute Kunala",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0174"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-013",
-    "title": "Sarvatmata Sarveshwara",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0175"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-014",
-    "title": "Uthi Uthi Gopala",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0176"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-034",
-    "title": "Kaivalyachya Chandnyala",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0177"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-035",
-    "title": "Marma Bandhatali Thev Hi",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0178"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-036",
-    "title": "Runanubandhachya",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0179"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-037",
-    "title": "Natha Ghari Nache Maza Sakha Pandurang",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0180"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-038",
-    "title": "Mriganayana Rasik Mohini",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0181"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-039",
-    "title": "Kon Tujh Sam Sang",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0182"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-036",
-    "title": "Mann Udhaan Varyache",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0186"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-037",
-    "title": "Kanth Aani Aabhal",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0187"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-038",
-    "title": "Chimbh Bhijalele",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0188"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-039",
-    "title": "Jhali Punha",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0189"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-040",
-    "title": "Sone Paijana",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0190"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-041",
-    "title": "Nuste Nuste",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0191"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-042",
-    "title": "Kai Jahale Tula Mane",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0192"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-043",
-    "title": "Ya Sukhano Ya",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0193"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-044",
-    "title": "Sakhya Re",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0194"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-020",
-    "title": "Majhi Pritichya Jhulyat Jhulwa",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0195"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-021",
-    "title": "Kabootar",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0196"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-022",
-    "title": "Themb Thembana Kelai Mala Gaar",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0197"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-023",
-    "title": "Majhya Pathivar Pensil Firva",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0198"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-024",
-    "title": "Kaatevadi Ghoda",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0199"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-025",
-    "title": "Gharaat Shirlaay Chor",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0200"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-026",
-    "title": "Kasa Pailwan Kadhatyat Jor",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0201"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-027",
-    "title": "Aho Raya Tumchya Hatachi",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0202"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-028",
-    "title": "Gaadi Aanavi Burkhyachi",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0203"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-029",
-    "title": "Chhatishi Kavlun Dhara",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0204"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-030",
-    "title": "Aata Kasa Re Majha",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0205"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-045",
-    "title": "Gomu Sangtina Majhya Tu Yeshil Ka",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0206"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-rom-017",
-    "title": "Hi Kashana Dhundi Aali",
-    "language": "marathi",
-    "categories": [
-      "romantic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0207"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-046",
-    "title": "Gandh Phulancha Gela Sangun",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0208"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-lav-031",
-    "title": "Mi Mosambi Mi Narangi",
-    "language": "marathi",
-    "categories": [
-      "lavani"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0209"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-047",
-    "title": "Kalya Matit Matit",
-    "language": "marathi",
-    "categories": [
-      "marathi-classics",
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": {
-      "type": "youtube",
-      "id": "M-i3NsMCrzA",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=M-i3NsMCrzA",
-      "checkedAt": "2026-09-07T16:52:55.450723+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=M-i3NsMCrzA"
-    },
-    "artists": [
-      "Suresh Wadkar",
-      "Anuradha Paudwal"
-    ],
-    "composers": [
-      "Anil-Arun"
-    ],
-    "lyricists": [
-      "Prof. Vithal Wagh"
-    ],
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Kalya Matit Matit - Audio with Lyrics | काळ्या मातीत मातीत | Suresh Wadkar, Anuradha Paudwal",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    }
-  },
-  {
-    "id": "mar-film-048",
-    "title": "Jo Jo Gate Zoka Dete",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0211"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-015",
-    "title": "Ashi Eka Satichi Thor Punyaai",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0212"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-016",
-    "title": "Bala Jo Jo Re",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0213"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-017",
-    "title": "Aparan Bhavsasagar",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0214"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-049",
-    "title": "Raya Lalkari Ashi De",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0215"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-018",
-    "title": "Chandra Bhagechya Tiri",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0216"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-019",
-    "title": "Datta Digambara Ya Ho",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0217"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-020",
-    "title": "Tuch Sur Thawa Majsi",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0218"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-021",
-    "title": "Deh Vitthal",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0219"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-022",
-    "title": "Mandirat Antarat",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0220"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-023",
-    "title": "Aarti Ye Vitthale",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0221"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-024",
-    "title": "Vithal Vithal Pandharinath",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0222"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-025",
-    "title": "Avaghe Garje Pandharpur",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0223"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-026",
-    "title": "Pandharpuricha Natha",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0224"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-027",
-    "title": "Vithoba Rakhumai",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0225"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-028",
-    "title": "Panduranga Dhav Re",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0227"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-029",
-    "title": "Sukhkarta Dukhharta",
-    "language": "marathi",
-    "categories": [
-      "marathi-bhakti"
-    ],
-    "moods": [],
-    "source": {
-      "type": "youtube",
-      "id": "2LoxjhZ8jRo",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=2LoxjhZ8jRo",
-      "checkedAt": "2026-09-07T16:52:29.487622+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=2LoxjhZ8jRo"
-    },
-    "artists": [
-      "Lata Mangeshkar"
-    ],
-    "composers": [
-      "Pt. Hridaynath Mangeshkar"
-    ],
-    "lyricists": [
-      "Traditional"
-    ],
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Ganpati Aarti | Sukhkarta Dukhharta Full Aarti with Lyrics | Lata Mangeshkar | Ganpati Songs",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    },
-    "aliases": [
-      "Shree Ganpatichi Aarti"
-    ]
-  },
-  {
-    "id": "mar-dev-030",
-    "title": "Durge Durgat Bhari",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0230"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-031",
-    "title": "Yei O Vitthale",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0231"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-032",
-    "title": "Pandharicha Raja",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0232"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-033",
-    "title": "Sundar Te Dhyan Ubhe Vitevari",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0233"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-034",
-    "title": "Tirth Vitthal Kshetra Vitthal",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0234"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-035",
-    "title": "Dnyanoba Mauli Tukaram",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0235"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-036",
-    "title": "Mauli Mauli",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0236"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-037",
-    "title": "Vithal Naamachi Shala Bharali",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0237"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-038",
-    "title": "Jai Jai Ram Krishna Hari",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0238"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-dev-039",
-    "title": "Ram Krishna Hari",
-    "language": "marathi",
-    "categories": [
-      "devotional"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0239"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-040",
-    "title": "Ghei Chhand Makarand",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0240"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-041",
-    "title": "Deva Tuza Gabhara",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0241"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-film-050",
-    "title": "Satyam Shivam Sundaram",
-    "language": "marathi",
-    "categories": [
-      "marathi-film"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0242"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-042",
-    "title": "Vasant Ki Bahar",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0243"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-043",
-    "title": "Sundar Mi Honar",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0244"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-natya-044",
-    "title": "Prem Seva Sharan",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": {
-      "type": "youtube",
-      "id": "4gXpTDLPAuU",
-      "verified": true,
-      "channel": "Saregama Marathi",
-      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
-      "url": "https://www.youtube.com/watch?v=4gXpTDLPAuU",
-      "checkedAt": "2026-09-07T16:52:33.067128+00:00"
-    },
-    "provenance": {
-      "catalogVersion": "1.3.0",
-      "source": "https://www.youtube.com/watch?v=4gXpTDLPAuU"
-    },
-    "artists": [
-      "Anand Bhate",
-      "Aarya Ambekar"
-    ],
-    "film": {
-      "name": "Sangeet Manapmaan"
-    },
-    "album": "Sangeet Manapmaan",
-    "composers": [
-      "Govindrao Tembe",
-      "Shankar-Ehsaan-Loy"
-    ],
-    "lyricists": [
-      "Krushnaji Prabhakar Khadilkar"
-    ],
-    "status": "playable",
-    "review": {
-      "individualSong": true,
-      "creditsChecked": true,
-      "videoTitle": "Prem Seva Sharan - Lyrical | प्रेम सेवा शरण | Sangeet Manapmaan | Subodh Bhave | Vaidehi P | Aarya A",
-      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
-    }
-  },
-  {
-    "id": "mar-natya-045",
-    "title": "Mhanoni Dya Malaa",
-    "language": "marathi",
-    "categories": [
-      "natya-sangeet"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0246"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-pat-001",
-    "title": "Jai Jai Maharashtra Majha",
-    "language": "marathi",
-    "categories": [
-      "patriotic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0247"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-pat-002",
-    "title": "Garja Maharashtra Majha",
-    "language": "marathi",
-    "categories": [
-      "patriotic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0248"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-pat-003",
-    "title": "Utha Rashtra Veer Ho",
-    "language": "marathi",
-    "categories": [
-      "patriotic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0249"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-pat-004",
-    "title": "Shivba Raja",
-    "language": "marathi",
-    "categories": [
-      "patriotic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0250"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-pat-005",
-    "title": "He Hindavi Swarajya",
-    "language": "marathi",
-    "categories": [
-      "patriotic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0251"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-pat-006",
-    "title": "Maharashtra Desha",
-    "language": "marathi",
-    "categories": [
-      "patriotic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0252"
-    },
-    "status": "metadata-only"
-  },
-  {
-    "id": "mar-pat-007",
-    "title": "Majha Maharashtra Desh Ha",
-    "language": "marathi",
-    "categories": [
-      "patriotic"
-    ],
-    "moods": [],
-    "source": null,
-    "provenance": {
-      "catalogVersion": "1.2.0",
-      "source": "sargam-marathi-seed-v1",
-      "seedId": "mr-0253"
-    },
-    "status": "metadata-only"
-  },
-  {
     "id": "mar-discovery-ac4d26f43f6a",
     "title": "Chimukala Sansar Majha",
     "language": "marathi",
@@ -4449,6 +122,53 @@
       "videoTitle": "अंजनीच्या सूता | Anjanichya Soota | Mahendra Kapoor | Marathi Bhaktigeete | Hanuman Songs",
       "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
     }
+  },
+  {
+    "id": "mar-natya-014",
+    "title": "Chandrika Hi Janu",
+    "language": "marathi",
+    "artists": [
+      "Sonu Nigam"
+    ],
+    "year": null,
+    "film": {
+      "name": "Sangeet Manapmaan"
+    },
+    "album": "Sangeet Manapmaan",
+    "composers": [
+      "Shankar-Ehsaan-Loy"
+    ],
+    "lyricists": [
+      "Sameer Samant"
+    ],
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "-GyZ_28MCNE",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=-GyZ_28MCNE",
+      "checkedAt": "2026-09-07T16:52:22.605724+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=-GyZ_28MCNE"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Chandrika - Lyrical | चंद्रिका | Sangeet Manapmaan | Sonu Nigam | Subodh Bhave | Vaidehi Parashurami",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "aliases": [
+      "Chandrika"
+    ],
+    "replacesExistingId": "mar-natya-014"
   },
   {
     "id": "mar-discovery-4d08ae537863",
@@ -4870,6 +590,51 @@
     }
   },
   {
+    "id": "mar-dev-029",
+    "title": "Sukhkarta Dukhharta",
+    "language": "marathi",
+    "artists": [
+      "Lata Mangeshkar"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Pt. Hridaynath Mangeshkar"
+    ],
+    "lyricists": [
+      "Traditional"
+    ],
+    "categories": [
+      "marathi-bhakti"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "2LoxjhZ8jRo",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=2LoxjhZ8jRo",
+      "checkedAt": "2026-09-07T16:52:29.487622+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=2LoxjhZ8jRo"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Ganpati Aarti | Sukhkarta Dukhharta Full Aarti with Lyrics | Lata Mangeshkar | Ganpati Songs",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "aliases": [
+      "Shree Ganpatichi Aarti"
+    ],
+    "replacesExistingId": "mar-dev-029"
+  },
+  {
     "id": "mar-discovery-a5dae8496cc3",
     "title": "Visru Nako Shrirama",
     "language": "marathi",
@@ -4954,6 +719,93 @@
     }
   },
   {
+    "id": "mar-folk-009",
+    "title": "Shoor Amhi Sardar",
+    "language": "marathi",
+    "artists": [
+      "Pt. Hridaynath Mangeshkar"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Anandghan"
+    ],
+    "lyricists": [
+      "Shanta Shelke"
+    ],
+    "categories": [
+      "patriotic"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "2v92Fga9vZ4",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=2v92Fga9vZ4",
+      "checkedAt": "2026-09-07T16:52:30.285607+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=2v92Fga9vZ4"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Shoor Amhi Sardar | शूर आम्ही सरदार | Pt. Hridaynath Mangeshkar | Shanta Shelke",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "replacesExistingId": "mar-folk-009"
+  },
+  {
+    "id": "mar-natya-012",
+    "title": "De Hata Ya Sharanagata",
+    "language": "marathi",
+    "artists": [
+      "Prabhakar Karekar"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Basant Prabhu"
+    ],
+    "lyricists": [
+      "K.P. Khadilkar"
+    ],
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "31v7OmY4GxY",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=31v7OmY4GxY",
+      "checkedAt": "2026-09-07T16:52:30.449523+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=31v7OmY4GxY"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "De Haata Ya Sharanagata | दे हात या शरणागत | Prabhakar Karekar | Old Marathi Songs",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "aliases": [
+      "De Haata Ya Sharanagata"
+    ],
+    "replacesExistingId": "mar-natya-012"
+  },
+  {
     "id": "mar-discovery-24597937122b",
     "title": "Tujyaa Naynant",
     "language": "marathi",
@@ -4992,6 +844,50 @@
       "videoTitle": "Tujyaa Naynant | तुझ्या नयनांत | Master Vinayak | Dada Saheb Chandekar | Old Marathi Songs",
       "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
     }
+  },
+  {
+    "id": "mar-film-031",
+    "title": "Akhercha Tula Ha Dandvat",
+    "language": "marathi",
+    "artists": [
+      "Lata Mangeshkar"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Anandghan"
+    ],
+    "lyricists": [],
+    "categories": [
+      "marathi-classics",
+      "marathi-film"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "3_G7NcKaaLc",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=3_G7NcKaaLc",
+      "checkedAt": "2026-09-07T16:52:31.554722+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=3_G7NcKaaLc"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Akhercha Ha Tula Dandvat | अखेरचा हा तुला दंडवत | Lata Mangeshkar | Old Marathi Songs",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null. Publisher lyricist credit appears inconsistent; omitted pending corroboration."
+    },
+    "aliases": [
+      "Akhercha Ha Tula Dandvat"
+    ],
+    "replacesExistingId": "mar-film-031"
   },
   {
     "id": "mar-discovery-4ffe2a5a3527",
@@ -5074,6 +970,97 @@
       "videoTitle": "Dehachi Tijori | देहाची तिजोरी | Sudhir Phadke | Jagdish Khebudkar | Old Marathi Songs",
       "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
     }
+  },
+  {
+    "id": "mar-dev-003",
+    "title": "Dnyaniyancha Raja",
+    "language": "marathi",
+    "artists": [
+      "Pt. Bhimsen Joshi"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Ram Pathak"
+    ],
+    "lyricists": [
+      "Sant Tukaram (Traditional)"
+    ],
+    "categories": [
+      "marathi-bhakti"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "4UKlLO45N9I",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=4UKlLO45N9I",
+      "checkedAt": "2026-09-07T16:52:32.421457+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=4UKlLO45N9I"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Dyaniyancha Raja Guru Maharav | ज्ञानियांचा  राजा गुरु महाराव | Pt. Bhimsen Joshi | Sant Tukaram",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "aliases": [
+      "Dyaniyancha Raja Guru Maharav"
+    ],
+    "replacesExistingId": "mar-dev-003"
+  },
+  {
+    "id": "mar-natya-044",
+    "title": "Prem Seva Sharan",
+    "language": "marathi",
+    "artists": [
+      "Anand Bhate",
+      "Aarya Ambekar"
+    ],
+    "year": null,
+    "film": {
+      "name": "Sangeet Manapmaan"
+    },
+    "album": "Sangeet Manapmaan",
+    "composers": [
+      "Govindrao Tembe",
+      "Shankar-Ehsaan-Loy"
+    ],
+    "lyricists": [
+      "Krushnaji Prabhakar Khadilkar"
+    ],
+    "categories": [
+      "natya-sangeet"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "4gXpTDLPAuU",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=4gXpTDLPAuU",
+      "checkedAt": "2026-09-07T16:52:33.067128+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=4gXpTDLPAuU"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Prem Seva Sharan - Lyrical | प्रेम सेवा शरण | Sangeet Manapmaan | Subodh Bhave | Vaidehi P | Aarya A",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "replacesExistingId": "mar-natya-044"
   },
   {
     "id": "mar-discovery-9fb554c561f7",
@@ -5160,6 +1147,97 @@
       "videoTitle": "Nakshatranche Dene | Javed Ali | Nirrmite Saawaant | Prarthana Behere | Kedar Shinde | Devdutta Baji",
       "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
     }
+  },
+  {
+    "id": "mar-cls-019",
+    "title": "Raja Lalkari Ashi De",
+    "language": "marathi",
+    "artists": [
+      "Anuradha Paudwal",
+      "Suresh Wadkar"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Anil-Arun"
+    ],
+    "lyricists": [
+      "Jagdish Khebudkar"
+    ],
+    "categories": [
+      "marathi-classics",
+      "marathi-film"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "65y1HN5abp0",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=65y1HN5abp0",
+      "checkedAt": "2026-09-07T16:52:35.012415+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=65y1HN5abp0"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Raja Lalkari Ashi De - Audio song with Lyrics | राजा ललकारी अशी दे | Anuradha | Suresh Wadkar",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "replacesExistingId": "mar-cls-019"
+  },
+  {
+    "id": "mar-film-023",
+    "title": "Chandra Ahe Sakshila",
+    "language": "marathi",
+    "artists": [
+      "Asha Bhosle",
+      "Sudhir Phadke"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Sudhir Phadke"
+    ],
+    "lyricists": [
+      "Jagdish Khebudkar"
+    ],
+    "categories": [
+      "marathi-classics",
+      "marathi-film"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "6YQ2lD9sJOA",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=6YQ2lD9sJOA",
+      "checkedAt": "2026-09-07T16:52:35.882598+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=6YQ2lD9sJOA"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Chandra Aahe Sakshiila | चंद्र आहे साक्षीला | Asha Bhosle, Sudhir Phadke | Old Marathi Songs",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "aliases": [
+      "Chandra Aahe Sakshiila"
+    ],
+    "replacesExistingId": "mar-film-023"
   },
   {
     "id": "mar-discovery-861dbe0674c4",
@@ -5452,6 +1530,52 @@
       "videoTitle": "Dhan Rashi Disata | धनराशी दिसता | Manik Varma | Old Marathi Songs",
       "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
     }
+  },
+  {
+    "id": "mar-cls-016",
+    "title": "Nimbonichya Zadamage",
+    "language": "marathi",
+    "artists": [
+      "Suman Kalyanpur"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "N. Dutta"
+    ],
+    "lyricists": [
+      "Madhusudan Kalekar"
+    ],
+    "categories": [
+      "marathi-classics",
+      "marathi-film"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "9JukBaAtLUM",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=9JukBaAtLUM",
+      "checkedAt": "2026-09-07T16:52:39.223238+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=9JukBaAtLUM"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Nimbonichya Zadamaage | निंबोणीच्या झाडामागे | Suman Kalyanpur | Old Marathi Songs",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "aliases": [
+      "Nimbonichya Zadamaage"
+    ],
+    "replacesExistingId": "mar-cls-016"
   },
   {
     "id": "mar-discovery-f450153dba75",
@@ -6679,6 +2803,50 @@
     }
   },
   {
+    "id": "mar-cls-014",
+    "title": "Dis Jatil Dis Yetil",
+    "language": "marathi",
+    "artists": [
+      "Asha Bhosle",
+      "Suresh Wadkar"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Sudhir Phadke"
+    ],
+    "lyricists": [
+      "Sudhir Moghe"
+    ],
+    "categories": [
+      "marathi-classics",
+      "marathi-film"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "LoKfGaFbfNw",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=LoKfGaFbfNw",
+      "checkedAt": "2026-09-07T16:52:54.803188+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=LoKfGaFbfNw"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Dis Jatil Dis Yetil - Audio song with Lyrics | दिस जातील दिस येतील | Asha Bhosle | Suresh Wadkar",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "replacesExistingId": "mar-cls-014"
+  },
+  {
     "id": "mar-discovery-7f28be8acb9f",
     "title": "Dhairyasheel Kshamasheel",
     "language": "marathi",
@@ -6721,6 +2889,93 @@
       "videoTitle": "Dhairyasheel Kshamasheel - Audio | Sangeet Maanapman | Subodh B | Vaidehi P | Shailendra D",
       "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
     }
+  },
+  {
+    "id": "mar-cls-006",
+    "title": "Asa Bebhan Ha Vara",
+    "language": "marathi",
+    "artists": [
+      "Lata Mangeshkar"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Pt. Hridaynath Mangeshkar"
+    ],
+    "lyricists": [
+      "Mangesh Padgaonkar"
+    ],
+    "categories": [
+      "marathi-classics",
+      "marathi-film"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "M9j5IWqz_Hk",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=M9j5IWqz_Hk",
+      "checkedAt": "2026-09-07T16:52:55.525709+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=M9j5IWqz_Hk"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Asa Bebhan Ha Vara | असा बेभान हा वारा | Lata Mangeshkar | Pt. Hridaynath Mangeshkar | Old Songs",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "replacesExistingId": "mar-cls-006"
+  },
+  {
+    "id": "mar-film-047",
+    "title": "Kalya Matit Matit",
+    "language": "marathi",
+    "artists": [
+      "Suresh Wadkar",
+      "Anuradha Paudwal"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Anil-Arun"
+    ],
+    "lyricists": [
+      "Prof. Vithal Wagh"
+    ],
+    "categories": [
+      "marathi-classics",
+      "marathi-film"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "M-i3NsMCrzA",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=M-i3NsMCrzA",
+      "checkedAt": "2026-09-07T16:52:55.450723+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=M-i3NsMCrzA"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Kalya Matit Matit - Audio with Lyrics | काळ्या मातीत मातीत | Suresh Wadkar, Anuradha Paudwal",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "replacesExistingId": "mar-film-047"
   },
   {
     "id": "mar-discovery-71ad5fb1ec26",
@@ -7147,6 +3402,48 @@
     }
   },
   {
+    "id": "mar-bhakti-019",
+    "title": "Sundar Te Dhyan",
+    "language": "marathi",
+    "artists": [
+      "Lata Mangeshkar"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Shrinivas Khale"
+    ],
+    "lyricists": [
+      "Sant Tukaram"
+    ],
+    "categories": [
+      "marathi-bhakti"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "QxjFBnsJ0sE",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=QxjFBnsJ0sE",
+      "checkedAt": "2026-09-07T16:53:01.592753+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=QxjFBnsJ0sE"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "सुंदर ते ध्यान | Sundar Te Dhyan | Lata Mangeshkar | Vitthal Songs | Marathi Bhaktigeete",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "replacesExistingId": "mar-bhakti-019"
+  },
+  {
     "id": "mar-discovery-485784373410",
     "title": "Aaivaj Maza",
     "language": "marathi",
@@ -7231,6 +3528,48 @@
       "videoTitle": "Mala Madan Bhase - Audio Song | मला मदन भासे | Sangeet Manapmaan | Aarya A | Subodh B | Vaidehi P",
       "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
     }
+  },
+  {
+    "id": "mar-dev-002",
+    "title": "Vrukshavalli Aamha Soyari",
+    "language": "marathi",
+    "artists": [
+      "Lata Mangeshkar"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Shrinivas Khale"
+    ],
+    "lyricists": [
+      "Sant Tukaram"
+    ],
+    "categories": [
+      "marathi-bhakti"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "RneauDtFYLA",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=RneauDtFYLA",
+      "checkedAt": "2026-09-07T16:53:02.361880+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=RneauDtFYLA"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Vrukshavalli Aamha Soyari | वृक्षवल्ली आम्हा सोयरी | Lata Mangeshkar | Vitthal Songs",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "replacesExistingId": "mar-dev-002"
   },
   {
     "id": "mar-discovery-6e51e7e7ad6a",
@@ -7529,6 +3868,48 @@
     }
   },
   {
+    "id": "mar-cls-013",
+    "title": "Mogara Phulala",
+    "language": "marathi",
+    "artists": [
+      "Lata Mangeshkar"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Pt. Hridaynath Mangeshkar"
+    ],
+    "lyricists": [
+      "Sant Dnyaneshwar"
+    ],
+    "categories": [
+      "marathi-bhakti"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "UNNUf9xpi0E",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=UNNUf9xpi0E",
+      "checkedAt": "2026-09-07T16:53:05.518379+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=UNNUf9xpi0E"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Mogara Phulala | मोगरा फुलला | Lata Mangeshkar | Pt. Hridaynath Mangeshkar | Sant Dnyaneshwar",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "replacesExistingId": "mar-cls-013"
+  },
+  {
     "id": "mar-discovery-37988e166354",
     "title": "Hi Chaal Turu Turu",
     "language": "marathi",
@@ -7568,6 +3949,48 @@
       "videoTitle": "Hi Chaal Turu Turu | ही चाल तुरु तुरु | Jaywant Kulkarni | Old Marathi Song",
       "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
     }
+  },
+  {
+    "id": "mar-bhakti-005",
+    "title": "Omkar Pradhan Roop Ganeshache",
+    "language": "marathi",
+    "artists": [
+      "Suman Kalyanpur"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Kamalakar Bhagwat"
+    ],
+    "lyricists": [
+      "Sant Tukaram"
+    ],
+    "categories": [
+      "marathi-bhakti"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "UxmD6ZorNsM",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=UxmD6ZorNsM",
+      "checkedAt": "2026-09-07T16:53:06.380080+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=UxmD6ZorNsM"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Omkar Pradhan Roop Ganeshache | ओंकार प्रधान रूप गणेशाचे | Suman Kalyanpur | Ganpati Songs",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "replacesExistingId": "mar-bhakti-005"
   },
   {
     "id": "mar-discovery-5dbd33fcc99b",
@@ -8157,6 +4580,52 @@
       "videoTitle": "Vadal Vara Sutala Ga | वादलवारं सुटलं गो | Lata Mangeshkar | Hridaynath Mangeshkar | Marathi Song",
       "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
     }
+  },
+  {
+    "id": "mar-bhakti-006",
+    "title": "Teerth Vitthal Kshetra Vitthal",
+    "language": "marathi",
+    "artists": [
+      "Pt. Bhimsen Joshi"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Ram Pathak"
+    ],
+    "lyricists": [
+      "Sant Namdeo"
+    ],
+    "categories": [
+      "marathi-classics",
+      "marathi-film"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "b2XdXHprhPc",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=b2XdXHprhPc",
+      "checkedAt": "2026-09-07T16:53:30.363803+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=b2XdXHprhPc"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Tirte Vithal Kshetra Vithal | तिर्थ विठ्ठल क्षेत्र विठ्ठल | Pt. Bhimsen Joshi | Marathi Bhaktigeet",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "aliases": [
+      "Tirtha Vithal Kshetra Vithal"
+    ],
+    "replacesExistingId": "mar-bhakti-006"
   },
   {
     "id": "mar-discovery-2fedb0ddf72f",
@@ -9042,6 +5511,50 @@
       "videoTitle": "Naahi Me Bolat - Audio Song | Priyanka Barve | Sangeet Manapmaan | Subodh Bhave | Vaidehi",
       "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
     }
+  },
+  {
+    "id": "mar-cls-021",
+    "title": "Aala Aala Vara",
+    "language": "marathi",
+    "artists": [
+      "Asha Bhosle",
+      "Anuradha Paudwal"
+    ],
+    "year": null,
+    "film": null,
+    "album": null,
+    "composers": [
+      "Pt. Hridaynath Mangeshkar"
+    ],
+    "lyricists": [
+      "Sudhir Moghe"
+    ],
+    "categories": [
+      "marathi-classics",
+      "marathi-film"
+    ],
+    "moods": [],
+    "status": "playable",
+    "source": {
+      "type": "youtube",
+      "id": "UiQJbR_EhSk",
+      "verified": true,
+      "channel": "Saregama Marathi",
+      "channelId": "UCJSX0gNr2U5lawLXE6IjRmA",
+      "url": "https://www.youtube.com/watch?v=UiQJbR_EhSk",
+      "checkedAt": "2026-09-07T16:53:06.309321+00:00"
+    },
+    "provenance": {
+      "catalogVersion": "1.3.0",
+      "source": "https://www.youtube.com/watch?v=UiQJbR_EhSk"
+    },
+    "review": {
+      "individualSong": true,
+      "creditsChecked": true,
+      "videoTitle": "Aala Aala Vara | आला आला वारा | Asha Bhosle, Anuradha Paudwal | Old Marathi Song",
+      "notes": "Individual recording identity and description credits reviewed; watch response OK and embeddable. Unknown release year/film left null."
+    },
+    "replacesExistingId": "mar-cls-021"
   },
   {
     "id": "mar-discovery-74a9b59ef790",

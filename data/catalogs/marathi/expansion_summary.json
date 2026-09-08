@@ -1,0 +1,22 @@
+{
+  "before": 313,
+  "removed": 85,
+  "added": 113,
+  "repaired": 19,
+  "final": 341,
+  "playable": 132,
+  "metadataOnly": 209,
+  "categories": {
+    "bhavageet": 36,
+    "devotional": 38,
+    "folk": 26,
+    "gavlani": 11,
+    "lavani": 29,
+    "marathi-bhakti": 41,
+    "marathi-classics": 38,
+    "marathi-film": 96,
+    "natya-sangeet": 48,
+    "patriotic": 11,
+    "romantic": 30
+  }
+}

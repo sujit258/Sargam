@@ -10,7 +10,7 @@ import {
   useState,
 } from "react";
 import { PlayerBar } from "@/components/player-bar";
-import { hydrate, type Catalogue, type RawSong, type Song } from "@/lib/catalogue";
+import { hydrate, isPlayableSong, type Catalogue, type RawSong, type Song } from "@/lib/catalogue";
 import { track } from "@/lib/analytics";
 import { useCatalogue } from "@/lib/queries";
 import { recordPlayedSong } from "@/lib/discovery";
@@ -89,8 +89,9 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
   });
   const [queue, setQueueState] = useState<RawSong[]>([]);
   const setQueue = useCallback((songs: RawSong[]) => {
-    queueRef.current = songs;
-    setQueueState(songs);
+    const playable = songs.filter(isPlayableSong);
+    queueRef.current = playable;
+    setQueueState(playable);
   }, []);
 
   // The songs either side of the current one, kept up to date as it plays.
@@ -115,9 +116,11 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
   }, [currentId, queue]);
 
   const play = useCallback((id: number | string) => {
+    const song = catalogue?.songs.find((candidate) => candidate.id === id);
+    if (!song || !isPlayableSong(song)) return;
     setCurrentId(id);
     setPlaying(true);
-  }, []);
+  }, [catalogue]);
 
   // Every start goes through here, and each says where it came from. play()
   // itself stays a bare state setter: wrapping the counting around it rather
@@ -150,10 +153,11 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
 
   const playFirst = useCallback(
     (songs: RawSong[]) => {
-      if (songs.length === 0) return;
-      setQueue(songs);
+      const playable = songs.filter(isPlayableSong);
+      if (playable.length === 0) return;
+      setQueue(playable);
       playFrom(
-        shuffle ? songs[Math.floor(Math.random() * songs.length)].id : songs[0].id,
+        shuffle ? playable[Math.floor(Math.random() * playable.length)].id : playable[0].id,
         "list"
       );
     },
@@ -162,9 +166,10 @@ export function PlayerProvider({ children }: { children: React.ReactNode }) {
 
   const playRandom = useCallback(
     (songs: RawSong[]) => {
-      if (songs.length === 0) return;
-      setQueue(songs);
-      playFrom(songs[Math.floor(Math.random() * songs.length)].id, "shuffle");
+      const playable = songs.filter(isPlayableSong);
+      if (playable.length === 0) return;
+      setQueue(playable);
+      playFrom(playable[Math.floor(Math.random() * playable.length)].id, "shuffle");
     },
     [playFrom, setQueue]
   );

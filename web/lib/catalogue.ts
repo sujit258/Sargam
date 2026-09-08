@@ -35,6 +35,11 @@ export type RawSong = {
   source_verified?: boolean;
 };
 
+/** Only validated playback sources may enter a queue. */
+export function isPlayableSong(song: RawSong): boolean {
+  return Boolean(song.v) && song.source_verified !== false;
+}
+
 /** What a station is named after, so its poster can be chosen sensibly. */
 export type StationMeta = {
   kind: "singer" | "composer" | "lyricist" | "actor" | "director" | "mood" | "genre" | "format";

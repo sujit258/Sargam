@@ -1,0 +1,236 @@
+[
+  {
+    "id": "station-marathi-classics",
+    "name": "Marathi Classics",
+    "language": "marathi",
+    "description": "Timeless golden-era master recordings by Maharashtra's greatest vocalists.",
+    "filters": {
+      "categories": [
+        "marathi-classics"
+      ]
+    },
+    "songIds": [
+      "mar-cls-006",
+      "mar-cls-014",
+      "mar-bhakti-006",
+      "mar-cls-016",
+      "mar-cls-019",
+      "mar-cls-021",
+      "mar-film-023",
+      "mar-film-031",
+      "mar-film-047",
+      "mar-discovery-ac4d26f43f6a",
+      "mar-discovery-dad1a8ea706f",
+      "mar-discovery-65579c780734",
+      "mar-discovery-24597937122b",
+      "mar-discovery-1caadd2abce7",
+      "mar-discovery-40ed2def6619",
+      "mar-discovery-caab9effdfcc",
+      "mar-discovery-6f5d9316623a",
+      "mar-discovery-631ca887c8d8",
+      "mar-discovery-857a669f294b",
+      "mar-discovery-f477f3a6ded5",
+      "mar-discovery-d9e24ab4cf07",
+      "mar-discovery-b4d08dd4f608",
+      "mar-discovery-7ec850f56fb5",
+      "mar-discovery-9c12b10b6d06",
+      "mar-discovery-5dbd33fcc99b",
+      "mar-discovery-2fedb0ddf72f"
+    ]
+  },
+  {
+    "id": "station-marathi-bhavg",
+    "name": "Marathi Bhavageet",
+    "language": "marathi",
+    "description": "Intimate poetic expressions of romance, rain, nature, and longing.",
+    "filters": {
+      "categories": [
+        "bhavageet"
+      ]
+    },
+    "songIds": [
+      "mar-discovery-da0b26ae0007",
+      "mar-discovery-9fb554c561f7",
+      "mar-discovery-0e54d1631ebf",
+      "mar-discovery-d6b3af2571c4",
+      "mar-discovery-d869abb26e56",
+      "mar-discovery-e0f52582c1ca",
+      "mar-discovery-37988e166354",
+      "mar-discovery-60632466a2db",
+      "mar-discovery-6e539d88be61",
+      "mar-discovery-4f16e6dff89b"
+    ]
+  },
+  {
+    "id": "station-marathi-natya",
+    "name": "Natya Sangeet",
+    "language": "marathi",
+    "description": "Semi-classical grandeur from the golden age of Marathi musical theatre.",
+    "filters": {
+      "categories": [
+        "natya-sangeet"
+      ]
+    },
+    "songIds": [
+      "mar-natya-012",
+      "mar-natya-014",
+      "mar-natya-044",
+      "mar-discovery-fce1a607c14f",
+      "mar-discovery-d08443f44fd3",
+      "mar-discovery-861dbe0674c4",
+      "mar-discovery-95a483d9a03f",
+      "mar-discovery-db81d6f0194d",
+      "mar-discovery-ad705f62889f",
+      "mar-discovery-cd4ed0b95379",
+      "mar-discovery-824474a81cf3",
+      "mar-discovery-3e0dff582231",
+      "mar-discovery-7f28be8acb9f",
+      "mar-discovery-af94ab77f696",
+      "mar-discovery-768ee7826878",
+      "mar-discovery-7cb80ddd4b3b",
+      "mar-discovery-4e7b891250f5"
+    ]
+  },
+  {
+    "id": "station-marathi-lavani",
+    "name": "Lavani",
+    "language": "marathi",
+    "description": "Electrifying rhythm, dholki beats, and vibrant traditional dance expressions.",
+    "filters": {
+      "categories": [
+        "lavani"
+      ]
+    },
+    "songIds": [
+      "mar-discovery-4d08ae537863",
+      "mar-discovery-7da1bde983f2",
+      "mar-discovery-4b0c55723686",
+      "mar-discovery-aa1e4db78aa1",
+      "mar-discovery-485784373410",
+      "mar-discovery-2e515fc641f5",
+      "mar-discovery-d553db710ee5",
+      "mar-discovery-78c2c0c2aaf4"
+    ]
+  },
+  {
+    "id": "station-marathi-bhakti",
+    "name": "Marathi Bhakti",
+    "language": "marathi",
+    "description": "Divine Abhangs, saint poetry, and Aarti hymns honoring Vitthal and Ganapati.",
+    "filters": {
+      "categories": [
+        "marathi-bhakti",
+        "devotional"
+      ]
+    },
+    "songIds": [
+      "mar-cls-013",
+      "mar-bhakti-005",
+      "mar-bhakti-019",
+      "mar-dev-002",
+      "mar-dev-003",
+      "mar-dev-029",
+      "mar-discovery-6c8720d35992",
+      "mar-discovery-143c521203b4",
+      "mar-discovery-5c180f779e14",
+      "mar-discovery-1816e4dd2589",
+      "mar-discovery-94cda36d9f20",
+      "mar-discovery-a5dae8496cc3",
+      "mar-discovery-4ffe2a5a3527",
+      "mar-discovery-0e54e7476ac6",
+      "mar-discovery-06b74f60cec0",
+      "mar-discovery-ae6bb95c40fd",
+      "mar-discovery-5126d96bf2ad",
+      "mar-discovery-db81d6f0194d",
+      "mar-discovery-ab1bc99927f9",
+      "mar-discovery-14b8bd79f7cf",
+      "mar-discovery-bf2d2f43b4e0",
+      "mar-discovery-a1cbd89d23fa",
+      "mar-discovery-707ad1e4e9bb",
+      "mar-discovery-7fcf5a6ad9b4",
+      "mar-discovery-6e51e7e7ad6a",
+      "mar-discovery-2e8cb0ec9511",
+      "mar-discovery-0e16a60e5d53",
+      "mar-discovery-b2df6775c4bd",
+      "mar-discovery-a67a189b0631",
+      "mar-discovery-5aff0cb38d74",
+      "mar-discovery-aaefc77ec5a5",
+      "mar-discovery-7241ad376b28",
+      "mar-discovery-1f07c2a90b8a",
+      "mar-discovery-8b95a13a85c4",
+      "mar-discovery-758172096c1a",
+      "mar-discovery-021cc5d4c242",
+      "mar-discovery-93f186d9d6bf",
+      "mar-discovery-ec0f76664e7d"
+    ]
+  },
+  {
+    "id": "station-marathi-gavlani",
+    "name": "Gavlani",
+    "language": "marathi",
+    "description": "Playful, joyful folk tales of Radha, Krishna, gopis, and the flute in Gokul.",
+    "filters": {
+      "categories": [
+        "gavlani"
+      ]
+    },
+    "songIds": [
+      "mar-discovery-f2c8b6b78756"
+    ]
+  },
+  {
+    "id": "station-marathi-folk",
+    "name": "Marathi Folk",
+    "language": "marathi",
+    "description": "Rustic rhythms of Maharashtra: Koli geet, Gondhal, Dhangari, and Powada.",
+    "filters": {
+      "categories": [
+        "folk"
+      ]
+    },
+    "songIds": [
+      "mar-discovery-1c80319a4a27",
+      "mar-discovery-f31693b08ab4",
+      "mar-discovery-71ad5fb1ec26",
+      "mar-discovery-c8389ecbf77e",
+      "mar-discovery-dfe76acc0bca",
+      "mar-discovery-7ee02f693162",
+      "mar-discovery-8c0a8c204c48",
+      "mar-discovery-17186e93bfb0",
+      "mar-discovery-ec19250d9486"
+    ]
+  },
+  {
+    "id": "station-marathi-romantic",
+    "name": "Marathi Romance",
+    "language": "marathi",
+    "description": "Soulful melodies celebrating tender moments and eternal cinema romance.",
+    "filters": {
+      "categories": [
+        "romantic"
+      ]
+    },
+    "songIds": [
+      "mar-discovery-5b9482b7e909",
+      "mar-discovery-ac0b0758de40",
+      "mar-discovery-ec6773bde3d7",
+      "mar-discovery-f450153dba75",
+      "mar-discovery-7de4de16c36e",
+      "mar-discovery-bee135bdf9bf",
+      "mar-discovery-65cc1d01400f",
+      "mar-discovery-cdb4dc33bcc9",
+      "mar-discovery-54f9f7981359",
+      "mar-discovery-47a2624b7300",
+      "mar-discovery-0dc0f2464357",
+      "mar-discovery-670944b1dcb7",
+      "mar-discovery-18b6289e346f",
+      "mar-discovery-1399d06dc577",
+      "mar-discovery-bc2be81041da",
+      "mar-discovery-bf4707099438",
+      "mar-discovery-a58b5a38431e",
+      "mar-discovery-87782ca8143d",
+      "mar-discovery-d6f8252a8749",
+      "mar-discovery-74a9b59ef790"
+    ]
+  }
+]
