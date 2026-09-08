@@ -1,0 +1,5789 @@
+{
+  "baselineCount": 313,
+  "baselineSha256": "6a2de02137f6e99e313eb01136df722567258e5f2afe39b77b185db08a66f578",
+  "baselineIds": [
+    "mar-cls-001",
+    "mar-cls-002",
+    "mar-cls-003",
+    "mar-cls-004",
+    "mar-cls-005",
+    "mar-cls-006",
+    "mar-cls-007",
+    "mar-cls-008",
+    "mar-cls-009",
+    "mar-cls-010",
+    "mar-cls-011",
+    "mar-cls-012",
+    "mar-cls-013",
+    "mar-cls-014",
+    "mar-cls-015",
+    "mar-bhav-001",
+    "mar-bhav-002",
+    "mar-bhav-003",
+    "mar-bhav-004",
+    "mar-bhav-005",
+    "mar-bhav-006",
+    "mar-bhav-007",
+    "mar-bhav-008",
+    "mar-natya-001",
+    "mar-natya-002",
+    "mar-natya-003",
+    "mar-natya-004",
+    "mar-natya-005",
+    "mar-natya-006",
+    "mar-natya-007",
+    "mar-natya-008",
+    "mar-natya-009",
+    "mar-natya-010",
+    "mar-natya-011",
+    "mar-lav-001",
+    "mar-lav-002",
+    "mar-lav-003",
+    "mar-lav-004",
+    "mar-lav-005",
+    "mar-lav-006",
+    "mar-lav-007",
+    "mar-lav-008",
+    "mar-lav-009",
+    "mar-lav-010",
+    "mar-bhakti-001",
+    "mar-bhakti-002",
+    "mar-bhakti-003",
+    "mar-bhakti-004",
+    "mar-bhakti-005",
+    "mar-bhakti-006",
+    "mar-bhakti-007",
+    "mar-bhakti-008",
+    "mar-bhakti-009",
+    "mar-bhakti-010",
+    "mar-bhakti-011",
+    "mar-bhakti-012",
+    "mar-bhakti-013",
+    "mar-bhakti-014",
+    "mar-bhakti-015",
+    "mar-bhakti-016",
+    "mar-folk-001",
+    "mar-folk-002",
+    "mar-folk-003",
+    "mar-folk-004",
+    "mar-folk-005",
+    "mar-folk-006",
+    "mar-folk-007",
+    "mar-folk-008",
+    "mar-folk-009",
+    "mar-folk-010",
+    "mar-folk-011",
+    "mar-rom-001",
+    "mar-rom-002",
+    "mar-rom-003",
+    "mar-rom-004",
+    "mar-rom-005",
+    "mar-rom-006",
+    "mar-rom-007",
+    "mar-rom-008",
+    "mar-rom-009",
+    "mar-gav-001",
+    "mar-gav-002",
+    "mar-gav-003",
+    "mar-gav-004",
+    "mar-gav-005",
+    "mar-gav-006",
+    "mar-gav-007",
+    "mar-gav-008",
+    "mar-gav-009",
+    "mar-gav-010",
+    "mar-gav-011",
+    "mar-gav-012",
+    "mar-gav-013",
+    "mar-gav-014",
+    "mar-gav-015",
+    "mar-gav-016",
+    "mar-gav-017",
+    "mar-gav-018",
+    "mar-gav-019",
+    "mar-gav-020",
+    "mar-bhav-009",
+    "mar-bhav-010",
+    "mar-bhav-011",
+    "mar-natya-012",
+    "mar-natya-013",
+    "mar-natya-014",
+    "mar-natya-015",
+    "mar-natya-016",
+    "mar-natya-017",
+    "mar-natya-018",
+    "mar-lav-011",
+    "mar-lav-012",
+    "mar-lav-013",
+    "mar-lav-014",
+    "mar-lav-015",
+    "mar-lav-016",
+    "mar-lav-017",
+    "mar-lav-018",
+    "mar-lav-019",
+    "mar-bhakti-017",
+    "mar-bhakti-018",
+    "mar-bhakti-019",
+    "mar-folk-012",
+    "mar-folk-013",
+    "mar-folk-014",
+    "mar-folk-015",
+    "mar-folk-016",
+    "mar-folk-017",
+    "mar-folk-018",
+    "mar-folk-019",
+    "mar-folk-020",
+    "mar-folk-021",
+    "mar-folk-022",
+    "mar-folk-023",
+    "mar-folk-024",
+    "mar-folk-025",
+    "mar-folk-026",
+    "mar-film-001",
+    "mar-film-002",
+    "mar-film-003",
+    "mar-film-004",
+    "mar-film-005",
+    "mar-film-006",
+    "mar-film-007",
+    "mar-film-008",
+    "mar-film-009",
+    "mar-film-010",
+    "mar-film-011",
+    "mar-film-012",
+    "mar-film-013",
+    "mar-film-014",
+    "mar-dev-001",
+    "mar-dev-002",
+    "mar-dev-003",
+    "mar-dev-004",
+    "mar-dev-005",
+    "mar-gav-021",
+    "mar-gav-022",
+    "mar-gav-023",
+    "mar-gav-024",
+    "mar-gav-025",
+    "mar-gav-026",
+    "mar-gav-027",
+    "mar-gav-028",
+    "mar-gav-029",
+    "mar-rom-010",
+    "mar-rom-011",
+    "mar-cls-016",
+    "mar-cls-017",
+    "mar-cls-018",
+    "mar-cls-019",
+    "mar-cls-020",
+    "mar-cls-021",
+    "mar-film-015",
+    "mar-film-016",
+    "mar-film-017",
+    "mar-film-018",
+    "mar-natya-019",
+    "mar-film-019",
+    "mar-bhakti-020",
+    "mar-folk-027",
+    "mar-dev-006",
+    "mar-film-020",
+    "mar-natya-020",
+    "mar-film-021",
+    "mar-film-022",
+    "mar-bhav-012",
+    "mar-bhav-013",
+    "mar-bhav-014",
+    "mar-bhav-015",
+    "mar-bhav-016",
+    "mar-natya-021",
+    "mar-bhav-017",
+    "mar-film-023",
+    "mar-bhav-018",
+    "mar-dev-007",
+    "mar-bhav-019",
+    "mar-bhav-020",
+    "mar-bhav-021",
+    "mar-dev-008",
+    "mar-bhav-022",
+    "mar-dev-009",
+    "mar-folk-028",
+    "mar-dev-010",
+    "mar-gav-030",
+    "mar-film-024",
+    "mar-bhav-023",
+    "mar-bhav-024",
+    "mar-bhav-025",
+    "mar-natya-022",
+    "mar-natya-023",
+    "mar-film-025",
+    "mar-rom-012",
+    "mar-rom-013",
+    "mar-film-026",
+    "mar-film-027",
+    "mar-film-028",
+    "mar-film-029",
+    "mar-film-030",
+    "mar-film-031",
+    "mar-film-032",
+    "mar-natya-024",
+    "mar-natya-025",
+    "mar-film-033",
+    "mar-dev-011",
+    "mar-rom-014",
+    "mar-natya-026",
+    "mar-film-034",
+    "mar-natya-027",
+    "mar-natya-028",
+    "mar-natya-029",
+    "mar-rom-015",
+    "mar-dev-012",
+    "mar-film-035",
+    "mar-natya-030",
+    "mar-natya-031",
+    "mar-rom-016",
+    "mar-natya-032",
+    "mar-natya-033",
+    "mar-dev-013",
+    "mar-dev-014",
+    "mar-natya-034",
+    "mar-natya-035",
+    "mar-natya-036",
+    "mar-natya-037",
+    "mar-natya-038",
+    "mar-natya-039",
+    "mar-film-036",
+    "mar-film-037",
+    "mar-film-038",
+    "mar-film-039",
+    "mar-film-040",
+    "mar-film-041",
+    "mar-film-042",
+    "mar-film-043",
+    "mar-film-044",
+    "mar-lav-020",
+    "mar-lav-021",
+    "mar-lav-022",
+    "mar-lav-023",
+    "mar-lav-024",
+    "mar-lav-025",
+    "mar-lav-026",
+    "mar-lav-027",
+    "mar-lav-028",
+    "mar-lav-029",
+    "mar-lav-030",
+    "mar-film-045",
+    "mar-rom-017",
+    "mar-film-046",
+    "mar-lav-031",
+    "mar-film-047",
+    "mar-film-048",
+    "mar-dev-015",
+    "mar-dev-016",
+    "mar-dev-017",
+    "mar-film-049",
+    "mar-dev-018",
+    "mar-dev-019",
+    "mar-dev-020",
+    "mar-dev-021",
+    "mar-dev-022",
+    "mar-dev-023",
+    "mar-dev-024",
+    "mar-dev-025",
+    "mar-dev-026",
+    "mar-dev-027",
+    "mar-dev-028",
+    "mar-dev-029",
+    "mar-dev-030",
+    "mar-dev-031",
+    "mar-dev-032",
+    "mar-dev-033",
+    "mar-dev-034",
+    "mar-dev-035",
+    "mar-dev-036",
+    "mar-dev-037",
+    "mar-dev-038",
+    "mar-dev-039",
+    "mar-natya-040",
+    "mar-natya-041",
+    "mar-film-050",
+    "mar-natya-042",
+    "mar-natya-043",
+    "mar-natya-044",
+    "mar-natya-045",
+    "mar-pat-001",
+    "mar-pat-002",
+    "mar-pat-003",
+    "mar-pat-004",
+    "mar-pat-005",
+    "mar-pat-006",
+    "mar-pat-007"
+  ],
+  "hindiCount": 3916,
+  "hindiSha256": "a34f3e51dc9d300bf83f0ff2964d26b1777bb21c8e339d656efe9e9f4d9fc46c",
+  "existingFacets": {
+    "artists": [
+      "Aarti Anklikar Tikekar",
+      "Aarti Mukherji",
+      "Abhas",
+      "Abhijeet",
+      "Abhijeet Bhattacharya",
+      "Abhishek Bachchan",
+      "Abida Parveen",
+      "Adarsh Shinde",
+      "Ajay Gogavale",
+      "Ajay-Atul",
+      "Ajit Parab",
+      "Alisha Chinai",
+      "Alka Yagnik",
+      "Alok Nath",
+      "Amaan Ali Bangash",
+      "Ambar Kumar",
+      "Ameen Sayani",
+      "Ameen Sayani (Commentary)",
+      "Ameesha Patel",
+      "Amey Date",
+      "Amir Jamal",
+      "Amirbai Karnataki",
+      "Amit Kumar",
+      "Amitabh Bachchan",
+      "Amrish Puri",
+      "Anand Bakshi",
+      "Anand Balraj",
+      "Anand Kumar C",
+      "Anand Shinde",
+      "Anandi Joshi",
+      "Anil Biswas",
+      "Anil Kapoor",
+      "Anita Singhvi",
+      "Annette Pinto",
+      "Antara Chowdhury",
+      "Anu Malik",
+      "Anup Ghoshal",
+      "Anup Jalota",
+      "Anupam Kher",
+      "Anupama Deshpande",
+      "Anuradha Paudwal",
+      "Anwar Hussain",
+      "Archana",
+      "Arko Mukherjee",
+      "Aroon Kumar",
+      "Arun Daga",
+      "Arun Date",
+      "Asha Bhosle",
+      "Asha Parekh",
+      "Ashish Chhabra",
+      "Ashok Kumar",
+      "Asit Sen",
+      "Asrani",
+      "Ayaan Ali Bangash",
+      "Aziz Nazan Qawwal",
+      "B. Nandekar",
+      "Baban Lal Yadav",
+      "Babla Mehta",
+      "Babul Supriyo",
+      "Balbir",
+      "Balgandharva",
+      "Bali Brahmbhatt",
+      "Banasree Sengupta",
+      "Bappi Lahiri",
+      "Begum Akhtar",
+      "Bela Shende",
+      "Benny",
+      "Bhagyashree",
+      "Bhai Tarlochan Singh",
+      "Bharat Vyas",
+      "Bhupinder Singh",
+      "Bhushan Mehta",
+      "Brian Silas",
+      "C. Ramchandra",
+      "C.H. Atma",
+      "Chandrakanta",
+      "Chandrani Mukherjee",
+      "Chandrashekhar Gadgil",
+      "Chandru Atma",
+      "Chhaya Ganguli",
+      "Children",
+      "Chitalkar",
+      "Chitra Singh",
+      "Chorus",
+      "Dalip Tahil",
+      "Danny Denzongpa",
+      "Deepak Parasher",
+      "Deepti Naval",
+      "Dev Anand",
+      "Deven Verma",
+      "Dharmendra",
+      "Dilip Kumar",
+      "Dilraj Kaur",
+      "Dinesh Kumar Dube",
+      "Dr. Rajkumar",
+      "Durga Jasraj",
+      "Dwijen Mukherjee",
+      "Eunuchs",
+      "Farid Sabri",
+      "G.M. Durrani",
+      "G.M. Sajan",
+      "Gauri Bapat",
+      "Geeta Dutt",
+      "Ghulam Ali",
+      "Gulzar",
+      "Gurpreet Kaur",
+      "Guru Ji Mandar Khaladkar",
+      "H. Khan Mastana",
+      "Haimanti Sukla",
+      "Hans Raj Hans",
+      "Hari Om Sharan",
+      "Hariharan",
+      "Harindranath Chattopadhyay",
+      "Hema Malini",
+      "Hema Sardesai",
+      "Hemant Kumar",
+      "Hemlata",
+      "Hridaynath Mangeshkar",
+      "Hrithik Roshan",
+      "Husn Banu",
+      "I.S. Johar",
+      "Ila Arun",
+      "Ishaan",
+      "J. Om Prakash",
+      "Jackie Shroff",
+      "Jagjit Kaur",
+      "Jagjit Singh",
+      "Jani Babu Qawwal",
+      "Jaspal Singh",
+      "Jaspinder Narula",
+      "Jatin Pandit",
+      "Jatin-Lalit",
+      "Javed Ali",
+      "Javed Bashir",
+      "Javed Jaffrey",
+      "Jaya Prada",
+      "Jayshree",
+      "Jitendra Abhyankar",
+      "Johnny Walker",
+      "Johnny Whisky",
+      "Jolly Mukherjee",
+      "Jugalbandi",
+      "K.J. Yesudas",
+      "K.K",
+      "K.K.Vasundhara Das",
+      "K.S. Chithra",
+      "Kabban Mirza",
+      "Kadar Khan",
+      "Kailash Kher",
+      "Kalyani Mitra",
+      "Kamaal Khan",
+      "Kamal Barot",
+      "Kanchan",
+      "Kanwar Ajit Singh",
+      "Kareena Kapoor",
+      "Kavita Krishnamurthy",
+      "Kavita Paudwal",
+      "Kavita Seth",
+      "Ketaki Mategaonkar",
+      "Khurshid Bawra",
+      "Kirti Killedar",
+      "Kishore Kumar",
+      "Kishori Amonkar",
+      "Komal Rizvi",
+      "Krishna Bose",
+      "Kumar Sanu",
+      "Kumari Meena Fatharpekar",
+      "Kunal Ganjawala",
+      "Lakshmi Shankar",
+      "Lalit Pandit",
+      "Lalita Dewoolkar",
+      "Lalita Pawar",
+      "Lata Mangesh- kar",
+      "Lata Mangeshka",
+      "Lata Mangeshkar",
+      "Leela Chitnis",
+      "Leena Chandavarkar",
+      "Lucky Ali",
+      "Madhubala",
+      "Madhurani",
+      "Mahalakshmi Iyer",
+      "Mahalaxmi",
+      "Mahendra Kapoor",
+      "Mahesh Kumar",
+      "Malaysia Vasudevan",
+      "Man Mohan Singh",
+      "Manhar Udhas",
+      "Manisha Koirala",
+      "Manmohan Krishna",
+      "Manmohan Singh",
+      "Manna Dey",
+      "Manoj Kumar",
+      "Manpreet Kaur",
+      "Master Ravi",
+      "Maya Banerjee",
+      "Meena Kapoor",
+      "Meena Khadikar",
+      "Mehmood",
+      "Minoo Purshottam",
+      "Mitali Singh",
+      "Mohammad Sayeed",
+      "Mohammed Aziz",
+      "Mohammed Hussain",
+      "Mohammed Rafi",
+      "Mohnish Behl",
+      "Motibai",
+      "Motilal",
+      "Mubarak Begum",
+      "Mujahad Ali",
+      "Mukesh",
+      "Mukesh Khanna",
+      "Mukul Agarwal",
+      "Mumtaz",
+      "Nalin Dave",
+      "Nanda",
+      "Nandu Bhende",
+      "Narendra Chanchal",
+      "Naseeruddin Shah",
+      "Nazia Hassan",
+      "Nirmala Devi",
+      "Nishi Kohli",
+      "Nitin Mukesh",
+      "Noor Jehan",
+      "Nusrat Fateh Ali Khan",
+      "Nutan",
+      "Omi",
+      "Others",
+      "Padmini Kolhapure",
+      "Pamela Chopra",
+      "Pamela Jain",
+      "Pandit Sharad Saathe",
+      "Pankaj Mitra",
+      "Pankaj Udhas",
+      "Party",
+      "Parul Ghosh",
+      "Parvati Khan",
+      "Parvati Kumari",
+      "Parveen Babi",
+      "Parveen Sultana",
+      "Pearl Padamse",
+      "Pradeep Kumar",
+      "Pran",
+      "Pratap",
+      "Prativa",
+      "Pravin Kunwar",
+      "Preeti Sagar",
+      "Preeti Uttam",
+      "Prem Chopra",
+      "Premlata",
+      "Prithivi Raj Kapoor",
+      "Priyanka",
+      "Pt. Bhimsen Joshi",
+      "Pt. Bickram Ghosh",
+      "Pt. Brij Bhushan Kabra",
+      "Pt. Hariprasad Chaurasia",
+      "Pt. Hridaynath Mangeshkar",
+      "Pt. Ravi Shankar",
+      "Pt. Shankar Ghosh",
+      "Pt. Shivkumar Sharma",
+      "Pt. Vasantrao Deshpande",
+      "R.D. Burman",
+      "Raaj Kumar",
+      "Rafaquat Ali Khan",
+      "Raghav Sachar",
+      "Raghunath Jadav",
+      "Rahat Fateh Ali Khan",
+      "Rajendra Mehta",
+      "Rajesh Jha",
+      "Rajesh Khanna",
+      "Rajesh Khanna(Dialogue)",
+      "Rajeshwari",
+      "Rajkumar",
+      "Rajkumari",
+      "Ramdas Kamat",
+      "Ramesh Deo",
+      "Ramya",
+      "Rana Chowdhury",
+      "Randhir Kapoor",
+      "Ranjeet",
+      "Ranu Mukharjee",
+      "Ranu Mukherjee",
+      "Ravi",
+      "Ravi Tripathi",
+      "Ravindra Sathe",
+      "Reema Lagoo",
+      "Rekha",
+      "Rekha Bharadwaj",
+      "Reshma",
+      "Richa Sharma",
+      "Rishi Kapoor",
+      "Roop Kumar Rathod",
+      "Runa Laila",
+      "S. Janaki",
+      "S.D. Batish",
+      "S.D. Burman",
+      "S.K. Mahan",
+      "S.P. Balasubrahmanyam",
+      "Sadhana Ghanekar",
+      "Sadhana Sargam",
+      "Sahaj Maa",
+      "Saif Samejo",
+      "Sailesh",
+      "Saira Banu",
+      "Salma Agha",
+      "Salman Khan",
+      "Sandhya Mukherjee",
+      "Sanjayraj Gaurinandan",
+      "Sanjeev Abhyankar",
+      "Sanjeevni Belande",
+      "Santokh Singh Dhaliwal",
+      "Sapan Chakraborty",
+      "Sapna Awasthi",
+      "Sapna Mukherjee",
+      "Saraswati Rane",
+      "Satish",
+      "Satyasheel Deshpande",
+      "Satyen Kappu",
+      "Saud Khan",
+      "Savita Suman",
+      "Sayed-Ul-Hasan",
+      "Seema Deo",
+      "Seeta Agarwal",
+      "Sensational Star Discoveries",
+      "Shaan",
+      "Shabana Azmi",
+      "Shabbir Kumar",
+      "Shah Rukh Khan",
+      "Shah Rukh Khan(Dialouge)",
+      "Shahir Vitthal Umap",
+      "Shailendra Bhartti",
+      "Shailendra Singh",
+      "Shamshad Begum",
+      "Shankar Dasgupta",
+      "Shankar Mahadevan",
+      "Shankar-Shambhu",
+      "Shanta Apte",
+      "Shanti Mathur",
+      "Sharad Kumar",
+      "Sharada",
+      "Sharmila",
+      "Sharon Prabhakar",
+      "Shashi Kapoor",
+      "Shatrughan Sinha",
+      "Shaunak Abhisheki",
+      "Shivangi Kolhapure",
+      "Shobha Joshi",
+      "Shreya Ghoshal",
+      "Shreyas",
+      "Shrini",
+      "Shujaat Khan",
+      "Shyam",
+      "Shyama Chittar",
+      "Siddharth Mohan",
+      "Simi Garewal",
+      "Simple Raja",
+      "Sivaji Chatterjee",
+      "Smita Patil",
+      "Sneha Pant",
+      "Sonali Vajpayee",
+      "Sonu Nigam",
+      "Sridevi",
+      "Subir Sen",
+      "Sudesh Bhosle",
+      "Sudesh Kumar",
+      "Sudha Malhotra",
+      "Sudhir Phadke",
+      "Sujata Bhattacharya",
+      "Sukhwinder Singh",
+      "Sulakshana Pandit",
+      "Sulochana Chavhan",
+      "Suman Kalyan- pur",
+      "Suman Kalyanpur",
+      "Sumeet Tappoo",
+      "Sumita Sanyal",
+      "Sunder Singh",
+      "Sunidhi Chauhan",
+      "Sunny Deol",
+      "Suraiya",
+      "Surendra",
+      "Suresh",
+      "Suresh Anand",
+      "Suresh Wadkar",
+      "Surinder Kaur",
+      "Sushma",
+      "Sushma Shrestha",
+      "Swapnaja",
+      "Swapnil Bandodkar",
+      "Syed Sohail Haider Kazmi",
+      "T.N. Krishnan",
+      "Tabun Sutradhar",
+      "Talat Aziz",
+      "Talat Mahmood",
+      "Thakur",
+      "Tina Munim",
+      "Trickbaby",
+      "Udit Narayan",
+      "Udit Narayan(Song)",
+      "Uma Devi",
+      "Ursula Vaz",
+      "Usha Iyer",
+      "Usha Khanna",
+      "Usha Mangeshkar",
+      "Usha Timothy",
+      "Usha Uthup",
+      "Ustad Ali Ahmed Hussain",
+      "Ustad Amir Khan",
+      "Ustad Amjad Ali Khan",
+      "Ustad Bade Ghulam Ali Khan",
+      "Ustad Bismillah Khan",
+      "Ustad Zakir Hussain",
+      "V. Shantaram",
+      "Vaishali Samant",
+      "Vandana Datar",
+      "Vandana Shastri",
+      "Vani Jairam",
+      "Vanita Mishra",
+      "Various Artists",
+      "Various Artists (Dialogue)",
+      "Varsha Bhosle",
+      "Vasanti",
+      "Vasantrao Deshpande",
+      "Vasundhara Das",
+      "Vijay",
+      "Vijay Benedict",
+      "Vijay Prakash",
+      "Vijayta Pandit",
+      "Vinod Khanna",
+      "Vinod Rathod",
+      "Vinod Sehgal",
+      "Vitthal Umap",
+      "Vivek Mushran",
+      "Vyjayanthimala",
+      "Wadali Brothers",
+      "Wahidan Bai",
+      "Zanai Bhosle",
+      "Zeenat Aman",
+      "Zoheb Hassan",
+      "Zohrabai Ambalawali"
+    ],
+    "films": [
+      "12 O'Clock",
+      "1942 A Love Story",
+      "24 Ghante",
+      "36 Ghante",
+      "A Life In Rhythm Great Maestros with Shankar Ghosh",
+      "Aa Ab Laut Chalen",
+      "Aadmi",
+      "Aadmi Aur Insaan",
+      "Aadmi Sadak Ka",
+      "Aag",
+      "Aag Ka Dariya",
+      "Aag.",
+      "Aah",
+      "Aahutee",
+      "Aaina",
+      "Aaj",
+      "Aaj Kaa M.L.A.",
+      "Aaj Ki Raat",
+      "Aakhri Daku",
+      "Aakhri Goli",
+      "Aakhri Insaaf",
+      "Aakhri Khat",
+      "Aakraman",
+      "Aamne Saamne",
+      "Aan",
+      "Aan Baan",
+      "Aan Milo Sajna",
+      "Aan.",
+      "Aandhi",
+      "Aankhon Aankhon Mein",
+      "Aap Aye Bahar Ayee",
+      "Aap Beati",
+      "Aap Ke Deewane",
+      "Aap Ke Naam",
+      "Aap Ki Kasam",
+      "Aap Ki Khatir",
+      "Aap Ki Parchhaiyan",
+      "Aap To Aise Na The",
+      "Aar Paar",
+      "Aaram",
+      "Aarop",
+      "Aarti",
+      "Aarzoo",
+      "Aas Ka Panchhi",
+      "Aas Paas",
+      "Aasha",
+      "Aashiq",
+      "Aashirwad",
+      "Aasman",
+      "Aavishkar",
+      "Aawaz",
+      "Aaya Toofan",
+      "Ab Dilli Door Nahin",
+      "Abhi To Jee Len",
+      "Abhilasha",
+      "Abhimaan",
+      "Abhiman",
+      "Abhinetri",
+      "Acoustic Fusion Bliss by Raghav Sachar",
+      "Adalat",
+      "Adhikar",
+      "Ae Mere Dil",
+      "Afsar",
+      "Aga Bai Arrecha!",
+      "Agar",
+      "Agni Pareeksha",
+      "Agreement",
+      "Aji Bas Shukriya",
+      "Ajnabee",
+      "Akalmand",
+      "Akash",
+      "Akeli Mat Jaiyo",
+      "Aks..",
+      "Alaap",
+      "Albela",
+      "Ali maula Ali",
+      "Alibaba",
+      "Alibaba Aur 40 Chor",
+      "Amaanat",
+      "Aman",
+      "Amanat",
+      "Amanush",
+      "Amar",
+      "Amar Deep",
+      "Amar Jyoti",
+      "Amar Kahani",
+      "Amar Prem",
+      "Amhi Jato Amuchya Gava",
+      "Amir Gharib",
+      "Amjad Ali Khan",
+      "Amjad Ali Khan Sarod",
+      "Amjad Ali Khan The Genius of-2",
+      "Amrapali",
+      "Amrit",
+      "An Evening In Paris",
+      "Anamika",
+      "Anand",
+      "Anand Ashram",
+      "Anand Mahal",
+      "Anand Math",
+      "Anandmayi Chaitanyamayi",
+      "Anari",
+      "Anarkali",
+      "Andaaz - Jagjit Singh (Compilation) Vol. 2",
+      "Andaz",
+      "Andhaa Kaanoon",
+      "Andher Nagari",
+      "Angaaray",
+      "Angoor",
+      "Angulimal",
+      "Anhonee",
+      "Anita",
+      "Anjaana",
+      "Ankhen",
+      "Ankhiyon Ke Jharokhon Se",
+      "Ankhon Mein Tum Ho",
+      "Anmol Ghadi",
+      "Anmol Moti",
+      "Annadata",
+      "Anokha Pyar",
+      "Anokhi Ada",
+      "Anokhi Raat",
+      "Anpadh",
+      "Ansoo Ban Gaye Phool",
+      "Anubhav",
+      "Anupama",
+      "Anuraag",
+      "Anuradha",
+      "Anurodh",
+      "Anwar",
+      "Apna Desh",
+      "Apna Haath Jagnnath",
+      "Apnapan",
+      "Apne Paraye",
+      "Apradh",
+      "April Fool",
+      "Aradhana",
+      "Aradhana - Hari Om Sharan",
+      "Are Sansar Sansar",
+      "Armaan",
+      "Around The World",
+      "Arpan",
+      "Arth",
+      "Arzoo",
+      "Ashanti",
+      "Ashi Hi Banwa Banwi",
+      "Ashiana",
+      "Ashtavinayak",
+      "Asli Naqli",
+      "Atma Ram",
+      "Aulad",
+      "Aum Namo Bhagawate Vasudevay",
+      "Aur Kaun",
+      "Aur Pyar Ho Gaya",
+      "Aurat",
+      "Avtaar",
+      "Awaara",
+      "Awam",
+      "Awara Baap",
+      "Awarapan",
+      "Aya Sawan Jhoom Ke",
+      "Ayaash",
+      "Aye Din Bahar Ke",
+      "Aye Dosti Teri Dosti",
+      "Aye Mohabat Tere Anjam Pe Rona Aaya - Malika E Ghazal",
+      "Ayee Milan Ki Bela",
+      "Azaad",
+      "Baadbaan",
+      "Baap Re Baap",
+      "Baarish",
+      "Baat Ek Raat Ki",
+      "Baawri",
+      "Baaz",
+      "Baazi",
+      "Babar",
+      "Babu",
+      "Babul",
+      "Babul Ki Galiyan",
+      "Bad Aur Badnam",
+      "Bada Din",
+      "Badal",
+      "Badaltey Rishtey",
+      "Bade Dil Wala",
+      "Badi Bahen",
+      "Badi Bahu",
+      "Badi Ma",
+      "Badla Aur Balidan",
+      "Baghavat",
+      "Bahana",
+      "Bahar",
+      "Baharen Phir Bhi Aayengi",
+      "Baharon Ke Sapne",
+      "Bahen",
+      "Bahu",
+      "Bahu Begum",
+      "Bahurani",
+      "Baiju Bawra",
+      "Bairaag",
+      "Bajrang Ban",
+      "Balam",
+      "Balika Badhu",
+      "Bandh Darwaza",
+      "Bandhan",
+      "Bandhan Kachchey Dhagon Ka",
+      "Bandini",
+      "Banphool",
+      "Bappa Moraya- Feat. Asha Bhosle And Zanai",
+      "Baradari",
+      "Bari Behen",
+      "Barkha",
+      "Barsaat",
+      "Barsaat Ki Raat",
+      "Basant Bahar",
+      "Baton Baton Mein",
+      "Bawarchi",
+      "Bawre Nain",
+      "Bazaar",
+      "Bazar",
+      "Be Naam",
+      "Be-Naam",
+      "Bedard Zamana Kya Jane",
+      "Bees Saal Baad",
+      "Begaanaa",
+      "Bemisal",
+      "Beqasoor",
+      "Best Instrumentals",
+      "Best Of Bhupinder Mitalee Sharmate Sharmate",
+      "Best Of Jagjit Singh & Chitra Singh Vol 2",
+      "Best Of Jagjit Singh And Chitra Singh Vol 2",
+      "Best Of Sahaj Ma",
+      "Best Of Shankar",
+      "Best Of Sufi",
+      "Best Of Talat Aziz",
+      "Best Of Ustad Amjad Ali Khan",
+      "Best of Bhupinder/Mitalee",
+      "Best of Talat Aziz",
+      "Betaab",
+      "Beti",
+      "Beti Bete",
+      "Bewafa",
+      "Beyond Time",
+      "Beyond Time : Jagjit & Chitra",
+      "Beyond Time :Jagjit/Chitra",
+      "Bhabhi",
+      "Bhabhi Ki Chudiyan",
+      "Bhai Bahen",
+      "Bhai Bhai",
+      "Bhajan Upahar Various Artist - Anup Jalota",
+      "Bhajan Uphar",
+      "Bhajanavali - Prabhu Vandan",
+      "Bhakti",
+      "Bhanwar",
+      "Bharosa",
+      "Bhavna",
+      "Bheegi Raat",
+      "Bhookh",
+      "Bhoomika",
+      "Bhoot Bungla",
+      "Bhoot Bungla Manna Dey",
+      "Bin Badal Barsaat",
+      "Biography Ustad Amjad Ali Khan Volume 4",
+      "Biraj Bahu",
+      "Biwi O Biwi",
+      "Blessings From My God Ganesha",
+      "Blessings From My God Hanuman",
+      "Blessings From My God Sai Baba",
+      "Bluff Master",
+      "Bobby",
+      "Bombai Ka Babu",
+      "Bombay To Goa",
+      "Bond 303",
+      "Boond Jo Ban Gayi Moti",
+      "Boot Polish",
+      "Boy Friend",
+      "Brahmachari",
+      "Buddha Mil Gaya",
+      "Budtameez",
+      "Burmah Road",
+      "C.I.D.",
+      "Call Of The Valley Shiv & Hari & Brij",
+      "Call of the Valley",
+      "Caravan",
+      "Cha Cha Cha",
+      "Chaani",
+      "Chakra",
+      "Chalaak",
+      "Chalta Purza",
+      "Chalti Ka Naam Gaadi",
+      "Chambal Ki Kassam",
+      "Chameli Ki Shaadi",
+      "Champakali",
+      "Chand",
+      "Chand Aur Suraj",
+      "Chandni",
+      "Chandni Raat",
+      "Chandralekha",
+      "Chants For The Soul - Krishna Dhun",
+      "Chants for the Soul - Ganesh Dhun",
+      "Chanwey",
+      "Char Ankhen",
+      "Char Dil Char Rahen",
+      "Char Din",
+      "Charandas",
+      "Charas",
+      "Charitra Heen",
+      "Charitraheen",
+      "Chashme Buddoor",
+      "Chaudhvin Ka Chand",
+      "Chetna",
+      "Chhabili",
+      "Chhalia",
+      "Chhaya",
+      "Chhoo Mantar",
+      "Chhota Bhai",
+      "Chhote Babu",
+      "Chhote Nawab",
+      "Chhoti Bahen",
+      "Chhoti Bahu",
+      "Chhoti Chhoti Baaten",
+      "Chhoti Si Baat",
+      "Chhoti Si Mulaqat",
+      "Chhupa Rustam",
+      "China Town",
+      "Chirag",
+      "Chirag Kahan Roshni Kahan",
+      "Chitchor",
+      "Chitralekha",
+      "Chor Bazar",
+      "Chor Machaye Shor",
+      "Chor-Police",
+      "Chori Chori",
+      "Chupke Chupke",
+      "Chupke Chupke Raat Din & Other Hits",
+      "Chupke Chupke Raat Din And Other Hits",
+      "Classical Melodies on the Santoor Shivkumar Sharma",
+      "Classical Music of India Instrumental",
+      "Colors Of Bhairavi",
+      "Colours Ghazal Ke Aneek Rang",
+      "Colours Sufi Ke Aneek Rang",
+      "Criminal",
+      "Daadi Maa",
+      "Daag",
+      "Daata Ek Ram",
+      "Daayraa",
+      "Dada",
+      "Dahej",
+      "Dak Bungalow",
+      "Damadum - Arun Daga",
+      "Damini",
+      "Dar Kain Darvesh Punjabi Sufi Poetry",
+      "Dard",
+      "Darpan",
+      "Darr",
+      "Dastaan",
+      "Dastak",
+      "Dastan",
+      "Deedar",
+      "Deedar-E-Yaar",
+      "Dekh Kabira Roya",
+      "Des Pardes",
+      "Devar",
+      "Devata",
+      "Devdas",
+      "Devi",
+      "Dhake Ki Malmal",
+      "Dhakti Jaoo",
+      "Dhamkee",
+      "Dhan Daulat",
+      "Dhanwaan",
+      "Dhanwan",
+      "Dharam Kanta",
+      "Dharam Karam",
+      "Dharma",
+      "Dharmatma",
+      "Dharti",
+      "Dharti Kahe Pukar Ke",
+      "Dholak",
+      "Dholna - Javed Bashir",
+      "Dhongee",
+      "Dhool Ka Phool",
+      "Dhun",
+      "Dhund",
+      "Dil Aashna Hai",
+      "Dil Apna Aur Preet Parai",
+      "Dil Bhi Tera Hum Bhi Tere",
+      "Dil Daulat Duniya",
+      "Dil Deke Dekho",
+      "Dil Diya Dard Liya",
+      "Dil Ek Mandir",
+      "Dil Hi To Hai",
+      "Dil Ka Heera",
+      "Dil Ne Phir Yaad Kiya",
+      "Dil Ne Pukara",
+      "Dil Tera Deewana",
+      "Dil Wala Dukhra",
+      "Dil-E-Nadaan",
+      "Dil-E-Nadan",
+      "Dil.",
+      "Dillagi",
+      "Dilli Ka Thug",
+      "Dilsey Miley Dil",
+      "Dilwale Dulhania Le Jayenge",
+      "Disco Dancer",
+      "Diwana",
+      "Do Aankhen Bara Haath",
+      "Do Anjaane",
+      "Do Aur Do Paanch",
+      "Do Badan",
+      "Do Bigha Zamin",
+      "Do Boond Pani",
+      "Do Chehere",
+      "Do Chor",
+      "Do Dil",
+      "Do Dooni Chaar",
+      "Do Dulhe",
+      "Do Jasoos",
+      "Do Kaliyan",
+      "Do Phool",
+      "Do Raaste",
+      "Do Raha",
+      "Do Sitare",
+      "Do Ustad",
+      "Doli",
+      "Don",
+      "Don.",
+      "Door Desh",
+      "Door Gagan Ki Chhaon Mein",
+      "Door Ka Raahi",
+      "Door Ki Awaz",
+      "Dooriyan",
+      "Doosara Aadmi",
+      "Dost",
+      "Dosti",
+      "Dr. Vidya",
+      "Dream Girl",
+      "Dulari",
+      "Dulha Dulhan",
+      "Dulhan Ek Raat Ki",
+      "Dulhan Wohi Jo Piya Man Bhaaye",
+      "Duniya",
+      "Duniya Jise Kahte Hain",
+      "Duniya Meri Jeb Mein",
+      "Duniyadari",
+      "Duplicate",
+      "Dus Lakh",
+      "Dus Numbri",
+      "Dushman",
+      "Dushmani",
+      "Dwadash Jyotirlinga Shiv Bhajan And Shiv Gayatri",
+      "Echoes",
+      "Echoes From Concerts Around The World",
+      "Ecstasies Jagjit Singh & Chitra Singh",
+      "Ecstasies Jagjit Singh And Chitra Singh",
+      "Ehsaas Pyar Ka",
+      "Ek Baar Kaho",
+      "Ek Dil Sau Afsane",
+      "Ek Duje Ke Liye",
+      "Ek Gaon Ki Kahani",
+      "Ek Hasina Do Diwane",
+      "Ek Hi Bhool",
+      "Ek Hi Rasta",
+      "Ek Kali Muskayee",
+      "Ek Kunwari Ek Kunwara",
+      "Ek Mahal Ho Sapnon Ka",
+      "Ek Musafir Ek Hasina",
+      "Ek Mutthi Aasman",
+      "Ek Naari Do Roop",
+      "Ek Pal",
+      "Ek Phool Char Kante",
+      "Ek Phool Do Mali",
+      "Ek Raaz",
+      "Ek Saal",
+      "Ek Saal Pahle",
+      "Ek Sapera Ek Lutera",
+      "Ek Shriman Ek Shrimati",
+      "Ek Thi Ladki",
+      "Faasla",
+      "Faasle",
+      "Fakira",
+      "Faraar",
+      "Fareb",
+      "Farz",
+      "Fashion",
+      "Fiffty Fiffty",
+      "Flat No. 9",
+      "Footpath",
+      "Funtoosh",
+      "Gajre",
+      "Gaman",
+      "Ganesh Bhajan",
+      "Ganga Ki Lahren",
+      "Ganga Tera Pani Amrit",
+      "Ganwaar",
+      "Garib",
+      "Gateway Of India",
+      "Gautam Govinda",
+      "Gazal",
+      "Geet",
+      "Geet Gaaya Patharon Ne",
+      "Geet Gata Chal",
+      "Gehra Daag",
+      "Gehri Chaal",
+      "Ghar",
+      "Ghar Ghar Ki Kahani",
+      "Ghar Sansar",
+      "Gharana",
+      "Gharaonda",
+      "Ghazab",
+      "Ghazal Ka Safar",
+      "Ghulam Ali Live Concert Vol 1",
+      "Ghulam Begum Badsha",
+      "Ghunghat",
+      "Ghungroo",
+      "Ginny Aur Johnny",
+      "Godaan",
+      "Godmother",
+      "Golden Milestones Ustad Bismillah Khan",
+      "Golden Moments : Jagjit Singh, Ghulam Ali & Bhupin",
+      "Golden Moments : Jagjit Singh, Ghulam Ali & Bhupinder",
+      "Golden Moments Jagjit Singh Ghulam Ali & Bhupinder",
+      "Golden Moments Jagjit Singh Ghulam Ali And Bhupin",
+      "Golden Moments Various Artist",
+      "Golmaal",
+      "Goonj",
+      "Goonj Uthi Shehnai",
+      "Gopaal Krishna",
+      "Gopi",
+      "Gora Aur Kala",
+      "Goverdhan Girdhari",
+      "Great Ghazals Ghulam Ali",
+      "Griha Pravesh",
+      "Guddi",
+      "Guide",
+      "Guldasta A Bouqet Of Flowers",
+      "Gulzars Nazm",
+      "Gumnaam",
+      "Gumrah",
+      "Gunga Jumna",
+      "Gurbani Japji Rehrass",
+      "Gurudev",
+      "Gurukul Mantron Ki Pathshala Mantras for Children",
+      "Ha Khel Savalyancha",
+      "Haar Jeet",
+      "Haath Ki Safai",
+      "Haathi Mere Saathi",
+      "Haisiyat",
+      "Halaku",
+      "Half Ticket",
+      "Hamaare Tumhare",
+      "Hamari Baat",
+      "Hamari Yaad Aayegi",
+      "Hamdard",
+      "Hamjoli",
+      "Hamraaz",
+      "Hamrahi",
+      "Hanste Zakhm",
+      "Haqeeqat",
+      "Hare Rama Hare Krishna",
+      "Hariyali Aur Rasta",
+      "Harjaee",
+      "Hasina Maan Jayegi",
+      "Hasti",
+      "Hawas",
+      "Heer",
+      "Heer Raanjha",
+      "Heera Moti",
+      "Heera Panna",
+      "Heeralaal Pannalaal",
+      "Henna",
+      "Hero",
+      "Hey Gobind Hey Gopal",
+      "Himalay Ki God Mein",
+      "Himmat",
+      "Himmatwala",
+      "Hindi Classics & Ghazals Volume 2",
+      "Hindustan Ki Kasam",
+      "Holi Aaee Re",
+      "Honeymoon",
+      "Hope Jagjit & Chitra Singh",
+      "Hope Jagjit And Chitra Singh",
+      "Hotel",
+      "House No.44",
+      "Howrah Bridge",
+      "Hulchul",
+      "Hum",
+      "Hum Aapke Hain Koun",
+      "Hum Dono",
+      "Hum Hain Lajawab",
+      "Hum Hindustani",
+      "Hum Kisise Kum Naheen",
+      "Hum Sab Ustad Hain",
+      "Hum Saya",
+      "Hum Shakal",
+      "Hum Tum Aur Woh",
+      "Humjoli",
+      "Humkhayal",
+      "Humlog",
+      "Hungama",
+      "Hungama Hai Kyon Barpa",
+      "Ijaazat",
+      "Ikraar",
+      "Imaan Dharam",
+      "Imaandaar",
+      "Imtihan",
+      "Inkaar",
+      "Insaaf Ka Tarazu",
+      "Insaan Aur Insaan",
+      "Insaan Jaag Utha",
+      "Insaniyat",
+      "Instrumental Cd 1",
+      "Intaqam",
+      "Intaquam",
+      "Inteha",
+      "Ishaara",
+      "Ishk Ishk Ishk",
+      "Ishq Ishq Ishq",
+      "Ishq Par Zor Nahin",
+      "Izhaar",
+      "Izzat",
+      "Jaadugar",
+      "Jaal",
+      "Jaali Note",
+      "Jaaneman",
+      "Jaani Dost",
+      "Jaani Dushman",
+      "Jaanwar",
+      "Jab Jab Phool Khile",
+      "Jab Pyar Kisi Se Hota Hai",
+      "Jab Yaad Kisi Ki Aati Hai",
+      "Jadoo",
+      "Jag Biti",
+      "Jagirdar",
+      "Jagjit & Chitra Live In Concert",
+      "Jagjit And Chitra Live In Concert",
+      "Jagjit And Chitra The Unforgettable Hits",
+      "Jagjit Javed Silsilay",
+      "Jagjit Singh - A Great Composer",
+      "Jagjit Singh And Chitra Singh Live At Royal Albert",
+      "Jagjit Singh Mirage",
+      "Jagjit/Chitra-The Unforgettable Hits",
+      "Jagriti",
+      "Jagte Raho",
+      "Jahan Ara",
+      "Jahan Pyar Mile",
+      "Jailor",
+      "Jaise Ko Taisa",
+      "Jal Bin Machhli Nritya Bin Bijli",
+      "Jalianwala Bagh Ki Jyoti",
+      "Jaltarang",
+      "Jalti Nishani",
+      "Janam Janam Ke Phere",
+      "Janata Hawaldar",
+      "Jane Anjane",
+      "Jangal Mein Mangal",
+      "Janwar",
+      "Jawan Muhabbat",
+      "Jeenay Nahin Diya - Javed Bashir",
+      "Jeene Ki Arzoo",
+      "Jeene Ki Raah",
+      "Jeene Nahin Doonga",
+      "Jeeo Aur Jeene Do",
+      "Jeet",
+      "Jeevan Ek Sanghursh",
+      "Jeevan Mrityu",
+      "Jewel Thief",
+      "Jhanak Jhanak Payal Baje",
+      "Jheel Ke Us Paar",
+      "Jhoota Kahin Ka",
+      "Jhuk Gaya Aasman",
+      "Jhumroo",
+      "Jhutha Sach",
+      "Ji Chahta Hai",
+      "Jigri Dost",
+      "Jis Desh Mein Ganga Behti Hai",
+      "Jiya Re Jhoome Parvati Kumari",
+      "Jo Jeeta Wohi Sikandar",
+      "Jogan",
+      "Juari",
+      "Jugal Bandi-Amjad Ali Khan & T.N.Krishnan",
+      "Jugnu",
+      "Junglee",
+      "Junoon",
+      "Jurmana",
+      "Jwala",
+      "Jwalamukhi",
+      "Jwar Bhata",
+      "Jyoti",
+      "Kaagaz Ke Phool",
+      "Kaajal",
+      "Kaala Patthar",
+      "Kaala Sona",
+      "Kaamchor",
+      "Kaaran",
+      "Kab Kyun Aur Kahan ?",
+      "Kabhi Andhera Kabhi Ujala",
+      "Kabhi Kabhie",
+      "Kabuliwala",
+      "Kadambari",
+      "Kahani Kismat Ki",
+      "Kahkashan (T.V. Serial)",
+      "Kaho Naa....Pyar Hai",
+      "Kailasa Ishq Anokha",
+      "Kajal",
+      "Kal Aaj Aur Kal",
+      "Kal Chaudhvin Ki Raat Thi Jagjit Singh",
+      "Kal Ki Awaz",
+      "Kala Bazar",
+      "Kala Pani",
+      "Kalabaaz",
+      "Kali Ghata",
+      "Kali Topi Lal Rumal",
+      "Kalicharan",
+      "Kalyug",
+      "Kan Kan Men Bhagwan",
+      "Kanchan",
+      "Kangan",
+      "Kanhaiya",
+      "Kanyadaan",
+      "Karm",
+      "Karma",
+      "Karma Aur Holi",
+      "Karmayogi",
+      "Kartavya",
+      "Kartoos",
+      "Karz",
+      "Kasam Paida Karnewale Ki",
+      "Kasauti",
+      "Kashmir Hamara Hai",
+      "Kashmir Ki Kali",
+      "Kath Putli",
+      "Kati Patang",
+      "Katyar Kaljat Ghusali",
+      "Kaun Kaisey",
+      "Kavi",
+      "Kavi Kalidas",
+      "Keemat",
+      "Khamoshi",
+      "Khandan",
+      "Khayyam Presents Guldasta E Ghazal",
+      "Khazana",
+      "Khazanchi",
+      "Khel Khel Mein",
+      "Khidki",
+      "Khilona",
+      "Khoon Ka Badla Khoon",
+      "Khote Sikkay",
+      "Khubsoorat",
+      "Khubsurat",
+      "Khud-Daar",
+      "Khushboo",
+      "Khwahish Jagjit And Gulzar & Javed Akhtar Compilation",
+      "Khwahish Jagjit And Gulzar And Javed Akhtar Compilatio",
+      "Kinara",
+      "Kinare Kinare",
+      "Kismat",
+      "Kismet",
+      "Kitaab",
+      "Kohinoor",
+      "Kohraa",
+      "Komal Rizvi",
+      "Koolest One",
+      "Kora Kagaz",
+      "Kranti",
+      "Krodhi",
+      "Kuch Naa Kaho",
+      "Kuchhe Dhaage",
+      "Kudrat",
+      "Kunwara Baap",
+      "L.O.C. - Kargil",
+      "Laalach",
+      "Laat Saheb",
+      "Laawaris",
+      "Ladka Ladki",
+      "Ladki Sahyadri Ki",
+      "Ladla",
+      "Ladli",
+      "Lafange",
+      "Lahu Ke Do Rang",
+      "Laila",
+      "Laila Majnu",
+      "Lajawab",
+      "Lajwanti",
+      "Lakhon Me Ek",
+      "Lal Haveli",
+      "Lal Patthar",
+      "Lal Qilla",
+      "Lala Rookh",
+      "Lamhe",
+      "Laparwah",
+      "Lata Hits Instrumental by Tabun Sutradhar Vol 2",
+      "Lava",
+      "Lava.",
+      "Leader",
+      "Lekh",
+      "Lekin",
+      "Libaas",
+      "Live With Jagjit Singh",
+      "Loafer",
+      "Lootmaar",
+      "Lorie",
+      "Los Angeles Cd Volume 1",
+      "Love In Simla",
+      "Love In Tokyo",
+      "Love Marriage",
+      "Love Story",
+      "Lucky Kabootar",
+      "Maa",
+      "Maa - Jagjit Singh",
+      "Maa Ka Aanchal",
+      "Maalik",
+      "Maan",
+      "Maan Abhiman",
+      "Maan Gaye Ustaad",
+      "Maang Bharo Sajna",
+      "Madari",
+      "Madhosh",
+      "Madhumati",
+      "Madly Bangali",
+      "Magroor",
+      "Maha Puja",
+      "Maha Shaktimaan",
+      "Mahal",
+      "Mahanayaka Shree Ganesh",
+      "Maharaja",
+      "Mahua",
+      "Maikada",
+      "Main Chup Rahungi",
+      "Main Nashe Mein Hoon",
+      "Main Sufi Hoon",
+      "Main Sundar Hoon",
+      "Main Tulsi Tere Aangan Ki",
+      "Maine Pyar Kiya",
+      "Majboor",
+      "Malang",
+      "Malhar",
+      "Malik",
+      "Mama Bhanja",
+      "Mamta",
+      "Man Ki Aankhen",
+      "Man Mandir",
+      "Man Pasand",
+      "Man-Mauji",
+      "Manah Shanti",
+      "Manchali",
+      "Mangal Dhwani Ustad Bismillah Khan Volume 1",
+      "Manokaamnaa",
+      "Manoranjan",
+      "Manthan",
+      "Manzil",
+      "Manzil Manzil",
+      "Maratha Tituka Melvava",
+      "Maryada",
+      "Mashaal",
+      "Mashuqa",
+      "Masoom",
+      "Mast Aankhain",
+      "Mast Qalandar",
+      "Mast qalandar",
+      "Mastana",
+      "Mata Rani Tere Darbar",
+      "Mausam",
+      "Mausi",
+      "Mawaali",
+      "Maya",
+      "Mazdoor Zindabad",
+      "Meenar",
+      "Mehboob Ki Mehndi",
+      "Mehbooba",
+      "Meherbani",
+      "Mela",
+      "Mela.",
+      "Mem Sahib",
+      "Mera India Patriotic Cd 4",
+      "Mera Naam Joker",
+      "Mera Saaya",
+      "Mere Apne",
+      "Mere Hamdam Mere Dost",
+      "Mere Humsafar",
+      "Mere Huzoor",
+      "Mere Jeevan Saathi",
+      "Mere Mehboob",
+      "Mere Sanam",
+      "Meri Aawaz Suno",
+      "Meri Jung",
+      "Meri Surat Teri Ankhen",
+      "Midnight Ragas",
+      "Milan",
+      "Mili",
+      "Minoo",
+      "Miraj - E - Ghazal Asha Bhosle & Ghulam Ali",
+      "Miraj - E - Ghazal Asha Bhosle/Ghulam Ali",
+      "Mirza Ghalib",
+      "Mirza Ghalib (T. V. Serial)",
+      "Mirza Saheban",
+      "Miss Bombay",
+      "Miss Mary",
+      "Modern Girl",
+      "Mohabbat",
+      "Mohabbat Isko Kahte Hain",
+      "Mohabbat Zindagi Hai",
+      "Mome Ki Gudiya",
+      "Mother India",
+      "Moti Mahal",
+      "Mr. And Mrs. 55",
+      "Mr. X",
+      "Mr. X In Bombay",
+      "Mr.& Mrs.55",
+      "Mr.Aashiq",
+      "Mr.Natwarlal",
+      "Mrityu Dand",
+      "Mughal-E-Azam",
+      "Mujhe Jeene Do",
+      "Mukesh Hits Instrumental by Tabun Sutradhar Vol 1",
+      "Mukti",
+      "Munimji",
+      "Muqaddar",
+      "Muqaddar Ka Sikandar",
+      "Murder",
+      "Music Is Music Amjad Ali Khan & T N Krishnan",
+      "Musical Journey through India Volume 1",
+      "My Love",
+      "Na Tum Jaano Na Hum",
+      "Naach",
+      "Naach Uthe Sansaar",
+      "Naam",
+      "Nadiya Ke Paar",
+      "Naghma",
+      "Nagin",
+      "Nai Umar Ki Nai Fasal",
+      "Naina",
+      "Naiyya",
+      "Nakhuda",
+      "Namak Halaal",
+      "Namak Haraam",
+      "Namkeen",
+      "Naqab",
+      "Nastik",
+      "Natak",
+      "Natarang",
+      "Nau Do Gyarah",
+      "Naujawan",
+      "Naukar Biwi Ka",
+      "Nauker",
+      "Naunihal",
+      "Nausherwan-E-Adil",
+      "Navaratri",
+      "Navrang",
+      "Naya Andaz",
+      "Naya Daur",
+      "Naya Din Nai Raat",
+      "Naya Ghar",
+      "Naya Raasta",
+      "Naya Zamana",
+      "Nazrana",
+      "Neel Kamal",
+      "Neela Akash",
+      "Neeli",
+      "Neend Hamari Khwab Tumhare",
+      "Nehle Pe Dehlaa",
+      "New Delhi",
+      "Night In London",
+      "Nikaah",
+      "Nishaan",
+      "Nishant",
+      "Nitnem Bhai Tarlochan Singh",
+      "Noor Mahal",
+      "Noorie",
+      "Nusrat Fateh Ali Khan: Yaad Sajna Dee",
+      "Oh Bewafaa",
+      "Om Jai Jagadish",
+      "Om Namah Shivaya & Shiv Bhajans Stuti & Aarti",
+      "Om Namah Shivaya & Shiv Bhajans Stuti And Aarti",
+      "Om Namah Shivaya Shiv Bhajans Stuti & Aarti",
+      "Om Namah Shivaya Shiv Bhajans Stuti And Aarti",
+      "Om Sai Namo Namaha",
+      "Oonche Log",
+      "Opera House",
+      "Paap.",
+      "Paapi",
+      "Padosan",
+      "Pagla Kahin Ka",
+      "Paigham",
+      "Pakeezah",
+      "Palki",
+      "Palkon Ki Chhaon Men",
+      "Papi Pet Ka Sawal Hai",
+      "Parakh",
+      "Paras",
+      "Parasmani",
+      "Paraya Dhan",
+      "Parchhain",
+      "Pardes",
+      "Pardesi",
+      "Parichay",
+      "Parinay",
+      "Parivar",
+      "Parvarish",
+      "Parwana",
+      "Passions",
+      "Pataal Bhairavi",
+      "Patang",
+      "Patanga",
+      "Pathan",
+      "Pathar Ke Sanam",
+      "Pati Patni",
+      "Pati Patni Aur Woh",
+      "Patita",
+      "Patthar Ka Khwab",
+      "Patthar Ke Sanam",
+      "Pavitra Papi",
+      "Payal Ki Jhankaar",
+      "Paying Guest",
+      "Pehchan",
+      "Pehli Nazar",
+      "Phaansi",
+      "Phagun",
+      "Phandebaaz",
+      "Phir Kab Milogi",
+      "Phir Subah Hogi",
+      "Phir Wohi Dil Laya Hoon",
+      "Phool",
+      "Phool Aur Patthar",
+      "Phool Bane Angare",
+      "Phool Khile Hain Gulshan Gulshan",
+      "Pinjar",
+      "Pinjra",
+      "Piya Ka Ghar",
+      "Pocketmaar",
+      "Police Force- An Inside Story",
+      "Ponga Pandit",
+      "Poorna - Ganesh",
+      "Poorna - Hanuman",
+      "Post Box 999",
+      "Pran Jaye Par Vachan Na Jaye",
+      "Pratiggya",
+      "Prem",
+      "Prem Bandhan",
+      "Prem Granth",
+      "Prem Kahani",
+      "Prem Nagar",
+      "Prem Patra",
+      "Prem Pujari",
+      "Prem Rog",
+      "Prince",
+      "Priya",
+      "Professor",
+      "Purab Aur Pachhim",
+      "Purnima",
+      "Pushpanjali",
+      "Pyaar Ka Saagar",
+      "Pyaara Dushman",
+      "Pyaas",
+      "Pyaasa",
+      "Pyaasa Sawan",
+      "Pyar Hi Pyar",
+      "Pyar Ka Mausam",
+      "Pyar Ki Jeet",
+      "Pyar Ki Pyas",
+      "Pyar Kiye Ja",
+      "Pyar Mohabbat",
+      "Pyara Dushman",
+      "Pyase Nain",
+      "Qaidi",
+      "Raag Rang",
+      "Raagini",
+      "Raahat",
+      "Raampur Ka Lakshman",
+      "Raaste Pyar Ke",
+      "Raat Aur Din",
+      "Raat Ke Andhere Mein",
+      "Raaz",
+      "Radhe Radhe",
+      "Rafi Hits Instrumental by Tabun Sutradhar Vol 1",
+      "Rafoo Chakkar",
+      "Ragmala - Vol- 10 \" Late Night Ragas \"",
+      "Rahat Fateh Ali Khan & Other Hits",
+      "Raj Hath",
+      "Raj Kumar",
+      "Raj Kumar Vol. 2 Golden Collection",
+      "Raja Aur Runk",
+      "Raja Jani",
+      "Raja Raneeko Chahiye Paseena",
+      "Raja Rani",
+      "Raja Saab",
+      "Rajaji",
+      "Rajdhani",
+      "Rajnigandha",
+      "Rajput",
+      "Rakhi Aur Hathkadi",
+      "Ram Aur Shyam",
+      "Ram Balram",
+      "Ram Bharose",
+      "Ram Lakhan",
+      "Ram Naam Sukhdai",
+      "Ram Teri Ganga Maili",
+      "Rangeela Raja",
+      "Rangila Ratan",
+      "Rani Aur Jaani",
+      "Rani Rupmati",
+      "Rare Gems Ghazals Jagjit Singh & Chitra Singh",
+      "Rare Gems Ghazals Jagjit Singh And Chitra Singh",
+      "Ravi Shankar",
+      "Razia Sultan",
+      "Razia Sultana",
+      "Red Rose",
+      "Refugee",
+      "Rege",
+      "Remembering Mahatma Gandhi",
+      "Resham Ki Dori",
+      "Reshma Aur Shera",
+      "Reshmi Roomal",
+      "Return Of Mr.Superman",
+      "Rifaaqat Ahmed & Mohammad Hussain Collection",
+      "Rok Sako To Rok Lo",
+      "Romantic Love Songs",
+      "Roop Ki Rani Choron Ka Raja",
+      "Roop Tera Mastana",
+      "Rootha Na Karo",
+      "Roti Kapada Aur Makaan",
+      "Rukhsat",
+      "Rungoli",
+      "Rustam Sohrab",
+      "Saajan Bina Suhagan",
+      "Saajan Ki Saheli",
+      "Saanwara - Krishan Bhajan & Kirtan",
+      "Saanwara Krishan Bhajan And Kirtan",
+      "Saath Saath",
+      "Saathi",
+      "Sabak",
+      "Sabse Bada Rupaiya",
+      "Sachaai",
+      "Sacred Mantras Volume 1",
+      "Sada E Sufi",
+      "Sadhi Mansa",
+      "Sadhu Aur Shaitaan",
+      "Safar",
+      "Sagaai",
+      "Sagai",
+      "Sagina",
+      "Saheli",
+      "Sahib Bibi Aur Ghulam",
+      "Sai Dhun Jagjit Singh",
+      "Sai Ram Bolo Sai Shyam Bolo",
+      "Sailaab",
+      "Saiyan",
+      "Sajan",
+      "Sajana Saath Nibhana",
+      "Sajda An Offering Of Ghazals",
+      "Samadhi",
+      "Sambandh",
+      "Samjhauta",
+      "Samrat Chandragupta",
+      "Samundari Daku",
+      "Sanam",
+      "Sangam",
+      "Sangdil",
+      "Sangeet Samrat Tansen",
+      "Sanghursh",
+      "Sangte Aika",
+      "Sanjh Aur Savera",
+      "Sanjog",
+      "Sanskar",
+      "Sanskar Dincharya",
+      "Sant Gyaneshwar",
+      "Santan",
+      "Sanu Ek Pal - Ashish Chhabra",
+      "Sanyasi",
+      "Sapnay",
+      "Saqi",
+      "Saranga",
+      "Saraswatichandra",
+      "Sarfarosh",
+      "Sargam",
+      "Sasural",
+      "Sati Savitri",
+      "Satta Bazar",
+      "Satyakam",
+      "Satyam Shivam Sundaram",
+      "Sau Saal Baad",
+      "Saudagar",
+      "Saugandh",
+      "Sautela Bhai",
+      "Sawan",
+      "Sawan Bhadon",
+      "Sawan Ki Ghata",
+      "Sawan Ko Aane Do",
+      "Sazaa",
+      "School Master",
+      "Seema",
+      "Seeta Aur Geeta",
+      "Sehra",
+      "Set Yourself Free",
+      "Shaadi Ki Shehnaiyan",
+      "Shaadi Ki Shehnaiyan - Vol 3",
+      "Shaadi Ki Shehnaiyan Ustad Bismillah Khan Shehn",
+      "Shaam-E-Ghazal - Jagjit Singh",
+      "Shaam-E-Ghazal Chitra Singh",
+      "Shaan",
+      "Shabab",
+      "Shabnam",
+      "Shagird",
+      "Shagoon",
+      "Shah Behram",
+      "Shaheed",
+      "Shahzada",
+      "Shair",
+      "Shakti",
+      "Shama",
+      "Shama Parwana",
+      "Shankar Dada",
+      "Shankar Husain",
+      "Sharaabi",
+      "Sharabi",
+      "Sharada",
+      "Sharafat",
+      "Shararat",
+      "Shareef Badmaash",
+      "Sharmate Sharmate",
+      "Sharmilee",
+      "Shart",
+      "Shatranj",
+      "Shehnai",
+      "Shehnai Ustad Bismillah Khan",
+      "Shehzada",
+      "Shikar",
+      "Shikari",
+      "Shikast",
+      "Shikshaa",
+      "Shin Shinaki Bubla Bu",
+      "Shirin Farhad",
+      "Shiv Kumar Sharma/Brij Bhushan Kabra",
+      "Shiv Kumar Sharma/brij Bhushan Kabra",
+      "Shiva - Jagjit Singh",
+      "Shivansh",
+      "Shola Aur Shabnam",
+      "Shor",
+      "Shree 420",
+      "Shree Shree Siddivinayak Aarti Sangrah",
+      "Shreeman Funtoosh",
+      "Shri Ganesh Mahamantra",
+      "Shriman Satyawadi",
+      "Shriman Shrimati",
+      "Shrimati 420",
+      "Sikander-E-Azam",
+      "Silsila",
+      "Silsilay - Jagjit Singh Javed Akhtar",
+      "Sipahsalar",
+      "Sitamgar",
+      "Sitara",
+      "Solva Saal",
+      "Solvaa Saawan",
+      "Someone Somewhere",
+      "Son Of India",
+      "Sone Ka Dil Lohe Ke Haath",
+      "Sone Ki Chidiya",
+      "Souten",
+      "Soz Pathos Jagjit Singh & Javed Akhtar",
+      "Soz Pathos Jagjit Singh And Javed Akhtar",
+      "Sparsh",
+      "Star",
+      "Station Master",
+      "Stolen Moments Jagjit Singh",
+      "Stree",
+      "Subah Ka Tara",
+      "Sufed Jhooth",
+      "Sufi Soul Abida Parveen",
+      "Sugandhi Katta",
+      "Suhaag",
+      "Suhaag Raat",
+      "Suhaag Sindoor",
+      "Suhagan",
+      "Suhana Safar",
+      "Sujata",
+      "Sunayana",
+      "Sunehre Din",
+      "Sunehri Nagin",
+      "Suntan",
+      "Suraag",
+      "Suraj",
+      "Surakksha",
+      "Sushila",
+      "Swami",
+      "Swami Dada",
+      "Swarg Se Pyara Ghar Hamaara",
+      "Sweekar Kiya Maine",
+      "Taj Mahal",
+      "Takkar",
+      "Talaq",
+      "Talash",
+      "Tangewala",
+      "Tanhai",
+      "Tapasya",
+      "Taqdeer",
+      "Taqdeer Ka Badshah",
+      "Taraana",
+      "Tarana",
+      "Tarzan",
+      "Taxi Chor",
+      "Taxi Driver",
+      "Teen Batti Char Rasta",
+      "Teen Devian",
+      "Teesri Aankh",
+      "Teesri Kasam",
+      "Teesri Manzil",
+      "Tel Malish Boot Polish",
+      "Tere Bharose Nandlal",
+      "Tere Ghar Ke Samne",
+      "Tere Pyar Mein",
+      "Teri Dhun - Arun Daga",
+      "Thagni - Shreyas & Abhas",
+      "Thakshak",
+      "The Best Of Ghulam Ali",
+      "The Burning Train",
+      "The Gentleman",
+      "The Great Gambler",
+      "The Magic Of Indian Classical Music Sitar Volume 2",
+      "The Music Room Cd 1",
+      "The Music Room Cd 2",
+      "The Ultimate In Percussion Music Zakir Hussain",
+      "Thodi Si Bewafai",
+      "Thokar",
+      "Timepass",
+      "Toofan Aur Diya",
+      "Toofani Tukker",
+      "Toote Khilone",
+      "Trishul",
+      "Truck Driver",
+      "Tu Tithe Mee",
+      "Tum Haseen Main Jawan",
+      "Tum Ko Dekah To Khayal Aaya",
+      "Tum Ne Kiya Ker Diya - Javed Bashir",
+      "Tumhare Liye",
+      "Tumhari Kassam",
+      "Tumsa Nahin Dekha",
+      "Tumse Achha Kaun Hai",
+      "Ujala",
+      "Uljhan",
+      "Umang",
+      "Ummeed",
+      "Umrao Jaan",
+      "Unees Bees",
+      "Upaasna",
+      "Uphaar",
+      "Upkar",
+      "Uran Khatola",
+      "Us Paar",
+      "Usne Kaha Tha",
+      "Ustad Amjad Ali Khan",
+      "Ustadi Ustad Se",
+      "Ustadon Ke Ustad",
+      "Vaasna",
+      "Vachan",
+      "Veeru Dada",
+      "Vidhaata",
+      "Vidya",
+      "Vijay",
+      "Village Girl",
+      "Vintage Ghazals --Jagjit/Chitra",
+      "Virasat",
+      "Vishwanath",
+      "Vishwas",
+      "Vishwatma",
+      "Wanted",
+      "Wapas",
+      "Waqt",
+      "Waris",
+      "Warrant",
+      "Who Kagaz Ki Kashti & Other Hits",
+      "Who Kagaz Ki Kashti And Other Hits",
+      "Woh Kaun Thi",
+      "Yaadon Ki Baaraat",
+      "Yaar di Masti",
+      "Yahudi",
+      "Yakeen",
+      "Yeh Desh",
+      "Yeh Dil Kisko Doon",
+      "Yeh Kya Jagah Hai Doston",
+      "Yeh Nazdeekiyan",
+      "Yeh Raaste Hain Pyar Ke",
+      "Yeh Raat Phir Na Aayegi",
+      "Yeh To Kamaal Ho Gaya",
+      "Zabak",
+      "Zakhm",
+      "Zakhmee",
+      "Zakir Hussain And The Maestros Volume 5",
+      "Zameer",
+      "Zanjeer",
+      "Zara Si Zindagi",
+      "Zeenat",
+      "Zehreela Insaan",
+      "Ziddi",
+      "Zinda Dil",
+      "Zindagi",
+      "Zindagi Aur Khwab",
+      "Zindagi Aur Maut",
+      "Zindagi Ek Juaa"
+    ],
+    "stations": [
+      "AMITABH BACHCHAN",
+      "AMOL PALEKAR - SANJEEV KUMAR",
+      "ANAND BAKSHI",
+      "ANAND-MILIND JATIN-LALIT",
+      "ANIL BISWAS",
+      "ASHA BHOSLE",
+      "BACHCHANS",
+      "BAPPI LAHIRI",
+      "BHAKTI",
+      "BHARAT VYAS",
+      "C. RAMCHANDRA CHITRAGUPTA",
+      "DUET HITS",
+      "FILM INSTRUMENTAL",
+      "GEETA DUTT",
+      "GHAZAL",
+      "GULZAR",
+      "GURBANI",
+      "Gavlani",
+      "HAPPY",
+      "HASRAT JAIPURI",
+      "HEMA MALINI",
+      "HEMANT KUMAR",
+      "HINDUSTANI CLASSICAL (INST)",
+      "INDEEVAR",
+      "JAGJIT SINGH",
+      "JAVED AKHTAR",
+      "KAIFI AZMI",
+      "KALYANJI-ANANDJI",
+      "KAPOORS",
+      "KHAYYAM",
+      "KISHORE KUMAR",
+      "LATA MANGESHKAR",
+      "LAXMIKANT-PYARELAL",
+      "Lavani",
+      "MADAN MOHAN",
+      "MAJROOH SULTANPURI",
+      "MANGESHKARS",
+      "MANNA DEY",
+      "MOHAMMED RAFI",
+      "MUKESH",
+      "Marathi Bhakti",
+      "Marathi Bhavageet",
+      "Marathi Classics",
+      "Marathi Folk",
+      "Marathi Romance",
+      "NAUSHAD",
+      "Natya Sangeet",
+      "O.P. NAYYAR",
+      "R.D. BURMAN",
+      "RAJENDRA KRISHAN",
+      "RAJESH ROSHAN",
+      "REKHA",
+      "RISHI KAPOOR",
+      "ROMANCE",
+      "ROSHANS",
+      "S.D. BURMAN",
+      "SAD",
+      "SADHANA / BABITA",
+      "SAHIR LUDHIANVI",
+      "SALIL CHOWDHURY",
+      "SHAILENDRA",
+      "SHAKEEL BADAYUNI",
+      "SHAMSHAD BEGUM & NOOR JEHAN",
+      "SHANKAR-JAIKISHAN",
+      "SHASHI KAPOOR",
+      "SMITA PATIL - SHABANA AZMI",
+      "SONGS WITH DIALOGUES",
+      "SUFI",
+      "SURAIYA, RAJKUMARI & UMA DEVI",
+      "TALAT MAHMOOD",
+      "TOP 300",
+      "V. SHANTARAM HITS",
+      "YESUDAS",
+      "ZEENAT AMAN - PARVEEN BABI"
+    ],
+    "moods": [
+      "Bhakti",
+      "Devotional",
+      "Duet Hits",
+      "Energetic",
+      "Festive",
+      "Film Instrumental",
+      "Ghazal",
+      "Gurbani",
+      "Happy",
+      "Hindustani Classical (Inst)",
+      "Joyful",
+      "Melancholic",
+      "Nostalgic",
+      "Peaceful",
+      "Playful",
+      "Romance",
+      "Romantic",
+      "Sad",
+      "Songs With Dialogues",
+      "Spiritual",
+      "Sufi",
+      "Top 300"
+    ],
+    "composer": [
+      "Ajay-Atul",
+      "Anand",
+      "Anand Modak",
+      "Anandghan",
+      "Anandji",
+      "Anil Biswas",
+      "Anil-Arun",
+      "Annasaheb Kirloskar",
+      "Arun Paudwal",
+      "Avadhoot Gupte",
+      "Bappi Lahiri",
+      "Bhaskarbua Bakhale",
+      "C. Ramchandra",
+      "Chinar-Mahesh",
+      "Chitragupta",
+      "Govindrao Tembe",
+      "Hridaynath Mangeshkar",
+      "Jaikishan",
+      "Jatin",
+      "Kalyanji",
+      "Kamleshwar",
+      "Khayyam",
+      "Kishori Amonkar",
+      "Lalit",
+      "Laxmikant",
+      "Madan Mohan",
+      "Milind",
+      "Naushad",
+      "O.P. Nayyar",
+      "Pankaj Padghan",
+      "Pravin Kunwar",
+      "Pt. Jitendra Abhisheki",
+      "Pyarelal",
+      "R.D. Burman",
+      "Rajesh Roshan",
+      "Ram Kadam",
+      "Ram Phatak",
+      "Roshan",
+      "S.D. Burman",
+      "Salil Chowdhury",
+      "Shankar",
+      "Shankar-Ehsaan-Loy",
+      "Shridhar Phadke",
+      "Srinivas Khale",
+      "Sudhir Phadke",
+      "Traditional",
+      "Vasant Pawar",
+      "Vasant Prabhu",
+      "Vitthal Umap",
+      "Yashwant Deo"
+    ],
+    "lyricist": [
+      "Anand Bakshi",
+      "Annasaheb Kirloskar",
+      "B.R. Tambe",
+      "Bhalchandra Pendharkar",
+      "Bharat Vyas",
+      "Dada Kondke",
+      "G.D. Madgulkar",
+      "Govind Ballal Deval",
+      "Gulzar",
+      "Guru Thakur",
+      "Hasrat Jaipuri",
+      "Indeevar",
+      "Jagdish Khebudkar",
+      "Javed Akhtar",
+      "K.P. Khadilkar",
+      "Kaifi Azmi",
+      "Majrooh Sultanpuri",
+      "Mandar Cholkar",
+      "Mangesh Kangane",
+      "Mangesh Padgaonkar",
+      "N.D. Mahanor",
+      "Patthe Bapurao",
+      "Pravin Davane",
+      "Purushottam Darvhekar",
+      "Rajendra Krishan",
+      "Ram Ganesh Gadkari",
+      "Ramesh Anavkar",
+      "Sachin Pathak",
+      "Sahir Ludhianvi",
+      "Sant Dnyaneshwar",
+      "Sant Eknath",
+      "Sant Janabai",
+      "Sant Namdev",
+      "Sant Soyrabai",
+      "Sant Tukaram",
+      "Shailendra",
+      "Shakeel Badayuni",
+      "Shanta Shelke",
+      "Shantabai Shelke",
+      "Sudhir Moghe",
+      "Suresh Bhat",
+      "Traditional",
+      "Vinayak Damodar Savarkar"
+    ],
+    "actor": [
+      "Amitabh Bachchan",
+      "Amol Palekar",
+      "Babita",
+      "Hema Malini",
+      "Jaya Bachchan",
+      "Parveen Babi",
+      "Raj Kapoor",
+      "Rekha",
+      "Rishi Kapoor",
+      "Sadhana",
+      "Sanjeev Kumar",
+      "Shabana Azmi",
+      "Shammi Kapoor",
+      "Shashi Kapoor",
+      "Smita Patil",
+      "Zeenat Aman"
+    ],
+    "singer": [
+      "Asha Bhosle",
+      "Geeta Dutt",
+      "Hemant Kumar",
+      "Jagjit Singh",
+      "K.J. Yesudas",
+      "Kishore Kumar",
+      "Lata Mangeshkar",
+      "Manna Dey",
+      "Mohammed Rafi",
+      "Mukesh",
+      "Noor Jehan",
+      "Rajkumari",
+      "Shamshad Begum",
+      "Suraiya",
+      "Talat Mahmood",
+      "Uma Devi",
+      "Usha Mangeshkar"
+    ],
+    "director": [
+      "V. Shantaram"
+    ],
+    "languages": [
+      "hindi",
+      "marathi"
+    ],
+    "categories": [
+      "bhavageet",
+      "devotional",
+      "dhangari",
+      "folk",
+      "gavlani",
+      "gondhal",
+      "koli-geet",
+      "lavani",
+      "marathi-bhakti",
+      "marathi-classics",
+      "marathi-film",
+      "natya-sangeet",
+      "patriotic",
+      "powada",
+      "romantic"
+    ]
+  },
+  "stationMetaSha256": "d0702c60f77b70d6b7081be63e5b1d79ed5fddee186d4d6e67e8f98e7bfb6e0a",
+  "removals": [
+    {
+      "id": "mar-cls-002",
+      "youtubeId": "YwS1hYwW-8E",
+      "reason": "watch_page_video_unavailable",
+      "originalRecord": {
+        "id": "mar-cls-002",
+        "title": "Ya Janmavar Ya Jagnyaavar",
+        "language": "marathi",
+        "year": 1974,
+        "artists": [
+          "Arun Date"
+        ],
+        "composers": [
+          "Srinivas Khale"
+        ],
+        "lyricists": [
+          "Mangesh Padgaonkar"
+        ],
+        "categories": [
+          "marathi-classics",
+          "bhavageet",
+          "romantic"
+        ],
+        "moods": [
+          "nostalgic",
+          "peaceful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "YwS1hYwW-8E",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-cls-004",
+      "youtubeId": "K3jUq3Vl_k0",
+      "reason": "watch_page_video_unavailable",
+      "originalRecord": {
+        "id": "mar-cls-004",
+        "title": "Chandane Shimpit Jashi",
+        "language": "marathi",
+        "year": 1980,
+        "artists": [
+          "Hridaynath Mangeshkar"
+        ],
+        "composers": [
+          "Hridaynath Mangeshkar"
+        ],
+        "lyricists": [
+          "Suresh Bhat"
+        ],
+        "categories": [
+          "marathi-classics",
+          "bhavageet",
+          "romantic"
+        ],
+        "moods": [
+          "romantic",
+          "joyful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "K3jUq3Vl_k0",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-cls-015",
+      "youtubeId": "h6I7j8K9lM0",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-cls-015",
+        "title": "Jayostute He Ushadevate",
+        "language": "marathi",
+        "year": 1965,
+        "artists": [
+          "Lata Mangeshkar"
+        ],
+        "composers": [
+          "Hridaynath Mangeshkar"
+        ],
+        "lyricists": [
+          "Vinayak Damodar Savarkar"
+        ],
+        "categories": [
+          "marathi-classics",
+          "bhavageet",
+          "devotional"
+        ],
+        "moods": [
+          "spiritual",
+          "energetic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "h6I7j8K9lM0",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhav-001",
+      "youtubeId": "a1B2c3D4eF5",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhav-001",
+        "title": "Bhatukalichya Khelamadhali",
+        "language": "marathi",
+        "year": 1972,
+        "artists": [
+          "Arun Date"
+        ],
+        "composers": [
+          "Sudhir Phadke"
+        ],
+        "lyricists": [
+          "Mangesh Padgaonkar"
+        ],
+        "categories": [
+          "bhavageet"
+        ],
+        "moods": [
+          "nostalgic",
+          "melancholic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "a1B2c3D4eF5",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhav-002",
+      "youtubeId": "b2C3d4E5fG6",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhav-002",
+        "title": "Hee Waat Door Jate",
+        "language": "marathi",
+        "year": 1980,
+        "artists": [
+          "Anuradha Paudwal",
+          "Ravindra Sathe"
+        ],
+        "composers": [
+          "Hridaynath Mangeshkar"
+        ],
+        "lyricists": [
+          "Shanta Shelke"
+        ],
+        "categories": [
+          "bhavageet",
+          "romantic"
+        ],
+        "moods": [
+          "melancholic",
+          "peaceful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "b2C3d4E5fG6",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhav-003",
+      "youtubeId": "c3D4e5F6gH7",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhav-003",
+        "title": "Mawalatya Dinakara",
+        "language": "marathi",
+        "year": 1955,
+        "artists": [
+          "Sudhir Phadke"
+        ],
+        "composers": [
+          "Sudhir Phadke"
+        ],
+        "lyricists": [
+          "B.R. Tambe"
+        ],
+        "categories": [
+          "bhavageet"
+        ],
+        "moods": [
+          "melancholic",
+          "peaceful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "c3D4e5F6gH7",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhav-004",
+      "youtubeId": "d4E5f6G7hI8",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhav-004",
+        "title": "Tinhi Sanja Sakhe Milalya",
+        "language": "marathi",
+        "year": 1966,
+        "artists": [
+          "Lata Mangeshkar"
+        ],
+        "composers": [
+          "Hridaynath Mangeshkar"
+        ],
+        "lyricists": [
+          "Bhalchandra Pendharkar"
+        ],
+        "categories": [
+          "bhavageet"
+        ],
+        "moods": [
+          "nostalgic",
+          "peaceful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "d4E5f6G7hI8",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhav-005",
+      "youtubeId": "e5F6g7H8iJ9",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhav-005",
+        "title": "Pratima Uri Dharuni",
+        "language": "marathi",
+        "year": 1964,
+        "artists": [
+          "Sudhir Phadke"
+        ],
+        "composers": [
+          "Sudhir Phadke"
+        ],
+        "lyricists": [
+          "G.D. Madgulkar"
+        ],
+        "categories": [
+          "bhavageet"
+        ],
+        "moods": [
+          "nostalgic",
+          "romantic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "e5F6g7H8iJ9",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhav-006",
+      "youtubeId": "f6G7h8I9jK0",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhav-006",
+        "title": "Shabda Shabda Japuni Theva",
+        "language": "marathi",
+        "year": 1976,
+        "artists": [
+          "Sudhir Phadke"
+        ],
+        "composers": [
+          "Sudhir Phadke"
+        ],
+        "lyricists": [
+          "Mangesh Padgaonkar"
+        ],
+        "categories": [
+          "bhavageet"
+        ],
+        "moods": [
+          "peaceful",
+          "nostalgic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "f6G7h8I9jK0",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhav-007",
+      "youtubeId": "g7H8i9J0kL1",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhav-007",
+        "title": "Keshava Madhava",
+        "language": "marathi",
+        "year": 1970,
+        "artists": [
+          "Suman Kalyanpur"
+        ],
+        "composers": [
+          "Kamleshwar"
+        ],
+        "lyricists": [
+          "Ramesh Anavkar"
+        ],
+        "categories": [
+          "bhavageet",
+          "marathi-bhakti",
+          "devotional"
+        ],
+        "moods": [
+          "devotional",
+          "peaceful"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "g7H8i9J0kL1",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhav-008",
+      "youtubeId": "h8I9j0K1lL2",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhav-008",
+        "title": "Naavika Re Vara Wahe Re",
+        "language": "marathi",
+        "year": 1969,
+        "artists": [
+          "Suman Kalyanpur"
+        ],
+        "composers": [
+          "Yashwant Deo"
+        ],
+        "lyricists": [
+          "Mangesh Padgaonkar"
+        ],
+        "categories": [
+          "bhavageet",
+          "folk"
+        ],
+        "moods": [
+          "peaceful",
+          "nostalgic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "h8I9j0K1lL2",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-natya-001",
+      "youtubeId": "i9J0k1L2mN3",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-natya-001",
+        "title": "De Hata Sharanagata",
+        "language": "marathi",
+        "year": 1912,
+        "artists": [
+          "Balgandharva"
+        ],
+        "composers": [
+          "Govindrao Tembe"
+        ],
+        "lyricists": [
+          "Annasaheb Kirloskar"
+        ],
+        "categories": [
+          "natya-sangeet"
+        ],
+        "moods": [
+          "spiritual",
+          "peaceful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "i9J0k1L2mN3",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-natya-002",
+      "youtubeId": "j0K1l2M3nO4",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-natya-002",
+        "title": "Nath Ha Majha",
+        "language": "marathi",
+        "year": 1916,
+        "artists": [
+          "Balgandharva"
+        ],
+        "composers": [
+          "Bhaskarbua Bakhale"
+        ],
+        "lyricists": [
+          "K.P. Khadilkar"
+        ],
+        "categories": [
+          "natya-sangeet"
+        ],
+        "moods": [
+          "romantic",
+          "joyful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "j0K1l2M3nO4",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-natya-003",
+      "youtubeId": "k1L2m3N4oP5",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-natya-003",
+        "title": "Kon Tuj Sam Sang",
+        "language": "marathi",
+        "year": 1911,
+        "artists": [
+          "Balgandharva"
+        ],
+        "composers": [
+          "Govindrao Tembe"
+        ],
+        "lyricists": [
+          "K.P. Khadilkar"
+        ],
+        "categories": [
+          "natya-sangeet"
+        ],
+        "moods": [
+          "nostalgic",
+          "spiritual"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "k1L2m3N4oP5",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-natya-004",
+      "youtubeId": "l2M3n4O5pQ6",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-natya-004",
+        "title": "Bola Amrut Bola",
+        "language": "marathi",
+        "year": 1916,
+        "artists": [
+          "Pt. Vasantrao Deshpande"
+        ],
+        "composers": [
+          "Govindrao Tembe"
+        ],
+        "lyricists": [
+          "Govind Ballal Deval"
+        ],
+        "categories": [
+          "natya-sangeet"
+        ],
+        "moods": [
+          "spiritual",
+          "peaceful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "l2M3n4O5pQ6",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-natya-005",
+      "youtubeId": "m3N4o5P6qR7",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-natya-005",
+        "title": "Bibba Dhara Madhura",
+        "language": "marathi",
+        "year": 1913,
+        "artists": [
+          "Balgandharva"
+        ],
+        "composers": [
+          "Bhaskarbua Bakhale"
+        ],
+        "lyricists": [
+          "K.P. Khadilkar"
+        ],
+        "categories": [
+          "natya-sangeet"
+        ],
+        "moods": [
+          "romantic",
+          "joyful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "m3N4o5P6qR7",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-natya-006",
+      "youtubeId": "n4O5p6Q7rS8",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-natya-006",
+        "title": "Ghanashyam Nayani Aala",
+        "language": "marathi",
+        "year": 1919,
+        "artists": [
+          "Ramdas Kamat"
+        ],
+        "composers": [
+          "Govindrao Tembe"
+        ],
+        "lyricists": [
+          "Ram Ganesh Gadkari"
+        ],
+        "categories": [
+          "natya-sangeet"
+        ],
+        "moods": [
+          "devotional",
+          "peaceful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "n4O5p6Q7rS8",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-natya-007",
+      "youtubeId": "o5P6q7R8sT9",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-natya-007",
+        "title": "Vadan Karo Re",
+        "language": "marathi",
+        "year": 1916,
+        "artists": [
+          "Balgandharva"
+        ],
+        "composers": [
+          "Bhaskarbua Bakhale"
+        ],
+        "lyricists": [
+          "K.P. Khadilkar"
+        ],
+        "categories": [
+          "natya-sangeet"
+        ],
+        "moods": [
+          "spiritual"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "o5P6q7R8sT9",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-natya-008",
+      "youtubeId": "p6Q7r8S9tU0",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-natya-008",
+        "title": "Tejonidhi Lohagol",
+        "language": "marathi",
+        "year": 1967,
+        "artists": [
+          "Pt. Vasantrao Deshpande"
+        ],
+        "composers": [
+          "Pt. Jitendra Abhisheki"
+        ],
+        "lyricists": [
+          "Purushottam Darvhekar"
+        ],
+        "categories": [
+          "natya-sangeet"
+        ],
+        "moods": [
+          "energetic",
+          "spiritual"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "p6Q7r8S9tU0",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-natya-009",
+      "youtubeId": "q7R8s9T0uV1",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-natya-009",
+        "title": "Sukhakar He Ahe",
+        "language": "marathi",
+        "year": 1882,
+        "artists": [
+          "Balgandharva"
+        ],
+        "composers": [
+          "Annasaheb Kirloskar"
+        ],
+        "lyricists": [
+          "Annasaheb Kirloskar"
+        ],
+        "categories": [
+          "natya-sangeet"
+        ],
+        "moods": [
+          "joyful",
+          "peaceful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "q7R8s9T0uV1",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-natya-010",
+      "youtubeId": "r8S9t0U1vW2",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-natya-010",
+        "title": "Ghei Chand Makarand",
+        "language": "marathi",
+        "year": 1967,
+        "artists": [
+          "Pt. Vasantrao Deshpande"
+        ],
+        "composers": [
+          "Pt. Jitendra Abhisheki"
+        ],
+        "lyricists": [
+          "Purushottam Darvhekar"
+        ],
+        "categories": [
+          "natya-sangeet"
+        ],
+        "moods": [
+          "romantic",
+          "peaceful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "r8S9t0U1vW2",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-natya-011",
+      "youtubeId": "s9T0u1V2wX3",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-natya-011",
+        "title": "Sur Niragas Ho",
+        "language": "marathi",
+        "year": 2015,
+        "film": {
+          "name": "Katyar Kaljat Ghusali",
+          "year": 2015
+        },
+        "artists": [
+          "Shankar Mahadevan",
+          "Anandi Joshi"
+        ],
+        "composers": [
+          "Shankar-Ehsaan-Loy"
+        ],
+        "lyricists": [
+          "Mangesh Kangane"
+        ],
+        "categories": [
+          "natya-sangeet",
+          "marathi-film",
+          "devotional"
+        ],
+        "moods": [
+          "spiritual",
+          "devotional"
+        ],
+        "themes": [
+          "ganesh"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "s9T0u1V2wX3",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-lav-001",
+      "youtubeId": "t0U1v2W3xY4",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-lav-001",
+        "title": "Sundara Manamadhye Bharli",
+        "language": "marathi",
+        "year": 1965,
+        "artists": [
+          "Sulochana Chavhan"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Patthe Bapurao"
+        ],
+        "categories": [
+          "lavani",
+          "folk"
+        ],
+        "moods": [
+          "energetic",
+          "joyful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "t0U1v2W3xY4",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-lav-002",
+      "youtubeId": "u1V2w3X4yZ5",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-lav-002",
+        "title": "Reshmachya Reghani",
+        "language": "marathi",
+        "year": 1975,
+        "artists": [
+          "Asha Bhosle"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Jagdish Khebudkar"
+        ],
+        "categories": [
+          "lavani",
+          "folk"
+        ],
+        "moods": [
+          "energetic",
+          "romantic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "u1V2w3X4yZ5",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-lav-003",
+      "youtubeId": "v2W3x4Y5zA6",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-lav-003",
+        "title": "Bugadi Majhi Sandli Ga",
+        "language": "marathi",
+        "year": 1959,
+        "film": {
+          "name": "Sangte Aika",
+          "year": 1959
+        },
+        "artists": [
+          "Asha Bhosle"
+        ],
+        "composers": [
+          "Vasant Pawar"
+        ],
+        "lyricists": [
+          "G.D. Madgulkar"
+        ],
+        "categories": [
+          "lavani",
+          "marathi-film"
+        ],
+        "moods": [
+          "energetic",
+          "romantic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "v2W3x4Y5zA6",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-lav-004",
+      "youtubeId": "w3X4y5Z6aB7",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-lav-004",
+        "title": "Apsara Aali",
+        "language": "marathi",
+        "year": 2010,
+        "film": {
+          "name": "Natarang",
+          "year": 2010
+        },
+        "artists": [
+          "Bela Shende",
+          "Ajay-Atul"
+        ],
+        "composers": [
+          "Ajay-Atul"
+        ],
+        "lyricists": [
+          "Guru Thakur"
+        ],
+        "categories": [
+          "lavani",
+          "marathi-film"
+        ],
+        "moods": [
+          "festive",
+          "energetic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "w3X4y5Z6aB7",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-lav-005",
+      "youtubeId": "x4Y5z6A7bC8",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-lav-005",
+        "title": "Wajle Ki Bara",
+        "language": "marathi",
+        "year": 2010,
+        "film": {
+          "name": "Natarang",
+          "year": 2010
+        },
+        "artists": [
+          "Bela Shende"
+        ],
+        "composers": [
+          "Ajay-Atul"
+        ],
+        "lyricists": [
+          "Guru Thakur"
+        ],
+        "categories": [
+          "lavani",
+          "marathi-film"
+        ],
+        "moods": [
+          "festive",
+          "energetic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "x4Y5z6A7bC8",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-lav-006",
+      "youtubeId": "y5Z6a7B8cD9",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-lav-006",
+        "title": "Aika Dajiba",
+        "language": "marathi",
+        "year": 2002,
+        "artists": [
+          "Vaishali Samant"
+        ],
+        "composers": [
+          "Avadhoot Gupte"
+        ],
+        "lyricists": [
+          "Sachin Pathak"
+        ],
+        "categories": [
+          "lavani",
+          "folk"
+        ],
+        "moods": [
+          "energetic",
+          "joyful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "y5Z6a7B8cD9",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-lav-007",
+      "youtubeId": "z6A7b8C9dE0",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-lav-007",
+        "title": "Shitti Vajali",
+        "language": "marathi",
+        "year": 2014,
+        "film": {
+          "name": "Rege",
+          "year": 2014
+        },
+        "artists": [
+          "Anand Shinde",
+          "Pravin Kunwar"
+        ],
+        "composers": [
+          "Pravin Kunwar"
+        ],
+        "lyricists": [
+          "Mandar Cholkar"
+        ],
+        "categories": [
+          "lavani",
+          "folk",
+          "marathi-film"
+        ],
+        "moods": [
+          "festive",
+          "energetic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "z6A7b8C9dE0",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-lav-008",
+      "youtubeId": "a7B8c9D0eF1",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-lav-008",
+        "title": "Hirvya Rangacha Chhand",
+        "language": "marathi",
+        "year": 1977,
+        "artists": [
+          "Sulochana Chavhan"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Jagdish Khebudkar"
+        ],
+        "categories": [
+          "lavani"
+        ],
+        "moods": [
+          "energetic",
+          "romantic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "a7B8c9D0eF1",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-lav-009",
+      "youtubeId": "b8C9d0E1fG2",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-lav-009",
+        "title": "Hil Hil Pori Hila",
+        "language": "marathi",
+        "year": 1988,
+        "artists": [
+          "Anand Shinde"
+        ],
+        "composers": [
+          "Vitthal Umap"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "lavani",
+          "folk",
+          "koli-geet"
+        ],
+        "moods": [
+          "energetic",
+          "joyful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "b8C9d0E1fG2",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-lav-010",
+      "youtubeId": "c9D0e1F2gH3",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-lav-010",
+        "title": "Hukumachi Rani Majhi",
+        "language": "marathi",
+        "year": 1978,
+        "artists": [
+          "Sulochana Chavhan"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Dada Kondke"
+        ],
+        "categories": [
+          "lavani",
+          "folk"
+        ],
+        "moods": [
+          "energetic",
+          "joyful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "c9D0e1F2gH3",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-001",
+      "youtubeId": "d0E1f2G3hI4",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-001",
+        "title": "Tuj Magato Mi Aata",
+        "language": "marathi",
+        "year": 1975,
+        "artists": [
+          "Lata Mangeshkar"
+        ],
+        "composers": [
+          "Hridaynath Mangeshkar"
+        ],
+        "lyricists": [
+          "Shantabai Shelke"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional"
+        ],
+        "moods": [
+          "devotional",
+          "peaceful"
+        ],
+        "themes": [
+          "ganesh"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "d0E1f2G3hI4",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-002",
+      "youtubeId": "e1F2g3H4iJ5",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-002",
+        "title": "Pratham Tula Vandito",
+        "language": "marathi",
+        "year": 1979,
+        "film": {
+          "name": "Ashtavinayak",
+          "year": 1979
+        },
+        "artists": [
+          "Anuradha Paudwal",
+          "Vasantrao Deshpande"
+        ],
+        "composers": [
+          "Anil-Arun"
+        ],
+        "lyricists": [
+          "Shantabai Shelke"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional",
+          "marathi-film"
+        ],
+        "moods": [
+          "devotional",
+          "spiritual"
+        ],
+        "themes": [
+          "ganesh"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "e1F2g3H4iJ5",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-003",
+      "youtubeId": "f2G3h4I5jK6",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-003",
+        "title": "Ghalin Lotangan",
+        "language": "marathi",
+        "year": 1970,
+        "artists": [
+          "Sanjeev Abhyankar"
+        ],
+        "composers": [
+          "Traditional"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional"
+        ],
+        "moods": [
+          "devotional",
+          "spiritual"
+        ],
+        "themes": [
+          "ganesh",
+          "traditional"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "f2G3h4I5jK6",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-004",
+      "youtubeId": "g3H4i5J6kL7",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-004",
+        "title": "Gajanana Shri Ganraya",
+        "language": "marathi",
+        "year": 1976,
+        "artists": [
+          "Lata Mangeshkar"
+        ],
+        "composers": [
+          "Hridaynath Mangeshkar"
+        ],
+        "lyricists": [
+          "Shantabai Shelke"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional"
+        ],
+        "moods": [
+          "devotional",
+          "joyful"
+        ],
+        "themes": [
+          "ganesh"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "g3H4i5J6kL7",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-007",
+      "youtubeId": "j6K7l8M9nO0",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-007",
+        "title": "Vithu Mauli Tu",
+        "language": "marathi",
+        "year": 1981,
+        "film": {
+          "name": "Are Sansar Sansar",
+          "year": 1981
+        },
+        "artists": [
+          "Sudhir Phadke",
+          "Suresh Wadkar"
+        ],
+        "composers": [
+          "Anil-Arun"
+        ],
+        "lyricists": [
+          "Jagdish Khebudkar"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional",
+          "marathi-film"
+        ],
+        "moods": [
+          "devotional",
+          "peaceful"
+        ],
+        "themes": [
+          "vitthal"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "j6K7l8M9nO0",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-008",
+      "youtubeId": "k7L8m9N0oP1",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-008",
+        "title": "Avagha Rang Ek Jhala",
+        "language": "marathi",
+        "year": 1982,
+        "artists": [
+          "Kishori Amonkar"
+        ],
+        "composers": [
+          "Kishori Amonkar"
+        ],
+        "lyricists": [
+          "Sant Soyrabai"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional"
+        ],
+        "moods": [
+          "spiritual",
+          "peaceful"
+        ],
+        "themes": [
+          "vitthal",
+          "saints"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "k7L8m9N0oP1",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-009",
+      "youtubeId": "l8M9n0O1pQ2",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-009",
+        "title": "Pandurang Hari",
+        "language": "marathi",
+        "year": 1978,
+        "artists": [
+          "Pt. Bhimsen Joshi"
+        ],
+        "composers": [
+          "Traditional"
+        ],
+        "lyricists": [
+          "Sant Tukaram"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional"
+        ],
+        "moods": [
+          "devotional",
+          "peaceful"
+        ],
+        "themes": [
+          "vitthal",
+          "saints"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "l8M9n0O1pQ2",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-010",
+      "youtubeId": "m9N0o1P2qR3",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-010",
+        "title": "Deva Tujhya Gabharyala",
+        "language": "marathi",
+        "year": 2013,
+        "film": {
+          "name": "Duniyadari",
+          "year": 2013
+        },
+        "artists": [
+          "Adarsh Shinde",
+          "Kirti Killedar"
+        ],
+        "composers": [
+          "Pankaj Padghan"
+        ],
+        "lyricists": [
+          "Mandar Cholkar"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional",
+          "marathi-film"
+        ],
+        "moods": [
+          "melancholic",
+          "spiritual"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "m9N0o1P2qR3",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-011",
+      "youtubeId": "n0O1p2Q3rS4",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-011",
+        "title": "Majhe Maher Pandhari",
+        "language": "marathi",
+        "year": 1973,
+        "artists": [
+          "Pt. Bhimsen Joshi"
+        ],
+        "composers": [
+          "Traditional"
+        ],
+        "lyricists": [
+          "Sant Eknath"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional"
+        ],
+        "moods": [
+          "devotional",
+          "peaceful"
+        ],
+        "themes": [
+          "vitthal",
+          "saints"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "n0O1p2Q3rS4",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-012",
+      "youtubeId": "o1P2q3R4sT5",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-012",
+        "title": "Vithal Vithal",
+        "language": "marathi",
+        "year": 1989,
+        "artists": [
+          "Suresh Wadkar"
+        ],
+        "composers": [
+          "Shridhar Phadke"
+        ],
+        "lyricists": [
+          "Pravin Davane"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional"
+        ],
+        "moods": [
+          "devotional",
+          "energetic"
+        ],
+        "themes": [
+          "vitthal"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "o1P2q3R4sT5",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-013",
+      "youtubeId": "p2Q3r4S5tU6",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-013",
+        "title": "Rama Raghunandana",
+        "language": "marathi",
+        "year": 1961,
+        "artists": [
+          "Lata Mangeshkar"
+        ],
+        "composers": [
+          "Sudhir Phadke"
+        ],
+        "lyricists": [
+          "G.D. Madgulkar"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional"
+        ],
+        "moods": [
+          "devotional",
+          "peaceful"
+        ],
+        "themes": [
+          "ram"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "p2Q3r4S5tU6",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-014",
+      "youtubeId": "q3R4s5T6uV7",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-014",
+        "title": "Vitthal Vitthal Pandharinath",
+        "language": "marathi",
+        "year": 1977,
+        "artists": [
+          "Pt. Bhimsen Joshi"
+        ],
+        "composers": [
+          "Ram Phatak"
+        ],
+        "lyricists": [
+          "Sant Tukaram"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional"
+        ],
+        "moods": [
+          "devotional",
+          "spiritual"
+        ],
+        "themes": [
+          "vitthal"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "q3R4s5T6uV7",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-015",
+      "youtubeId": "r4S5t6U7vW8",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-015",
+        "title": "Kanada Raja Pandharicha",
+        "language": "marathi",
+        "year": 1966,
+        "artists": [
+          "Pt. Bhimsen Joshi",
+          "Sudhir Phadke"
+        ],
+        "composers": [
+          "Ram Phatak"
+        ],
+        "lyricists": [
+          "G.D. Madgulkar"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional"
+        ],
+        "moods": [
+          "spiritual",
+          "devotional"
+        ],
+        "themes": [
+          "vitthal"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "r4S5t6U7vW8",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-bhakti-016",
+      "youtubeId": "s5T6u7V8wX9",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-bhakti-016",
+        "title": "Utha Utha Ho Sakalajana",
+        "language": "marathi",
+        "year": 1974,
+        "artists": [
+          "Lata Mangeshkar"
+        ],
+        "composers": [
+          "Hridaynath Mangeshkar"
+        ],
+        "lyricists": [
+          "Sant Tukaram"
+        ],
+        "categories": [
+          "marathi-bhakti",
+          "devotional"
+        ],
+        "moods": [
+          "devotional",
+          "peaceful"
+        ],
+        "themes": [
+          "vitthal",
+          "traditional"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "s5T6u7V8wX9",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-folk-001",
+      "youtubeId": "t6U7v8W9xY0",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-folk-001",
+        "title": "Ye Go Ye Ye Maina",
+        "language": "marathi",
+        "year": 1978,
+        "artists": [
+          "Vitthal Umap"
+        ],
+        "composers": [
+          "Vitthal Umap"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "folk",
+          "koli-geet"
+        ],
+        "moods": [
+          "joyful",
+          "energetic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "t6U7v8W9xY0",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-folk-002",
+      "youtubeId": "u7V8w9X0yZ1",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-folk-002",
+        "title": "Mee Dolkara Daryacha Raja",
+        "language": "marathi",
+        "year": 1969,
+        "artists": [
+          "Hemant Kumar",
+          "Lata Mangeshkar"
+        ],
+        "composers": [
+          "Hridaynath Mangeshkar"
+        ],
+        "lyricists": [
+          "Shanta Shelke"
+        ],
+        "categories": [
+          "folk",
+          "koli-geet",
+          "marathi-classics"
+        ],
+        "moods": [
+          "energetic",
+          "joyful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "u7V8w9X0yZ1",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-folk-003",
+      "youtubeId": "v8W9x0Y1zA2",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-folk-003",
+        "title": "Aga Bai Arechya",
+        "language": "marathi",
+        "year": 2004,
+        "film": {
+          "name": "Aga Bai Arrecha!",
+          "year": 2004
+        },
+        "artists": [
+          "Ajay Gogavale"
+        ],
+        "composers": [
+          "Ajay-Atul"
+        ],
+        "lyricists": [
+          "Guru Thakur"
+        ],
+        "categories": [
+          "folk",
+          "marathi-film"
+        ],
+        "moods": [
+          "energetic",
+          "festive"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "v8W9x0Y1zA2",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-folk-004",
+      "youtubeId": "w9X0y1Z2aB3",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-folk-004",
+        "title": "Kurya Chalalya Ya Ranala",
+        "language": "marathi",
+        "year": 1983,
+        "artists": [
+          "Suresh Wadkar"
+        ],
+        "composers": [
+          "Yashwant Deo"
+        ],
+        "lyricists": [
+          "N.D. Mahanor"
+        ],
+        "categories": [
+          "folk",
+          "dhangari"
+        ],
+        "moods": [
+          "peaceful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "w9X0y1Z2aB3",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-folk-005",
+      "youtubeId": "x0Y1z2A3bC4",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-folk-005",
+        "title": "Jhali Banu Dhangarin",
+        "language": "marathi",
+        "year": 1985,
+        "artists": [
+          "Shahir Vitthal Umap"
+        ],
+        "composers": [
+          "Traditional"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "folk",
+          "dhangari"
+        ],
+        "moods": [
+          "energetic",
+          "festive"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "x0Y1z2A3bC4",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-folk-006",
+      "youtubeId": "y1Z2a3B4cD5",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-folk-006",
+        "title": "Malhari Don Baykacha Ladka",
+        "language": "marathi",
+        "year": 1990,
+        "artists": [
+          "Anand Shinde"
+        ],
+        "composers": [
+          "Vitthal Umap"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "folk",
+          "gondhal"
+        ],
+        "moods": [
+          "festive",
+          "energetic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "y1Z2a3B4cD5",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-folk-007",
+      "youtubeId": "z2A3b4C5dE6",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-folk-007",
+        "title": "Gomu Sangtina Majhya",
+        "language": "marathi",
+        "year": 1976,
+        "film": {
+          "name": "Ha Khel Savalyancha",
+          "year": 1976
+        },
+        "artists": [
+          "Hemant Kumar",
+          "Asha Bhosle"
+        ],
+        "composers": [
+          "Hridaynath Mangeshkar"
+        ],
+        "lyricists": [
+          "Sudhir Moghe"
+        ],
+        "categories": [
+          "folk",
+          "koli-geet",
+          "marathi-film"
+        ],
+        "moods": [
+          "romantic",
+          "joyful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "z2A3b4C5dE6",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-folk-008",
+      "youtubeId": "a3B4c5D6eF7",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-folk-008",
+        "title": "Khedyamadhle Ghar Kaularu",
+        "language": "marathi",
+        "year": 1977,
+        "artists": [
+          "Arun Date"
+        ],
+        "composers": [
+          "Yashwant Deo"
+        ],
+        "lyricists": [
+          "Mangesh Padgaonkar"
+        ],
+        "categories": [
+          "folk",
+          "bhavageet"
+        ],
+        "moods": [
+          "nostalgic",
+          "peaceful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "a3B4c5D6eF7",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-folk-010",
+      "youtubeId": "c5D6e7F8gH9",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-folk-010",
+        "title": "Manacha Sajan",
+        "language": "marathi",
+        "year": 1972,
+        "film": {
+          "name": "Pinjra",
+          "year": 1972
+        },
+        "artists": [
+          "Lata Mangeshkar"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Jagdish Khebudkar"
+        ],
+        "categories": [
+          "folk",
+          "marathi-film"
+        ],
+        "moods": [
+          "joyful",
+          "romantic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "c5D6e7F8gH9",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-folk-011",
+      "youtubeId": "d6E7f8G9hI0",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-folk-011",
+        "title": "Gomu Tujhya Pyarat Padlay",
+        "language": "marathi",
+        "year": 1985,
+        "artists": [
+          "Vitthal Umap"
+        ],
+        "composers": [
+          "Vitthal Umap"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "folk",
+          "koli-geet"
+        ],
+        "moods": [
+          "playful",
+          "energetic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "d6E7f8G9hI0",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-rom-001",
+      "youtubeId": "e7F8g9H0iJ1",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-rom-001",
+        "title": "Mala Ved Lagale Premache",
+        "language": "marathi",
+        "year": 2014,
+        "film": {
+          "name": "Timepass",
+          "year": 2014
+        },
+        "artists": [
+          "Swapnil Bandodkar",
+          "Ketaki Mategaonkar"
+        ],
+        "composers": [
+          "Chinar-Mahesh"
+        ],
+        "lyricists": [
+          "Mangesh Kangane"
+        ],
+        "categories": [
+          "romantic",
+          "marathi-film"
+        ],
+        "moods": [
+          "romantic",
+          "playful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "e7F8g9H0iJ1",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-rom-002",
+      "youtubeId": "f8G9h0I1jK2",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-rom-002",
+        "title": "Dhundi Kalyana",
+        "language": "marathi",
+        "year": 1958,
+        "film": {
+          "name": "Dhakti Jaoo",
+          "year": 1958
+        },
+        "artists": [
+          "Lata Mangeshkar"
+        ],
+        "composers": [
+          "Sudhir Phadke"
+        ],
+        "lyricists": [
+          "G.D. Madgulkar"
+        ],
+        "categories": [
+          "romantic",
+          "marathi-film",
+          "marathi-classics"
+        ],
+        "moods": [
+          "romantic",
+          "joyful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "f8G9h0I1jK2",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-rom-003",
+      "youtubeId": "g9H0i1J2kL3",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-rom-003",
+        "title": "Hridayi Vasant Phulatana",
+        "language": "marathi",
+        "year": 1988,
+        "film": {
+          "name": "Ashi Hi Banwa Banwi",
+          "year": 1988
+        },
+        "artists": [
+          "Suresh Wadkar",
+          "Asha Bhosle",
+          "Sudesh Bhosle",
+          "Shailendra Singh"
+        ],
+        "composers": [
+          "Arun Paudwal"
+        ],
+        "lyricists": [
+          "Shantabai Shelke"
+        ],
+        "categories": [
+          "romantic",
+          "marathi-film"
+        ],
+        "moods": [
+          "romantic",
+          "joyful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "g9H0i1J2kL3",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-rom-004",
+      "youtubeId": "h0I1j2K3lL4",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-rom-004",
+        "title": "Rutu Hirava Rutu Barava",
+        "language": "marathi",
+        "year": 1983,
+        "artists": [
+          "Asha Bhosle"
+        ],
+        "composers": [
+          "Shridhar Phadke"
+        ],
+        "lyricists": [
+          "Shanta Shelke"
+        ],
+        "categories": [
+          "romantic",
+          "bhavageet"
+        ],
+        "moods": [
+          "romantic",
+          "peaceful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "h0I1j2K3lL4",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-rom-005",
+      "youtubeId": "i1J2k3L4mN5",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-rom-005",
+        "title": "Ka Re Durava",
+        "language": "marathi",
+        "year": 1995,
+        "artists": [
+          "Suresh Wadkar"
+        ],
+        "composers": [
+          "Shridhar Phadke"
+        ],
+        "lyricists": [
+          "Guru Thakur"
+        ],
+        "categories": [
+          "romantic",
+          "bhavageet"
+        ],
+        "moods": [
+          "melancholic",
+          "romantic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "i1J2k3L4mN5",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-rom-006",
+      "youtubeId": "j2K3l4M5nO6",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-rom-006",
+        "title": "Tu Tithe Mi",
+        "language": "marathi",
+        "year": 1998,
+        "film": {
+          "name": "Tu Tithe Mee",
+          "year": 1998
+        },
+        "artists": [
+          "Suresh Wadkar"
+        ],
+        "composers": [
+          "Anand Modak"
+        ],
+        "lyricists": [
+          "Sudhir Moghe"
+        ],
+        "categories": [
+          "romantic",
+          "marathi-film"
+        ],
+        "moods": [
+          "nostalgic",
+          "romantic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "j2K3l4M5nO6",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-rom-007",
+      "youtubeId": "k3L4m5N6oP7",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-rom-007",
+        "title": "Tarun Aahe Ratra Ajuni",
+        "language": "marathi",
+        "year": 1978,
+        "artists": [
+          "Asha Bhosle"
+        ],
+        "composers": [
+          "Hridaynath Mangeshkar"
+        ],
+        "lyricists": [
+          "Suresh Bhat"
+        ],
+        "categories": [
+          "romantic",
+          "bhavageet",
+          "marathi-classics"
+        ],
+        "moods": [
+          "romantic",
+          "nostalgic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "k3L4m5N6oP7",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-rom-008",
+      "youtubeId": "l4M5n6O7pQ8",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-rom-008",
+        "title": "Pahile Na Mi Tula",
+        "language": "marathi",
+        "year": 1985,
+        "artists": [
+          "Suresh Wadkar"
+        ],
+        "composers": [
+          "Shridhar Phadke"
+        ],
+        "lyricists": [
+          "Mangesh Padgaonkar"
+        ],
+        "categories": [
+          "romantic",
+          "bhavageet"
+        ],
+        "moods": [
+          "romantic",
+          "joyful"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "l4M5n6O7pQ8",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-rom-009",
+      "youtubeId": "m5N6o7P8qR9",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-rom-009",
+        "title": "Bhetali Tu Punha",
+        "language": "marathi",
+        "year": 1992,
+        "artists": [
+          "Suresh Wadkar"
+        ],
+        "composers": [
+          "Shridhar Phadke"
+        ],
+        "lyricists": [
+          "Sudhir Moghe"
+        ],
+        "categories": [
+          "romantic",
+          "bhavageet"
+        ],
+        "moods": [
+          "nostalgic",
+          "romantic"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "m5N6o7P8qR9",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-001",
+      "youtubeId": "n6O7p8Q9rS0",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-001",
+        "title": "Dharila Pandharicha Chor",
+        "language": "marathi",
+        "year": 1976,
+        "artists": [
+          "Pt. Bhimsen Joshi"
+        ],
+        "composers": [
+          "Ram Phatak"
+        ],
+        "lyricists": [
+          "Sant Janabai"
+        ],
+        "categories": [
+          "gavlani",
+          "marathi-bhakti",
+          "devotional"
+        ],
+        "moods": [
+          "devotional",
+          "playful"
+        ],
+        "themes": [
+          "krishna",
+          "vitthal",
+          "saints"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "n6O7p8Q9rS0",
+          "verified": true
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-002",
+      "youtubeId": "o7P8q9R0sT1",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-002",
+        "title": "Vajavito Pava Toh Krishna Murari",
+        "language": "marathi",
+        "year": 1970,
+        "artists": [
+          "Lata Mangeshkar"
+        ],
+        "composers": [
+          "Hridaynath Mangeshkar"
+        ],
+        "lyricists": [
+          "Shanta Shelke"
+        ],
+        "categories": [
+          "gavlani",
+          "devotional"
+        ],
+        "moods": [
+          "joyful",
+          "devotional"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "o7P8q9R0sT1",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-003",
+      "youtubeId": "p8Q9r0S1tU2",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-003",
+        "title": "Kanha Ga Bai Haluch Marto Khada",
+        "language": "marathi",
+        "year": 1974,
+        "artists": [
+          "Asha Bhosle"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Jagdish Khebudkar"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "playful",
+          "joyful"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "p8Q9r0S1tU2",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-004",
+      "youtubeId": "q9R0s1T2uV3",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-004",
+        "title": "Rutla Payi Kata",
+        "language": "marathi",
+        "year": 1977,
+        "artists": [
+          "Sulochana Chavhan"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Dada Kondke"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "playful",
+          "romantic"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "q9R0s1T2uV3",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-005",
+      "youtubeId": "r0S1t2U3vW4",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-005",
+        "title": "Sakhyano Chala",
+        "language": "marathi",
+        "year": 1982,
+        "artists": [
+          "Anuradha Paudwal"
+        ],
+        "composers": [
+          "Shridhar Phadke"
+        ],
+        "lyricists": [
+          "Pravin Davane"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "festive",
+          "joyful"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "r0S1t2U3vW4",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-006",
+      "youtubeId": "s1T2u3V4wX5",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-006",
+        "title": "Radhe Majhya Gavala Jau",
+        "language": "marathi",
+        "year": 1985,
+        "artists": [
+          "Vitthal Umap"
+        ],
+        "composers": [
+          "Traditional"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "gavlani",
+          "folk"
+        ],
+        "moods": [
+          "playful",
+          "energetic"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "s1T2u3V4wX5",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-007",
+      "youtubeId": "t2U3v4W5xY6",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-007",
+        "title": "Dahi Dudh Khauni",
+        "language": "marathi",
+        "year": 1973,
+        "artists": [
+          "Usha Mangeshkar"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "playful"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "t2U3v4W5xY6",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-008",
+      "youtubeId": "u3V4w5X6yZ7",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-008",
+        "title": "Nakore Vajavu Basari",
+        "language": "marathi",
+        "year": 1971,
+        "artists": [
+          "Lata Mangeshkar"
+        ],
+        "composers": [
+          "Hridaynath Mangeshkar"
+        ],
+        "lyricists": [
+          "Shanta Shelke"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "peaceful",
+          "devotional"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "u3V4w5X6yZ7",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-009",
+      "youtubeId": "v4W5x6Y7zA8",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-009",
+        "title": "Majha Math Fodila",
+        "language": "marathi",
+        "year": 1975,
+        "artists": [
+          "Sulochana Chavhan"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Jagdish Khebudkar"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "playful",
+          "energetic"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "v4W5x6Y7zA8",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-010",
+      "youtubeId": "w5X6y7Z8aB9",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-010",
+        "title": "Gopi Galbala Zala",
+        "language": "marathi",
+        "year": 1980,
+        "artists": [
+          "Anuradha Paudwal"
+        ],
+        "composers": [
+          "Arun Paudwal"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "festive",
+          "energetic"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "w5X6y7Z8aB9",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-011",
+      "youtubeId": "x6Y7z8A9bC0",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-011",
+        "title": "Bai Majhya Ga Dudhat Nahi Pani",
+        "language": "marathi",
+        "year": 1972,
+        "artists": [
+          "Sulochana Chavhan"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "playful",
+          "joyful"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "x6Y7z8A9bC0",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-012",
+      "youtubeId": "y7Z8a9B0cD1",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-012",
+        "title": "Panya Nighali Gavlan",
+        "language": "marathi",
+        "year": 1974,
+        "artists": [
+          "Usha Mangeshkar"
+        ],
+        "composers": [
+          "Traditional"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "gavlani",
+          "folk"
+        ],
+        "moods": [
+          "joyful",
+          "festive"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "y7Z8a9B0cD1",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-013",
+      "youtubeId": "z8A9b0C1dE2",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-013",
+        "title": "Ala Bagha Muraliwala",
+        "language": "marathi",
+        "year": 1976,
+        "artists": [
+          "Asha Bhosle"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Jagdish Khebudkar"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "joyful",
+          "devotional"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "z8A9b0C1dE2",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-014",
+      "youtubeId": "a9B0c1D2eF3",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-014",
+        "title": "Aaj Bal Krushna Janmala",
+        "language": "marathi",
+        "year": 1971,
+        "artists": [
+          "Suman Kalyanpur"
+        ],
+        "composers": [
+          "Yashwant Deo"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "gavlani",
+          "devotional"
+        ],
+        "moods": [
+          "festive",
+          "joyful"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "a9B0c1D2eF3",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-015",
+      "youtubeId": "b0C1d2E3fG4",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-015",
+        "title": "Yashodha Tujhya Krushnane",
+        "language": "marathi",
+        "year": 1978,
+        "artists": [
+          "Anuradha Paudwal"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "playful"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "b0C1d2E3fG4",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-016",
+      "youtubeId": "c1D2e3F4gH5",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-016",
+        "title": "Murliwala Murliwala",
+        "language": "marathi",
+        "year": 1975,
+        "artists": [
+          "Sulochana Chavhan"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "joyful"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "c1D2e3F4gH5",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-017",
+      "youtubeId": "d2E3f4G5hI6",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-017",
+        "title": "Kanha Vajavi Basuri",
+        "language": "marathi",
+        "year": 1969,
+        "artists": [
+          "Lata Mangeshkar"
+        ],
+        "composers": [
+          "Hridaynath Mangeshkar"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "peaceful",
+          "devotional"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "d2E3f4G5hI6",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-018",
+      "youtubeId": "e3F4g5H6iJ7",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-018",
+        "title": "Dhaka Madhala Mohan Majha",
+        "language": "marathi",
+        "year": 1973,
+        "artists": [
+          "Asha Bhosle"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "playful"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "e3F4g5H6iJ7",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-019",
+      "youtubeId": "f4G5h6I7jK8",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-019",
+        "title": "Gokuli Malaa Jao De Na",
+        "language": "marathi",
+        "year": 1977,
+        "artists": [
+          "Sulochana Chavhan"
+        ],
+        "composers": [
+          "Ram Kadam"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "gavlani"
+        ],
+        "moods": [
+          "playful",
+          "romantic"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "f4G5h6I7jK8",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    },
+    {
+      "id": "mar-gav-020",
+      "youtubeId": "g5H6i7J8kL9",
+      "reason": "sequential_placeholder_id",
+      "originalRecord": {
+        "id": "mar-gav-020",
+        "title": "Radhecha Kambar Lachakali",
+        "language": "marathi",
+        "year": 1986,
+        "artists": [
+          "Anand Shinde"
+        ],
+        "composers": [
+          "Vitthal Umap"
+        ],
+        "lyricists": [
+          "Traditional"
+        ],
+        "categories": [
+          "gavlani",
+          "folk"
+        ],
+        "moods": [
+          "playful",
+          "energetic"
+        ],
+        "themes": [
+          "krishna"
+        ],
+        "source": {
+          "type": "youtube",
+          "id": "g5H6i7J8kL9",
+          "verified": false
+        },
+        "provenance": {
+          "catalogVersion": "1.1.0",
+          "source": "sargam-marathi-archives"
+        }
+      }
+    }
+  ],
+  "retainedUnresolved": [
+    {
+      "id": "mar-cls-001",
+      "youtubeId": "m9aTqK6fS7Q",
+      "status": "INCONCLUSIVE",
+      "action": "retain_metadata_and_candidate_source_without_playable_claim"
+    },
+    {
+      "id": "mar-cls-003",
+      "youtubeId": "j0O5pW0P9oA",
+      "status": "INCONCLUSIVE",
+      "action": "retain_metadata_and_candidate_source_without_playable_claim"
+    },
+    {
+      "id": "mar-cls-005",
+      "youtubeId": "eZtWvK8_wW8",
+      "status": "INCONCLUSIVE",
+      "action": "retain_metadata_and_candidate_source_without_playable_claim"
+    },
+    {
+      "id": "mar-cls-007",
+      "youtubeId": "tG0wY5T9oJk",
+      "status": "INCONCLUSIVE",
+      "action": "retain_metadata_and_candidate_source_without_playable_claim"
+    },
+    {
+      "id": "mar-cls-008",
+      "youtubeId": "p8G2kL3W4jU",
+      "status": "INCONCLUSIVE",
+      "action": "retain_metadata_and_candidate_source_without_playable_claim"
+    },
+    {
+      "id": "mar-cls-009",
+      "youtubeId": "uK4jT1P5wVo",
+      "status": "INCONCLUSIVE",
+      "action": "retain_metadata_and_candidate_source_without_playable_claim"
+    },
+    {
+      "id": "mar-cls-010",
+      "youtubeId": "vL5kU7X1wVo",
+      "status": "INCONCLUSIVE",
+      "action": "retain_metadata_and_candidate_source_without_playable_claim"
+    },
+    {
+      "id": "mar-cls-011",
+      "youtubeId": "wM6jV4Y3kU8",
+      "status": "INCONCLUSIVE",
+      "action": "retain_metadata_and_candidate_source_without_playable_claim"
+    },
+    {
+      "id": "mar-cls-012",
+      "youtubeId": "xN7kL8W2wVo",
+      "status": "INCONCLUSIVE",
+      "action": "retain_metadata_and_candidate_source_without_playable_claim"
+    }
+  ],
+  "policy": "Remove only proven unavailable or structurally invalid/placeholder sources; archive full original records. Keep metadata-only records and spelling variants. Repair reviewed existing IDs before considering removal."
+}
